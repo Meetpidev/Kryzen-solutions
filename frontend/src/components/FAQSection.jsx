@@ -41,9 +41,8 @@ const reviews = [
 ];
 
 const faqs = [
-  "Is Sapphire the Top-Rated Mobile App Development Company for my business?",
+  "Is Kryzen the Top-Rated Mobile App Development Company for my business?",
   "What industries do you specialize in for app development?",
-  "Can I hire dedicated mobile app developers from your team?",
   "Why should I choose your company over other mobile app developers?",
   "Do you have client testimonials or case studies?",
   "What is the difference between native and hybrid mobile app development?",
@@ -52,7 +51,7 @@ const faqs = [
     answer:
       "We follow a user-centered design approach, keeping up with the latest UX trends such as intuitive navigation, minimalistic design, and responsive layouts to enhance user engagement and satisfaction.",
   },
-  "Why choose Sapphire Software Solutions for mobile app development services?",
+  "Why choose Kryzen Software Solutions for mobile app development services?",
 ];
 
 function StatCard({ label, desc, img }) {
