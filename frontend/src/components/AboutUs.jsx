@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import Img_1 from "../public/About_1.webp";
 import Img_2 from "../public/About_2.webp";
 import Img_3 from "../public/fortune.webp";
-import Img_9 from "../public/About_3.webp";
 import Img_4 from "../public/About_4.webp";
 import Img_5 from "../public/About_5.webp";
 import Img_6 from "../public/About_6.webp";
@@ -16,7 +15,7 @@ const cards = [
   { image: Img_5, stat: "99%", desc: "Client Retention" },
   { image: Img_6, stat: "2+", desc: "Industry Served" },
   { image: Img_2, stat: "20+", desc: "Satisfied Clients" },
-  { image: Img_9, stat: "20+", desc: "Google Reviews" },
+  { image: Img_2, stat: "20+", desc: "Google Reviews" },
 ];
 
 export default function AboutUs() {
