@@ -27,7 +27,6 @@ const footerLinks = {
     "Android",
     "iOS",
     "Flutter",
-    "Xamarin",
   ]
 };
 
@@ -65,9 +64,9 @@ const solutions = {
 };
 
 const getLinks = (category, links) => (
-  <ul className="space-y-2 mt-3 list-none">
+  <ul className="space-y-2 mt-3 list-none ">
     {links.map((link, index) => (
-      <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm">
+      <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm hover:text-blue-600">
         <span>•</span>
         {link === "About Sapphire" ? (
           <Link to="/about-Kryzen-Software-Solutions" className="block">
@@ -117,9 +116,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white">
       
-      <div className="hidden lg:block max-w-7xl mx-auto px-4 py-12">
+      <div className="hidden lg:block max-w-8xl px-4 py-5 rounded-lg border border-gray-300 mx-4 my-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           
           {Object.entries(footerLinks).map(([category, links]) => (
@@ -159,7 +158,7 @@ export default function Footer() {
               </button>
               <div
                 id={`footer-sec-${key}`}
-                className={`overflow-hidden transition-max-height duration-300 ${open === key ? "max-h-96" : "max-h-0"}`}
+                className={`overflow-auto transition-max-height duration-300 ${open === key ? "max-h-96" : "max-h-0"}`}
                 style={{
                   transition: "max-height 0.3s ease",
                 }}

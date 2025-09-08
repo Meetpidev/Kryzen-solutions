@@ -15,7 +15,7 @@ import PodcastsSection from "../components/PodcastsSection.jsx";
 import CaseStudySlider from "../components/CaseStudySlider.jsx";
 import TestimonialSlider from "../components/TestimonialSlider.jsx";
 import BlogCards from "../components/BlogCards.jsx";
-import FeaturedLogos from "../components/FeaturedLogos.jsx";
+import FeaturedLogos, { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos.jsx";
 import Demo from "../components/Demo.jsx";
 import AboutUs from "../components/AboutUs.jsx";
 
@@ -37,6 +37,8 @@ function Home() {
         <SuccessMatrix />
         <TestimonialSlider />
         <BlogCards />
+      <CTAWorkTogether />
+      <CTASubscribe />
     </div>
   )
 }
