@@ -411,79 +411,74 @@ export default function About() {
   return (
     <div className="min-h-[80vh] bg-background text-foreground font-sans antialiased">
       {/* Hero Section */}
-      <section
-        id="home"
-        ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      >
-        <div className="container mx-auto flex flex-col mt-15 md:flex-row items-center justify-between py-12 px-4 md:px-8">
-          {/* Left: Text Content */}
-          <div className="max-w-xl mb-10 md:mb-0 ml-19 text-justify">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 whitespace-nowrap">
-              We Shape Digital Solutions
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Kryzen Software Solutions provides the solutions you need to
+    <section
+  id="home"
+  ref={heroRef}
+  className="relative min-h-screen flex flex-col md:flex-row items-center justify-center overflow-hidden"
+>
+  <div className="container mx-auto flex flex-col md:flex-row items-center justify-center py-40 px-4 sm:px-6 md:px-8">
+    <div className="max-w-xl mb-10 md:mb-0 text-center md:text-left">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        We Shape Digital Solutions
+      </h1>
+      <p className="text-base sm:text-lg text-gray-600 mb-8">
+        Kryzen Software Solutions provides the solutions you need to
               innovate & accelerate business. We are a leading software
               development company with decade-long expertise in creating
               innovative solutions.
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition duration-150"
-            >
-              Connect Now
-              <span className="ml-2 font-normal text-xl">&rarr;</span>
-            </a>
-          </div>
-          {/* Right: Illustration/Image */}
-          <div className="flex justify-center w-full md:w-auto shrink-0">
-            <img
-              src={Digital}
-              alt="Digital Solutions illustration"
-              className="w-[880px] max-w-full h-[350px] object-contain"
-            />
-          </div>
-        </div>
-      </section>
+      </p>
+      <a
+        href="#contact"
+        className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition duration-150"
+      >
+        Connect Now
+        <span className="ml-2 font-normal text-xl">&rarr;</span>
+      </a>
+    </div>
+    <div className="w-full md:w-auto flex justify-center px-20">
+      <img
+        src={Digital}
+        alt="Digital Solutions illustration"
+        className="w-full max-w-lg h-auto object-contain"
+      />
+    </div>
+  </div>
+</section>
+
 
          {/* About Section */}
-      <section id="about" ref={aboutRef} className="py-20 bg-background">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div
-              className={`transition-all duration-800 delay-200 ${
-                aboutIntersected
-                  ? "opacity-100 transform translate-y-0"
-                  : "opacity-0 transform translate-y-8"
-              }`}
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-1xl">
-                <img
-                  src={logo}
-                  alt="Professional software development environment"
-                  className="w-full rounded-xl object-cover"
-                  data-testid="about-office-image"
-                />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-xl opacity-20"></div>
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent rounded-xl opacity-30"></div>
-              </div>
-            </div>
-            <div
-              className={`transition-all duration-800 delay-100 ${
-                aboutIntersected
-                  ? "opacity-100 transform translate-y-0"
-                  : "opacity-0 transform translate-y-8"
-              }`}
-            >
-              <h2
-                className="text-3xl md:text-4xl font-bold text-foreground mb-8 whitespace-nowrap"
-                data-testid="about-title"
-              >
-                About Kryzen{" "}Software Solutions
-              </h2>
-              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed text-justify">
-                <p data-testid="about-paragraph-1">
+    <section id="about" ref={aboutRef} className="py-20 bg-background">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div
+        className={`transition-all duration-800 delay-200 ${
+          aboutIntersected
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="relative rounded-xl overflow-hidden shadow-1xl">
+          <img
+            src={logo}
+            alt="Professional software development environment"
+            className="w-full rounded-xl object-cover"
+          />
+          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-xl opacity-20"></div>
+          <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent rounded-xl opacity-30"></div>
+        </div>
+      </div>
+      <div
+        className={`transition-all duration-800 delay-100 ${
+          aboutIntersected
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-8">
+          About Kryzen Software Solutions
+        </h2>
+        <div className="space-y-6 text-muted-foreground text-base sm:text-lg leading-relaxed text-justify">
+           <p data-testid="about-paragraph-1">
                   Kryzen Software Solutions is a certified Web & Mobile App
                   Development Company established in 2024. We offer a wide
                   range of IT services and domain-specific solutions to
@@ -500,20 +495,20 @@ export default function About() {
                   level to provide high-end technology solutions and
                   innovations.
                 </p>
-              </div>
-               <div className="sm:flex-row gap-4 justify-center mt-7">
-              <a
-                href="#contact"
-                className="bg-blue-100 text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105"
-                data-testid="button-get-started"
-              >
-                Get In Touch
-              </a>
-            </div>
-            </div>
-          </div>
         </div>
-      </section>
+        <div className="flex justify-center sm:justify-start gap-4 mt-7">
+          <a
+            href="#contact"
+            className="bg-blue-100 text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <h1 className="text-center mt-14 font-bold text-[2rem]">
           We Create, We Enhance, We Deliver <br /> More Than Expected –
