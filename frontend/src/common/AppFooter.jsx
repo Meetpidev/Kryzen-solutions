@@ -9,6 +9,9 @@ import {
 } from "react-icons/si";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";
+import Google from "../public/google.webp";
+import Left from "../public/left-leaf.jpg";
+import Right from "../public/right-leaf.jpg";
 
 // ContactCard Component
 function ContactCard({ title, email, phones }) {
@@ -64,15 +67,10 @@ function OfficeCard({ country, flag, address, highlight }) {
 
 function ReviewBadge({ platform, icon, reviewCount }) {
     return (
-        <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 shadow-md">
+        <div className="items-center gap-2  px-3 py-2 ">
             {icon}
-            <div>
-                <div className="flex items-center gap-1 mb-1">
-                    {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                    ))}
-                </div>
-                <p className="text-xs text-gray-600">{reviewCount}</p>
+            <div className="translate-x-12">
+                <p className="text-[1.125rem] text-gray-600 font-bold">{reviewCount}</p>
             </div>
         </div>
     );
@@ -156,7 +154,11 @@ export default function AppFooter() {
                                 <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
                                     <ReviewBadge
                                         platform="Google"
-                                        icon={<SiGoogle className="text-red-500 text-lg" />}
+                                        icon={<div className="flex">
+                                            <img src={Left} alt="Left" className="pr-4"/>
+                                            <img src={Google} alt="Google" />
+                                            <img src={Right} alt="Right" className="pl-3"/>
+                                        </div>}
                                         reviewCount="50+ REVIEWS"
                                     />
                                     {/* <ReviewBadge

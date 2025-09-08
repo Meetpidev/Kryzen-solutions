@@ -35,6 +35,7 @@ function Home() {
         <TechnologiesTabs />
         <PremiumServices />
         <SuccessMatrix />
+        <CaseStudySlider />
         <TestimonialSlider />
         <BlogCards />
       <CTAWorkTogether />
