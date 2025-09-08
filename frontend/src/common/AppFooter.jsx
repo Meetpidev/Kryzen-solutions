@@ -213,31 +213,28 @@ export default function AppFooter() {
                     </div>
                 </div>
             </div>
-
-                 <div className="w-full bg-[#0582b3] py-3">
-  <div className="max-w-17xl px-4 flex items-center justify-between text-[1.225rem]">
-    <p className="text-white font-medium">
+               <div className="w-full bg-[#0582b3] py-3 text-white max-w-8xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 text-sm sm:text-base md:text-[1.225rem]">
+    <p className="font-medium text-center md:text-left">
       © 2025 Kryzen Software Solutions. All rights reserved.
     </p>
-    <div className="flex items-center space-x-4">
-      <Link
-        to="/privacy-policy"
-        className="text-white font-medium"
+    <div className="flex items-center justify-center space-x-4">
+      <a
+        href="/privacy-policy"
+        className="font-medium hover:underline"
         data-testid="link-privacy"
       >
         Privacy Policy
-      </Link>
-      <span className="mx-2 text-white font-medium">|</span>
-      <Link
-        to="/term-of-use"
-        className="text-white font-medium hover:underline"
+      </a>
+      <span className="mx-2 font-medium hidden sm:inline">|</span>
+      <a
+        href="/term-of-use"
+        className="font-medium hover:underline"
         data-testid="link-terms"
       >
         Terms of Use
-      </Link>
+      </a>
     </div>
   </div>
-</div>
         </footer>
     );
 }

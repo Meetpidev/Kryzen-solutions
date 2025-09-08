@@ -212,7 +212,7 @@ export default function Header() {
                     <ChevronDown className="w-4 h-4 ml-1" />
                   </button>
 
-                  {/* -------- MEGA MENUS -------- */}
+                  {/* -------- BIG MENUS -------- */}
                   {megaMenu === menu && (
                     <div onMouseLeave={() => setmegaMenu(null)}>
                       {menu === 'company' && (
@@ -485,7 +485,7 @@ export default function Header() {
             </div>
 
             <div className="ml-auto flex lg:hidden">
-              <button onClick={toggleMobileMenu} className="hover:cursor-pointer transition-colors p-2 text-white" aria-label="Toggle mobile menu">
+              <button onClick={toggleMobileMenu} className={`hover:cursor-pointer transition-colors p-2 ${isScrolled ? "text-black" : "text-white"}`} aria-label="Toggle mobile menu">
                 <Menu className="w-6 h-6" />
               </button>
             </div>
