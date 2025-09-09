@@ -58,7 +58,7 @@ const services = [
       "Chatboat Development",
       "Data Analysis",
       "Data Migration",
-      "Business Anyalysis",
+      "Business Analysis",
     ]
   },
   {
@@ -527,7 +527,7 @@ const contentMap = {
         sectionTitle="Our Expertise in Mobile App Development Services"
         sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
       />
-     <Common />
+      <Common />
     </>
   ),
 
@@ -1189,7 +1189,7 @@ const contentMap = {
     </>
   ),
 
-  "data analytics": (
+  "data analysis": (
     <>
       <HeroSection
         title="Data Analytics"
@@ -1283,7 +1283,7 @@ const contentMap = {
     </>
   ),
 
-  "business anylysis": (
+  "business analysis": (
     <>
       <HeroSection
         title="Business Analytics"
@@ -1329,8 +1329,53 @@ const contentMap = {
       <Common />
     </>
   ),
-  
 
+  "typescript development": (
+    <>
+      <HeroSection
+        title="Typescript Development"
+        description="As a leading mobile app development company with Good Review and High Rating,
+                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
+                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Creating Excellent Mobile Apps for Every Business"
+        highlightedText="Smart and Reliable Apps"
+        paragraphs={[
+          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
+          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["hire mobile app developers"]}
+      />
+      <TechnologiesSlider />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Hiring our Mobile App Development Company"
+        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+      />
+      <AboutUs />
+      <ImpactCards
+        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        benefitCards={benefitCards}
+        autoInterval={3500}
+      />
+      <SectorsSlider />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Our Expertise in Mobile App Development Services"
+        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
+      />
+      <Common />
+    </>
+  ),
 };
 
 function SubMenuContent({ subItemName }) {

@@ -28,39 +28,50 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
-        name: form.name,
-        email: form.email,
-        mobile: form.mobile,
-        service: form.service,
-        budget: form.budget,
-        type: form.type,
-        details: form.details,
-        newsletter: form.newsletter,
-        notRobot: form.notRobot,
-      });
+    e.preventDefault();
 
-      if (response.status === 200) {
-        alert('Meeting scheduled successfully!');
-        setForm({
-          name: "",
-          email: "",
-          mobile: "",
-          service: "",
-          budget: "",
-          type: "",
-          details: "",
-          newsletter: false,
-          notRobot: false,
-        });
-      } else {
-        alert('Failed to schedule meeting.');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('An error occurred while scheduling the meeting.');
+  const formDataToSend = new FormData();
+  formDataToSend.append('name', form.name);
+  formDataToSend.append('email', form.email);
+  formDataToSend.append('mobile', form.mobile);
+  formDataToSend.append('service', form.service);
+  formDataToSend.append('budget', form.budget);
+  formDataToSend.append('type', form.type);
+  formDataToSend.append('details', form.details);
+  formDataToSend.append('newsletter', form.newsletter);
+  formDataToSend.append('notRobot', form.notRobot);
+  
+  // Append the file
+  const fileInput = document.querySelector('input[type="file"]');
+  if (fileInput.files.length > 0) {
+    formDataToSend.append('attachment', fileInput.files[0]);
+  }
+
+  try {
+    const response = await axios.post('http://localhost:3000/api/schedule-meeting', formDataToSend, {
+      headers: { 'Content-Type': 'multipart/form-data' }
+    });
+
+    if (response.status === 200) {
+      alert('Meeting scheduled successfully!');
+      setForm({
+        name: "",
+        email: "",
+        mobile: "",
+        service: "",
+        budget: "",
+        type: "",
+        details: "",
+        newsletter: false,
+        notRobot: false,
+      });
+    } else {
+      alert('Failed to schedule meeting.');
     }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('An error occurred while scheduling the meeting.');
+  }
   };
   return (
     <section className="bg-[#F0F8FF] w-full mx-auto px-4 py-20 mt-27">

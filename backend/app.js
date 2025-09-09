@@ -4,6 +4,10 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import cors from "cors";
 import { email } from "./template/email.js";
+import multer from "multer";
+import fs from "fs";
+
+const upload = multer({ dest: 'uploads/' }); 
 
 const app = express();
 app.use(bodyParser.json());
@@ -11,9 +15,13 @@ app.use(express.json());
 dotenv.config();
 app.use(cors());
 
-app.post('/api/schedule-meeting', async (req, res) => {
+
+
+app.post('/api/schedule-meeting',upload.single('attachment'), async (req, res) => {
   console.log('Received form data:', req.body);
+  console.log('Received file:', req.file);
   const formData = req.body;
+  const file = req.file;
   try {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -27,35 +35,34 @@ app.post('/api/schedule-meeting', async (req, res) => {
     });
 
 
-   const emailContent = `
-  <h2>New Meeting Scheduled</h2>
-  <ul>
-    <li><strong>Your Name:</strong> ${formData.name}</li>
-    <li><strong>Email:</strong> ${formData.email}</li>
-    <li><strong>Mobile Number:</strong> ${formData.mobile}</li>
-    <li><strong>Interested Service:</strong> ${formData.service}</li>
-    <li><strong>Project Budget:</strong> ${formData.budget}</li>
-    <li><strong>Project Type:</strong> ${formData.type}</li>
-    <li><strong>Project Details:</strong> ${formData.details}</li>
-    <li><strong>Subscribed to Newsletter:</strong> ${formData.newsletter ? "Yes" : "No"}</li>
-  </ul>
-`;
-
-
-
     await transporter.sendMail({
       from: '"Website Contact Form"',
       to: formData.email,
       subject: 'New Meeting Scheduled',
       html: email(formData),
+      attachments: file ? [
+        {
+          filename: file.originalname,
+          path: file.path
+        }
+      ] : []
     });
 
     res.status(200).json({ message: 'Email sent successfully' });
+
+    
+if (file) {
+  fs.unlink(file.path, (err) => {
+    if (err) console.error('Failed to delete temp file:', err);
+    else console.log('Temporary file deleted.');
+  });
+}
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to send email' });
   }
 });
+
 
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
