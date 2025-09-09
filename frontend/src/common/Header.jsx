@@ -3,13 +3,6 @@ import { ChevronDown, Menu, X, Mail, Calendar, MapPin, Briefcase } from "lucide-
 import { Link, useLocation } from "react-router-dom";
 import logo from "./logo.png";
 
-// const ratings = [
-//   { label: "Google", reviews: "1012 REVIEWS" },
-//   { label: "Clutch", reviews: "301 REVIEWS" },
-//   { label: "GoodFirms", reviews: "201 REVIEWS" },
-//   { label: "DesignRush", reviews: "55 REVIEWS" }
-// ];
-
 const services = [
   {
     label: "Mobile App Development",

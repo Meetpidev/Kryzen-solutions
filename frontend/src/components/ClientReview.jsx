@@ -117,7 +117,7 @@ export default function ClientReview() {
     .map((_, i) => testimonials[(current + i) % testimonials.length]);
 
   return (
-    <section className="bg-cyan-900 py-12 px-4">
+    <section className="bg-[#005D89] py-12 px-4">
       <h2 className="text-2xl md:text-3xl font-extrabold text-center text-white mb-10">
         What Our Clients Say
       </h2>

@@ -12,15 +12,17 @@ import { Link } from "react-router-dom";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";
+import India from "../public/india_iamge.png";
+import Email from "../public/icon_email_blue.jpg";
 
-// ContactCard Component
+
 function ContactCard({ title, email, phones }) {
     return (
-        <div className="bg-white rounded-lg shadow-md p-4 w-full max-w-xs sm:max-w-sm">
+        <div className="bg-white rounded-lg shadow-md p-4 px-6 w-full max-w-xs sm:max-w-sm">
             <h1 className="text-blue-800 font-semibold text-[1.1rem] mb-3">{title}</h1>
             <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                    <Mail className="text-gray-600 w-4 h-4" />
+                    <img src={Email} alt="Email Icon" className="text-gray-600 w-4 h-4"/>
                     <a
                         href={`mailto:${email}`}
                         className="text-gray-700 text-[1rem] hover:text-blue-600 transition-colors"
@@ -44,24 +46,35 @@ function ContactCard({ title, email, phones }) {
     );
 }
 
-// OfficeCard Component, now supports "highlight" prop
 function OfficeCard({ country, flag, address, highlight }) {
     return (
-        <div className={`bg-white rounded-lg shadow-md p-4 min-h-32 ${
-            highlight
-                ? "border-2 border-blue-500 ring-2 ring-blue-100 md:p-8"
-                : ""
-        }`}>
-            <div className="flex items-center gap-3 mb-3">
-                {flag}
-                <h4 className="font-semibold text-gray-800 text-sm md:text-base">{country}</h4>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600 space-y-1">
-                {address.map((line, index) => (
-                    <p key={index}>{line}</p>
-                ))}
-            </div>
-        </div>
+        <div className={`bg-white rounded-lg shadow-md p-4 sm:p-[1rem] min-h-32 ${
+  highlight
+    ? "border-2 border-blue-500 ring-2 ring-blue-100 md:p-8"
+    : ""
+}`}>
+  
+  <div className="flex items-center gap-3 mb-3">
+    {flag} 
+    <h4 className="font-semibold text-gray-800 text-sm md:text-base">{country}</h4>
+  </div>
+
+
+  <div className="flex justify-between items-start text-xs md:text-sm text-gray-600">
+    
+    <div className="flex-1 pr-4 space-y-1">
+      {address.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+
+
+    <div className="flex-shrink-1">
+      <img src={India} alt="India" className="h-[10rem] w-[10rem] translate-y-[-2rem] object-contain" />
+    </div>
+  </div>
+</div>
+
     );
 }
 
@@ -161,16 +174,6 @@ export default function AppFooter() {
                                         </div>}
                                         reviewCount="50+ REVIEWS"
                                     />
-                                    {/* <ReviewBadge
-                                        platform="Clutch"
-                                        icon={
-                                            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-                                                <span className="text-white text-xs font-bold">C</span>
-                                            </div>
-                                        }
-                                        reviewCount="54 REVIEWS"
-                                    />
-                                   */}
                                 </div>
 
                                 

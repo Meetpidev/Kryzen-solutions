@@ -1,23 +1,77 @@
+import { useState } from "react";
 import { CTASubscribe } from "../components/FeaturedLogos";
 import InnovativeSlider from "../components/InnovativeSlider";
 import SuccessMatrix from "../components/SuccessMatrix";
+import axios from "axios";
 
 export default function Contact() {
+
+ const [form, setForm] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    service: "",
+    budget: "",
+    type: "",
+    details: "",
+    newsletter: false,
+    notRobot: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
+        "Your name*": form.name,
+        "Email*": form.email,
+        "+91 Mobile Number*": form.mobile,
+        "Interested Service*": form.service,
+        "Project Budget": form.budget,
+        "Project Type": form.type,
+        "Tell us more about your project*": form.details,
+        "Subscribe to Newsletter": form.newsletter,
+        "Not a robot": form.notRobot,
+      });
+      if (response.status === 200) {
+        alert('Meeting scheduled successfully!');
+        setForm({
+          name: "",
+          email: "",
+          mobile: "",
+          service: "",
+          budget: "",
+          type: "",
+          details: "",
+          newsletter: false,
+          notRobot: false,
+        });
+      } else {
+        alert('Failed to schedule meeting.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while scheduling the meeting.');
+    }
+  };
   return (
     <section className="bg-[#F0F8FF] w-full mx-auto px-4 py-20 mt-27">
-      {/* Top Header */}
       <h1 className="font-bold text-2xl md:text-3xl text-center mb-2">
         Let's Navigate Digital Transformation Together!!!
       </h1>
       <p className="text-center text-gray-600 mb-6">
         Every day, Kryzen experts help businesses around the globe accelerate digital transformation and build a more resilient, sustainable, and inclusive future Together.
       </p>
-
-      {/* Stats + Review + Contact Form */}
+      
       <div className="flex flex-col lg:flex-row gap-6 m-7">
-        {/* Left Column: Stats + Review */}
         <div className="flex flex-col flex-1 gap-6">
-          {/* Stats Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center mb-2">
             <div>
               <div className="text-blue-800 font-bold text-xl md:text-2xl">20+</div>
@@ -44,7 +98,6 @@ export default function Contact() {
               <div className="text-gray-600 text-xs">Industry Served</div>
             </div>
           </div>
-          {/* Review Card */}
           <div className="bg-white rounded-lg shadow border p-3 flex items-center gap-3">
             <div className="flex-shrink-0 flex flex-col items-center justify-center">
               <div className="text-yellow-400 text-lg mb-1">★★★★★</div>
@@ -57,37 +110,60 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-        {/* Right Column: Contact Form */}
+        
         <div className="flex-1">
           <div className="shadow-2xl bg-white">
             <div className="bg-blue-800 text-white px-4 py-2 font-semibold mb-3">
               Questions? Contact us for Sales Enquiry!
             </div>
-            <form className="space-y-3 p-5">
+            <form className="space-y-3 p-5" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input type="text" placeholder="Your name*" className="border p-2 rounded w-full" required />
-                <input type="email" placeholder="Email*" className="border p-2 rounded w-full" required />
+                <input type="text" name="name" placeholder="Your name*" className="border p-2 rounded w-full" required 
+                  value={form.name}
+                  onChange={handleChange}
+                />
+                <input type="email" name="email" placeholder="Email*" className="border p-2 rounded w-full" required 
+                  value={form.email}
+                  onChange={handleChange}
+               />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input type="tel" placeholder="+91 Mobile Number*" className="border p-2 rounded w-full" required />
-                <input type="text" placeholder="Interested Service*" className="border p-2 rounded w-full" required />
+                <input type="tel" name="mobile" placeholder="+91 Mobile Number*" className="border p-2 rounded w-full" required 
+                  value={form.mobile}
+                  onChange={handleChange}
+                />
+                <input type="text" name="service" placeholder="Interested Service*" className="border p-2 rounded w-full" required 
+                  value={form.service}
+                  onChange={handleChange}
+                />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <select className="border p-2 rounded w-full">
+                <select className="border p-2 rounded w-full"
+                  name="budget"
+                  value={form.budget}
+                  onChange={handleChange}
+                 >
                   <option>Project Budget</option>
                   <option>Below $10k</option>
                   <option>$10k-$50k</option>
                   <option>Above $50k</option>
                 </select>
-                <select className="border p-2 rounded w-full">
+                <select className="border p-2 rounded w-full"
+                 name="type"
+                 value={form.type}
+                 onChange={handleChange}
+                >
                   <option>Project Type</option>
                   <option>Web Development</option>
                   <option>Mobile App</option>
                   <option>Other</option>
                 </select>
               </div>
-              <textarea rows={3} placeholder="Tell us more about your project*" className="border p-2 rounded w-full" required></textarea>
+              <textarea rows={3} placeholder="Tell us more about your project*" className="border p-2 rounded w-full" required
+              name="details"
+              value={form.details}
+              onChange={handleChange}
+              ></textarea>
               <div className="flex flex-col sm:flex-row gap-2 items-center">
                 <div className="flex-1 w-full">
                   <label className="block text-xs mb-1">Select or Drag your file here</label>
@@ -96,19 +172,28 @@ export default function Contact() {
                 <button type="button" className="bg-blue-600 text-white rounded px-4 py-2 text-xs">Upload</button>
               </div>
               <div className="flex items-center gap-2 text-xs">
-                <input type="checkbox" id="newsletter" />
+                <input type="checkbox" id="newsletter" 
+                  name="newsletter"
+                  checked={form.newsletter}
+                  onChange={handleChange}
+                />
                 <label htmlFor="newsletter">Subscribe to our Newsletter</label>
                 <span className="ml-auto flex items-center">All Projects are protected by NDA and IPs</span>
               </div>
               <div className="flex items-center gap-2">
-                <input type="checkbox" id="notRobot" required />
+                <input type="checkbox" id="notRobot" required 
+                  name="notRobot"
+                  checked={form.notRobot}
+                  onChange={handleChange}
+                />
                 <label htmlFor="notRobot" className="text-xs">I'm not a robot</label>
               </div>
               <div className="flex gap-2">
                 <button type="button" className="flex-1 bg-blue-600 text-white rounded px-4 py-2">Schedule a meeting</button>
                 <button type="submit" className="flex-1 bg-blue-800 text-white rounded px-4 py-2">Submit</button>
               </div>
-            </form>
+            </form> 
+         
           </div>
         </div>
       </div>

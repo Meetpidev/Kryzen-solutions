@@ -1,4 +1,6 @@
-import React from "react";
+import Flexible from "../public/flexible.png";
+import Experience from "../public/experencied developers.png";
+import Time from "../public/timiley deliverd.png";
 
 const features = [
   {
@@ -42,12 +44,12 @@ function FeatureItem({ icon, title, description }) {
 
 export default function Upper() {
   return (
-    <section className="bg-blue-50 py-10 px-4">
+    <section className="bg-[#F2F7FC] py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-3">
           What Sets Us Apart As Mobile App Development Company?
         </h2>
-        <p className="text-gray-700 text-center mb-8 max-w-3xl mx-auto">
+        <p className="text-gray-700 text-center mb-8 max-w-5xl mx-auto">
           Being unique is our quality! Sapphire Solutions believe in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors.
         </p>
         <div className="flex flex-col lg:flex-row gap-8 items-stretch">
@@ -58,7 +60,7 @@ export default function Upper() {
             ))}
           </div>
           {/* Right Contact Form */}
-          <div className="flex-1 bg-white rounded-lg shadow p-8 min-w-[300px]">
+          <div className="flex-1 bg-white rounded-lg shadow p-8 min-w-[300px] border-2">
             <h3 className="text-xl font-bold text-center mb-6">Let's Discuss</h3>
             <form className="flex flex-col gap-4">
               <input
