@@ -24,7 +24,7 @@ app.post('/api/schedule-meeting', async (req, res) => {
   }
     });
 
-    // Compose email
+
     const emailContent = `
       <h2>New Meeting Scheduled</h2>
       <ul>

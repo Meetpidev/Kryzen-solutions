@@ -26,7 +26,7 @@ const services = [
   {
     label: "Frontend Development",
     sub: [
-    "Frontend Development","Typscript Development","Angular Development","React Development"
+    "Typscript Development","Angular Development","React Development"
   ]
   },
     {

@@ -1,5 +1,5 @@
 import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function InsightFulVideos() {
 const galleryData = {
