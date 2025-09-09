@@ -29,17 +29,18 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
-        "Your name*": form.name,
-        "Email*": form.email,
-        "+91 Mobile Number*": form.mobile,
-        "Interested Service*": form.service,
-        "Project Budget": form.budget,
-        "Project Type": form.type,
-        "Tell us more about your project*": form.details,
-        "Subscribe to Newsletter": form.newsletter,
-        "Not a robot": form.notRobot,
-      });
+    const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
+    name: form.name,
+    email: form.email,
+    mobile: form.mobile,
+    service: form.service,
+    budget: form.budget,
+    type: form.type,
+    details: form.details,
+    newsletter: form.newsletter,
+    notRobot: form.notRobot,
+});
+
       if (response.status === 200) {
         alert('Meeting scheduled successfully!');
         setForm({

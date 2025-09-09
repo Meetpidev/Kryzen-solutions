@@ -7,10 +7,12 @@ import { email } from "./template/email.js";
 
 const app = express();
 app.use(bodyParser.json());
+app.use(express.json());
 dotenv.config();
 app.use(cors());
 
 app.post('/api/schedule-meeting', async (req, res) => {
+  console.log('Received form data:', req.body);
   const formData = req.body;
   try {
     const transporter = nodemailer.createTransport({
@@ -25,25 +27,27 @@ app.post('/api/schedule-meeting', async (req, res) => {
     });
 
 
-    const emailContent = `
-      <h2>New Meeting Scheduled</h2>
-      <ul>
-        <li><strong>Your Name:</strong> ${formData['Your name*']}</li>
-        <li><strong>Email:</strong> ${formData['Email*']}</li>
-        <li><strong>Mobile Number:</strong> ${formData['+91 Mobile Number*']}</li>
-        <li><strong>Interested Service:</strong> ${formData['Interested Service*']}</li>
-        <li><strong>Project Budget:</strong> ${formData['Project Budget']}</li>
-        <li><strong>Project Type:</strong> ${formData['Project Type']}</li>
-        <li><strong>Project Details:</strong> ${formData['Tell us more about your project*']}</li>
-        <li><strong>Subscribed to Newsletter:</strong> ${formData['Subscribe to Newsletter'] ? "Yes" : "No"}</li>
-      </ul>
-    `;
+   const emailContent = `
+  <h2>New Meeting Scheduled</h2>
+  <ul>
+    <li><strong>Your Name:</strong> ${formData.name}</li>
+    <li><strong>Email:</strong> ${formData.email}</li>
+    <li><strong>Mobile Number:</strong> ${formData.mobile}</li>
+    <li><strong>Interested Service:</strong> ${formData.service}</li>
+    <li><strong>Project Budget:</strong> ${formData.budget}</li>
+    <li><strong>Project Type:</strong> ${formData.type}</li>
+    <li><strong>Project Details:</strong> ${formData.details}</li>
+    <li><strong>Subscribed to Newsletter:</strong> ${formData.newsletter ? "Yes" : "No"}</li>
+  </ul>
+`;
+
+
 
     await transporter.sendMail({
       from: '"Website Contact Form"',
-      to: formData['Email*'],
+      to: formData.email,
       subject: 'New Meeting Scheduled',
-      html: email(emailContent),
+      html: email(formData),
     });
 
     res.status(200).json({ message: 'Email sent successfully' });
