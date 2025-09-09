@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function Contact() {
 
- const [form, setForm] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     mobile: "",
@@ -29,17 +29,17 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
-    name: form.name,
-    email: form.email,
-    mobile: form.mobile,
-    service: form.service,
-    budget: form.budget,
-    type: form.type,
-    details: form.details,
-    newsletter: form.newsletter,
-    notRobot: form.notRobot,
-});
+      const response = await axios.post('http://localhost:3000/api/schedule-meeting', {
+        name: form.name,
+        email: form.email,
+        mobile: form.mobile,
+        service: form.service,
+        budget: form.budget,
+        type: form.type,
+        details: form.details,
+        newsletter: form.newsletter,
+        notRobot: form.notRobot,
+      });
 
       if (response.status === 200) {
         alert('Meeting scheduled successfully!');
@@ -70,7 +70,7 @@ export default function Contact() {
       <p className="text-center text-gray-600 mb-6">
         Every day, Kryzen experts help businesses around the globe accelerate digital transformation and build a more resilient, sustainable, and inclusive future Together.
       </p>
-      
+
       <div className="flex flex-col lg:flex-row gap-6 m-7">
         <div className="flex flex-col flex-1 gap-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center mb-2">
@@ -111,7 +111,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        
+
         <div className="flex-1">
           <div className="shadow-2xl bg-white">
             <div className="bg-blue-800 text-white px-4 py-2 font-semibold mb-3">
@@ -119,21 +119,21 @@ export default function Contact() {
             </div>
             <form className="space-y-3 p-5" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input type="text" name="name" placeholder="Your name*" className="border p-2 rounded w-full" required 
+                <input type="text" name="name" placeholder="Your name*" className="border p-2 rounded w-full" required
                   value={form.name}
                   onChange={handleChange}
                 />
-                <input type="email" name="email" placeholder="Email*" className="border p-2 rounded w-full" required 
+                <input type="email" name="email" placeholder="Email*" className="border p-2 rounded w-full" required
                   value={form.email}
                   onChange={handleChange}
-               />
+                />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input type="tel" name="mobile" placeholder="+91 Mobile Number*" className="border p-2 rounded w-full" required 
+                <input type="tel" name="mobile" placeholder="+91 Mobile Number*" className="border p-2 rounded w-full" required
                   value={form.mobile}
                   onChange={handleChange}
                 />
-                <input type="text" name="service" placeholder="Interested Service*" className="border p-2 rounded w-full" required 
+                <input type="text" name="service" placeholder="Interested Service*" className="border p-2 rounded w-full" required
                   value={form.service}
                   onChange={handleChange}
                 />
@@ -143,16 +143,16 @@ export default function Contact() {
                   name="budget"
                   value={form.budget}
                   onChange={handleChange}
-                 >
+                >
                   <option>Project Budget</option>
                   <option>Below $10k</option>
                   <option>$10k-$50k</option>
                   <option>Above $50k</option>
                 </select>
                 <select className="border p-2 rounded w-full"
-                 name="type"
-                 value={form.type}
-                 onChange={handleChange}
+                  name="type"
+                  value={form.type}
+                  onChange={handleChange}
                 >
                   <option>Project Type</option>
                   <option>Web Development</option>
@@ -161,9 +161,9 @@ export default function Contact() {
                 </select>
               </div>
               <textarea rows={3} placeholder="Tell us more about your project*" className="border p-2 rounded w-full" required
-              name="details"
-              value={form.details}
-              onChange={handleChange}
+                name="details"
+                value={form.details}
+                onChange={handleChange}
               ></textarea>
               <div className="flex flex-col sm:flex-row gap-2 items-center">
                 <div className="flex-1 w-full">
@@ -173,7 +173,7 @@ export default function Contact() {
                 <button type="button" className="bg-blue-600 text-white rounded px-4 py-2 text-xs">Upload</button>
               </div>
               <div className="flex items-center gap-2 text-xs">
-                <input type="checkbox" id="newsletter" 
+                <input type="checkbox" id="newsletter"
                   name="newsletter"
                   checked={form.newsletter}
                   onChange={handleChange}
@@ -182,7 +182,7 @@ export default function Contact() {
                 <span className="ml-auto flex items-center">All Projects are protected by NDA and IPs</span>
               </div>
               <div className="flex items-center gap-2">
-                <input type="checkbox" id="notRobot" required 
+                <input type="checkbox" id="notRobot" required
                   name="notRobot"
                   checked={form.notRobot}
                   onChange={handleChange}
@@ -193,12 +193,12 @@ export default function Contact() {
                 <button type="button" className="flex-1 bg-blue-600 text-white rounded px-4 py-2">Schedule a meeting</button>
                 <button type="submit" className="flex-1 bg-blue-800 text-white rounded px-4 py-2">Submit</button>
               </div>
-            </form> 
-         
+            </form>
+
           </div>
         </div>
       </div>
-      
+
       <h3 className="text-lg font-bold text-center mt-8 mb-3">
         You Can Also Contact Us By
       </h3>
@@ -217,12 +217,12 @@ export default function Contact() {
           <p className="font-bold mb-1">Product</p>
           <p className="text-xs mb-1">www.vidayalayachodaksoftware.com<br />www.eaccounts.co.in</p>
         </div>
-          </div>
-          <div>
-              <SuccessMatrix />
-              <InnovativeSlider />
-              <CTASubscribe />
-          </div>
+      </div>
+      <div>
+        <SuccessMatrix />
+        <InnovativeSlider />
+        <CTASubscribe />
+      </div>
     </section>
   );
 }

@@ -1,6 +1,3 @@
-import React from "react";
-
-// Dummy podcast data
 const podcasts = [
     {
         title: "Mobile App Testing and Quality Assurance: Ensuring a Seamless User Experience",
@@ -80,42 +77,42 @@ export default function PodcastsSection() {
             </section>
 
             <section className="bg-blue-50 w-full py-10 px-3">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          Download Our Brochure To Take A Glimpse Of Our Offerings
-        </h2>
-        <form className="flex flex-col lg:flex-row gap-4 items-center justify-center">
-          <input
-            type="text"
-            placeholder="Your name *"
-            className="w-full lg:w-1/4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-200"
-          />
-          <input
-            type="email"
-            placeholder="Your Email ID *"
-            className="w-full lg:w-1/4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-200"
-          />
-          <div className="flex w-full lg:w-1/4">
-            <span className="inline-flex items-center px-2 bg-gray-100 border border-r-0 border-gray-300 rounded-l text-gray-600">
-              +91
-            </span>
-            <input
-              type="tel"
-              placeholder="Mobile Number *"
-              className="w-full px-4 py-2 border border-gray-300 rounded-r focus:outline-none focus:ring-2 focus:ring-blue-200"
-            />
-          </div>
-        </form>
-        <div className="flex justify-center mt-6">
-          <button
-            type="submit"
-            className="bg-blue-900 text-white font-semibold px-10 py-2 rounded hover:bg-blue-800 transition mt-2"
-          >
-            Download
-          </button>
-        </div>
-      </div>
-    </section>
+                <div className="max-w-7xl mx-auto">
+                    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+                        Download Our Brochure To Take A Glimpse Of Our Offerings
+                    </h2>
+                    <form className="flex flex-col lg:flex-row gap-4 items-center justify-center">
+                        <input
+                            type="text"
+                            placeholder="Your name *"
+                            className="w-full lg:w-1/4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        />
+                        <input
+                            type="email"
+                            placeholder="Your Email ID *"
+                            className="w-full lg:w-1/4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        />
+                        <div className="flex w-full lg:w-1/4">
+                            <span className="inline-flex items-center px-2 bg-gray-100 border border-r-0 border-gray-300 rounded-l text-gray-600">
+                                +91
+                            </span>
+                            <input
+                                type="tel"
+                                placeholder="Mobile Number *"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-r focus:outline-none focus:ring-2 focus:ring-blue-200"
+                            />
+                        </div>
+                    </form>
+                    <div className="flex justify-center mt-6">
+                        <button
+                            type="submit"
+                            className="bg-blue-900 text-white font-semibold px-10 py-2 rounded hover:bg-blue-800 transition mt-2"
+                        >
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

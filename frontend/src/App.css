@@ -3,11 +3,11 @@
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .slick-slide > div {
-  padding: 0 4px; /* Makes the gap very small */
+  padding: 0 4px; 
 }
 
 .slick-list {
-  margin: 0 -4px; /* Ensures slides align flush at edges */
+  margin: 0 -4px; 
 }
 
 @keyframes marquee {

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const cards = [
   {
@@ -46,7 +46,7 @@ const cards = [
       { text: "View Case Study", style: "bg-black text-white" },
       { text: "View Portfolio", style: "border border-black text-black" },
     ]
-    },
+  },
   {
     size: "gallery",
     bg: "bg-pink-50 flex flex-col gap-4 justify-between",
@@ -62,8 +62,7 @@ const cards = [
 export default function CaseStudySlider() {
   const sliderRef = useRef(null);
   const slideCount = 3;
-  // Simulate slide width for auto scroll (customize if card widths are changed)
-  const slideWidth = 540 + 24; 
+  const slideWidth = 540 + 24;
 
   useEffect(() => {
     let idx = 0;
@@ -89,7 +88,7 @@ export default function CaseStudySlider() {
           className="flex overflow-x-hidden scrollbar-hide gap-6 px-2 py-2 transition-all"
           style={{ scrollSnapType: "x mandatory" }}
         >
-          {/* Large Feature Card */}
+          
           <div className="snap-start min-w-[540px] max-w-[540px] rounded-2xl p-8 shadow flex flex-col justify-between items-start bg-pink-100">
             <img src={cards[0].logo} alt="logo" className="h-10 mb-3" />
             <div>
@@ -104,7 +103,7 @@ export default function CaseStudySlider() {
               </ul>
             </div>
             <div className="flex gap-3 mt-2">
-              {cards[0].actions.map((a,i) => (
+              {cards[0].actions.map((a, i) => (
                 <button key={i} className={`rounded-full px-6 py-2 font-semibold text-sm transition ${a.style}`}>{a.text}</button>
               ))}
             </div>
@@ -133,14 +132,13 @@ export default function CaseStudySlider() {
               </ul>
             </div>
             <div className="flex gap-3 mt-2">
-              {cards[2].actions.map((a,i) => (
+              {cards[2].actions.map((a, i) => (
                 <button key={i} className={`rounded-full px-6 py-2 font-semibold text-sm transition ${a.style}`}>{a.text}</button>
               ))}
             </div>
           </div>
         </div>
       </div>
-      {/* (Optional) Manual arrows can also be added similar to above examples */}
     </section>
   );
 }

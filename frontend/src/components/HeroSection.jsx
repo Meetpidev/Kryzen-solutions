@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function HeroSection({ 
     title, 
     description, 
@@ -14,7 +12,6 @@ export default function HeroSection({
             className="relative bg-blue-50 min-h-[95vh] flex flex-col md:flex-row items-center justify-center overflow-hidden pt-[7rem] px-4 sm:px-6 md:px-8"
         >
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-                {/* Text content */}
                 <div className="max-w-xl mb-10 md:mb-0 text-center md:text-left">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
                         {title}
@@ -30,8 +27,7 @@ export default function HeroSection({
                         <span className="ml-2 font-normal text-xl">&rarr;</span>
                     </a>
                 </div>
-
-                {/* Image content */}
+                
                 <div className="w-full md:w-auto flex justify-center px-4 sm:px-20">
                     <img
                         src={imageSrc}

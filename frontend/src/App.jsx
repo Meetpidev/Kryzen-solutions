@@ -1,3 +1,5 @@
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "./common/Header.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -7,19 +9,17 @@ import CeoMsg from "./pages/CeoMsg.jsx";
 import SubMenuPage from "./pages/SubMenuPage.jsx";
 import Footer from "./common/Footer.jsx";
 import AppFooter from "./common/AppFooter.jsx";
-import { Route, Routes, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import "./App.css";
 import Contact from "./pages/Contact.jsx";
 import InsightFulVideos from "./pages/InsightFulVideos.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
+import "./App.css";
 
 function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" }); 
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
   return (
     <>
@@ -35,7 +35,7 @@ function App() {
         <Route path="/service/:service/:subItem" element={<SubMenuPage />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/term-of-use" element={<Terms />} />
-     </Routes>
+      </Routes>
       <Footer />
       <AppFooter />
     </>

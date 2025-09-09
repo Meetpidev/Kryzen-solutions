@@ -22,7 +22,7 @@ function ContactCard({ title, email, phones }) {
             <h1 className="text-blue-800 font-semibold text-[1.1rem] mb-3">{title}</h1>
             <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                    <img src={Email} alt="Email Icon" className="text-gray-600 w-4 h-4"/>
+                    <img src={Email} alt="Email Icon" className="text-gray-600 w-4 h-4" />
                     <a
                         href={`mailto:${email}`}
                         className="text-gray-700 text-[1rem] hover:text-blue-600 transition-colors"
@@ -48,32 +48,31 @@ function ContactCard({ title, email, phones }) {
 
 function OfficeCard({ country, flag, address, highlight }) {
     return (
-        <div className={`bg-white rounded-lg shadow-md p-4 sm:p-[1rem] min-h-32 ${
-  highlight
-    ? "border-2 border-blue-500 ring-2 ring-blue-100 md:p-8"
-    : ""
-}`}>
-  
-  <div className="flex items-center gap-3 mb-3">
-    {flag} 
-    <h4 className="font-semibold text-gray-800 text-sm md:text-base">{country}</h4>
-  </div>
+        <div className={`bg-white rounded-lg shadow-md p-4 sm:p-[1rem] min-h-32 ${highlight
+            ? "border-2 border-blue-500 ring-2 ring-blue-100 md:p-8"
+            : ""
+            }`}>
+
+            <div className="flex items-center gap-3 mb-3">
+                {flag}
+                <h4 className="font-semibold text-gray-800 text-sm md:text-base">{country}</h4>
+            </div>
 
 
-  <div className="flex justify-between items-start text-xs md:text-sm text-gray-600">
-    
-    <div className="flex-1 pr-4 space-y-1">
-      {address.map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
-    </div>
+            <div className="flex justify-between items-start text-xs md:text-sm text-gray-600">
+
+                <div className="flex-1 pr-4 space-y-1">
+                    {address.map((line, index) => (
+                        <p key={index}>{line}</p>
+                    ))}
+                </div>
 
 
-    <div className="flex-shrink-1">
-      <img src={India} alt="India" className="h-[10rem] w-[10rem] translate-y-[-2rem] object-contain" />
-    </div>
-  </div>
-</div>
+                <div className="flex-shrink-1">
+                    <img src={India} alt="India" className="h-[10rem] w-[10rem] translate-y-[-2rem] object-contain" />
+                </div>
+            </div>
+        </div>
 
     );
 }
@@ -148,7 +147,7 @@ export default function AppFooter() {
                                 </div>
                             </div>
 
-                            
+
                             <div className="flex flex-col sm:flex-row gap-4 mb-6">
                                 <ContactCard
                                     title="Contact For Sales"
@@ -162,21 +161,21 @@ export default function AppFooter() {
                                 />
                             </div>
 
-                            
+
                             <div className="lg:flex-row items-center justify-between gap-6 pt-6 border-t border-blue-200 flex flex-col">
                                 <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
                                     <ReviewBadge
                                         platform="Google"
                                         icon={<div className="flex">
-                                            <img src={Left} alt="Left" className="pr-4"/>
+                                            <img src={Left} alt="Left" className="pr-4" />
                                             <img src={Google} alt="Google" />
-                                            <img src={Right} alt="Right" className="pl-3"/>
+                                            <img src={Right} alt="Right" className="pl-3" />
                                         </div>}
                                         reviewCount="50+ REVIEWS"
                                     />
                                 </div>
 
-                                
+
                                 <div className="flex items-center gap-3 mt-9">
                                     <SocialLink
                                         href="#"
@@ -207,7 +206,7 @@ export default function AppFooter() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="flex-1 flex flex-col justify-center">
                         <OfficeCard
                             country={offices[0].country}
@@ -218,28 +217,28 @@ export default function AppFooter() {
                     </div>
                 </div>
             </div>
-               <div className="w-full bg-[#0582b3] py-3 text-white max-w-8xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 text-sm sm:text-base md:text-[1.225rem]">
-    <p className="font-medium text-center md:text-left">
-      © 2025 Kryzen Software Solutions. All rights reserved.
-    </p>
-    <div className="flex items-center justify-center space-x-4">
-      <a
-        href="/privacy-policy"
-        className="font-medium hover:underline"
-        data-testid="link-privacy"
-      >
-        Privacy Policy
-      </a>
-      <span className="mx-2 font-medium hidden sm:inline">|</span>
-      <a
-        href="/term-of-use"
-        className="font-medium hover:underline"
-        data-testid="link-terms"
-      >
-        Terms of Use
-      </a>
-    </div>
-  </div>
+            <div className="w-full bg-[#0582b3] py-3 text-white max-w-8xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 text-sm sm:text-base md:text-[1.225rem]">
+                <p className="font-medium text-center md:text-left">
+                    © 2025 Kryzen Software Solutions. All rights reserved.
+                </p>
+                <div className="flex items-center justify-center space-x-4">
+                    <a
+                        href="/privacy-policy"
+                        className="font-medium hover:underline"
+                        data-testid="link-privacy"
+                    >
+                        Privacy Policy
+                    </a>
+                    <span className="mx-2 font-medium hidden sm:inline">|</span>
+                    <a
+                        href="/term-of-use"
+                        className="font-medium hover:underline"
+                        data-testid="link-terms"
+                    >
+                        Terms of Use
+                    </a>
+                </div>
+            </div>
         </footer>
     );
 }

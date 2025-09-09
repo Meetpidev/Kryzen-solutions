@@ -74,7 +74,7 @@ export default function ProcessWeFollow() {
 
   useEffect(() => {
     const checkScreen = () => {
-      setisSmall(window.innerWidth < 1024); 
+      setisSmall(window.innerWidth < 1024);
     };
     checkScreen();
     window.addEventListener("resize", checkScreen);
@@ -82,7 +82,7 @@ export default function ProcessWeFollow() {
   }, []);
 
   useEffect(() => {
-    if (!isSmall) return; 
+    if (!isSmall) return;
     const interval = setInterval(() => {
       setCurrentStep(prev => (prev === processSteps.length - 1 ? 0 : prev + 1));
     }, 4000);
@@ -149,7 +149,6 @@ export default function ProcessWeFollow() {
         ))}
       </div>
 
-      {/* Timeline dots and lines */}
       <div className="flex justify-center w-full">
         <img src={Arrows} alt="Arrows" />
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import Img_1 from "../public/About_1.webp";
 import Img_2 from "../public/About_2.webp";
@@ -120,7 +120,6 @@ export default function FAQSection() {
                     {item}
                     {openedIndex === idx && (
                       <p className="mt-2 text-gray-700 text-sm">
-                        {/* Placeholder for no detailed answer */}
                         No detailed answer available.
                       </p>
                     )}

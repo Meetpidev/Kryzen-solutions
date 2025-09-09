@@ -26,17 +26,17 @@ const techCards = [
     description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
     icon: <span className="text-5xl">icon</span>,
   },
-   {
+  {
     title: "Cross-Platform Development",
     description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
     icon: <span className="text-5xl">icon</span>,
   },
-    {
+  {
     title: "Cross-Platform Development",
     description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
     icon: <span className="text-5xl">icon</span>,
   },
-     {
+  {
     title: "Cross-Platform Development",
     description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
     icon: <span className="text-5xl">icon</span>,

@@ -13,7 +13,7 @@ const footerLinks = {
   ],
   Services: [
     "Web Development",
-    "Mobile App Development", 
+    "Mobile App Development",
     "Custom Software Development",
     "Graphics & UI/UX Design",
     "Digital Marketing",
@@ -105,7 +105,7 @@ const getSolutionsLinks = links => (
 
 export default function Footer() {
   const [open, setOpen] = useState("");
-  
+
   const solutionsArray = Object.values(solutions).flat();
 
   const sections = [
@@ -117,17 +117,17 @@ export default function Footer() {
 
   return (
     <footer className="bg-white">
-      
+
       <div className="hidden lg:block max-w-8xl px-4 py-5 rounded-lg border border-gray-300 mx-4 my-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          
+
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category} className="lg:col-span-1">
               <h3 className="text-lg font-bold text-blue-600 mb-4">{category}</h3>
               {getLinks(category, links)}
             </div>
           ))}
-          
+
           <div className="lg:col-span-3">
             <h3 className="text-lg font-bold text-blue-600 mb-4">Solutions</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -140,7 +140,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-     
+
       <div className="block lg:hidden max-w-[42rem] mx-auto px-3 pt-8 pb-8">
         <div className="rounded-xl border border-gray-200 p-3 bg-white">
           {sections.map(({ key, label, links }) => (

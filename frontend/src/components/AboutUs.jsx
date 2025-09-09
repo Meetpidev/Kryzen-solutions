@@ -54,16 +54,16 @@ export default function AboutUs() {
       <div className="hidden lg:grid grid-cols-4 gap-x-8 gap-y-6 px-58">
         {cards.map(card => (
           <div key={card.start} className="bg-white rounded-xl shadow-lg p-4 flex items-center gap-4 w-[16rem]">
-  <img
-    src={card.image}
-    className="w-30 h-30 object-cover rounded"
-    alt="Icnos"
-  />
-  <div className="flex flex-col">
-    <div className="text-3xl font-bold text-blue-600">{card.stat}</div>
-    <div className="text-base text-gray-700">{card.desc}</div>
-  </div>
-</div>
+            <img
+              src={card.image}
+              className="w-30 h-30 object-cover rounded"
+              alt="Icnos"
+            />
+            <div className="flex flex-col">
+              <div className="text-3xl font-bold text-blue-600">{card.stat}</div>
+              <div className="text-base text-gray-700">{card.desc}</div>
+            </div>
+          </div>
         ))}
       </div>
     </div>

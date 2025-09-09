@@ -163,7 +163,6 @@ export default function FeaturedLogos() {
             </section>
 
             <CTAWorkTogether />
-
             <CTASubscribe />
         </>
     );

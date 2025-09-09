@@ -14,17 +14,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const logos = [L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12];
+const logos = [L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12];
 
 const settings = {
-      infinite: true,
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear"
-    };
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 2000,
+  cssEase: "linear"
+};
 
 export default function LogoCarousel() {
   return (
@@ -42,6 +42,6 @@ export default function LogoCarousel() {
         ))}
       </Slider>
     </div>
-    
+
   );
 }

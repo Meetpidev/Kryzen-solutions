@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-// Testimonial Data
 const testimonials = [
   {
     name: "aa",
@@ -28,7 +27,7 @@ const testimonials = [
     platform: "Clutch",
     text:
       "The team continues to exhibit development and collaborative skills that allow them to create end products that exceed their client's expectations. They exert ample time and energy to make sure that they provide high-quality service within a reliable timeframe.",
-    },
+  },
   {
     name: "ff",
     location: "Georgia",
@@ -37,7 +36,7 @@ const testimonials = [
     platform: "Clutch",
     text:
       "The team continues to exhibit development and collaborative skills that allow them to create end products that exceed their client's expectations. They exert ample time and energy to make sure that they provide high-quality service within a reliable timeframe.",
-    },
+  },
   {
     name: "gg",
     location: "Georgia",
@@ -50,7 +49,6 @@ const testimonials = [
 
 ];
 
-// Testimonial Card component
 function TestimonialCard({ name, location, avatar, rating, platform, text }) {
   return (
     <div className="bg-white rounded-lg shadow p-8 w-full max-w-md min-h-[250px] flex flex-col justify-between">
@@ -89,7 +87,6 @@ export default function ClientReview() {
     return () => window.removeEventListener("resize", updateCardsPerView);
   }, []);
 
-  // Auto-advance every 3s (desktop only)
   useEffect(() => {
     if (cardsPerView !== 3) return;
     const interval = setInterval(() => {
@@ -111,7 +108,6 @@ export default function ClientReview() {
     );
   }
 
-  // Always show cardsPerView, wrap around if needed
   const visibleCards = Array(cardsPerView)
     .fill(0)
     .map((_, i) => testimonials[(current + i) % testimonials.length]);

@@ -52,7 +52,7 @@ infrastructure management and software development. To enhance your cloud experi
     description: "We use key technologies to create expressive and feature-rich native iOS / Android, cross-platform that will wow your users. For example, Kotlin and Java are the primary programming languages for Android apps, whereas Swift and Objective-C are frequently used for iOS development. The UI/UX design, prototyping, and collaboration are commonly done with tools like Adobe XD, Sketch, and Figma.",
     tools: [
       { name: "Android", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLIBpPNNm0N6Apru0vRGz-T6FYvyiWJ5ie8Q&s" },
-    { name: "IOS", icon: "https://cdn-icons-png.flaticon.com/512/0/747.png" },
+      { name: "IOS", icon: "https://cdn-icons-png.flaticon.com/512/0/747.png" },
       { name: "React Native", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCMS5dKOhb5ku0srvEaKlFhxDU51SIpW_Xg&s" },
       { name: "Flutter", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/1024px-Flutter_logo.svg.png" },
       { name: "Swift", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvxiKZRQnt32woh9rIjdG1y-9NJiaXkVX6A&s" },
@@ -113,9 +113,8 @@ export default function TechnologiesTabs() {
               onClick={() => setMobileTabStart((i) => Math.max(0, i - 1))}
               disabled={leftDisabled}
               aria-label="Show previous tabs"
-              className={`rounded-full p-2 bg-blue-100 transition ${
-                leftDisabled ? "opacity-30 cursor-not-allowed" : "hover:bg-blue-200"
-              }`}
+              className={`rounded-full p-2 bg-blue-100 transition ${leftDisabled ? "opacity-30 cursor-not-allowed" : "hover:bg-blue-200"
+                }`}
             >
               <ChevronLeft className="w-5 h-5 text-blue-900" />
             </button>
@@ -123,11 +122,10 @@ export default function TechnologiesTabs() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-6 py-2 text-lg font-semibold rounded transition whitespace-nowrap ${
-                  activeTab === tab.key
+                className={`px-6 py-2 text-lg font-semibold rounded transition whitespace-nowrap ${activeTab === tab.key
                     ? "bg-blue-900 text-white"
                     : "bg-[#005D89]-200 hover:bg-blue-200"
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -138,9 +136,8 @@ export default function TechnologiesTabs() {
               }
               disabled={rightDisabled}
               aria-label="Show next tabs"
-              className={`rounded-full p-2 bg-blue-100 transition ${
-                rightDisabled ? "opacity-30 cursor-not-allowed" : "hover:bg-blue-200"
-              }`}
+              className={`rounded-full p-2 bg-blue-100 transition ${rightDisabled ? "opacity-30 cursor-not-allowed" : "hover:bg-blue-200"
+                }`}
             >
               <ChevronRight className="w-5 h-5 text-blue-900" />
             </button>
@@ -151,11 +148,10 @@ export default function TechnologiesTabs() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-6 py-2 text-lg font-semibold rounded transition whitespace-nowrap ${
-                  activeTab === tab.key
+                className={`px-6 py-2 text-lg font-semibold rounded transition whitespace-nowrap ${activeTab === tab.key
                     ? "bg-blue-900 text-white"
                     : "bg-[#005D89]-200 hover:bg-blue-200"
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -171,15 +167,15 @@ export default function TechnologiesTabs() {
           <p className="text-gray-700">{tabContent.description}</p>
         </div>
         <div className="md:w-3/5 grid grid-cols-2 sm:grid-cols-3 gap-6">
-         {tabContent.tools.map((tool, idx) => (
-  <div
-    key={`${tool.name}-${idx}`} 
-    className="bg-white rounded-lg shadow p-6 flex flex-col items-center"
-  >
-    <img src={tool.icon} alt={tool.name} className="h-12 w-12 mb-3" />
-    <span className="font-semibold text-lg">{tool.name}</span>
-  </div>
-))}
+          {tabContent.tools.map((tool, idx) => (
+            <div
+              key={`${tool.name}-${idx}`}
+              className="bg-white rounded-lg shadow p-6 flex flex-col items-center"
+            >
+              <img src={tool.icon} alt={tool.name} className="h-12 w-12 mb-3" />
+              <span className="font-semibold text-lg">{tool.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>

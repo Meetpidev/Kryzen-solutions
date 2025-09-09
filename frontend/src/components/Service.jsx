@@ -1,6 +1,3 @@
-import React from 'react';
-
-// Example CSS-in-JS styles
 const styles = {
   container: {
     padding: '2rem',
@@ -99,20 +96,20 @@ const Services = () => (
     <div style={styles.subheading}>
       We offer a comprehensive suite of services designed to cover every aspect of your digital journey from concept to launch and beyond.
     </div>
-  <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-  {services.map((service, idx) => (
-    <div key={idx} className="bg-white p-6 shadow-md flex flex-col justify-between min-h-[230px] text-justify border-b-4 border-transparent hover:border-red-500 transition-colors">
-      <div className="font-bold text-xl mb-2">{service.title}</div>
-      <div className="text-gray-600 mb-6 flex-grow text-sm">{service.desc}</div>
-      <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
-        Explore Service &rarr;
-      </button>
-       <div
-    className="absolute bottom-0 left-0 h-1 bg-red-500 w-0 group-hover:w-full transition-[2rem] duration-800 ease-in-out"
-  />
+    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+      {services.map((service, idx) => (
+        <div key={idx} className="bg-white p-6 shadow-md flex flex-col justify-between min-h-[230px] text-justify border-b-4 border-transparent hover:border-red-500 transition-colors">
+          <div className="font-bold text-xl mb-2">{service.title}</div>
+          <div className="text-gray-600 mb-6 flex-grow text-sm">{service.desc}</div>
+          <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
+            Explore Service &rarr;
+          </button>
+          <div
+            className="absolute bottom-0 left-0 h-1 bg-red-500 w-0 group-hover:w-full transition-[2rem] duration-800 ease-in-out"
+          />
+        </div>
+      ))}
     </div>
-  ))}
-</div>
 
   </div>
 );

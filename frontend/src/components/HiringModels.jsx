@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const hiringModels = [
   {
@@ -99,15 +99,13 @@ export default function HiringModels() {
         <p className="text-center text-gray-700 mb-6 text-lg">
           We offer three different types of hiring models that are designed to suit your diverse needs and budget. Take a look at our hiring models:
         </p>
-
-        {/* Large and medium screens grid */}
+        
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {hiringModels.map((model) => (
             <Card key={model.title} model={model} />
           ))}
         </div>
-
-        {/* Small screens carousel */}
+       
         <div className="md:hidden flex flex-col items-center">
           <Card model={hiringModels[currentIndex]} />
           <div className="mt-6 flex space-x-6">

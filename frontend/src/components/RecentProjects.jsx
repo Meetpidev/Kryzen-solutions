@@ -95,7 +95,7 @@ export default function RecentProjects() {
               aria-label="Previous project"
               className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition"
             >
-              {/* SVG left arrow */}
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-700"
@@ -111,7 +111,7 @@ export default function RecentProjects() {
               aria-label="Next project"
               className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition"
             >
-              {/* SVG right arrow */}
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-700"
@@ -128,7 +128,6 @@ export default function RecentProjects() {
     );
   }
 
-  // Large screen grid - full width with padding
   return (
     <div className="bg-white py-8 px-4 md:px-8 lg:px-12 w-full">
       <h2 className="text-4xl font-bold text-center mb-6 w-full">Our Recent Projects</h2>

@@ -100,7 +100,6 @@ export default function SuccessMatrix() {
   };
 
   if (isSmallOrMedium) {
-    // single card carousel view
     const item = successMatrixData[currentIndex];
     return (
       <div className="bg-blue-50 py-12 px-4 flex flex-col items-center min-h-[60vj]">
@@ -140,7 +139,6 @@ export default function SuccessMatrix() {
     );
   }
 
-  // large screen grid view
   return (
     <div className="bg-blue-50 py-12 px-4">
       <div className="max-w-6xl mx-auto text-center">

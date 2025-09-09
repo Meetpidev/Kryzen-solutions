@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function BenefitCard({ icon, title, description, bg }) {
   return (
@@ -25,7 +25,6 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
     return () => window.removeEventListener("resize", updateCardsPerView);
   }, []);
 
-  // Autoplay cycling cards based on cardsPerView
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + cardsPerView) % benefitCards.length);
@@ -43,7 +42,6 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
     setCurrent((prev) => (prev + cardsPerView) % benefitCards.length);
   }
 
-  // Get visible cards, wrapping if needed
   const visibleCards = Array(cardsPerView)
     .fill(0)
     .map((_, idx) => benefitCards[(current + idx) % benefitCards.length]);
@@ -54,9 +52,8 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
         {sectionTitle}
       </h2>
       <div
-        className={`w-full max-w-6xl grid gap-6 ${
-          cardsPerView === 1 ? "grid-cols-1" : "grid-cols-4"
-        }`}
+        className={`w-full max-w-6xl grid gap-6 ${cardsPerView === 1 ? "grid-cols-1" : "grid-cols-4"
+          }`}
       >
         {visibleCards.map(({ icon, title, description, bg }, idx) => (
           <BenefitCard
@@ -68,7 +65,7 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
           />
         ))}
       </div>
-      {/* Show arrows only on small/medium screens */}
+
       {cardsPerView === 1 && (
         <div className="flex gap-6 mt-8">
           <button

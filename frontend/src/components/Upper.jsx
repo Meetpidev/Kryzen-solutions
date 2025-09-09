@@ -59,7 +59,7 @@ export default function Upper() {
               <FeatureItem key={item.title + idx} {...item} />
             ))}
           </div>
-          {/* Right Contact Form */}
+
           <div className="flex-1 bg-white rounded-lg shadow p-8 min-w-[300px] border-2">
             <h3 className="text-xl font-bold text-center mb-6">Let's Discuss</h3>
             <form className="flex flex-col gap-4">
@@ -78,7 +78,7 @@ export default function Upper() {
               <div className="flex gap-2">
                 <select className="border rounded px-3 py-2">
                   <option value="+91">+91</option>
-                  {/* Add more options as needed */}
+                  
                 </select>
                 <input
                   type="tel"
@@ -93,11 +93,11 @@ export default function Upper() {
                 rows={3}
                 required
               />
-              {/* Simulated reCAPTCHA */}
+              
               <div className="bg-gray-100 rounded p-3 flex items-center gap-2">
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <span>I'm not a robot</span>
-                {/* Add a real reCAPTCHA widget for production use */}
+                
               </div>
               <button
                 type="submit"

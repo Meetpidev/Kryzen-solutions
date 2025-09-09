@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const testimonials = [
   {
@@ -121,8 +121,7 @@ export default function TestimonialSlider() {
       </section>
     );
   }
-
-  // Large devices: show all testimonials horizontally scrollable without arrows
+  
   return (
     <section className="bg-blue-100 py-10 px-6">
       <h2 className="text-3xl font-bold text-center mb-2 max-w-7xl mx-auto">Our Story, Their Words</h2>

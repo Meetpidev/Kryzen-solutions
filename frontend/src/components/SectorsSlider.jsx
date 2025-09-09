@@ -46,7 +46,7 @@ const sectors = [
       { color: "bg-blue-50", icon: "", text: "Virtual Reality" },
     ],
   },
-   {
+  {
     bg: "bg-blue-100",
     icon: <span className="bg-blue-500 text-white rounded p-3 text-3xl mr-2"></span>,
     title: "Tourism App Development",
@@ -119,7 +119,7 @@ export function SectorsSlider() {
     );
   }
 
- 
+
   const visibleCards = Array(cardsPerView)
     .fill(0)
     .map((_, i) => sectors[(current + i) % sectors.length]);
