@@ -70,11 +70,11 @@ const processSteps = [
 
 export default function ProcessWeFollow() {
   const [currentStep, setCurrentStep] = useState(0);
-  const [isSmallOrMedium, setIsSmallOrMedium] = useState(false);
+  const [isSmall, setisSmall] = useState(false);
 
   useEffect(() => {
     const checkScreen = () => {
-      setIsSmallOrMedium(window.innerWidth < 1024); 
+      setisSmall(window.innerWidth < 1024); 
     };
     checkScreen();
     window.addEventListener("resize", checkScreen);
@@ -82,12 +82,12 @@ export default function ProcessWeFollow() {
   }, []);
 
   useEffect(() => {
-    if (!isSmallOrMedium) return; 
+    if (!isSmall) return; 
     const interval = setInterval(() => {
       setCurrentStep(prev => (prev === processSteps.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(interval);
-  }, [isSmallOrMedium]);
+  }, [isSmall]);
 
   const prevStep = () => {
     setCurrentStep(prev => (prev === 0 ? processSteps.length - 1 : prev - 1));
@@ -97,7 +97,7 @@ export default function ProcessWeFollow() {
     setCurrentStep(prev => (prev === processSteps.length - 1 ? 0 : prev + 1));
   };
 
-  if (isSmallOrMedium) {
+  if (isSmall) {
     const step = processSteps[currentStep];
     return (
       <div className="px-4 py-12 bg-white max-w-md mx-auto">

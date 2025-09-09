@@ -38,7 +38,7 @@ export default function CeoMsg() {
               
         <div className="bg-white mt-10 py-8">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Values List */}
+        
         <div className="flex flex-col justify-center ml-4 md:ml-6 text-3xl md:text-[2rem]">
           <span className="text-blue-700 font-bold italic leading-relaxed md:leading-loose">
             Integrity
@@ -63,7 +63,7 @@ export default function CeoMsg() {
           </span>
         </div>
 
-        {/* CEO Quote */}
+        
         <div className="bg-blue-50 rounded-xl p-6 shadow max-w-full md:max-w-[43rem]">
           <div className="text-blue-700 text-7xl md:text-[4rem] font-bold leading-none">“</div>
           <p
@@ -85,7 +85,7 @@ export default function CeoMsg() {
 
         
       <div className="max-w-5xl mx-auto p-4 flex flex-col gap-12">
-        {/* CEO Message */}
+        
         <div className="bg-white rounded-xl shadow-lg p-6 mb-10">
           <h2 className="text-2xl font-bold mb-4">Message from CEO</h2>
           <div className="text-gray-800 space-y-5 leading-relaxed text-[1.125rem]">

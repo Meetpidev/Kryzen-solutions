@@ -329,11 +329,6 @@ import Brands from "../components/Brands";
 import TestimonialSlider from "../components/TestimonialSlider";
 import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
 
-const imgAbout = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-const imgVision = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // example tech image
-const imgMission1 = "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-const imgMission2 = "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-
 
 function useIntersectionObserver(options = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);

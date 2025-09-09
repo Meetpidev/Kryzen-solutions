@@ -1,4 +1,4 @@
-const Quataus = ({
+const Quotes = ({
   title,
   highlightedText,
   paragraphs,
@@ -50,4 +50,4 @@ const Quataus = ({
   );
 };
 
-export default Quataus;
+export default Quotes;

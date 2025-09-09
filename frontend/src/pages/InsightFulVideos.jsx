@@ -13,8 +13,8 @@ const galleryData = {
     { src: "office_team.jpg", alt: "Team at their desks" },
     { src: "holi_celebration.jpg", alt: "Holi celebration group" }
   ],
-  2024: [/* ...images for 2024... */],
-  2023: [/* ... */],
+  2024: [],
+  2023: [],
  
 };
 
@@ -38,7 +38,7 @@ const years = [
             Let's Talk <span className="ml-2">&#8594;</span>
           </a>
         </div>
-        {/* Right Image */}
+        
         <div className="max-w-md md:max-w-lg w-full mx-auto flex-shrink-0 flex justify-center">
           <img
             src="https://lh3.googleusercontent.com/proxy/EOMSqj1pCzJnP0aXqfhk4J2PFCTzJh4F0DoXO3qNwJBInJMD1KHmPkIiiUIpknI7PmenxKKGi1QRNCGiuwprGg"
@@ -55,7 +55,7 @@ const years = [
         At Sapphire, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Sapphire!
       </p>
 
-      {/* Year Tabs */}
+      
       <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
         {years.map((yr) => (
           <button
@@ -73,7 +73,7 @@ const years = [
         ))}
       </div>
 
-      {/* Gallery Grid */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {images.map((img, idx) => (
           <div

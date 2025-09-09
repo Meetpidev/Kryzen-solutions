@@ -197,8 +197,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Contact Methods */}
+      
       <h3 className="text-lg font-bold text-center mt-8 mb-3">
         You Can Also Contact Us By
       </h3>

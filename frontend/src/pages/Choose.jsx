@@ -107,7 +107,7 @@ export default function Choose() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-change feature every 5 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % features.length);
@@ -115,7 +115,7 @@ export default function Choose() {
     return () => clearInterval(interval);
   }, [features.length]);
 
-  // Handlers for manual navigation
+ 
   const prevFeature = () => {
     setCurrentIndex((prev) => (prev - 1 + features.length) % features.length);
   };
@@ -127,9 +127,9 @@ export default function Choose() {
   return (
     <>
     <section className="bg-blue-50 md:py-17 md:mt-30 px-2 md:px-7 mt-30 py-10">
-      {/* Top Split Row */}
+      
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mb-14">
-        {/* Left Content */}
+        
         <div className="max-w-xl">
           <h2 className="text-3xl font-bold mb-3 text-gray-900">Why Choose Us?</h2>
           <p className="mb-3 text-gray-600">
@@ -139,7 +139,7 @@ export default function Choose() {
             Connect Now <span className="ml-2">&#8594;</span>
           </a>
         </div>
-        {/* Right Image */}
+        
         <div className="max-w-md md:max-w-lg w-full mx-auto flex-shrink-0 flex justify-center">
           <img
             src="https://lh3.googleusercontent.com/proxy/EOMSqj1pCzJnP0aXqfhk4J2PFCTzJh4F0DoXO3qNwJBInJMD1KHmPkIiiUIpknI7PmenxKKGi1QRNCGiuwprGg"
@@ -154,7 +154,7 @@ export default function Choose() {
         <h2 className="text-3xl font-bold text-center mb-2 text-gray-900">Why Kryzen?</h2>
         <p className="text-center text-gray-500 mb-10">Reasons why our clients keep coming back to us:</p>
 
-        {/* For large screens: show grid as before */}
+        
         <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {features.map((feature, idx) => (
             <div key={idx} className="bg-white rounded-2xl shadow-sm border border-blue-50 px-6 py-8 flex flex-col justify-between min-h-[170px]">
@@ -164,7 +164,7 @@ export default function Choose() {
           ))}
         </div>
 
-        {/* For small/medium screens: show one feature at a time with arrows */}
+        
         <div className="lg:hidden bg-white rounded-2xl shadow-sm border border-blue-50 px-6 py-8 flex flex-col justify-between min-h-[170px] max-w-md mx-auto">
           <h3 className="font-semibold text-lg text-gray-900 mb-2 text-center">{features[currentIndex].title}</h3>
           <p className="text-gray-600 text-sm text-center mb-6">{features[currentIndex].description}</p>

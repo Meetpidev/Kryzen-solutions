@@ -1,8 +1,11 @@
-import React from "react";
 import { useParams } from "react-router-dom";
+import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
+import { TechnologiesSlider } from "../components/TechnologiesSlider";
+import { SectorsSlider } from "../components/SectorsSlider";
+import { ExpertiseSlider } from "../components/ExpertiseSlider";
+import { ImpactCards } from "../components/ImpactCards";
 import LogoCarousel from "../components/LogoCarousel";
 import PremiumServices from "../components/PremiumServices";
-import { useState, useEffect } from "react";
 import AboutUs from "../components/AboutUs";
 import ProcessWeFollow from "../components/ProcessWeFollow";
 import TestimonialSlider from "../components/TestimonialSlider";
@@ -11,18 +14,13 @@ import SuccessMatrix from "../components/SuccessMatrix";
 import ClientReview from "../components/ClientReview";
 import Upper from "../components/Upper";
 import FAQSection from "../components/FAQSection";
-import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
 import HiringModels from "../components/HiringModels";
 import Benefits from "../components/Benefits";
 import MobileApp from "../public/mobile_app_development1.webp";
 import Chart from "../public/mobile_market_stats.webp";
 import PieChart from "../public/pie_chart.webp";
 import HeroSection from "../components/HeroSection";
-import Quataus from "../components/Quataus";
-import { TechnologiesSlider } from "../components/TechnologiesSlider";
-import { SectorsSlider } from "../components/SectorsSlider";
-import { ExpertiseSlider } from "../components/ExpertiseSlider";
-import { ImpactCards } from "../components/ImpactCards";
+import Quotes from "../components/Quotes";
 
 const services = [
   {
@@ -204,7 +202,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -263,7 +261,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -321,7 +319,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -379,7 +377,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -437,7 +435,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -495,7 +493,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -553,7 +551,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -611,7 +609,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -669,7 +667,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -727,7 +725,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -785,7 +783,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -829,7 +827,7 @@ const contentMap = {
   "custom mobile app development": (
      <>
               <HeroSection
-                title="Best custom mobile app development Company"
+                title="Best Custom Mobile App development Company"
                 description="As a leading mobile app development company with Good Review and High Rating,
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
@@ -843,7 +841,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
@@ -901,7 +899,7 @@ const contentMap = {
       
       <Charts />
      
-      <Quataus
+      <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
       highlightedText="Smart and Reliable Apps"
       paragraphs={[
