@@ -37,8 +37,8 @@ app.post('/api/schedule-meeting',upload.single('attachment'), async (req, res) =
 
 
     await transporter.sendMail({
-      from: '"Website Contact Form"',
-      to: formData.email,
+      from: formData.email,
+      to: process.env.EMAIL,
       subject: 'New Meeting Scheduled',
       html: email(formData),
       attachments: file ? [
