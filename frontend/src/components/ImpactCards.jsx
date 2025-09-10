@@ -1,18 +1,25 @@
 import { useState, useEffect } from "react";
 
-function BenefitCard({ icon, title, description, bg }) {
+
+function BenefitCard({ img, title, description, bg }) {
   return (
     <div
       className={`rounded-lg p-6 shadow-md flex flex-col items-start max-w-xl w-full ${bg}`}
     >
-      <div className="mb-4">{icon}</div>
+      <div className="mb-4">
+        <img src={img} alt={title} className="h-16 w-16 object-contain" />
+      </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-700">{description}</p>
     </div>
   );
 }
 
-export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 }) {
+export function ImpactCards({
+  sectionTitle,
+  benefitCards,
+  autoInterval = 3000
+}) {
   const [current, setCurrent] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(1);
 
@@ -44,7 +51,9 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
 
   const visibleCards = Array(cardsPerView)
     .fill(0)
-    .map((_, idx) => benefitCards[(current + idx) % benefitCards.length]);
+    .map(
+      (_, idx) => benefitCards[(current + idx) % benefitCards.length]
+    );
 
   return (
     <section className="bg-white py-10 px-4 flex flex-col items-center">
@@ -52,13 +61,14 @@ export function ImpactCards({ sectionTitle, benefitCards, autoInterval = 3000 })
         {sectionTitle}
       </h2>
       <div
-        className={`w-full max-w-6xl grid gap-6 ${cardsPerView === 1 ? "grid-cols-1" : "grid-cols-4"
-          }`}
+        className={`w-full max-w-6xl grid gap-6 ${
+          cardsPerView === 1 ? "grid-cols-1" : "grid-cols-4"
+        }`}
       >
-        {visibleCards.map(({ icon, title, description, bg }, idx) => (
+        {visibleCards.map(({ img, title, description, bg }, idx) => (
           <BenefitCard
             key={title + idx}
-            icon={icon}
+            img={img}
             title={title}
             description={description}
             bg={bg}

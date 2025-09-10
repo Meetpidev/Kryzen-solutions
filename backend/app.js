@@ -15,8 +15,9 @@ app.use(express.json());
 dotenv.config();
 app.use(cors());
 
-
-
+app.get("/", (req, res) => {
+  res.send("Its Working....");
+});
 app.post('/api/schedule-meeting',upload.single('attachment'), async (req, res) => {
   console.log('Received form data:', req.body);
   console.log('Received file:', req.file);

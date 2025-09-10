@@ -14,6 +14,7 @@ import InsightFulVideos from "./pages/InsightFulVideos.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
 import "./App.css";
+import Protect from "./common/Protect.jsx";
 
 function App() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ function App() {
   }, [pathname]);
   return (
     <>
+      <Protect />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

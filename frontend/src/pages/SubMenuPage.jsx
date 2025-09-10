@@ -17,10 +17,24 @@ import FAQSection from "../components/FAQSection";
 import HiringModels from "../components/HiringModels";
 import Benefits from "../components/Benefits";
 import MobileApp from "../public/mobile_app_development1.webp";
+import CostomApp from "../public/custom_app_banner.png";
+import CustomDes from "../public/custom_app_section_1.png";
+import CustomAbout from "../public/custom_app_about.png";
+import CrossDes from "../public/cross_platform.png";
+import Windows from "../public/windows_app_banner.png";
+import WindowSection from "../public/windows_app_section_1.png";
+import WindowAbout from "../public/windows_app_about.png";
 import Chart from "../public/mobile_market_stats.webp";
 import PieChart from "../public/pie_chart.webp";
 import HeroSection from "../components/HeroSection";
 import Quotes from "../components/Quotes";
+import Img_1 from "../public/Explore_1.png";
+import Img_2 from "../public/Explore_2.png";
+import Img_3 from "../public/Explore_3.png";
+import Img_4 from "../public/Explore_4.png";
+import Img_5 from "../public/Explore_5.png";
+import Img_6 from "../public/Explore_6.png";
+import Img_7 from "../public/Explore_7.png";
 
 const services = [
   {
@@ -115,27 +129,21 @@ const expertiseCards = [
 
 const benefitCards = [
   {
-    icon: (
-      <svg width="40" height="40" fill="currentColor" className="text-yellow-700"><circle cx="20" cy="20" r="20" fill="#EEC980" /><text x="14" y="27" fontSize="16" fontWeight="bold" fill="#8D6B21">🤝</text></svg>
-    ),
+    img: Img_1,
     title: "Enhanced Customer Engagement",
     description:
       "Mobile application give businesses the ability to give their users a more immersive and engaging experience by giving them a direct and personalized communication channel.",
     bg: "bg-yellow-100",
   },
   {
-    icon: (
-      <svg width="40" height="40" fill="currentColor" className="text-teal-700"><circle cx="20" cy="20" r="20" fill="#D7EFE7" /><text x="15" y="27" fontSize="16" fontWeight="bold" fill="#21796B">🏅</text></svg>
-    ),
+    img: Img_2,
     title: "Increased Brand Visibility",
     description:
       "By actively interacting with your audience across many channels, you can use social media platforms to raise brand awareness for your mobile application.",
     bg: "bg-teal-100",
   },
   {
-    icon: (
-      <svg width="40" height="40" fill="currentColor" className="text-blue-700"><circle cx="20" cy="20" r="20" fill="#C3DAEF" /><text x="14" y="27" fontSize="16" fontWeight="bold" fill="#1956A0">🤲</text></svg>
-    ),
+    img: Img_3,
     title: "Improve Customer Loyalty and Retention",
     description:
       "Mobile apps aid in customer understanding and the creation of pleasurable shopping experiences. Customers are more loyal when they receive personalized recommendations and early access to promotions.",
@@ -176,7 +184,7 @@ const benefits = [
   },
 ];
 
-const Charts = () => {
+const Charts = ({img,img2}) => {
   return (
     <section className="py-10 px-24">
       <div className="bg-gray-50 py-12 px-6">
@@ -185,7 +193,7 @@ const Charts = () => {
 
           <div className="flex-1 rounded-lg bg-white shadow p-8 flex flex-col items-center">
             <img
-              src={Chart}
+              src={img}
               alt="Mobile Application Market Size"
               className="w-full max-w-lg mb-2"
             />
@@ -219,7 +227,7 @@ const Charts = () => {
 
           <div className="flex-1 rounded-lg bg-white shadow p-8 flex flex-col items-center">
             <img
-              src={PieChart}
+              src={img2}
               alt="Global Smartphone Users 2020-2025"
               className="w-[434rem] h-[18rem]"
             />
@@ -262,7 +270,7 @@ const contentMap = {
       />
 
       <LogoCarousel />
-      <Charts />
+      <Charts img={Chart} img2={PieChart} />
       <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
         highlightedText="Smart and Reliable Apps"
@@ -305,7 +313,7 @@ const contentMap = {
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={CrossDes}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
@@ -722,17 +730,17 @@ const contentMap = {
   "windows app development": (
     <>
       <HeroSection
-        title="Best Windows App Development Company"
+        title="Windows App Development Services In India"
         description="As a leading mobile app development company with Good Review and High Rating,
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={Windows}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts img={WindowSection} img2={WindowAbout} />
       <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
         highlightedText="Smart and Reliable Apps"
@@ -769,17 +777,17 @@ const contentMap = {
   "custom mobile app development": (
     <>
       <HeroSection
-        title="Best Custom Mobile App development Company"
+        title="Custom Mobile App Development Company In India"
         description="As a leading mobile app development company with Good Review and High Rating,
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={CostomApp}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts img={CustomDes} img2={CustomAbout} />
       <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
         highlightedText="Smart and Reliable Apps"
