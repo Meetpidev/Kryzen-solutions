@@ -7,7 +7,7 @@ import { email } from "./template/email.js";
 import multer from "multer";
 import fs from "fs";
 
-const upload = multer({ dest: 'uploads/' }); 
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -18,7 +18,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Its Working....");
 });
-app.post('/api/schedule-meeting',upload.single('attachment'), async (req, res) => {
+app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) => {
   console.log('Received form data:', req.body);
   console.log('Received file:', req.file);
   const formData = req.body;
@@ -26,38 +26,46 @@ app.post('/api/schedule-meeting',upload.single('attachment'), async (req, res) =
   try {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
+      secure: true,
       auth: {
         user: process.env.EMAIL,
         pass: process.env.PASS,
-        },
-        tls: {
-    rejectUnauthorized: false
-  }
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
 
-    await transporter.sendMail({
+    const mailOptionsToAdmin = {
       from: formData.email,
       to: process.env.EMAIL,
       subject: 'New Meeting Scheduled',
       html: email(formData),
-      attachments: file ? [
-        {
-          filename: file.originalname,
-          path: file.path
-        }
-      ] : []
-    });
+      attachments: file ? [{ filename: file.originalname, path: file.path }] : [],
+    };
 
-    res.status(200).json({ message: 'Email sent successfully' });
+    const mailOptionsToUser = {
+      from: process.env.EMAIL,
+      to: formData.email,
+      subject: 'Your Meeting is scheduled, some of our team will contact you soon.',
+      html: email(formData),
+      attachments: file ? [{ filename: file.originalname, path: file.path }] : [],
+    };
 
-    
-if (file) {
-  fs.unlink(file.path, (err) => {
-    if (err) console.error('Failed to delete temp file:', err);
-    else console.log('Temporary file deleted.');
-  });
-}
+    await Promise.all([
+     transporter.sendMail(mailOptionsToAdmin),
+     transporter.sendMail(mailOptionsToUser),
+    ]);
+
+
+    if (file) {
+      fs.unlink(file.path, (err) => {
+        if (err) console.error('Failed to delete temp file:', err);
+        else console.log('Temporary file deleted.');
+      });
+    }
+    //return res.status(200).json({ message: 'Emails sent successfully' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to send email' });
