@@ -8,46 +8,47 @@ const services = [
     label: "Mobile App Development",
     sub: [
       "Mobile App Development", "Cross Platform App Development", "IPad App Development Services",
-       "Hybrid App Development", "Progressive Web App Development", "Swift App Development",
-      "Native App Development", "Windows App Development","Custom Mobile App Development", "B2B Mobile App Development"
+      "Hybrid App Development", "Progressive Web App Development", "Swift App Development",
+      "Native App Development", "Windows App Development", "Custom Mobile App Development", "B2B Mobile App Development"
     ]
   },
   {
     label: "Back End Development",
     sub: [
-    "Django Development","Laravel Development","Python Development","NodeJs Development","Big Commerce Development"
-  ] },
+      "Django Development", "Laravel Development", "Python Development", "NodeJs Development", "Big Commerce Development"
+    ]
+  },
   {
     label: "AI & ML Development",
     sub: [
-    "AI/ML Development","chatboat Development","data analytics","data migration","Business analytics"
-  ]
+      "AI/ML Development", "chatboat Development", "data analytics", "data migration", "Business analytics"
+    ]
   },
   {
     label: "Frontend Development",
     sub: [
-    "Typscript Development","Angular Development","React Development"
-  ]
+      "Typscript Development", "Angular Development", "React Development"
+    ]
   },
-    {
+  {
     label: "Software Development",
     sub: [
       "product Development", "Software Development", "Application services", "Startup consulting",
       "CRM", "Web application", "App development consulting", "Business Application consulting",
       "Full stack development",
-  ]
+    ]
   },
-    {
+  {
     label: "Other services",
     sub: [
       "UI/UX Designing", "Digital marketing", "Mobile application Development"
-  ]
+    ]
   },
-     {
+  {
     label: "Tech Consulting",
     sub: [
       "It consulting", "App development", "Startup Consulting"
-  ]
+    ]
   },
 ];
 
@@ -254,9 +255,9 @@ export default function Header() {
                                 <div className="ml-[17rem] whitespace-nowrap group">
                                   <div className="font-bold text-blue-800 text-lg mb-4">MODELS</div>
                                   <div className="space-y-2 text-gray-800">
-                                    <div  className="hover:text-blue-600  cursor-pointer rounded">Delivery Models</div>
-                                    <div  className="hover:text-blue-600  cursor-pointer rounded">Engagement Models</div>
-                                    <div  className="hover:text-blue-600  cursor-pointer py-1 rounded">Development Methodology</div>
+                                    <div className="hover:text-blue-600  cursor-pointer rounded">Delivery Models</div>
+                                    <div className="hover:text-blue-600  cursor-pointer rounded">Engagement Models</div>
+                                    <div className="hover:text-blue-600  cursor-pointer py-1 rounded">Development Methodology</div>
                                   </div>
                                 </div>
 
@@ -325,13 +326,13 @@ export default function Header() {
                                   <div key={i} className="w-1/2">
                                     {col.map((item) => (
                                       <Link
-            key={item}
-            to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
-            className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block"
-            onClick={() => setmegaMenu(null)}
-          >
-            {item}
-          </Link>
+                                        key={item}
+                                        to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
+                                        className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block"
+                                        onClick={() => setmegaMenu(null)}
+                                      >
+                                        {item}
+                                      </Link>
                                     ))}
                                   </div>
                                 ))}
@@ -403,7 +404,6 @@ export default function Header() {
                                 Get A Quote
                               </button>
                               <img src="https://www.shutterstock.com/shutterstock/photos/1549501607/display_1500/stock-vector-two-people-shake-hands-as-a-result-of-agreement-successful-cooperation-happy-businessman-1549501607.jpg" className="h-55" alt="" />
-                              {/* or use an <img> with a network URL as in your screenshot */}
                             </div>
                           </div>
                         </div>
@@ -461,18 +461,18 @@ export default function Header() {
                 data-testid="button-lets-talk-ai"
                 style={{ minWidth: 120 }}
                 onMouseEnter={() => setmegaMenu(true)}
-                onMouseLeave={()=>setmegaMenu(null)}
+                onMouseLeave={() => setmegaMenu(null)}
               >
                 Let's Talk AI
               </button>
               <Link to="/contact-us">
-              <button
+                <button
 
-                className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
-                data-testid="button-contact-us"
-                style={{ minWidth: 120 }}
-              >
-                Contact Us
+                  className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
+                  data-testid="button-contact-us"
+                  style={{ minWidth: 120 }}
+                >
+                  Contact Us
                 </button>
               </Link>
             </div>
@@ -553,12 +553,12 @@ export default function Header() {
               Let's Talk AI
             </button>
             <Link to="/contact-us">
-            <button
-              className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
-              data-testid="button-contact-us"
-              style={{ minWidth: 120 }}
-            >
-              Contact Us
+              <button
+                className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
+                data-testid="button-contact-us"
+                style={{ minWidth: 120 }}
+              >
+                Contact Us
               </button>
             </Link>
           </div>

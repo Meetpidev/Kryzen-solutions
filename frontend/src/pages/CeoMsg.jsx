@@ -1,7 +1,10 @@
+import { lazy } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
 import CEO from "../public/sujal_Pass.png";
+
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 
 export default function CeoMsg() {
   return (

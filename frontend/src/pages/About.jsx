@@ -1,25 +1,17 @@
-import { useState, useEffect, useRef } from "react";
-import {
-  ChevronDown,
-  Eye,
-  Zap,
-  CheckCircle,
-  Lightbulb,
-  Shield,
-  Users,
-} from "lucide-react";
-import logo from "./logo2.png";
+import { useState, useEffect, useRef, lazy } from "react";
+import { ChevronDown,Eye,Zap,CheckCircle,Lightbulb,Shield,Users } from "lucide-react";
 import Digital from "../public/about_us_banner.jpg";
-import Brands from "../components/Brands";
-import TestimonialSlider from "../components/TestimonialSlider";
-import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
+import logo from "./logo2.png";
 
+const Brands = lazy(() => import("../components/Brands"));
+const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 
 function useIntersectionObserver(options = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [hasIntersected, setHasIntersected] = useState(false);
   const elementRef = useRef(null);
-
 
   useEffect(() => {
     const element = elementRef.current;
@@ -49,7 +41,6 @@ function useIntersectionObserver(options = {}) {
   return { elementRef, isIntersecting, hasIntersected };
 }
 
-// Number counter hook for animating stats
 function useCountUp(end, duration = 2000, startOn = false) {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -80,7 +71,6 @@ export default function About() {
   const { elementRef: ctaRef, hasIntersected: ctaIntersected } =
     useIntersectionObserver();
 
-  // Animate numbers on stats section intersect
   const experience = useCountUp(2, 1500, statsIntersected);
   const clients = useCountUp(20, 1500, statsIntersected);
   const projects = useCountUp(15, 1500, statsIntersected);
@@ -239,7 +229,6 @@ export default function About() {
         </section>
       </div>
 
-      {/* Stats Section with animated numbers */}
       <section
         ref={statsRef}
         className="bg-[#086CC4] mt-18 mb-10 py-16 text-white"

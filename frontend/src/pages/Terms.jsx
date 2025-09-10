@@ -1,4 +1,7 @@
-import { CTASubscribe, CTAWorkTogether } from '../components/FeaturedLogos'
+import { lazy } from "react";
+
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 
 function Terms() {
   return (

@@ -1,21 +1,5 @@
+import { lazy } from "react";
 import { useParams } from "react-router-dom";
-import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
-import { TechnologiesSlider } from "../components/TechnologiesSlider";
-import { SectorsSlider } from "../components/SectorsSlider";
-import { ExpertiseSlider } from "../components/ExpertiseSlider";
-import { ImpactCards } from "../components/ImpactCards";
-import LogoCarousel from "../components/LogoCarousel";
-import PremiumServices from "../components/PremiumServices";
-import AboutUs from "../components/AboutUs";
-import ProcessWeFollow from "../components/ProcessWeFollow";
-import TestimonialSlider from "../components/TestimonialSlider";
-import Brands from "../components/Brands";
-import SuccessMatrix from "../components/SuccessMatrix";
-import ClientReview from "../components/ClientReview";
-import Upper from "../components/Upper";
-import FAQSection from "../components/FAQSection";
-import HiringModels from "../components/HiringModels";
-import Benefits from "../components/Benefits";
 import MobileApp from "../public/mobile_app_development1.webp";
 import CostomApp from "../public/custom_app_banner.png";
 import CustomDes from "../public/custom_app_section_1.png";
@@ -26,15 +10,35 @@ import WindowSection from "../public/windows_app_section_1.png";
 import WindowAbout from "../public/windows_app_about.png";
 import Chart from "../public/mobile_market_stats.webp";
 import PieChart from "../public/pie_chart.webp";
-import HeroSection from "../components/HeroSection";
-import Quotes from "../components/Quotes";
 import Img_1 from "../public/Explore_1.png";
 import Img_2 from "../public/Explore_2.png";
 import Img_3 from "../public/Explore_3.png";
-import Img_4 from "../public/Explore_4.png";
-import Img_5 from "../public/Explore_5.png";
-import Img_6 from "../public/Explore_6.png";
-import Img_7 from "../public/Explore_7.png";
+
+const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
+const SectorsSlider = lazy(() => import("../components/SectorsSlider").then(module => ({ default: module.SectorsSlider })));
+const ExpertiseSlider = lazy(() => import("../components/ExpertiseSlider").then(module => ({ default: module.ExpertiseSlider })));
+const ImpactCards = lazy(() => import("../components/ImpactCards").then(module => ({ default: module.ImpactCards })));
+const LogoCarousel = lazy(() => import("../components/LogoCarousel"));
+const PremiumServices = lazy(() => import("../components/PremiumServices"));
+const AboutUs = lazy(() => import("../components/AboutUs"));
+const ProcessWeFollow = lazy(() => import("../components/ProcessWeFollow"));
+const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));
+const Brands = lazy(() => import("../components/Brands"));
+const SuccessMatrix = lazy(() => import("../components/SuccessMatrix"));
+const ClientReview = lazy(() => import("../components/ClientReview"));
+const Upper = lazy(() => import("../components/Upper"));
+const FAQSection = lazy(() => import("../components/FAQSection"));
+const HiringModels = lazy(() => import("../components/HiringModels"));
+const Benefits = lazy(() => import("../components/Benefits"));
+const HeroSection = lazy(() => import("../components/HeroSection"));
+const Quotes = lazy(() => import("../components/Quotes"));
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
+
+// import Img_4 from "../public/Explore_4.png";
+// import Img_5 from "../public/Explore_5.png";
+// import Img_6 from "../public/Explore_6.png";
+// import Img_7 from "../public/Explore_7.png";
 
 const services = [
   {
@@ -255,6 +259,7 @@ const Common = () => {
     </>
   )
 }
+
 const contentMap = {
   "mobile app development": (
     <>

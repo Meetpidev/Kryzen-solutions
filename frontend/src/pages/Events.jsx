@@ -1,5 +1,7 @@
-import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos";
-import { useState, useEffect } from "react";
+import { useState, lazy } from "react";
+
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 
 export default function Events() {
   const galleryData = {

@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { CTASubscribe } from "../components/FeaturedLogos";
-import InnovativeSlider from "../components/InnovativeSlider";
-import SuccessMatrix from "../components/SuccessMatrix";
+import { useState, lazy } from "react";
 import axios from "axios";
+
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const InnovativeSlider = lazy(() => import("../components/InnovativeSlider"));
+const SuccessMatrix = lazy(() => import("../components/SuccessMatrix"));
 
 export default function Contact() {
 
