@@ -2,27 +2,27 @@ import { useRef, useEffect, useState } from "react";
 
 const testimonials = [
   {
-    img: "https://via.placeholder.com/100?text=1",
+    img: "https://png.pngtree.com/element_our/20190522/ourmid/pngtree-small-briquettes-cute-avatar-logo-material-image_1070815.jpg",
     text:
       "From Idea to Reality | Client's Success Story with Sapphire - Best Mobile App...",
   },
   {
-    img: "https://via.placeholder.com/100?text=2",
+    img: "https://png.pngtree.com/element_our/20190522/ourmid/pngtree-small-briquettes-cute-avatar-logo-material-image_1070815.jpg",
     text:
       "From Vision to Wellness | Client's Success Story with Sapphire - Top Digital Solution...",
   },
   {
-    img: "https://via.placeholder.com/100?text=3",
+    img: "https://png.pngtree.com/element_our/20190522/ourmid/pngtree-small-briquettes-cute-avatar-logo-material-image_1070815.jpg",
     text:
       "Hear out Tim got to say about working with Team Sapphire on building an app...",
   },
   {
-    img: "https://via.placeholder.com/100?text=4",
+    img: "https://png.pngtree.com/element_our/20190522/ourmid/pngtree-small-briquettes-cute-avatar-logo-material-image_1070815.jpg",
     text:
       "Testimonial from client who expanded their business using Sapphire's technology...",
   },
   {
-    img: "https://via.placeholder.com/100?text=5",
+    img: "https://png.pngtree.com/element_our/20190522/ourmid/pngtree-small-briquettes-cute-avatar-logo-material-image_1070815.jpg",
     text:
       "Another happy client shares unique experience with Sapphire Solutions...",
   },
@@ -80,7 +80,7 @@ export default function TestimonialSlider() {
             className="flex overflow-x-hidden gap-6 px-2"
             style={{ scrollSnapType: "x mandatory" }}
           >
-            {testimonials.map((t, i) => (
+            {testimonials.map((testimonial, i) => (
               <div
                 key={i}
                 className="bg-white rounded-xl shadow flex flex-col min-w-[320px] snap-start mb-4"
@@ -88,11 +88,11 @@ export default function TestimonialSlider() {
               >
                 <div className="flex flex-col items-center py-6 px-4">
                   <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                    <img src={t.img} alt="user" className="object-cover w-full h-full" />
+                    <img src={testimonial.img} alt="user" className="object-cover w-full h-full" />
                   </div>
                 </div>
                 <div className="px-6 pb-6 grow flex flex-col justify-between">
-                  <p className="text-gray-800 text-base font-medium mb-4">{t.text}</p>
+                  <p className="text-gray-800 text-base font-medium mb-4">{testimonial.text}</p>
                   <div className="flex justify-end">
                     <span className="bg-blue-400 p-3 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer">
                       <svg width="28" height="28" fill="white" viewBox="0 0 24 24">

@@ -52,8 +52,8 @@ export default function AboutUs() {
       </div>
       {/* large screens: grid */}
       <div className="hidden lg:grid grid-cols-4 gap-x-8 gap-y-6 px-58">
-        {cards.map(card => (
-          <div key={card.start} className="bg-white rounded-xl shadow-lg p-4 flex items-center gap-4 w-[16rem]">
+        {cards.map((card,index) => (
+          <div key={index} className="bg-white rounded-xl shadow-lg p-4 flex items-center gap-4 w-[16rem]">
             <img
               src={card.image}
               className="w-30 h-30 object-cover rounded"
