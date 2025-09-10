@@ -48,7 +48,7 @@ export default function Contact() {
   }
 
   try {
-    const response = await axios.post('http://localhost:3000/api/schedule-meeting', formDataToSend, {
+    const response = await axios.post('https://kryzen-solutions.onrender.com/api/schedule-meeting', formDataToSend, {
       headers: { 'Content-Type': 'multipart/form-data' }
     });
 
