@@ -1,5 +1,3 @@
-import { FaLinkedinIn } from "react-icons/fa";
-
 const logos = [
     {
         src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
@@ -161,7 +159,6 @@ export default function FeaturedLogos() {
                     ))}
                 </div>
             </section>
-
             <CTAWorkTogether />
             <CTASubscribe />
         </>

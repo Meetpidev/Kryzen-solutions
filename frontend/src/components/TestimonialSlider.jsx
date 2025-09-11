@@ -32,7 +32,7 @@ export default function TestimonialSlider() {
   const sliderRef = useRef(null);
   const [isSmallOrMedium, setIsSmallOrMedium] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
-  const cardWidth = 340; // approx card width + gap
+  const cardWidth = 340;
 
   useEffect(() => {
     const checkScreen = () => {

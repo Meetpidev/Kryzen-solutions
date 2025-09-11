@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Img_1 from "../public/About_1.webp";
 import Img_2 from "../public/About_2.webp";
 import Img_3 from "../public/fortune.webp";

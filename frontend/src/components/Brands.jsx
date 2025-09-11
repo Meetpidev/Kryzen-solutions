@@ -19,7 +19,6 @@ function Brands() {
   const [startIndex, setStartIndex] = useState(0);
   const logosPerPage = 4;
 
-
   const prev = () => {
     setStartIndex((prevIndex) =>
       prevIndex === 0 ? logos.length - logosPerPage : prevIndex - logosPerPage
@@ -39,9 +38,7 @@ function Brands() {
     return () => clearInterval(interval);
   }, []);
 
-
   const currentLogos = logos.slice(startIndex, startIndex + logosPerPage);
-
 
   if (currentLogos.length < logosPerPage) {
     currentLogos.push(
@@ -61,7 +58,6 @@ function Brands() {
           Building greater futures through innovation and collective knowledge.
         </p>
 
-
         <div className="hidden md:grid md:grid-cols-6 gap-6">
           {logos.map((logo, index) => (
             <div
@@ -72,7 +68,6 @@ function Brands() {
             </div>
           ))}
         </div>
-
 
         <div className="md:hidden">
           <div className="grid grid-cols-2 grid-rows-2 gap-6 mb-6">
@@ -86,14 +81,12 @@ function Brands() {
             ))}
           </div>
 
-
           <div className="flex justify-center gap-4">
             <button
               onClick={prev}
               aria-label="Previous logos"
               className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition"
             >
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-700"
@@ -110,7 +103,6 @@ function Brands() {
               aria-label="Next logos"
               className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition"
             >
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-blue-700"

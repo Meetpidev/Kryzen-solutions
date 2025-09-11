@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import FixPrice from "../public/ic_fixed_price.png";
 import FullTime from "../public/ic_full_time.png";
-import Hiring from "../public/ic_fixed_price.png";
 import Time from "../public/ic_time_material.png";
 import Buckets from "../public/bucketapproch.png";
 

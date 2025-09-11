@@ -1,6 +1,6 @@
-import Flexible from "../public/flexible.png";
-import Experience from "../public/experencied developers.png";
-import Time from "../public/timiley deliverd.png";
+// import Flexible from "../public/flexible.png";
+// import Experience from "../public/experencied developers.png";
+// import Time from "../public/timiley deliverd.png";
 
 const features = [
   {

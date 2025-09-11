@@ -1,14 +1,12 @@
-import { Mail, Phone, Star } from "lucide-react";
+import { Phone } from "lucide-react";
 import {
     SiFacebook,
     SiX,
     SiLinkedin,
     SiInstagram,
     SiYoutube,
-    SiGoogle
 } from "react-icons/si";
 import logo from "./logo.png";
-import { Link } from "react-router-dom";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";

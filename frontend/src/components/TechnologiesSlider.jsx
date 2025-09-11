@@ -1,59 +1,6 @@
 import { useState, useEffect } from "react";
-import Img_1 from "../public/cuttingEdge.png";
-import Img_2 from "../public/cuttingEdge_2.png";
-import Img_3 from "../public/cuttingEdge_4.png";
-import Img_4 from "../public/cuttingEdge_5.png";
-import Img_5 from "../public/cuttingEdge_6.png";
-import Img_6 from "../public/cuttingEdge_7.png";
-import Img_7 from "../public/cuttingEdge_8.png";
-import Img_8 from "../public/cuttingEdge_9.png";
-import Img_9 from "../public/cuttingEdge_10.png";
 
-const techCards = [
-  {
-    title: "Voice Search and Voice Assistants",
-    description: "We use Voice search technology that enables users to search the Internet, a website, or an application using voice commands.",
-    icon: <img src={Img_1} alt="Icons" />,
-  },
-  {
-    title: "Wearable App Integration",
-    description: "Our skilled developers are masters in integrating wearable apps, guaranteeing compatibility across many devices, and providing outstanding user experiences.",
-    icon: <img src={Img_2} alt="Icons" />,
-  },
-  {
-    title: "Beacons and Location-Based Services",
-    description: "We use Beacons and location-based services to offer a wide range of features, including check-ins, location-based alerts, real-time mapping and navigation, and customized suggestions.",
-    icon: <img src={Img_3} alt="Icons" />,
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
-    icon: <img src={Img_4} alt="Icons" />,
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
-    icon: <img src={Img_5} alt="Icons" />,
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
-    icon: <img src={Img_6} alt="Icons" />,
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
-    icon: <img src={Img_7} alt="Icons" />,
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "With a few single codebases, we enable us to develop for multiple platforms, including iOS, Android, and more.",
-    icon: <img src={Img_8} alt="Icons" />,
-  },
-
-];
-
-export function TechnologiesSlider() {
+export function TechnologiesSlider({ title, techCards = [] }) {
   const [current, setCurrent] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(4);
 
@@ -67,23 +14,30 @@ export function TechnologiesSlider() {
   }, []);
 
   useEffect(() => {
-    if (cardsPerView !== 4) return;
+    if (cardsPerView !== 4 || !Array.isArray(techCards) || techCards.length === 0) return;
+
     const interval = setInterval(() => {
       setCurrent(prev =>
         (prev + cardsPerView) % techCards.length
       );
     }, 3000);
+
     return () => clearInterval(interval);
-  }, [cardsPerView]);
+  }, [cardsPerView, techCards]);
 
   function prev() {
+    if (!Array.isArray(techCards) || techCards.length === 0) return;
+
     setCurrent(prev =>
       prev - cardsPerView < 0
         ? (techCards.length - cardsPerView + prev) % techCards.length
         : prev - cardsPerView
     );
   }
+
   function next() {
+    if (!Array.isArray(techCards) || techCards.length === 0) return;
+
     setCurrent(prev =>
       (prev + cardsPerView) % techCards.length
     );
@@ -91,13 +45,19 @@ export function TechnologiesSlider() {
 
   const visibleCards = Array(cardsPerView)
     .fill(0)
-    .map((_, i) => techCards[(current + i) % techCards.length]);
+    .map((_, i) =>
+      techCards.length > 0 ? techCards[(current + i) % techCards.length] : null
+    )
+    .filter(Boolean);  // Remove nulls if techCards is empty
+
+  if (visibleCards.length === 0) return null;  // Render nothing if no cards
 
   return (
     <div className="bg-white py-10 px-2 md:px-8 max-w-full">
       <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
-        Cutting Edge Technologies Kryzen Use For Mobile App Development
+        {title}
       </h2>
+
       <div className="flex justify-center overflow-hidden">
         {visibleCards.map((card, idx) => (
           <div
@@ -110,6 +70,7 @@ export function TechnologiesSlider() {
           </div>
         ))}
       </div>
+
       <div className="flex justify-center items-center gap-6 mt-4">
         <button
           className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 font-bold text-xl"
@@ -118,6 +79,7 @@ export function TechnologiesSlider() {
         >
           ←
         </button>
+
         <button
           className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 font-bold text-xl"
           onClick={next}
@@ -128,4 +90,4 @@ export function TechnologiesSlider() {
       </div>
     </div>
   );
-}
+};

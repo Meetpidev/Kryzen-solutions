@@ -35,7 +35,7 @@ export default function InnovativeSlider() {
         From cutting-edge technology to revolutionary concepts, get ready to be inspired and intrigued.<br />
         This is more than just a video – it's a glimpse into the future.
       </p>
-      {/* The outer container provides the 'peek' effect by cropping the edge cards */}
+      
       <div className="relative mx-auto max-w-16xl px-6">
         <div
           className="flex overflow-x-hidden scrollbar-hide gap-6 px-4"

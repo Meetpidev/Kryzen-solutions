@@ -8,7 +8,6 @@ import Payment from "../public/ic_flexible_payment.png";
 import Analysis from "../public/ic_in_dept_analysis.png";
 import AMC from "../public/ic_amc.png";
 import Mind from "../public/ic_mind_maps.png";
-import Moneys from "../public/ic_money.png";
 import Quality from "../public/ic_quality.png";
 import Penalty from "../public/ic_penalty.png";
 import RealTime from "../public/ic_real_time.png";
