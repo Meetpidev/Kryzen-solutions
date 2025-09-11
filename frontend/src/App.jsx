@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, lazy, Suspense } from "react";
+
 const Header = lazy(() => import("./common/Header.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));

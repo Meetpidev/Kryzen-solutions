@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Menu, X, Mail, Calendar, MapPin, Briefcase } from "lucide-react";
+import { ChevronDown, Menu, X, MapPin, Briefcase } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "./logo.png";
+import Schedule from "../public/schedule.jpg";
+import Email from "../public/gmail_new.jpg";
+import Google from "../public/google.webp";
+import Left from "../public/left-leaf.jpg";
+import Right from "../public/right-leaf.jpg";
 
 const services = [
   {
@@ -129,11 +134,11 @@ export default function Header() {
         data-testid="contact-bar"
       >
         <div className="container mx-auto">
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex flex-wrap items-center gap-6">
               <div className="flex items-center gap-2">
                 <Briefcase className="w-4 h-4 text-blue-300" />
-                <a href="mailto:career@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1.110rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
+                <a href="mailto:career@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                   }`}>
                   For Career: career@kryzensoftwaresolutions.com
                 </a>
@@ -146,7 +151,7 @@ export default function Header() {
                   alt="India Flag"
                   className="w-4 h-3"
                 />
-                <span className={`text-xs lg:text-[1.110rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
+                <span className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                   }`}>For Sales: +91 704-125-2829</span>
               </div>
 
@@ -159,16 +164,16 @@ export default function Header() {
 
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-300" />
-                <a href="mailto:contact@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1.110rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
+                <img src={Email} alt="Mail" className="w-4 h-4" />
+                <a href="mailto:contact@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                   }`}>contact@kryzensoftwaresolutions.com</a>
               </div>
 
               <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-blue-300" />
+                <img src={Schedule} alt="Schedule" className="w-4 h-4" />
                 <Link
                   to="/contact-us"
-                  className={`text-xs lg:text-[1.110rem] cursor-pointer hover:text-blue-200 transition-colors"
+                  className={`text-xs lg:text-[1rem] cursor-pointer hover:text-blue-200 transition-colors"
                   data-testid="button-schedule-meeting ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                     }`}
                 >
@@ -217,7 +222,7 @@ export default function Header() {
                               <div className="mb-7 text-lg">
                                 We Partner You To Deliver A Innovative Solution To Your Needs With Our 20+ Year Of Technical Experience With Fortune 500 Organizations.
                               </div>
-                              <Link to="/about-Kryzen-Software-Solutions" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap">
+                              <Link to="/about-Kryzen-Software-Solutions" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap" onClick={() => setmegaMenu(null)}>
                                 About Company
                               </Link>
                             </div>
@@ -243,7 +248,6 @@ export default function Header() {
                                         <Link to='/choose' onMouseLeave={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
                                         <div className="py-3" onMouseLeave={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
                                       </div>
-
                                       <div>
                                         <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</div>
                                         <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</div>
@@ -271,13 +275,15 @@ export default function Header() {
 
 
                               </div>
-                              <div className="mt-4 flex gap-7 items-center pt-5 border-t">
-                                <div className="font-bold text-blue-800 text-lg mr-4">REVIEWS AND RATING</div>
-                                <div className="flex gap-6 pt-4" style={{ transform: 'transLateX(-15rem)' }}>
-                                  <div className="flex flex-col"><img src="/google-logo.png" alt="" className="h-8" /><span className="text-black font-bold text-xs">1012 REVIEWS</span></div>
-                                  <div className="flex flex-col"><img src="/clutch-logo.png" alt="" className="h-8" /><span className="text-black font-bold text-xs">301 REVIEWS</span></div>
-                                  <div className="flex flex-col"><img src="/goodfirms-logo.png" alt="" className="h-8" /><span className="text-black font-bold text-xs">201 REVIEWS</span></div>
-                                  <div className="flex flex-col"><img src="/designrush-logo.png" alt="" className="h-8" /><span className="text-black font-bold text-xs">55 REVIEWS</span></div>
+                              <div className="mt-4 flex flex-col gap-2 pt-5 border-t">
+                                <div className="font-bold text-blue-800 text-lg mb-4">REVIEWS AND RATING</div>
+                                <div className="flex flex-col items-start gap-2">
+                                  <div className="flex h-8 items-center gap-2 mb-1">
+                                    <img src={Left} alt="Left" className="pr-1" />
+                                    <img src={Google} alt="Google" className="h-12 w-25"/>
+                                    <img src={Right} alt="Right" className="pl-1" />
+                                  </div>
+                                  <span className="text-black font-bold text-[1rem] mt-2 translate-x-7">50+ REVIEWS</span>
                                 </div>
                               </div>
                             </div>
@@ -350,8 +356,9 @@ export default function Header() {
                                 Technology Is Best When It Brings People Together.
                               </div>
                               <Link
-                                to="/about-company"
+                                to="/about-Kryzen-Software-Solutions"
                                 className="bg-white mt-22 border-0 text-blue-900 text-lg font-bold px-8 py-3 rounded shadow hover:bg-blue-50 transition mb-6 whitespace-nowrap"
+                                onClick={() => setmegaMenu(null)}
                               >
                                 About Company
                               </Link>
@@ -423,7 +430,6 @@ export default function Header() {
                               </button>
                             </div>
 
-
                             <div className="flex-1 flex px-6 py-8 items-start gap-9">
                               <div className="w-1/3">
                                 <div className="font-bold text-blue-800 text-xl mb-3 uppercase">SOLUTIONS</div>
@@ -448,7 +454,6 @@ export default function Header() {
                         </div>
                       )}
                     </div>
-
                   )}
                 </div>
               ))}

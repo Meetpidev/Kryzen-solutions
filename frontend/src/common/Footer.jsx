@@ -90,7 +90,6 @@ const getLinks = (category, links) => (
   </ul>
 );
 
-
 const getSolutionsLinks = links => (
   <ul className="space-y-2 mt-3">
     {links.map((link, index) => (

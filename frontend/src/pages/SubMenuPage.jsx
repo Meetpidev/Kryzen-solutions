@@ -454,15 +454,15 @@ const contentMap = {
         img={Chart}
         img2={PieChart}
         h1="Mobile App Market Stats"
-        p1="The global mobile application market size was valued at nearly" 
+        p1="The global mobile application market size was valued at nearly"
         h2="The Mobile Application Development Market Size"
         p2={
-    <>
-      According to one study, there will be <strong>4.74 billion smartphone users</strong> by the end of 2024, growing at a rate of 2.2% each year.
-      When examining the rise in smartphone users between 2020 to 2025, we find that the average yearly growth rate is 6.2%.
-    </>
-  }
-        />
+          <>
+            According to one study, there will be <strong>4.74 billion smartphone users</strong> by the end of 2024, growing at a rate of 2.2% each year.
+            When examining the rise in smartphone users between 2020 to 2025, we find that the average yearly growth rate is 6.2%.
+          </>
+        }
+      />
       <Quotes
         title="Creating Excellent Mobile Apps for Every Business"
         highlightedText="Smart and Reliable Apps"
@@ -473,7 +473,7 @@ const contentMap = {
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider 
+      <TechnologiesSlider
         title="Cutting Edge Technologies Kryzen Use For Mobile App Development"
         techCards={techCards}
       />
@@ -512,8 +512,8 @@ const contentMap = {
       <LogoCarousel />
       <Charts img={Chart}
         h1="Mobile App Market Stats"
-        p1="The global mobile application market size was valued at nearly" 
-        />
+        p1="The global mobile application market size was valued at nearly"
+      />
       <Quotes
         title="Build High-Quality Hybrid Applications Using Latest Technologies"
         highlightedText="Robust, Scalable, Innovative And Hybrid Applications"
@@ -524,7 +524,7 @@ const contentMap = {
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider 
+      <TechnologiesSlider
         title="Our Range Of Cross-Platform App Development Services Include"
       />
       <PremiumServices />
@@ -984,15 +984,15 @@ const contentMap = {
       />
       <LogoCarousel />
       <Charts
-        img={CustomDes} 
+        img={CustomDes}
         img2={CustomAbout}
-        h1="Affordable Custom Mobile Application Development Services" 
+        h1="Affordable Custom Mobile Application Development Services"
         p1="It would help if you had a team of mobile app developers that would immerse themselves in your company environment and market. After all, this is the essence of custom mobile app development. Custom iOS and Android app development company in USA with UX/UI designers and engineers adapt custom app development services to customer’s specific needs and objectives, including Oracle, Printique, and Takeda, for over a decade, delivering award-winning apps for millions of mobile users. And now, you can use this knowledge to expedite your mobile app development. Whether you want Android or iOS app development services or augmented reality integration, our experts can help you bring your mobile concept to life."
         h2="Brief About Custom App Development Services"
         p2={<>INDIA-based Mobile App Development Agency provide enterprise-specific mobile apps with robust connectivity to optimize your operations. You can transform record-keeping systems into engagement systems and create user interactions that are more complex, intuitive, and simple.
 
-Our intelligent applications, you can create next-generation user experiences that fit today's digital requirements.</>}
-        />
+          Our intelligent applications, you can create next-generation user experiences that fit today's digital requirements.</>}
+      />
       <Quotes
         title="Get 100% Customizable Custom App Development Services"
         highlightedText="Sophisticated And Easily-Adapted Solutions"

@@ -19,8 +19,6 @@ app.get("/", (req, res) => {
   res.send("Its Working....");
 });
 app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) => {
-  console.log('Received form data:', req.body);
-  console.log('Received file:', req.file);
   const formData = req.body;
   const file = req.file;
   try {
@@ -58,14 +56,14 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
      transporter.sendMail(mailOptionsToUser),
     ]);
 
-
     if (file) {
       fs.unlink(file.path, (err) => {
         if (err) console.error('Failed to delete temp file:', err);
         else console.log('Temporary file deleted.');
       });
     }
-    //return res.status(200).json({ message: 'Emails sent successfully' });
+    return res.status(200).json({ message: 'Emails sent successfully' });
+  
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to send email' });
