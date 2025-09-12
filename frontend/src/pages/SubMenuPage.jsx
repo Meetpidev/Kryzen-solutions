@@ -368,31 +368,37 @@ const Custom_benefits = [
     title: "Customized Options",
     description:
       "Custom mobile applications are tailored to your company. Custom Mobile App Development Services collaborates with you to understand your goals, processes, and difficulties and ensure the result meets your company goals.",
+    icon: Maintain,
   },
   {
     title: "Improved UX",
     description:
       "Custom mobile applications provide your target audience with a smooth, straightforward experience and create applications that are simple to use, engaging, and optimized for different devices and screen sizes by concentrating on usability and user interface design.",
+    icon: Crm,
   },
   {
     title: "Scalability, Flexibility",
     description:
       "Custom mobile applications may grow with your company. Custom Mobile App Development Services utilize flexible structures and scalable technology to meet changing user needs, new features, and market trends.",
+    icon: Accountibility,
   },
   {
     title: "Integration",
     description:
       "Custom mobile applications can effortlessly interact with databases, CRMs, ERPs, and third-party APIs. Custom Mobile App Development Services connect your app to other systems, improving processes and efficiency.",
+    icon: Scalability,
   },
   {
     title: "Branding",
     description:
       "Custom mobile applications display your brand and set you apart from the competition. Custom Mobile App Development Services blend your logos, colors, and messages into the app design to build brand loyalty.",
+    icon: Crm,
   },
   {
     title: "Support",
     description:
       "To keep your app updated, safe, and functioning, Custom Mobile App Development Services provides extensive support and maintenance. It keeps your app operating smoothly with bug patches, performance optimization, feature additions, and platform updates.",
+    icon: Maintain
   },
 ];
 
@@ -1153,8 +1159,8 @@ const contentMap = {
       <PremiumServices />
       <ExpertiseSlider
         expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
+        sectionTitle="Our Expertise in Custom App Development Services"
+        sectionDescription="We specialize in top custom app development services for every industry type and size. Our expertise includes:"
       />
       <TechnologyStack data={Custom_Technology} />
       <Benefits
