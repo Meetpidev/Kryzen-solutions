@@ -43,7 +43,6 @@ const SuccessMatrix = lazy(() => import("../components/SuccessMatrix"));
 const ClientReview = lazy(() => import("../components/ClientReview"));
 const Upper = lazy(() => import("../components/Upper"));
 const FAQSection = lazy(() => import("../components/FAQSection"));
-const HiringModels = lazy(() => import("../components/HiringModels"));
 const Benefits = lazy(() => import("../components/Benefits"));
 const HeroSection = lazy(() => import("../components/HeroSection"));
 const Quotes = lazy(() => import("../components/Quotes"));
