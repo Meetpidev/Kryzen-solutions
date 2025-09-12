@@ -13,8 +13,7 @@ const services = [
     label: "Mobile App Development",
     sub: [
       "Mobile App Development", "Cross Platform App Development", "IPad App Development Services",
-      "Hybrid App Development", "Progressive Web App Development", "Swift App Development",
-      "Native App Development", "Windows App Development", "Custom Mobile App Development", "B2B Mobile App Development"
+      "Hybrid App Development", "Progressive Web App Development", "Native App Development", "Custom Mobile App Development", "B2B Mobile App Development"
     ]
   },
   {

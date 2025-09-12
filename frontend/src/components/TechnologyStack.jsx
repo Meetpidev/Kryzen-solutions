@@ -1,4 +1,3 @@
-
 function TechnologyStack({ data = [] }) {
   return (
     <section className="py-10 px-3 md:px-12">
@@ -27,3 +26,9 @@ function TechnologyStack({ data = [] }) {
 }
 
 export default TechnologyStack;
+
+
+
+
+
+// export default TechnologyStack;

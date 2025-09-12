@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+
 export default function Benefits({ benifits, sectionTitle, sectionDescription }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const intervalRef = useRef(null);
@@ -48,13 +49,17 @@ export default function Benefits({ benifits, sectionTitle, sectionDescription })
 
         <div className="hidden lg:grid grid-cols-3 gap-6">
           {benifits?.map((item) => (
-            <Card key={item.title} title={item.title} description={item.description} />
+            <Card key={item.title} title={item.title} description={item.description} icon={item.icon} />
           ))}
         </div>
 
         {benifits && benifits.length > 0 && (
           <div className="lg:hidden flex flex-col items-center">
-            <Card title={benifits[currentIdx].title} description={benifits[currentIdx].description} />
+            <Card
+              title={benifits[currentIdx].title}
+              description={benifits[currentIdx].description} 
+              icon={benifits[currentIdx].icon} 
+            />
 
             <div className="mt-6 flex space-x-6">
               <button
@@ -74,18 +79,16 @@ export default function Benefits({ benifits, sectionTitle, sectionDescription })
             </div>
           </div>
         )}
-
-
       </div>
     </section>
   );
 }
 
-function Card({ title, description }) {
+function Card({ title, description, icon }) {
   return (
     <div className="bg-white rounded-xl shadow p-7 flex flex-col max-w-md mx-auto">
       <div className="mb-5 flex items-center justify-start">
-        <span className="text-lg font-semibold text-blue-500">icon</span>
+        <img src={icon} alt="Icons" />
       </div>
       <h3 className="mb-2 text-xl font-bold">{title}</h3>
       <p className="text-gray-600 text-base">{description}</p>

@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
+import Sector_1 from "../public/sector_1.png";
+import Sector_2 from "../public/sector_2.png";
+import Sector_3 from "../public/sector_3.png";
+import Sector_4 from "../public/sector_4.png";
+import Sector_5 from "../public/sector_5.png";
+import Sector_6 from "../public/sector_6.png";
+import Sector_7 from "../public/sector_7.png";
+import Sector_8 from "../public/sector_8.png";
+import Sector_9 from "../public/sector_9.png";
+import Sector_10 from "../public/sector_10.png";
 
 const sectors = [
   {
     bg: "bg-blue-100",
-    icon: <span className="bg-blue-500 text-white rounded p-3 text-3xl mr-2"></span>,
+    icon: Sector_1,
     title: "Logistics App Development Company",
     description:
       "Enterprise mobility is the most acceptable way to deliver something distinctive compared to other businesses in the same industry as you.",
@@ -18,7 +28,7 @@ const sectors = [
   },
   {
     bg: "bg-blue-100",
-    icon: <span className="bg-blue-500 text-white rounded p-3 text-3xl mr-2"></span>,
+    icon: Sector_2,
     title: "E-commerce Website Development Services",
     description:
       "As a top ecommerce Website Development Company, we assist B2B and B2C businesses in increasing client fulfillment, traffic growth, and lead generation. Our client-centric approach help businesses reimagine the digital commerce. Contact us now!",
@@ -33,7 +43,7 @@ const sectors = [
   },
   {
     bg: "bg-blue-100",
-    icon: <span className="bg-blue-500 text-white rounded p-3 text-3xl mr-2"></span>,
+    icon: Sector_3,
     title: "Tourism App Development",
     description:
       "Because of the continued expansion of the e-commerce industry, every company now needs tourism website development.",
@@ -48,7 +58,7 @@ const sectors = [
   },
   {
     bg: "bg-blue-100",
-    icon: <span className="bg-blue-500 text-white rounded p-3 text-3xl mr-2"></span>,
+    icon: Sector_4,
     title: "Tourism App Development",
     description:
       "Because of the continued expansion of the e-commerce industry, every company now needs tourism website development.",
@@ -66,7 +76,9 @@ const sectors = [
 function SectorCard({ bg, icon, title, description, features }) {
   return (
     <div className={`${bg} rounded-lg p-8 shadow-md flex flex-col min-h-[230px] w-full max-w-md`}>
-      <div className="flex items-center mb-2">{icon}</div>
+      <div className="flex items-center mb-2">
+        <img src={icon} alt="Icons" />
+      </div>
       <h4 className="font-bold text-xl mb-2">{title}</h4>
       <p className="text-gray-700 mb-4">{description}</p>
       <div className="grid grid-cols-2 gap-2">

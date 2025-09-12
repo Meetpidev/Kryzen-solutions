@@ -2,6 +2,10 @@ import { lazy } from "react";
 import { useParams } from "react-router-dom";
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
 import MobileApp from "../public/mobile_app_development1.webp";
+import Maintain from "../public/ic_easy_maintain_mobile_app_development.png";
+import Crm from "../public/ic_crm_mobile_app_development.png";
+import Accountibility from "../public/ic_accountibility_mobile_app_development.png";
+import Scalability from "../public/ic_improve_scalability_mobile_app_development.png";
 import CostomApp from "../public/custom_app_banner.png";
 import CustomDes from "../public/custom_app_section_1.png";
 import CustomAbout from "../public/custom_app_about.png";
@@ -23,6 +27,7 @@ import cuttingEdge_6 from "../public/cuttingEdge_7.png";
 import cuttingEdge_7 from "../public/cuttingEdge_8.png";
 import cuttingEdge_8 from "../public/cuttingEdge_9.png";
 import TechnologyStack from "../components/TechnologyStack";
+import CrossDev from "../public/crossplatformdev.png";
 
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
 const SectorsSlider = lazy(() => import("../components/SectorsSlider").then(module => ({ default: module.SectorsSlider })));
@@ -44,6 +49,7 @@ const HeroSection = lazy(() => import("../components/HeroSection"));
 const Quotes = lazy(() => import("../components/Quotes"));
 const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
+const Technology_pannel = lazy(() => import("../components/Technology_pannel"));
 
 // import Img_4 from "../public/Explore_4.png";
 // import Img_5 from "../public/Explore_5.png";
@@ -101,14 +107,11 @@ const services = [
       "Mobile App Development",
       "Cross Platform App Development",
       "IPad App Development Services",
-      "Kotlin App Development",
       "Hybrid App Development",
       "Progressive Web App Development",
-      "Swift App Development",
       "IBeacon App Development",
       "Wearable App Development",
       "Native App Development",
-      "Windows App Development",
       "Custom Mobile App Development",
       "B2B Mobile App Development"
     ]
@@ -185,6 +188,79 @@ const expertiseCards = [
   },
 ];
 
+const ipadExpertise = [
+  {
+    title: "iPad App Design",
+    description:
+      "We specialize in crafting intuitive and engaging iPad app designs, ensuring a seamless user experience tailored to your brand's identity."
+  },
+  {
+    title: "Enterprise iPad App Development",
+    description:
+      "Our team develops robust enterprise-grade iPad applications, focusing on scalability, security, and performance to meet business needs."
+  },
+  {
+    title: "iPad Tech Support and Preventative Maintenance",
+    description:
+      "We offer comprehensive technical support and maintenance services, ensuring your iPad applications remain up-to-date and perform optimally."
+  },
+  {
+    title: "iPad App Development in Native Language",
+    description:
+      "Leveraging native iOS technologies, we build high-performance iPad applications that fully utilize device capabilities and deliver superior user experiences."
+  },
+  {
+    title: "Augmented Reality (AR) App Solutions",
+    description:
+      "We develop interactive AR applications for iPad, enhancing user engagement by integrating real-world elements with digital content."
+  },
+  {
+    title: "Integration with Third-Party Services",
+    description:
+      "Our expertise includes integrating iPad apps with various third-party services like WebRTC, Twilio, Stripe, PayPal, and more, to extend functionality."
+  }
+];
+
+const ipadAppBenefits = [
+  {
+    title: "Customized User Experiences",
+    description:
+      "iPad app development services create apps for iPad’s giant screens and additional features. Simple and easy to use, these applications boost engagement and enjoyment. Customizing the iPad’s multitouch gestures and high-resolution display improves user experience.",
+    icon: Maintain,
+  },
+  {
+    title: "Increased productivity and efficiency",
+    description:
+      "iPad applications improve productivity and efficiency by automating mundane operations and making crucial data accessible. Employees can work better in the office or on the road, enhancing corporate effectiveness.",
+    icon: Scalability,
+  },
+  {
+    title: "Better Customer Engagement and Loyalty",
+    description:
+      "User engagement is maintained using push alerts, in-app messaging, and personalized content. Customer satisfaction and loyalty increase with better engagement, driving repeat business.",
+    icon: Crm,
+  },
+  {
+    title: "Smooth Apple Ecosystem Integration",
+    description:
+      "Users can seamlessly transition between their iPhone, Mac, and iPad thanks to this compatibility. Apple ecosystem integration improves app functionality and customer ease, increasing engagement.",
+    icon: Accountibility,
+  },
+  {
+    title: "Get Advanced Features and Technologies",
+    description:
+      "Your iPad app will use the newest iOS features and technologies like ARKit for augmented reality, Core ML for machine learning. Adding these enhanced features helps produce new and competitive apps that suit user and market needs.",
+    icon: Scalability,
+  },
+  {
+    title: "Constant Care",
+    description:
+      "Post-launch support and upgrades are essential for iPad app performance and security. Maintenance includes bug repairs, feature additions, and compatibility updates from professional development services.",
+    icon: Maintain,
+  }
+];
+
+
 const benefitCards = [
   {
     img: Img_1,
@@ -214,31 +290,37 @@ const benefits = [
     title: "Tech-savvy",
     description:
       "Our team knows many programming languages, frameworks, and tools for iOS, Android, and cross-platform app development. As a Mobile Application Development Company, Swift, Kotlin, Java, JavaScript, React Native, Flutter, and Xamarin are our expertise.",
+    icon: Maintain,
   },
   {
     title: "Knowledge and Skill",
     description:
       "Our team includes experienced mobile app developers from many sectors. They've completed everything from consumer applications to business solutions, and their varied skills allow them to solve problems quickly and creatively for customers.",
+    icon: Scalability,
   },
   {
     title: "Design sense",
     description:
       "Our mobile app developers are design and UX experts. They value attractive, intuitive, and easy-to-use interfaces. Using UI/UX best practices, our developers ensure that every component of the app improves user engagement and pleasure, creating a good experience.",
+    icon: Crm,
   },
   {
     title: "Agile Methodologies",
     description:
       "To guarantee flexibility, transparency, and cooperation, our engineers use Scrum or Kanban. We divide the project into sprints for feedback and iteration. Iterative development allows our developers to adapt to changing needs and provide high-quality outcomes on time and within budget.",
+    icon: Accountibility,
   },
   {
     title: "Transparency",
     description:
       "We work with you from planning to implementation and support. With clear communication and frequent updates, our developers turn your idea into a successful mobile app that matches your company goals.",
+    icon: Maintain,
   },
   {
     title: "Quality Control",
     description:
       "Quality is our priority. Our services satisfy the highest performance, reliability, and security requirements since our developers undergo rigorous quality assurance methods. Before the app is published, it undergoes functional, usability, performance, and security testing to find and fix any flaws.",
+    icon: Crm,
   },
 ];
 
@@ -248,31 +330,37 @@ const Cross_AppBenifits = [
     title: "Optimum Audience Exposure",
     description:
       "Since cross-platform applications benefit both the Android and iOS platforms, you get the most audience attention and target several OS markets, your chances of reaching a global audience grow.",
+    icon: Maintain,
   },
   {
     title: "Decreased Development Overheads",
     description:
       "When you create a cross-platform app, you gain the advantage of re-usability. From the code to the deployment strategy, you can reuse anything and save a significant amount of money.",
+    icon: Scalability,  
   },
   {
     title: "Simple Handling And Deployment",
     description:
       "Maintenance is simplified because you only need to handle one app that runs through several platforms. Furthermore, the deployment phase is simplified.",
+    icon: Crm,  
   },
   {
     title: "Easy To Integrate",
     description:
       "Since Cross-Platform apps support several plugins that aid in cloud integration, they are easy to integrate. It significantly increases efficiency and scalability.",
+    icon: Accountibility,
   },
   {
     title: "Quick Marketing And Modification",
     description:
       "Since your production time gets reduced, your marketing time gets reduced as well. Furthermore, its scalability allows you to make as many changes as possible.",
+    icon: Maintain,
   },
   {
     title: "Uniformity",
     description:
       "Cross-Platform apps promote uniformity like nothing else. You get to highlight your brand values through all of your products and offer uniformity in design on any device your customers use.",
+    icon: Crm,
   },
 ];
 
@@ -375,8 +463,28 @@ const Django_benifits = [
   }
 ];
 
-
-
+const mobileTech = [
+   {
+    category: "iOS",
+    items: ["Swift", "Objective-C", "X-Code", "SwiftUI"]
+  },
+  {
+    category: "Android",
+    items: ["Java", "Kotlin", "Android Studio", "Version control tools (Git, GitLab, Bit Bucket)"]
+  },
+  {
+    category: "Cross Platform",
+    items: ["Flutter", "React Native", "Ionic", "NativeScript"]
+  },
+  {
+    category: "Database",
+    items: ["Firebase", "Redis", "PostgreSQL", "MongoDB", "MySQL", "DynamoDB", "SQLite"]
+  },
+  {
+    category: "Design Tool",
+    items: ["Figma", "Sketch", "Adobe XD", "Zeplin", "Photoshop", "Illustrator", "After Effects", "InVision"]
+  }
+];
 const Custom_Technology = [
   {
     title: "Backend",
@@ -554,12 +662,10 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
 const Common = () => {
   return (
     <>
-      <HiringModels />
       <ProcessWeFollow />
       <TestimonialSlider />
       <Brands />
       <SuccessMatrix />
-      <TechnologyStack data={Custom_Technology} />
       <ClientReview />
       <FAQSection />
       <Upper />
@@ -607,10 +713,6 @@ const contentMap = {
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider
-        title="Cutting Edge Technologies Kryzen Use For Mobile App Development"
-        techCards={techCards}
-      />
       <PremiumServices />
       <Benefits
         benifits={benefits}
@@ -628,6 +730,9 @@ const contentMap = {
         expertiseCards={expertiseCards}
         sectionTitle="Our Expertise in Mobile App Development Services"
         sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
+      />
+       <Technology_pannel
+        techCards={mobileTech}
       />
       <Common />
     </>
@@ -644,9 +749,9 @@ const contentMap = {
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts img={Chart}
-        h1="Mobile App Market Stats"
-        p1="The global mobile application market size was valued at nearly"
+      <Charts img={CrossDev}
+        h1="Hire Cross-Platform App Developers for Project"
+        p1="Regardless of the platform, device, sector, or user base, our affordable cross-platform app development specializes in developing robust cross-platform applications that stand out and produce outcomes. By utilizing universal code, developing a common user interface, and testing cross-platform mobile apps to make sure all essential functions work with both iOS and Android, we guarantee the same user experience. With their expertise in cross-platform development, Sapphire's developers can design a multi-platform experience that fits your needs as a user, business, sector, or vertical."
       />
       <Quotes
         title="Build High-Quality Hybrid Applications Using Latest Technologies"
@@ -658,27 +763,18 @@ const contentMap = {
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider
-        title="Our Range Of Cross-Platform App Development Services Include"
-      />
       <PremiumServices />
+       <TechnologiesSlider
+        title="Our Range Of Cross-Platform App Development Services Include"
+        techCards={techCards}
+      />
       <Benefits
         benifits={Cross_AppBenifits}
         sectionTitle="Benefits of Hiring Cross pPlateform App Development"
         sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
       />
       <AboutUs />
-      <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
-        benefitCards={benefitCards}
-        autoInterval={3500}
-      />
-      <SectorsSlider />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
-      />
+      <TechnologyStack data={Custom_Technology} />
       <Common />
     </>
   ),
@@ -686,93 +782,45 @@ const contentMap = {
   "ipad app development services": (
     <>
       <HeroSection
-        title="Best Ipad App Development Company"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="iPad App Development Services in INDIA"
+        description="Our iPad App Development firm is well-known for its ability to build and design individualized iPad applications while adhering to the standards set by the Apple App Store."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={Chart}
+        img2={PieChart}
+        h1="Best iPad App Development Company"
+        p1="Do you want a no-cost consultation with our app's foremost authority on iPad applications? Our iPad app development company employs a team of seasoned iPad app developers familiar with the most recent iPad app frameworks and the iPad Mobile Application development process, which spans from the validation of a concept to the introduction of a product. You can hire iPad Developers from us to develop the project of your dreams on schedule and within your financial constraints."
+        h2="Brief About Our iPad App Development"
+        p2={
+          <>
+           Our company is well-versed in developing highly interactive augmented reality app solutions, both those based on markers and those that do not need features. We see these apps as an extension of the actual world. We adhere to the most acceptable standards in the industry, which are related to Apple's Human Interface Guidelines and the stringent use policy for the iOS SDK.
+           We provide audio and video call solutions using the WebRTC framework and other third-party calling solutions such as TokBox, Twilio, and others. Our iPad developers have expertise with several payment gateways, including Stripe, Authorize.Net, PayPal, and 2Checkout. They can assist you with making the most appropriate choice for your project.
+          </>
+        }
+      />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="Get A 100% Customizable iPad App Development By Experts"
+        highlightedText="Building Scalable Secure IOS & Ipad Apps "
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We are a leading iPad app development company, and as such, we are supported by a team of experienced and knowledgeable iPad developers. Our iPad app development consultants have solid expertise in delivering robust iPad App Development Services, regardless of whether the iPad in question is part of the iPad Mini-Series or the original iPad. To improve the overall experience and bring your iPad app development project to an entirely new level, we use the most advanced capabilities, including Touch ID, Photokit, Manual Camera Controls, and Handoff.",
+          "The applications we design not only fulfill your company's needs but are up to the required quality and safety levels, all without sacrificing the many aesthetic elements and functionality required.",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider />
+      <ExpertiseSlider expertiseCards={ipadExpertise} sectionTitle="The Expertise Of Our iPad App Developers" sectionDescription="You may maximize the value of your company's operations by using our cutting-edge Salesforce Application Development services to run your business more efficiently and effectively."/>
       <PremiumServices />
       <Benefits
-        benifits={benefits}
-        sectionTitle="Benefits of Hiring our Mobile App Development Company"
-        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+        benifits={ipadAppBenefits}
+        sectionTitle="Benefits of iPad Development Service"
+        sectionDescription="iPad app Development may boost corporate operations and client engagement."
       />
       <AboutUs />
-      <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
-        benefitCards={benefitCards}
-        autoInterval={3500}
-      />
-      <SectorsSlider />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
-      />
-      <Common />
-    </>
-  ),
-
-  "kotlin app development": (
-    <>
-      <HeroSection
-        title="Best Kotlin App Development Company"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
-        buttonText="Get Started"
-        buttonLink="#contact"
-        imageSrc={MobileApp}
-        imageAlt="Digital Solutions illustration"
-      />
-      <LogoCarousel />
-      <Charts />
-      <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
-        paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
-        ]}
-        emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
-      />
-      <TechnologiesSlider />
-      <PremiumServices />
-      <Benefits
-        benifits={benefits}
-        sectionTitle="Benefits of Hiring our Mobile App Development Company"
-        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
-      />
-      <AboutUs />
-      <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
-        benefitCards={benefitCards}
-        autoInterval={3500}
-      />
-      <SectorsSlider />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
-      />
       <Common />
     </>
   ),
@@ -780,28 +828,39 @@ const contentMap = {
   "hybrid app development": (
     <>
       <HeroSection
-        title="Best Hybrid App Development Company"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="Hybrid App Development Company in INDIA"
+        description="We are your one-stop shop for affordable Hybrid App Development services. We incorporate the best features of native programs to create robust cross-platform mobile applications that function identically to native applications on Android, iOS, and Windows."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+        <Charts
+        img={Chart}
+        img2={PieChart}
+        h1="The Reliable Hybrid App Development Company"
+        p1="Our revolutionary hybrid app development services are equipped to handle all of your cross-platform app development challenges. We provide custom hybrid app development solutions that are compatible with numerous devices. With our hybrid mobile app development services, you can rapidly construct a high-quality hybrid app that suits your business's particular needs."
+        h2="Brief About Hybrid App Development Services"
+        p2={
+          <>
+           We offer Hybrid app development services to help you create hybrid apps with the latest features. Our design specialists ensure the ergonomic development of a hybrid application's user interface to enhance the user experience. Hiring a dedicated Hybrid App Developers team of highly qualified and experienced developers with unmatched competency and originality makes us a reliable partner for developing exceptional hybrid applications for your company.
+          </>
+        }
+      />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="Get 100% Customizable Hybrid App Development Services By Experts"
+        highlightedText="Easy To Use And Customized Hybrid Apps"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "There are several cross-platform mobile app development businesses in India, but you must choose one that can accommodate your needs and finances. As the top Hybrid Mobile app Development Company, we adhere to the correct development technique. We continue to test the product utilizing app development so that the app will function properly after its release. We have a staff of highly-skilled and knowledgeable Hybrid app developers that can deal with various technologies and hybrid mobile app frameworks. We strive to serve you with a successful Customized Hybrid app Development in this manner.",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["hire mobile app developers"]}
       />
-      <TechnologiesSlider />
+       <TechnologiesSlider
+        title="Cutting Edge Technologies Kryzen Use For Hybrid App Development"
+        techCards={techCards}
+      />
       <PremiumServices />
       <Benefits
         benifits={benefits}
@@ -810,7 +869,7 @@ const contentMap = {
       />
       <AboutUs />
       <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        sectionTitle="Explore The Transformative Impact Of Hybrid App On Your Business Success"
         benefitCards={benefitCards}
         autoInterval={3500}
       />
@@ -871,52 +930,6 @@ const contentMap = {
     </>
   ),
 
-  "swift app development": (
-    <>
-      <HeroSection
-        title="Best Swift App Development Company"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
-        buttonText="Get Started"
-        buttonLink="#contact"
-        imageSrc={MobileApp}
-        imageAlt="Digital Solutions illustration"
-      />
-      <LogoCarousel />
-      <Charts />
-      <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
-        paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
-        ]}
-        emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
-      />
-      <TechnologiesSlider />
-      <PremiumServices />
-      <Benefits
-        benifits={benefits}
-        sectionTitle="Benefits of Hiring our Mobile App Development Company"
-        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
-      />
-      <AboutUs />
-      <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
-        benefitCards={benefitCards}
-        autoInterval={3500}
-      />
-      <SectorsSlider />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
-      />
-      <Common />
-    </>
-  ),
 
   "ibeacon app development": (
     <>
@@ -1059,52 +1072,52 @@ const contentMap = {
     </>
   ),
 
-  "windows app development": (
-    <>
-      <HeroSection
-        title="Windows App Development Services In India"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
-        buttonText="Get Started"
-        buttonLink="#contact"
-        imageSrc={Windows}
-        imageAlt="Digital Solutions illustration"
-      />
-      <LogoCarousel />
-      <Charts img={WindowSection} img2={WindowAbout} />
-      <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
-        paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
-        ]}
-        emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
-      />
-      <TechnologiesSlider />
-      <PremiumServices />
-      <Benefits
-        benifits={benefits}
-        sectionTitle="Benefits of Hiring our Mobile App Development Company"
-        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
-      />
-      <AboutUs />
-      <ImpactCards
-        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
-        benefitCards={benefitCards}
-        autoInterval={3500}
-      />
-      <SectorsSlider />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Our Expertise in Mobile App Development Services"
-        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
-      />
-      <Common />
-    </>
-  ),
+  // "windows app development": (
+  //   <>
+  //     <HeroSection
+  //       title="Windows App Development Services In India"
+  //       description="As a leading mobile app development company with Good Review and High Rating,
+  //                            we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
+  //                            that surpasses your expectations and makes you an industry leader. Contact us now!"
+  //       buttonText="Get Started"
+  //       buttonLink="#contact"
+  //       imageSrc={Windows}
+  //       imageAlt="Digital Solutions illustration"
+  //     />
+  //     <LogoCarousel />
+  //     <Charts img={WindowSection} img2={WindowAbout} />
+  //     <Quotes
+  //       title="Creating Excellent Mobile Apps for Every Business"
+  //       highlightedText="Smart and Reliable Apps"
+  //       paragraphs={[
+  //         "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
+  //         "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+  //       ]}
+  //       emphasizeTextIndex={[1]}
+  //       emphasizePhrases={["hire mobile app developers"]}
+  //     />
+  //     <TechnologiesSlider />
+  //     <PremiumServices />
+  //     <Benefits
+  //       benifits={benefits}
+  //       sectionTitle="Benefits of Hiring our Mobile App Development Company"
+  //       sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+  //     />
+  //     <AboutUs />
+  //     <ImpactCards
+  //       sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+  //       benefitCards={benefitCards}
+  //       autoInterval={3500}
+  //     />
+  //     <SectorsSlider />
+  //     <ExpertiseSlider
+  //       expertiseCards={expertiseCards}
+  //       sectionTitle="Our Expertise in Mobile App Development Services"
+  //       sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
+  //     />
+  //     <Common />
+  //   </>
+  // ),
 
   "custom mobile app development": (
     <>
@@ -1144,6 +1157,7 @@ const contentMap = {
         sectionTitle="Our Expertise in Mobile App Development Services"
         sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
       />
+      <TechnologyStack data={Custom_Technology} />
       <Benefits
         benifits={Custom_benefits}
         sectionTitle="Benefits of Custom Mobile App Development"
