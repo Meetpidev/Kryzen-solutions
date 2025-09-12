@@ -74,7 +74,7 @@ const navigationItems = [
   },
   {
     label: "Service",
-    items: [{ label: "Mobile App", to: "/mobile-app" }],
+    items: services,
   },
   {
     label: "Technology",
@@ -92,7 +92,7 @@ export default function Header() {
   const [Dropdown, setDropdown] = useState(null);
   const [megaMenu, setmegaMenu] = useState(null);
   const [active, setactive] = useState("Mobile App Development");
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState({});
 
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -121,9 +121,13 @@ export default function Header() {
   //   setDropdown(null);
   // };
 
-  const toggleDropdown = (label) => {
-    setOpenDropdown(openDropdown === label ? null : label);
-  };
+  const toggleDropdown = (key) => {
+  setOpenDropdown((prev) => ({
+    ...prev,
+    [key]: !prev[key],
+  }));
+};
+
 
   return (
     <div className="relative">
@@ -513,60 +517,97 @@ export default function Header() {
           </button>
         </div>
 
-        <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
-          {navigationItems.map(({ label, items }) => (
-            <div key={label}>
-              <button
-                className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
-                onClick={() => toggleDropdown(label)}
-                aria-expanded={openDropdown === label}
-              >
-                {label}
-                <ChevronDown
-                  className={`transition-transform duration-300 ${openDropdown === label ? "rotate-180" : ""}`}
-                />
-              </button>
-              {openDropdown === label && (
-                <ul className="pl-4 space-y-1 border-l border-blue-200">
-                  {items.map(({ label: itemLabel, to }) => (
-                    <li key={itemLabel}>
-                      <Link
-                        to={to}
-                        className="block py-1 text-gray-700 hover:text-blue-700"
-                        onClick={() => {
-                          setisMobile(false);
-                          setOpenDropdown(null);
-                          document.body.style.overflow = "auto";
-                        }}
-                      >
-                        {itemLabel}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+      <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
+  {navigationItems.map(({ label, items }) => (
+    <div key={label}>
+      <button
+        className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
+        onClick={() => toggleDropdown(label)}
+        aria-expanded={!!openDropdown[label]}
+      >
+        {label}
+        <ChevronDown
+          className={`transition-transform duration-300 ${openDropdown[label] ? "rotate-180" : ""}`}
+        />
+      </button>
 
-          <div className="flex items-center justify-between w-full p-4 border-t border-gray-200">
-            <button
-              className="bg-[#D2497E] mr-4 whitespace-nowrap hover:bg-cyan-600 text-white px-4 py-2 font-bold rounded-lg transition"
-              data-testid="button-lets-talk-ai"
-              style={{ minWidth: 120 }}
-            >
-              Let's Talk AI
-            </button>
-            <Link to="/contact-us">
-              <button
-                className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
-                data-testid="button-contact-us"
-                style={{ minWidth: 120 }}
-              >
-                Contact Us
-              </button>
-            </Link>
-          </div>
-        </nav>
+      {openDropdown[label] && (
+        <ul className="pl-4 space-y-1 border-l border-blue-200">
+          {label === "Service" ? (
+            services.map((svc) => (
+              <li key={svc.label}>
+                <button
+                  className="flex justify-between items-center w-full text-gray-700 hover:text-blue-700 py-1"
+                  onClick={() => toggleDropdown(svc.label)}
+                >
+                  {svc.label}
+                  <ChevronDown className={`transition-transform duration-300 ${openDropdown[svc.label] ? "rotate-180" : ""}`} />
+                </button>
+
+                {openDropdown[svc.label] && (
+                  <ul className="pl-4 space-y-1 border-l border-blue-300">
+                    {svc.sub.map((subItem) => (
+                      <li key={subItem}>
+                        <Link
+                          to={`/service/${encodeURIComponent(svc.label.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(subItem.toLowerCase().replace(/\s+/g, "-"))}`}
+                          className="block py-1 text-gray-600 hover:text-blue-600"
+                          onClick={() => {
+                            setisMobile(false);
+                            setOpenDropdown({});
+                            document.body.style.overflow = "auto";
+                          }}
+                        >
+                          {subItem}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))
+          ) : (
+            items.map(({ label: itemLabel, to }) => (
+              <li key={itemLabel}>
+                <Link
+                  to={to}
+                  className="block py-1 text-gray-700 hover:text-blue-700"
+                  onClick={() => {
+                    setisMobile(false);
+                    setOpenDropdown({});
+                    document.body.style.overflow = "auto";
+                  }}
+                >
+                  {itemLabel}
+                </Link>
+              </li>
+            ))
+          )}
+        </ul>
+      )}
+    </div>
+  ))}
+
+  <div className="flex items-center justify-between w-full p-4 border-t border-gray-200">
+    <button
+      className="bg-[#D2497E] mr-4 whitespace-nowrap hover:bg-cyan-600 text-white px-4 py-2 font-bold rounded-lg transition"
+      data-testid="button-lets-talk-ai"
+      style={{ minWidth: 120 }}
+    >
+      Let's Talk AI
+    </button>
+    <Link to="/contact-us">
+      <button
+        className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
+        data-testid="button-contact-us"
+        style={{ minWidth: 120 }}
+      >
+        Contact Us
+      </button>
+    </Link>
+  </div>
+</nav>
+
+
       </div>
 
       {isMobile && (
