@@ -592,7 +592,7 @@ const Laravel_benifits = [
 
 
 const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
-  // If no content is provided, render nothing
+  
   if (!img && !img2 && !h1 && !p1 && !h2) {
     return null;
   }
