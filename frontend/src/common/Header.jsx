@@ -204,7 +204,7 @@ export default function Header() {
                 { label: "Technology", menu: "technology" },
                 { label: "Our Work", menu: "ourwork" }
               ].map(({ label, menu }) => (
-                <div key={label} className="relative"
+                <div key={label} className="relative translate-x-97"
                   onMouseEnter={() => setmegaMenu(menu)}
                   style={{ zIndex: 1000 }}
                 >
@@ -218,7 +218,7 @@ export default function Header() {
                   {megaMenu === menu && (
                     <div onMouseLeave={() => setmegaMenu(null)}>
                       {menu === 'company' && (
-                        <div className="absolute left-[28rem] top-full mt-3 w-[100vw] max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-auto">
+                        <div className="absolute left-[4rem] top-full mt-3 w-[100vw] max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-auto">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Company</div>
@@ -294,7 +294,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'service' && (
-                        <div className="absolute left-[20rem] w-[100vw] mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded">
+                        <div className="absolute left-[-4rem] w-[100vw] mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded">
                           <div className="bg-[#0178a8] text-white flex flex-col justify-between p-10 min-w-[330px] max-w-[390px]">
                             <div>
                               <div className="text-3xl font-bold mb-5">Service</div>
@@ -351,7 +351,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'technology' && (
-                        <div className="absolute left-[13rem] top-full mt-3 w-[100vw] max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-auto">
+                        <div className="absolute left-[-11em] top-full mt-3 w-[100vw] max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-auto">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Technology</div>
@@ -419,7 +419,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'ourwork' && (
-                        <div className="absolute left-[4rem] mt-3 w-[100vw] max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-auto">
+                        <div className="absolute left-[-20rem] mt-3 w-[100vw] max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-auto">
                           <div className="w-full flex bg-white text-gray-900 rounded shadow-xl pb-7 overflow-hidden" style={{ minHeight: 390 }}>
                             <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
                               <div>

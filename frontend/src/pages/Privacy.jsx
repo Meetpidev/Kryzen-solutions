@@ -1,7 +1,9 @@
 import { lazy } from "react"
+import PrivacyImg from "../public/privacy.png";
 
 const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
+
 function Privacy() {
   return (
     <>
@@ -21,9 +23,9 @@ function Privacy() {
             <div className="relative flex flex-col items-center">
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-blue-200 rounded-full -z-10" />
               <img
-                src=""
+                src={PrivacyImg}
                 alt="Privacy"
-                className="w-76 h-76 rounded-xl object-cover border-4 border-white shadow-lg"
+                className="w-76 h-76 rounded-xl object-cover"
               />
             </div>
           </div>

@@ -25,39 +25,29 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
-    useEffect(() => {
+  useEffect(() => {
     const scriptId = 'google-translate-script';
-    //const scriptIdChatbase = 'chatbase-script';
 
-    const initGoogleTranslate = () => {
-      window.gtranslateSettings = {
-        default_language: 'en',
-        detect_browser_language: true,
-        wrapper_selector: '.gtranslate_wrapper',
-      };
-    };
-   
     if (!document.querySelector(`#${scriptId}`)) {
       const script = document.createElement('script');
       script.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
       script.defer = true;
       script.id = scriptId;
       document.body.appendChild(script);
-      script.onload = initGoogleTranslate;
-    } else {
-      initGoogleTranslate();
-    }
 
-    return () => {
-      const script = document.querySelector(`#${scriptId}`);
-      if (script) {
-        document.body.removeChild(script);
-      }
-    };
+      script.onload = () => {
+        window.gtranslateSettings = {
+          default_language: 'en',
+          detect_browser_language: true,
+          wrapper_selector: '.gtranslate_wrapper',
+        };
+      };
+    }
   }, []);
 
   return (
     <>
+       <div className="gtranslate_wrapper z-50"></div>
       <Suspense fallback={
         <div className="loader-container">
           <div className="loader">
@@ -82,7 +72,6 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/term-of-use" element={<Terms />} />
         </Routes>
-        <div className="gtranslate_wrapper"></div>
         <Footer />
         <AppFooter />
       </Suspense>

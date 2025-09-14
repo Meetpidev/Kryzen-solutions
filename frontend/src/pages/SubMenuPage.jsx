@@ -10,9 +10,6 @@ import CostomApp from "../public/custom_app_banner.png";
 import CustomDes from "../public/custom_app_section_1.png";
 import CustomAbout from "../public/custom_app_about.png";
 import CrossDes from "../public/cross_platform.png";
-import Windows from "../public/windows_app_banner.png";
-import WindowSection from "../public/windows_app_section_1.png";
-import WindowAbout from "../public/windows_app_about.png";
 import Chart from "../public/mobile_market_stats.webp";
 import PieChart from "../public/pie_chart.webp";
 import Img_1 from "../public/Explore_1.png";
@@ -28,6 +25,9 @@ import cuttingEdge_7 from "../public/cuttingEdge_8.png";
 import cuttingEdge_8 from "../public/cuttingEdge_9.png";
 import TechnologyStack from "../components/TechnologyStack";
 import CrossDev from "../public/crossplatformdev.png";
+import TypeScript from "../public/typescript_development_banner.svg";
+import Types1 from "../public/typescript_development_section_1.svg";
+import Types_about from "../public/typescript_development_about.svg";
 
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
 const SectorsSlider = lazy(() => import("../components/SectorsSlider").then(module => ({ default: module.SectorsSlider })));
@@ -138,9 +138,9 @@ const services = [
   {
     label: "Frontend Development",
     sub: [
-      "Typescript Development",
+      "Typscript Development",
       "Angular Development",
-      "ReactJs Development",
+      "React Development",
     ]
   },
   {
@@ -590,6 +590,78 @@ const Laravel_benifits = [
   },
 ];
 
+const TypeScript_benifits = [
+  {
+    title: "Type Safety, Error Prevention",
+    description: "TypeScript uses static typing to identify development problems and improve code description and uses these characteristics to enhance the quality of code, minimize defects, and make applications more resilient and maintainable.",
+    icon: Maintain,
+  },
+  {
+    title: "Increased Efficiency",
+    description: "TypeScript's type inference and code refactoring capabilities let developers produce clearer, more expressive, and error-free code. It help companies use these capabilities efficiently, speeding up development.",
+    icon: Crm,
+  },
+  {
+    title: "Ability to scale and maintain",
+    description: "TypeScript is ideal for large-scale applications because of its static typing and modular design and assists organizations in building scalable, stable codebases that can scale with their demands, eliminating technical debt and assuring sustainability.",
+    icon: Scalability,
+  },
+  {
+    title: "Better Cooperation",
+    description: "TypeScript's robust typing and explicit code structure simplify developer collaboration and guarantees your development team maintains uniform code standards and best practices, enhancing team communication and project productivity.",
+    icon: Accountibility,
+  },
+  {
+    title: "JavaScript Ecosystem compatibility",
+    description: "JavaScript code can be smoothly incorporated into TypeScript applications. TypeScript Development Services lets organizations use their JavaScript libraries and frameworks with static typing and other TypeScript capabilities.",
+    icon: Scalability,
+  },
+  {
+    title: "Future-proof options",
+    description: "TypeScript Development Services assist organizations in keeping current with TypeScript ecosystem developments and best practices to ensure their projects are future-proof and adaptable to new technologies and trends.",
+    icon: Crm,
+  },
+];
+
+const typescriptExpertise = [
+  {
+    title: "TypeScript App Development",
+    description:
+      "We have assembled a skilled group capable of developing an enterprise-grade mobile application that is resilient, scalable, and engaging. Our professionals guarantee the flawless and high-quality delivery of mobile app solutions with a user interface unparalleled in depth and breadth.",
+    btn: "View More",
+  },
+  {
+    title: "Endeavor App Development And APIs",
+    description:
+      "When you work with us, you essentially agree to a prosperous future for your company. When planning an endeavor, we consider some factors: adaptability, user interface, speed, energy, and liquid usage. Get in touch with us right now!",
+    btn: "View More",
+  },
+  {
+    title: "TypeScript Consultation",
+    description:
+      "Have a conversation with one of our TypeScript specialists if you have questions regarding TypeScript, including whether it has any benefits or drawbacks. Finding exact solutions for your company that is based on TypeScript is something our brightest brains can help you with.",
+    btn: "View More",
+  },
+  {
+    title: "Web App Development",
+    description:
+      "Our experience as a typescript development company helps firms achieve resounding levels of success. We write our code in TypeScript and construct the structure using JavaScript, which ultimately leads to developing cutting-edge solutions in the form of web applications.",
+    btn: "View More",
+  },
+  {
+    title: "JS To TS Migration",
+    description:
+      "If you wish to switch from your current platforms that use JavaScript to TypeScript, we can achieve this in as little as one, two, or three simple steps. Our TypeScript engineers use a straightforward method that does not include any potential risks to migrate from JS to TS successfully.",
+    btn: "View More",
+  },
+  {
+    title: "Maintenance & Support",
+    description:
+      "We provide the most excellent support and maintenance services available, and we will assist you in keeping up the work, whether it is an update in the version being used or maintenance services. The reliable operation of your digital product is ensured by our use of various strategies and procedures.",
+  }
+];
+
+
 
 const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
   
@@ -605,7 +677,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
         {(img || h1 || p1) && (
           <div className="flex flex-col md:flex-row md:space-x-8 mb-12">
             {img && (
-              <div className="flex-1 rounded-lg bg-white shadow p-6 flex justify-center items-center mb-6 md:mb-0">
+              <div className="flex-1 rounded-lg bg-white p-6 flex justify-center items-center mb-6 md:mb-0">
                 <img
                   src={img}
                   alt="Mobile Application Market Size"
@@ -615,7 +687,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
             )}
 
             {(h1 || p1) && (
-              <div className="flex-1 rounded-lg bg-white shadow p-6 flex flex-col justify-between">
+              <div className="flex-1 rounded-lg bg-white p-6 flex flex-col justify-between">
                 {h1 && <h3 className="text-2xl font-bold mb-4 text-center md:text-left">{h1}</h3>}
                 {p1 && (
                   <p className="text-gray-700 mb-6 text-center md:text-left">
@@ -637,7 +709,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
         {(img2 || h2) && (
           <div className="flex flex-col md:flex-row md:space-x-8">
             {h2 && (
-              <div className="flex-1 rounded-lg bg-white shadow p-6 mb-6 md:mb-0">
+              <div className="flex-1 rounded-lg bg-white p-6 mb-6 md:mb-0">
                 <h2 className="text-2xl font-bold mb-3 text-center md:text-left">{h2}</h2>
                 <div className="text-gray-700 mb-6 text-center md:text-left">
                   {p2}
@@ -652,7 +724,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
             )}
 
             {img2 && (
-              <div className="flex-1 rounded-lg bg-white shadow p-6 flex justify-center items-center">
+              <div className="flex-1 rounded-lg bg-white p-6 flex justify-center items-center">
                 <img
                   src={img2}
                   alt="Global Smartphone Users 2020-2025"
@@ -1659,7 +1731,101 @@ const contentMap = {
     </>
   ),
 
-  "typescript development": (
+  "typscript development": (
+    <>
+      <HeroSection
+        title="Typescript Development Services in INDIA"
+        description="As a leading full-stack TypeScript development company, we have a decade of experience in TypeScript with frameworks like Angular, React, and Vue.js. Contact us now to get your free quote!"
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={TypeScript}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+       <Charts
+        img={Types1}
+        img2={Types_about}
+        h1="Get Custom TypeScript Development Services"
+        p1="TypeScript is a highly effective programming language that provides Tailored Solutions for Every TypeScript Project on the client or the server. The technology is very dependable, as well as offering Custom TypeScript App Development service with rapid and high levels of predictability. We make the process of developing your FinTech product smooth and pleasurable by using Typescript app development and JavaScript development. By using TypeScript Web App Development scale your Typescript development to the next level. Our Enterprise App Development team can also efficiently rewrite any old code you have. This is true regardless of whether you start from zero or make a pivot along the road."
+        h2="Brief About Typescript Development Services"
+        p2={<>We tailor our interactions with our clients to the specific requirements of their companies. The size and scope of your business will determine which of our engagement models is most suited to meet your needs. 
+          We have assembled a group of highly skilled server-side applications specialists who are at the forefront of their field and possess cutting-edge expertise.</>}
+      />
+      <Quotes
+        title="Get 100% Customizable Typescript Development Services"
+        highlightedText="Scalable, Reliable And Secure Application"
+        paragraphs={[
+          "We are a reliable TypeScript Web Development Company and have assisted several business owners in capitalizing on the scalability and outstanding digital solutions produced using TypeScript. The object-oriented programming characteristic of this programming language is what contributes to the language's modularity. Because of this, our Dedicated TypeScript Developers can construct things in TypeScript that are impossible to create in JavaScript.",
+          "We provide specialized TypeScript development solutions and JavaScript to TypeScript Migration that focus on the needs of businesses. Overall, makes it possible to create scalable apps; it is a valuable tool for substantial development teams and boasts SOLID design principles. Because we have more than seven years of expertise in Typescript development services, you are welcome to Hire TypeScript Developers from our company.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["hire mobile app developers"]}
+      />
+      <TechnologiesSlider />
+      <PremiumServices />
+      <Benefits
+        benifits={TypeScript_benifits}
+        sectionTitle="Benefits of Type Script Development Service"
+        sectionDescription="TypeScript Development Services helps organizations construct contemporary web apps with reliability and scalability"
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={typescriptExpertise}
+        sectionTitle="Expertise In Our Typescript Development Services"
+        sectionDescription="Our typescript development services cater to all your development needs."
+      />
+      <Common />
+    </>
+  ),
+
+  "angular development": (
+    <>
+      <HeroSection
+        title="Typescript Development"
+        description="As a leading mobile app development company with Good Review and High Rating,
+                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
+                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Creating Excellent Mobile Apps for Every Business"
+        highlightedText="Smart and Reliable Apps"
+        paragraphs={[
+          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
+          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["hire mobile app developers"]}
+      />
+      <TechnologiesSlider />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Hiring our Mobile App Development Company"
+        sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+      />
+      <AboutUs />
+      <ImpactCards
+        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        benefitCards={benefitCards}
+        autoInterval={3500}
+      />
+      <SectorsSlider />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Our Expertise in Mobile App Development Services"
+        sectionDescription="We specialize in top mobile app development services for every industry type and size. Our expertise includes:"
+      />
+      <Common />
+    </>
+  ),
+
+  "react development": (
     <>
       <HeroSection
         title="Typescript Development"
