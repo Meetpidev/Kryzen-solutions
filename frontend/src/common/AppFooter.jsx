@@ -6,7 +6,7 @@ import {
     SiInstagram,
     SiYoutube,
 } from "react-icons/si";
-import logo from "./logo.png";
+import logo from "../public/logo.png";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, lazy } from "react";
 import { ChevronDown,Eye,Zap,CheckCircle,Lightbulb,Shield,Users } from "lucide-react";
 import Digital from "../public/about_us_banner.jpg";
-import logo from "./logo2.png";
+import logo from "../public/logo2.png";
 
 const Brands = lazy(() => import("../components/Brands"));
 const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));

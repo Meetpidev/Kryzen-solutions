@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import video1 from "../common/video1.mp4";
-import video2 from "../common/video2.mp4";
+import video1 from "../public/video1.mp4";
+import video2 from "../public/video2.mp4";
 
 export default function Hero() {
   const [currentVideo, setCurrentVideo] = useState(0);

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X, MapPin, Briefcase } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "./logo.png";
+import logo from "../public/logo.png";
 import Schedule from "../public/schedule.jpg";
 import Email from "../public/gmail_new.jpg";
 import Google from "../public/google.webp";
@@ -465,22 +465,26 @@ export default function Header() {
             {/* Desktop-only buttons */}
             <div className="hidden lg:flex items-center ml-auto space-x-4">
               <button
-                className="bg-[#D2497E] hover:bg-cyan-600 text-white px-6 py-2 font-bold rounded-lg transition"
+                className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm hover:from-purple-600 hover:to-pink-600 transition-all duration-200 flex items-center"
                 data-testid="button-lets-talk-ai"
                 style={{ minWidth: 120 }}
                 onMouseEnter={() => setmegaMenu(true)}
                 onMouseLeave={() => setmegaMenu(null)}
               >
+               <span className="mr-2">✨</span>
                 Let's Talk AI
               </button>
               <Link to="/contact-us">
                 <button
 
-                  className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
+                  className="relative bg-[#005D89] text-white px-3 py-2 font-medium text-sm border-white hover:shadow-lg hover:shadow-blue-400/50 transition-shadow duration-300 rounded-sm"
                   data-testid="button-contact-us"
                   style={{ minWidth: 120 }}
                 >
                   Contact Us
+                   <div className="absolute -inset-1 border-2 border-[#00A3D9] pointer-events-none rounded-sm"></div>
+                <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-1 pointer-events-none rounded-sm"></div>
+                <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-2 pointer-events-none rounded-sm"></div>
                 </button>
               </Link>
             </div>
@@ -493,6 +497,8 @@ export default function Header() {
           </div>
         </div>
       </nav>
+
+      
 
       {/* Mobile Menu Overlay */}
       <div
