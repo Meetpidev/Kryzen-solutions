@@ -1499,10 +1499,8 @@ const contentMap = {
   "ai/ml development": (
     <>
       <HeroSection
-        title="Ai & ML Development"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="Artificial Intelligence Development Company"
+        description="Build intelligent solutions with machine learning, vision, and NLP that automate decisions, uncover insights, and accelerate innovation across your business."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
@@ -1511,14 +1509,14 @@ const contentMap = {
       <LogoCarousel />
       <Charts />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="AI solutions that deliver measurable impact"
+        highlightedText="From strategy to production AI"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We design AI roadmaps, select the right models, and build secure pipelines so you can move from proof of concept to real business outcomes.",
+          "Our team ships ML services for prediction, personalization, and automation with MLOps, monitoring, and ongoing model improvement.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["MLOps", "personalization"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1546,10 +1544,8 @@ const contentMap = {
   "chatboat development": (
     <>
       <HeroSection
-        title="Chatboat Development"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="AI Chatbot Development Company"
+        description="Launch intelligent chat and voice bots that understand context, automate support, and boost conversions across web, mobile, and messaging."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
@@ -1558,14 +1554,14 @@ const contentMap = {
       <LogoCarousel />
       <Charts />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="Conversational AI that feels human"
+        highlightedText="Smarter support and guided sales"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We build chatbots with NLP, retrieval, and integrations to answer questions, resolve tickets, and collect leads 24/7.",
+          "Custom flows and analytics help you deflect routine queries, speed up response times, and personalize every interaction.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["NLP", "24/7"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1593,10 +1589,8 @@ const contentMap = {
   "data analysis": (
     <>
       <HeroSection
-        title="Data Analytics"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="Data Analytics Services Provider"
+        description="Turn raw data into clear dashboards and actionable insights so teams can move faster with confidence."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
@@ -1605,14 +1599,14 @@ const contentMap = {
       <LogoCarousel />
       <Charts />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="From data to decisions"
+        highlightedText="BI, reporting, and predictive analytics"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We consolidate sources, model your data, and ship trusted metrics so stakeholders can self-serve answers.",
+          "Advanced analytics and forecasting reveal trends, risks, and opportunities to guide strategy.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["forecasting", "self-serve"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1640,10 +1634,8 @@ const contentMap = {
   "data migration": (
     <>
       <HeroSection
-        title="Data Migration"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="Data Migration Services"
+        description="Move data between systems and clouds safely with validation, minimal downtime, and full auditability."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
@@ -1652,14 +1644,14 @@ const contentMap = {
       <LogoCarousel />
       <Charts />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="Reliable migrations without surprises"
+        highlightedText="Plan, test, validate, cutover"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We map sources and targets, reconcile schemas, and run dry runs to de-risk your migration.",
+          "Automated checks, rollbacks, and monitoring ensure integrity and confidence at every step.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["rollbacks", "integrity"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1687,10 +1679,8 @@ const contentMap = {
   "business analysis": (
     <>
       <HeroSection
-        title="Business Analytics"
-        description="As a leading mobile app development company with Good Review and High Rating,
-                             we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
-                             that surpasses your expectations and makes you an industry leader. Contact us now!"
+        title="Business Intelligence Company"
+        description="Define KPIs, model your data, and create interactive dashboards that turn complex operations into clear, trackable outcomes."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={MobileApp}
@@ -1699,14 +1689,14 @@ const contentMap = {
       <LogoCarousel />
       <Charts />
       <Quotes
-        title="Creating Excellent Mobile Apps for Every Business"
-        highlightedText="Smart and Reliable Apps"
+        title="Analytics that everyone can use"
+        highlightedText="Executive views to team-level reporting"
         paragraphs={[
-          "Discover the potential of entirely customizable mobile app development services with reliable mobile app development company. Custom mobile apps for your company and needs are our speciality. We concentrate on flexibility and scalability to guarantee your app matches your brand identity and user expectations. As a custom mobile app development company, we collaborate with you to understand your vision and create a unique mobile app that stands out in the app market, from user interface design to backend functions. With our advanced Mobile app builder, you can turn ideas into powerful digital solutions efficiently while reducing development time and cost.",
-          "Innovation and cooperation drive our development approach, with frequent feedback loops to adapt your app to your requirements and market trends. You can hire mobile app developers to design consumer-facing apps, corporate solutions, and more. From concept and prototyping to development, testing, and deployment, our rigorous development process ensures your app exceeds expectations. When considering the development of a mobile app, understanding the mobile app development cost is essential. Costs vary depending on factors such as app complexity, platform (iOS vs. Android), and features. As a Mobile App Design Agency, our high-quality, scalable, and feature-rich mobile solutions help your business thrive in today’s competitive digital market.",
+          "We connect your tools, standardize metrics, and ship dashboards that answer the questions teams ask every day.",
+          "Drilldowns, alerts, and storytelling help leaders spot trends early and act with confidence.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["dashboards", "alerts"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1734,8 +1724,8 @@ const contentMap = {
   "typscript development": (
     <>
       <HeroSection
-        title="Typescript Development Services in INDIA"
-        description="As a leading full-stack TypeScript development company, we have a decade of experience in TypeScript with frameworks like Angular, React, and Vue.js. Contact us now to get your free quote!"
+        title="TypeScript Development Services"
+        description="Ship maintainable web apps faster with strong typing, modern tooling, and frameworks like React, Angular, and Vue."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={TypeScript}
@@ -1752,14 +1742,14 @@ const contentMap = {
           We have assembled a group of highly skilled server-side applications specialists who are at the forefront of their field and possess cutting-edge expertise.</>}
       />
       <Quotes
-        title="Get 100% Customizable Typescript Development Services"
-        highlightedText="Scalable, Reliable And Secure Application"
+        title="Type-safe code, fewer bugs"
+        highlightedText="Better DX and reliable releases"
         paragraphs={[
-          "We are a reliable TypeScript Web Development Company and have assisted several business owners in capitalizing on the scalability and outstanding digital solutions produced using TypeScript. The object-oriented programming characteristic of this programming language is what contributes to the language's modularity. Because of this, our Dedicated TypeScript Developers can construct things in TypeScript that are impossible to create in JavaScript.",
-          "We provide specialized TypeScript development solutions and JavaScript to TypeScript Migration that focus on the needs of businesses. Overall, makes it possible to create scalable apps; it is a valuable tool for substantial development teams and boasts SOLID design principles. Because we have more than seven years of expertise in Typescript development services, you are welcome to Hire TypeScript Developers from our company.",
+          "We add types, refactor to modern patterns, and improve build pipelines for speed and quality.",
+          "Migrations from JavaScript to TypeScript include strict mode, shared types, and test coverage.",
         ]}
         emphasizeTextIndex={[1]}
-        emphasizePhrases={["hire mobile app developers"]}
+        emphasizePhrases={["strict mode", "refactor"]}
       />
       <TechnologiesSlider />
       <PremiumServices />
@@ -1781,7 +1771,7 @@ const contentMap = {
   "angular development": (
     <>
       <HeroSection
-        title="Typescript Development"
+        title="Angular Development"
         description="As a leading mobile app development company with Good Review and High Rating,
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
@@ -1828,7 +1818,7 @@ const contentMap = {
   "react development": (
     <>
       <HeroSection
-        title="Typescript Development"
+        title="React Development"
         description="As a leading mobile app development company with Good Review and High Rating,
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
@@ -1871,6 +1861,538 @@ const contentMap = {
       <Common />
     </>
   ),
+
+  "product development": (
+    <>
+      <HeroSection
+        title="Product Development"
+        description="We help you plan, design, build, and scale products with predictable delivery and strong ROI."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="End-to-End Product Engineering"
+        highlightedText="Discovery to Launch and Beyond"
+        paragraphs={[
+          "From discovery and prototyping to iterative delivery, QA, and DevOps, our team partners with you to build market-ready products that delight users and scale reliably.",
+          "We embed feedback loops, analytics, and A/B testing to continuously refine the product, reduce risk, and accelerate time-to-value.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["reduce risk", "accelerate time-to-value"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Product Development with Us"
+        sectionDescription="Outcome-focused execution, predictable delivery, and scalable architecture."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Our Product Engineering Expertise"
+        sectionDescription="We specialize across mobile, web, backend, cloud, and data."
+      />
+      <Common />
+    </>
+  ),
+
+  "software development": (
+    <>
+      <HeroSection
+        title="Software Development"
+        description="Custom software solutions tailored to your workflows, users, and growth plans."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Reliable, Maintainable, and Secure Software"
+        highlightedText="Built for Scale and Longevity"
+        paragraphs={[
+          "We design modular architectures with strong testing, CI/CD, and observability to keep your software fast, secure, and easy to evolve.",
+          "Our agile approach and transparent communication ensure predictable delivery and measurable business impact.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["predictable delivery", "measurable impact"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Why Choose Our Software Development"
+        sectionDescription="Scalable code, robust QA, and thoughtful UX for high adoption."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Technology Expertise"
+        sectionDescription="Frontend, backend, cloud-native, and data engineering skills in one team."
+      />
+      <Common />
+    </>
+  ),
+
+  "application services": (
+    <>
+      <HeroSection
+        title="Application Services"
+        description="Modernize, maintain, and optimize applications to reduce costs and improve reliability."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Modernization and Managed Services"
+        highlightedText="Enhance Performance and Stability"
+        paragraphs={[
+          "We upgrade legacy stacks, migrate to cloud-native platforms, and improve resilience with monitoring and alerting.",
+          "Our managed services cover incident response, performance tuning, and continuous improvement.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["cloud-native", "continuous improvement"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Application Services"
+        sectionDescription="Lower TCO, improved uptime, and faster change delivery."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Capabilities"
+        sectionDescription="Refactoring, replatforming, SRE, and DevOps automation."
+      />
+      <Common />
+    </>
+  ),
+
+  "startup consulting": (
+    <>
+      <HeroSection
+        title="Startup Consulting Services"
+        description="Validate your idea, scope an MVP, and craft a go-to-market plan that wins early users and investor trust."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Move from idea to traction"
+        highlightedText="Prototype, validate, iterate"
+        paragraphs={[
+          "Workshops, prototypes, and user testing help you prove demand before you scale.",
+          "We align product, engineering, and fundraising milestones so you can launch with clarity.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["user testing", "milestones"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits for Startups"
+        sectionDescription="Clarity, speed to market, and investor-ready documentation."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="What We Bring"
+        sectionDescription="Product strategy, UX, engineering, analytics, and GTM support."
+      />
+      <Common />
+    </>
+  ),
+
+  "crm": (
+    <>
+      <HeroSection
+        title="CRM"
+        description="Design and implement CRM solutions that unify data and boost conversions."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Data-Driven Customer Journeys"
+        highlightedText="Personalization and Automation"
+        paragraphs={[
+          "We integrate CRMs with marketing, support, and billing to create a single customer view.",
+          "Automation and analytics improve pipeline visibility and customer lifetime value.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["automation", "lifetime value"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of CRM"
+        sectionDescription="Higher conversion rates and better retention via insights and workflows."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="CRM Expertise"
+        sectionDescription="Custom integrations, dashboards, and workflow automation."
+      />
+      <Common />
+    </>
+  ),
+
+  "web application": (
+    <>
+      <HeroSection
+        title="Web Application"
+        description="Responsive, secure, and fast web apps tailored to your business goals."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Modern Web Engineering"
+        highlightedText="Performance and Accessibility"
+        paragraphs={[
+          "We build accessible, SEO-friendly web apps with modern tooling, strong testing, and observability.",
+          "Our architectures support scale, localization, and progressive enhancement.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["accessibility", "SEO-friendly"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Modern Web Apps"
+        sectionDescription="Better UX, faster load times, and improved conversion."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Web Expertise"
+        sectionDescription="SPAs, SSR, PWAs, and headless CMS integrations."
+      />
+      <Common />
+    </>
+  ),
+
+  "app development consulting": (
+    <>
+      <HeroSection
+        title="App Development Consulting"
+        description="Architecture reviews, audits, and roadmaps to unblock delivery and scale."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Expert Guidance, Practical Outcomes"
+        highlightedText="Actionable, Prioritized Plans"
+        paragraphs={[
+          "We assess code quality, infrastructure, and processes to recommend focused improvements.",
+          "Engagements include quick wins, risk mitigation, and measurable milestones.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["quick wins", "risk mitigation"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Consulting Benefits"
+        sectionDescription="Clarity, speed, and reduced technical debt."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Consulting Expertise"
+        sectionDescription="Architecture, DevOps, performance, and security."
+      />
+      <Common />
+    </>
+  ),
+
+  "business application consulting": (
+    <>
+      <HeroSection
+        title="Business Application Consulting"
+        description="Optimize processes and systems to improve efficiency and visibility."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Process and Platform Alignment"
+        highlightedText="From Audit to Execution"
+        paragraphs={[
+          "We map workflows, remove bottlenecks, and align technology with business goals.",
+          "Deliverables include implementation plans, KPIs, and change management support.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["bottlenecks", "change management"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits"
+        sectionDescription="Streamlined operations and better decision-making."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Domains"
+        sectionDescription="ERP, CRM, finance, HR, and data integrations."
+      />
+      <Common />
+    </>
+  ),
+
+  "full stack development": (
+    <>
+      <HeroSection
+        title="Full Stack Development"
+        description="End-to-end engineering across frontend, backend, databases, and cloud."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="One Team, Full Lifecycle"
+        highlightedText="From UI to Infrastructure"
+        paragraphs={[
+          "We deliver cohesive solutions with shared context across the stack, reducing handoffs and delays.",
+          "Our practices include code reviews, automation, and observability for long-term reliability.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["automation", "observability"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Full Stack"
+        sectionDescription="Faster delivery, fewer dependencies, and consistent quality."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Stack Expertise"
+        sectionDescription="React, Angular, Node, Python, Django, cloud-native, and more."
+      />
+      <Common />
+    </>
+  ),
+
+  "ui/ux designing": (
+    <>
+      <HeroSection
+        title="UI/UX Design"
+        description="Create accessible, consistent experiences with research-driven UX and scalable design systems."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Design that drives outcomes"
+        highlightedText="From research to design systems"
+        paragraphs={[
+          "We interview users, map journeys, and prototype flows to reduce friction and improve task success.",
+          "Design systems and component libraries speed delivery while keeping the product cohesive.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["journeys", "component libraries"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Great UX"
+        sectionDescription="Higher engagement, conversions, and retention."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="UX Capabilities"
+        sectionDescription="Research, IA, prototyping, testing, and design systems."
+      />
+      <Common />
+    </>
+  ),
+
+  "digital marketing": (
+    <>
+      <HeroSection
+        title="Top Digital Marketing Services in USA"
+        description="Grow traffic and revenue with SEO, paid media, and content strategies tied to clear KPIs."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Performance marketing without the guesswork"
+        highlightedText="Full-funnel strategy and reporting"
+        paragraphs={[
+          "We combine technical SEO, SEM, and CRO to attract qualified visitors and convert them efficiently.",
+          "Dashboards and experiments make progress visible and campaigns continually better.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["CRO", "experiments"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Marketing Benefits"
+        sectionDescription="More qualified leads and better ROI from campaigns."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Channels"
+        sectionDescription="SEO, SEM, social, email, and analytics."
+      />
+      <Common />
+    </>
+  ),
+
+  "mobile application development": (
+    <>
+      <HeroSection
+        title="Mobile Application Development"
+        description="Design and build mobile apps that users love and businesses trust."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="High-Quality Mobile Experiences"
+        highlightedText="Performance, Security, and UX"
+        paragraphs={[
+          "We deliver native and cross-platform apps with seamless UX and robust performance.",
+          "Our tooling and processes reduce time-to-market and improve reliability.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["native", "cross-platform"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Our Mobile Apps"
+        sectionDescription="Scalable, secure, and easy to maintain applications."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Mobile Expertise"
+        sectionDescription="iOS, Android, Flutter, React Native, and more."
+      />
+      <Common />
+    </>
+  ),
+
+  "it consulting": (
+    <>
+      <HeroSection
+        title="IT Consulting Services"
+        description="Align technology with business goals through architecture reviews, security hardening, and cloud strategy."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="Practical guidance, real results"
+        highlightedText="Assess, prioritize, execute"
+        paragraphs={[
+          "We evaluate your stack and processes, then outline a prioritized plan to reduce risk and increase velocity.",
+          "Engagements cover cloud, data, security, and DevOps with measurable milestones and ownership.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["DevOps", "prioritized plan"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of IT Consulting"
+        sectionDescription="Reduced risk, better performance, and faster delivery cycles."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Consulting Expertise"
+        sectionDescription="Architecture, security, cloud, DevOps, and data engineering."
+      />
+      <Common />
+    </>
+  ),
+
+  "app development": (
+    <>
+      <HeroSection
+        title="App Development"
+        description="Plan and build high-quality apps with the right tech and process."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={MobileApp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts />
+      <Quotes
+        title="From Plan to Production"
+        highlightedText="Design, Build, Launch"
+        paragraphs={[
+          "We guide you through architecture, UX, and implementation choices to ship faster with confidence.",
+          "Delivery includes CI/CD, testing strategy, and observability to ensure long-term reliability.",
+        ]}
+        emphasizeTextIndex={[1]}
+        emphasizePhrases={["CI/CD", "observability"]}
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={benefits}
+        sectionTitle="Benefits of Our App Development"
+        sectionDescription="Predictable delivery, maintainable code, and great user experience."
+      />
+      <AboutUs />
+      <ExpertiseSlider
+        expertiseCards={expertiseCards}
+        sectionTitle="Capabilities"
+        sectionDescription="Mobile, web, backend, cloud, and data in one team."
+      />
+      <Common />
+    </>
+  ),
 };
 
 function SubMenuContent({ subItemName }) {
@@ -1886,15 +2408,17 @@ function SubMenuContent({ subItemName }) {
 export default function SubMenuPage() {
   const { service, subItem } = useParams();
 
-  const serviceEntry = services.find(
-    s => s.label.toLowerCase().replace(/\s+/g, "-") === service
-  );
+  const toSlug = (text) =>
+    (text || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
-  const normalizedSubItem = subItem?.toLowerCase().replace(/-/g, " ");
+  const serviceEntry = services.find((s) => toSlug(s.label) === toSlug(service));
 
-  const subItemName = serviceEntry?.sub.find(
-    sub => sub.toLowerCase() === normalizedSubItem
-  );
+  const subItemSlug = toSlug(subItem);
+
+  const subItemName = serviceEntry?.sub.find((sub) => toSlug(sub) === subItemSlug);
 
   if (!serviceEntry) {
     return <div className="p-10 text-center">Service not found</div>;

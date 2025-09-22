@@ -12,6 +12,7 @@ import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";
 import India from "../public/india_iamge.png";
 import Email from "../public/icon_email_blue.jpg";
+import MadeinIndia from "../public/Make_in_india-removebg-preview.png";
 
 
 function ContactCard({ title, email, phones }) {
@@ -164,11 +165,21 @@ export default function AppFooter() {
                                 <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
                                     <ReviewBadge
                                         platform="Google"
-                                        icon={<div className="flex">
-                                            <img src={Left} alt="Left" className="pr-4" />
-                                            <img src={Google} alt="Google" />
-                                            <img src={Right} alt="Right" className="pl-3" />
-                                        </div>}
+                                        icon={
+                                            <>
+                                                <div className="flex items-center gap-4">
+                                                    <div className="flex items-center gap-4 flex-shrink-0">
+                                                        <img src={Left} alt="Left" className="pr-1" />
+                                                        <img src={Google} alt="Google" />
+                                                        <img src={Right} alt="Right" className="pl-1" />
+                                                    </div>
+                                                    <div className="flex items-center flex-shrink-1">
+                                                        <img src={MadeinIndia} alt="Made In India" className="max-h-12 md:max-h-36 object-contain" />
+                                                    </div>
+                                                </div>
+
+                                            </>
+                                        }
                                         reviewCount="50+ REVIEWS"
                                     />
                                 </div>

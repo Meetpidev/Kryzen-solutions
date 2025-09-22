@@ -131,6 +131,7 @@ export default function Header() {
 
   return (
     <div className="relative">
+
       <div
         className={`contact-bar-transition bg-contact-bg text-black px-4 py-2 text-sm overflow-hidden fixed top-0 left-0 right-0 z-40
     ${isScrolled ? "hidden" : ""} hidden md:flex`}
@@ -612,10 +613,8 @@ export default function Header() {
     </Link>
   </div>
 </nav>
-
-
+        
       </div>
-
       {isMobile && (
         <div
           className="fixed inset-0 bg-white bg-opacity-50 z-40 lg:hidden"

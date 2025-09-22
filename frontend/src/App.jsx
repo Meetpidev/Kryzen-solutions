@@ -15,8 +15,8 @@ const InsightFulVideos = lazy(() => import("./pages/InsightFulVideos.jsx"));
 const Privacy = lazy(() => import("./pages/Privacy.jsx"));
 const Terms = lazy(() => import("./pages/Terms.jsx"));
 const Protect = lazy(() => import("./common/Protect.jsx"));
-import "./App.css";
 import Right_Nav from "./common/Right_Nav.jsx";
+import "./App.css";
 
 function App() {
   const { pathname } = useLocation();
