@@ -15,12 +15,14 @@ import CaseStudySlider from "../components/CaseStudySlider.jsx";
 import TestimonialSlider from "../components/TestimonialSlider.jsx";
 import BlogCards from "../components/BlogCards.jsx";
 import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos.jsx";
+import DigitalTransformationPopup from "../components/DigitalTransformationPopup.jsx";
 
 function Home() {
   return (
     <div>
       <Hero />
       <LogoCarousel />
+      <DigitalTransformationPopup />
       <AboutUs />
       <Brands />
       <Services />

@@ -76,11 +76,11 @@ function OfficeCard({ country, flag, address, highlight }) {
     );
 }
 
-function ReviewBadge({ platform, icon, reviewCount }) {
+function ReviewBadge({ icon, reviewCount }) {
     return (
-        <div className="items-center gap-2  px-3 py-2 ">
+        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 px-3 py-2 text-center sm:text-left">
             {icon}
-            <div className="translate-x-12">
+            <div className="sm:ml-2">
                 <p className="text-[1.125rem] text-gray-600 font-bold">{reviewCount}</p>
             </div>
         </div>
@@ -173,8 +173,8 @@ export default function AppFooter() {
                                                         <img src={Google} alt="Google" />
                                                         <img src={Right} alt="Right" className="pl-1" />
                                                     </div>
-                                                    <div className="flex items-center flex-shrink-1">
-                                                        <img src={MadeinIndia} alt="Made In India" className="max-h-12 md:max-h-36 object-contain" />
+                                                    <div className="flex items-center justify-center flex-shrink-0">
+                                                        <img src={MadeinIndia} alt="Made In India" className="h-8 sm:h-10 md:h-20 object-contain" />
                                                     </div>
                                                 </div>
 
