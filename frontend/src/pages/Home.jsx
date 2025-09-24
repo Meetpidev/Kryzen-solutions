@@ -10,12 +10,11 @@ import EngagementModels from "../components/EngagementModels.jsx";
 import TechnologiesTabs from "../components/TechnologiesTabs.jsx";
 import PremiumServices from "../components/PremiumServices.jsx";
 import SuccessMatrix from "../components/SuccessMatrix.jsx";
-import InnovativeSlider from "../components/InnovativeSlider.jsx"
-import CaseStudySlider from "../components/CaseStudySlider.jsx";
 import TestimonialSlider from "../components/TestimonialSlider.jsx";
 import BlogCards from "../components/BlogCards.jsx";
 import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos.jsx";
 import DigitalTransformationPopup from "../components/DigitalTransformationPopup.jsx";
+import ClientReview from "../components/ClientReview.jsx";
 
 function Home() {
   return (
@@ -33,8 +32,7 @@ function Home() {
       <TechnologiesTabs />
       <PremiumServices />
       <SuccessMatrix />
-      <CaseStudySlider />
-      <TestimonialSlider />
+      <ClientReview />
       <BlogCards />
       <CTAWorkTogether />
       <CTASubscribe />

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import video1 from "../public/video1.mp4";
 import video2 from "../public/video2.mp4";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [currentVideo, setCurrentVideo] = useState(0);
@@ -80,9 +81,9 @@ export default function Hero() {
             </li>
           </ul>
 
-          <button className="mt-1 mb-8 px-6 py-3 w-full sm:w-auto text-base sm:text-lg font-semibold rounded-lg bg-cyan-600 hover:bg-purple-600 text-white shadow-lg transition-colors text-left">
+          <Link to="/contact-us" className="mt-1 mb-8 px-6 py-3 w-full sm:w-auto text-base sm:text-lg font-semibold rounded-lg bg-cyan-600 hover:bg-purple-600 text-white shadow-lg transition-colors text-left">
             Let’s Talk
-          </button>
+          </Link>
         </div>
 
         <div className="md:absolute md:bottom-14 md:right-6 lg:right-16 xl:right-24 md:text-right max-w-xs sm:max-w-sm whitespace-nowrap px-4 sm:px-6 mt-auto pb-10 md:pb-0">

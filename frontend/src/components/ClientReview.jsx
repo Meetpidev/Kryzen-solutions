@@ -2,50 +2,109 @@ import { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    name: "aa",
-    location: "London, United Kingdom",
-    avatar: "av",
+    name: "Sandip Shah, HOD",
+    location: "Raghuvir School of Science",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
     platform: "Clutch",
     text:
-      "While the project is ongoing, the results thus far have met the expectations of the internal team. Sapphire Software Solutions has been prepared to accommodate requests and changes in the project development. They've been prompt, clever, and collaborative throughout the workflow.",
+      "Kryzen Software Solutions has delivered outstanding services with complete professionalism and expertise. Their solutions have added great value to our institution by streamlining processes and enhancing efficiency. We highly recommend their services for their dedication, reliability, and timely support.",
   },
   {
-    name: "ss",
-    location: "Kenya",
-    avatar: "av",
+    name: "Hemant Joshi, Founder",
+    location: "Everneu Skin’s Wellness",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
     platform: "Clutch",
     text:
-      "The product was delivered within budget and timeframe. Sapphire Software Solutions was able to work around the client's budget limitations. Their team provided excellent customer service and greater product development.",
+      "Kryzen Software Solutions has provided us with an exceptional E-commerce platform and innovative digital solutions that perfectly support our business goals. Their professionalism, technical expertise, and commitment to delivering on time have greatly enhanced our online presence and customer experience. We truly value their partnership and highly recommend their services.",
   },
   {
-    name: "dd.",
-    location: "Georgia",
-    avatar: "av",
+    name: "Hemant Joshi, Co-Founder",
+    location: "Shiv Wellness",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
     platform: "Clutch",
     text:
-      "The team continues to exhibit development and collaborative skills that allow them to create end products that exceed their client's expectations. They exert ample time and energy to make sure that they provide high-quality service within a reliable timeframe.",
+      "Kryzen Software Solutions has been instrumental in providing us with a robust digital platform tailored to our needs. Their expertise in delivering seamless solutions and their professional approach have significantly strengthened our brand’s digital presence. We appreciate their dedication, timely support, and innovative ideas.",
   },
   {
-    name: "ff",
-    location: "Georgia",
-    avatar: "av",
+    name: "Katha Developers",
+    location: "Katha Developers (Real Estate)",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
     platform: "Clutch",
     text:
-      "The team continues to exhibit development and collaborative skills that allow them to create end products that exceed their client's expectations. They exert ample time and energy to make sure that they provide high-quality service within a reliable timeframe.",
+      "Kryzen Software Solutions has provided us with exceptional digital marketing, website development, and consulting services tailored to the real estate industry. Their professional approach, innovative strategies, and reliable execution have helped us strengthen our brand presence and engage effectively with our clients. We truly value their expertise and commitment to excellence.",
   },
   {
-    name: "gg",
-    location: "Georgia",
-    avatar: "av",
+    name: "Riverdale Real Estate",
+    location: "Riverdale Real Estate",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
     platform: "Clutch",
     text:
-      "The team continues to exhibit development and collaborative skills that allow them to create end products that exceed their client's expectations. They exert ample time and energy to make sure that they provide high-quality service within a reliable timeframe.",
+      "Kryzen Software Solutions has been a valuable partner in enhancing our marketing strategies through effective digital marketing and consulting services. Their expertise has helped us reach the right clients, improve engagement, and strengthen our brand presence in the competitive real estate market. We truly appreciate their professionalism and results-driven approach",
   },
+    {
+    name: "Sales Manager",
+    location: "Petpooja",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions has been an excellent technology partner, providing us with reliable digital solutions and continuous support. Their professional approach and commitment to delivering quality have streamlined our processes and helped us serve our clients more efficiently. We truly appreciate their expertise and dedication.",
+  },
+
+      {
+    name: "Shiv Shakti Travels",
+    location: "Shiv Shakti Travels",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions has developed an excellent website for our business and provided impactful digital marketing services that have helped us reach a wider audience. Their professionalism, creativity, and timely execution have greatly enhanced our online presence and strengthened our brand visibility. We truly value their expertise and dedication.",
+  },
+
+        {
+    name: "Infosoft",
+    location: "Infosoft",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions has provided us with exceptional consulting services that have significantly improved our performance and efficiency. Their expertise, strategic approach, and commitment to delivering quality solutions have made a real difference for our business. We highly value their professionalism and reliable support.",
+  },
+
+          {
+    name: "TransStadia University",
+    location: "TransStadia University",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions delivered an outstanding AI-based animation video for our School of Computer Science. Their creativity, technical expertise, and professional execution brought our vision to life in a highly engaging and impactful way. We truly appreciate their dedication and innovative approach, which added great value to our academic initiatives.",
+  },
+
+            {
+    name: "Principal Government Arts College",
+    location: "Government Arts College",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions has been an excellent technology partner for our institution. Their consulting services, digital solutions, and consistent website maintenance have greatly improved our online presence and operational efficiency. We truly value their professionalism, expertise, and timely support.",
+  },
+              {
+    name: "HOD & Dean School of Engineering, Indrashil Universit",
+    location: "Indrashil University (School of Engineering)",
+    avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
+    rating: 5,
+    platform: "Clutch",
+    text:
+      "Kryzen Software Solutions has provided exceptional support in maintaining and redesigning our website with new features and digital solutions. Their professionalism, technical expertise, and innovative approach have enhanced our online presence and improved the overall digital experience for our students and faculty. We greatly appreciate their dedication and reliable service",
+  },
+
 
 ];
 

@@ -3,6 +3,7 @@ import FixPrice from "../public/ic_fixed_price.png";
 import FullTime from "../public/ic_full_time.png";
 import Time from "../public/ic_time_material.png";
 import Buckets from "../public/bucketapproch.png";
+import { Link } from "react-router-dom";
 
 const models = [
   {
@@ -94,9 +95,9 @@ export default function EngagementModels() {
           </button>
         </div>
           <div className="flex justify-center mt-10 w-full max-w-screen-lg">
-        <button className="bg-white text-[#07688c] font-semibold text-lg px-8 py-3 rounded shadow hover:bg-gray-100 transition">
+        <Link to="/contact-us" className="cursor-pointer bg-white text-[#07688c] font-semibold text-lg px-8 py-3 rounded shadow hover:bg-gray-100 transition">
           Get In Touch
-        </button>
+        </Link>
       </div>
       </div>
     );
@@ -123,9 +124,9 @@ export default function EngagementModels() {
         ))}
       </div>
       <div className="flex justify-center mt-10 w-full max-w-screen-lg">
-        <button className="bg-white text-[#07688c] font-semibold text-lg px-8 py-3 rounded shadow hover:bg-gray-100 transition">
+        <Link to="/contact-us" className="cursor-pointer bg-white text-[#07688c] font-semibold text-lg px-8 py-3 rounded shadow hover:bg-gray-100 transition">
           Get In Touch
-        </button>
+        </Link>
       </div>
     </div>
   );

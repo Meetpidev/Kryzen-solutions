@@ -18,6 +18,32 @@ const cards = [
   { image: Img_2, stat: "20+", desc: "Google Reviews" },
 ];
 
+function AnimatedCounter({ target }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const end = parseInt(target.replace(/\D/g, ""));
+    if (isNaN(end)) return;
+   
+    const duration = 1000; 
+    const frameDuration = 5; 
+    const totalFrames = Math.round(duration / frameDuration);
+    const increment = end / totalFrames;
+
+    let frame = 0;
+    const counter = setInterval(() => {
+      frame++;
+      const currentCount = Math.min(Math.round(increment * frame), end);
+      setCount(currentCount);
+      if (frame === totalFrames) clearInterval(counter);
+    }, frameDuration);
+
+    return () => clearInterval(counter);
+  }, [target]);
+
+  return <>{count}{target.replace(/\d/g, "")}</>;
+}
+
 export default function AboutUs() {
   const [current, setCurrent] = useState(0);
   const intervalRef = useRef();
@@ -35,13 +61,17 @@ export default function AboutUs() {
   return (
     <div className="bg-[#1668a7] py-11 px-2 min-h-[60vh]">
       <h2 className="text-white text-3xl font-bold text-center mb-4 md:text-4xl">About Us</h2>
-      <p className="text-white text-center mb-8 text-1xl md:text-2xl">Kryzen delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success</p>
+      <p className="text-white text-center mb-8 text-1xl md:text-2xl">
+        Kryzen delivers cutting-edge digital solutions that drive our clients to achieve unparalleled success
+      </p>
       {/* small/medium screens: carousel */}
       <div className="block lg:hidden">
         <div className="w-full max-w-xs mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
             <img src={cards[current].image} className="mb-4 w-44 h-44 object-cover rounded" alt="Icnos" />
-            <div className="text-4xl font-bold text-blue-600">{cards[current].stat}</div>
+            <div className="text-4xl font-bold text-blue-600">
+              <AnimatedCounter target={cards[current].stat} />
+            </div>
             <div className="text-lg text-gray-700">{cards[current].desc}</div>
           </div>
         </div>
@@ -52,7 +82,7 @@ export default function AboutUs() {
       </div>
       {/* large screens: grid */}
       <div className="hidden lg:grid grid-cols-4 gap-x-8 gap-y-6 px-58">
-        {cards.map((card,index) => (
+        {cards.map((card, index) => (
           <div key={index} className="bg-white rounded-xl shadow-lg p-4 flex items-center gap-4 w-[16rem]">
             <img
               src={card.image}
@@ -60,7 +90,9 @@ export default function AboutUs() {
               alt="Icnos"
             />
             <div className="flex flex-col">
-              <div className="text-3xl font-bold text-blue-600">{card.stat}</div>
+              <div className="text-3xl font-bold text-blue-600">
+                <AnimatedCounter target={card.stat} />
+              </div>
               <div className="text-base text-gray-700">{card.desc}</div>
             </div>
           </div>

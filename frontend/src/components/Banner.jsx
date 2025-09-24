@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Banner() {
   const words = ["Great", "Greate", "Big", "New"];
@@ -31,9 +32,9 @@ function Banner() {
         <p className="text-white text-base md:text-lg mb-8 max-w-3xl mx-auto">
           Book a meeting with our specialists today to learn more about how Kryzen Software Solutions can help you unlock technology visions and drive your product strategy.
         </p>
-        <button className="bg-white text-[#078ab5] border-2 border-[#078ab5] rounded-md py-3 px-10 font-semibold text-lg hover:bg-[#078ab5] hover:text-white transition-colors duration-200">
+        <Link to="/contact-us" className=" cursor-pointer bg-white text-[#078ab5] border-2 border-[#078ab5] rounded-md py-3 px-10 font-semibold text-lg hover:text-black transition-colors duration-200">
           Get In Touch
-        </button>
+        </Link>
       </div>
 
       <div className="hidden md:block flex-shrink-0">
