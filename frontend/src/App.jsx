@@ -8,6 +8,7 @@ const Choose = lazy(() => import("./pages/Choose.jsx"));
 const Events = lazy(() => import("./pages/Events.jsx"));
 const CeoMsg = lazy(() => import("./pages/CeoMsg.jsx"));
 const SubMenuPage = lazy(() => import("./pages/SubMenuPage.jsx"));
+  const TechnologyPage = lazy(() => import("./pages/TechnologyPage.jsx"));
 const Footer = lazy(() => import("./common/Footer.jsx"));
 const AppFooter = lazy(() => import("./common/AppFooter.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
@@ -15,7 +16,7 @@ const InsightFulVideos = lazy(() => import("./pages/InsightFulVideos.jsx"));
 const Privacy = lazy(() => import("./pages/Privacy.jsx"));
 const Terms = lazy(() => import("./pages/Terms.jsx"));
 const Protect = lazy(() => import("./common/Protect.jsx"));
-import Right_Nav from "./common/Right_Nav.jsx";
+const Right_Nav = lazy(() => import("./common/Right_Nav.jsx"));
 import "./App.css";
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/insightful-videos" element={<InsightFulVideos />} />
           <Route path="/service/:service/:subItem" element={<SubMenuPage />} />
+          <Route path="/technology/:tech" element={<TechnologyPage />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/term-of-use" element={<Terms />} />
         </Routes>

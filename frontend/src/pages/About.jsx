@@ -4,7 +4,7 @@ import Digital from "../public/about_us_banner.jpg";
 import logo from "../public/logo2.png";
 
 const Brands = lazy(() => import("../components/Brands"));
-const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));
+const ClientReview = lazy(() => import("../components/ClientReview"));
 const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 
@@ -281,7 +281,7 @@ export default function About() {
         </div>
       </section>
       <Brands />
-      <TestimonialSlider />
+      <ClientReview />
       <CTAWorkTogether />
       <CTASubscribe />
     </div>

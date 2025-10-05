@@ -6,7 +6,7 @@ const testimonials = [
     location: "Raghuvir School of Science",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has delivered outstanding services with complete professionalism and expertise. Their solutions have added great value to our institution by streamlining processes and enhancing efficiency. We highly recommend their services for their dedication, reliability, and timely support.",
   },
@@ -15,7 +15,7 @@ const testimonials = [
     location: "Everneu Skin’s Wellness",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has provided us with an exceptional E-commerce platform and innovative digital solutions that perfectly support our business goals. Their professionalism, technical expertise, and commitment to delivering on time have greatly enhanced our online presence and customer experience. We truly value their partnership and highly recommend their services.",
   },
@@ -24,7 +24,7 @@ const testimonials = [
     location: "Shiv Wellness",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has been instrumental in providing us with a robust digital platform tailored to our needs. Their expertise in delivering seamless solutions and their professional approach have significantly strengthened our brand’s digital presence. We appreciate their dedication, timely support, and innovative ideas.",
   },
@@ -33,7 +33,7 @@ const testimonials = [
     location: "Katha Developers (Real Estate)",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has provided us with exceptional digital marketing, website development, and consulting services tailored to the real estate industry. Their professional approach, innovative strategies, and reliable execution have helped us strengthen our brand presence and engage effectively with our clients. We truly value their expertise and commitment to excellence.",
   },
@@ -42,7 +42,7 @@ const testimonials = [
     location: "Riverdale Real Estate",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has been a valuable partner in enhancing our marketing strategies through effective digital marketing and consulting services. Their expertise has helped us reach the right clients, improve engagement, and strengthen our brand presence in the competitive real estate market. We truly appreciate their professionalism and results-driven approach",
   },
@@ -51,7 +51,7 @@ const testimonials = [
     location: "Petpooja",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has been an excellent technology partner, providing us with reliable digital solutions and continuous support. Their professional approach and commitment to delivering quality have streamlined our processes and helped us serve our clients more efficiently. We truly appreciate their expertise and dedication.",
   },
@@ -61,7 +61,7 @@ const testimonials = [
     location: "Shiv Shakti Travels",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has developed an excellent website for our business and provided impactful digital marketing services that have helped us reach a wider audience. Their professionalism, creativity, and timely execution have greatly enhanced our online presence and strengthened our brand visibility. We truly value their expertise and dedication.",
   },
@@ -71,7 +71,7 @@ const testimonials = [
     location: "Infosoft",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has provided us with exceptional consulting services that have significantly improved our performance and efficiency. Their expertise, strategic approach, and commitment to delivering quality solutions have made a real difference for our business. We highly value their professionalism and reliable support.",
   },
@@ -81,7 +81,7 @@ const testimonials = [
     location: "TransStadia University",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions delivered an outstanding AI-based animation video for our School of Computer Science. Their creativity, technical expertise, and professional execution brought our vision to life in a highly engaging and impactful way. We truly appreciate their dedication and innovative approach, which added great value to our academic initiatives.",
   },
@@ -91,7 +91,7 @@ const testimonials = [
     location: "Government Arts College",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has been an excellent technology partner for our institution. Their consulting services, digital solutions, and consistent website maintenance have greatly improved our online presence and operational efficiency. We truly value their professionalism, expertise, and timely support.",
   },
@@ -100,7 +100,7 @@ const testimonials = [
     location: "Indrashil University (School of Engineering)",
     avatar: "https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image-File.png",
     rating: 5,
-    platform: "Clutch",
+    platform: "Google Review",
     text:
       "Kryzen Software Solutions has provided exceptional support in maintaining and redesigning our website with new features and digital solutions. Their professionalism, technical expertise, and innovative approach have enhanced our online presence and improved the overall digital experience for our students and faculty. We greatly appreciate their dedication and reliable service",
   },

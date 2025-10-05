@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Menu, X, MapPin, Briefcase } from "lucide-react";
+import { ChevronDown, Menu, X, MapPin, Briefcase, Link2 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../public/logo.png";
 import Schedule from "../public/schedule.jpg";
@@ -7,6 +7,7 @@ import Email from "../public/gmail_new.jpg";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";
+import Kryzen from "../public/kryzen.png";
 
 const services = [
   {
@@ -78,7 +79,25 @@ const navigationItems = [
   },
   {
     label: "Technology",
-    items: [{ label: "React", to: "/technology/react" }],
+    items: [
+      { label: "Android", to: "/technology/android" },
+      { label: "iOS", to: "/technology/ios" },
+      { label: "Flutter", to: "/technology/flutter" },
+      { label: "React Native", to: "/technology/react-native" },
+      { label: "Angular", to: "/technology/angular" },
+      { label: "React", to: "/technology/react" },
+      { label: "Vuejs", to: "/technology/vuejs" },
+      { label: ".NET", to: "/technology/dotnet" },
+      { label: "PHP", to: "/technology/php" },
+      { label: "Java", to: "/technology/java" },
+      { label: "Nodejs", to: "/technology/nodejs" },
+      { label: "Generative AI", to: "/technology/generative-ai" },
+      { label: "AI & ML", to: "/technology/ai-ml" },
+      { label: "Blockchain", to: "/technology/blockchain" },
+      { label: "Full Stack", to: "/technology/full-stack" },
+      { label: "Wordpress", to: "/technology/wordpress" },
+      { label: "Shopify", to: "/technology/shopify" }
+    ],
   },
   {
     label: "Our Work",
@@ -146,15 +165,7 @@ export default function Header() {
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <div className="flex flex-wrap items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Briefcase className="w-4 h-4 text-blue-300" />
-                <a href="mailto:career@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
-                  }`}>
-                  For Career: career@kryzensoftwaresolutions.com
-                </a>
-
-              </div>
+            <div className="flex flex-wrap items-center gap-25">
 
               <div className="flex items-center gap-2">
                 <img
@@ -171,9 +182,7 @@ export default function Header() {
                 <a href="https://maps.app.goo.gl/tXoapvH3Ky1MhVqz5" target="_blank" rel="noopener noreferrer" className={`text-xs lg:text-[1.110rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                   }`}>Kryzen Software Solutions</a>
               </div>
-            </div>
 
-            <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <img src={Email} alt="Mail" className="w-4 h-4" />
                 <a href="mailto:contact@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
@@ -184,13 +193,16 @@ export default function Header() {
                 <img src={Schedule} alt="Schedule" className="w-4 h-4" />
                 <Link
                   to="/contact-us"
-                  className={`text-xs lg:text-[1rem] cursor-pointer hover:text-blue-200 transition-colors"
-                  data-testid="button-schedule-meeting ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
-                    }`}
+                  className={`text-xs lg:text-[1rem] cursor-pointer hover:text-blue-200 transition-colors ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"}`}
+                  data-testid="button-schedule-meeting"
                 >
                   Schedule a Meeting
                 </Link>
               </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              
             </div>
           </div>
         </div>
@@ -201,9 +213,9 @@ export default function Header() {
           <div className="flex items-center h-14 sm:h-16 w-full">
             <div className="flex items-center whitespace-nowrap gap-3 mr-3 sm:mr-8 flex-shrink-0">
               <Link to='/' className="rounded p-1 sm:p-2 flex-shrink-0">
-                <img src={logo} alt="Logo" className="h-10 w-auto lg:h-16 object-contain" />
+                <img src={Kryzen} alt="Logo" className="h-10 w-auto lg:h-16 object-contain" />
               </Link>
-              <Link to='/' style={{ transform: 'translateX(-0.5rem)' }}><span className={`text-xl sm:text-2xl font-bold ${(!isHome || isScrolled) ? "text-black " : "text-white "}`}>Kryzen</span><p className={`${(!isHome || isScrolled) ? "text-black" : "text-white"} text-xs sm:text-sm`}>Software solutions</p></Link>
+              {/* <Link to='/' style={{ transform: 'translateX(-0.5rem)' }}><span className={`text-xl sm:text-2xl font-bold ${(!isHome || isScrolled) ? "text-black " : "text-white "}`}>Kryzen</span><p className={`${(!isHome || isScrolled) ? "text-black" : "text-white"} text-xs sm:text-sm`}>Software solutions</p></Link> */}
             </div>
             <div className="hidden lg:flex flex-1 flex-wrap items-center space-x-3">
               {[
@@ -248,10 +260,10 @@ export default function Header() {
                                         <Link to='/about-Kryzen-Software-Solutions' onClick={() => setmegaMenu(null)} className="block w-full hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">
                                           About Kryzen
                                         </Link>
-                                        <Link to="/ceo-message" onClick={() => setmegaMenu(null)} className="block w-full hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">
+                                        {/* <Link to="/ceo-message" onClick={() => setmegaMenu(null)} className="block w-full hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">
                                           CEO Message
-                                        </Link>
-                                        <Link to='/events-activity' className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Events & Activities</Link>
+                                        </Link> */}
+                                        {/* <Link to='/events-activity' className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Events & Activities</Link> */}
                                         <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Brochure</div>
 
                                       </div>
@@ -380,37 +392,38 @@ export default function Header() {
                                 {/* MOBILE */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">MOBILE</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">IOS</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Flutter</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React Native</div>
+                                  <Link to="/technology/android" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</Link>
+                                  <Link to="/technology/ios" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">IOS</Link>
+                                  <Link to="/technology/flutter" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Flutter</Link>
+                                  <Link to="/technology/react-native" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React Native</Link>
 
                                   <div className="font-bold text-blue-800 text-lg mb-4 mt-6">FRONTEND</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Angular</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Vuejs</div>
+                                  <Link to="/technology/angular" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Angular</Link>
+                                  <Link to="/technology/react" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React</Link>
+                                  <Link to="/technology/vuejs" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Vuejs</Link>
                                 </div>
                                 {/* BACKEND & FRONTEND */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">BACKEND</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">.NET</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">PHP</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Java</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</div>
+                                  <Link to="/technology/dotnet" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">.NET</Link>
+                                  <Link to="/technology/php" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">PHP</Link>
+                                  <Link to="/technology/java" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Java</Link>
+                                  <Link to="/technology/nodejs" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</Link>
                                 </div>
                                 {/* TRENDING */}
-                                <div>
+                                  <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">TRENDING</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Generative AI</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">AI & ML</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Blockchain</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Full Stack</div>
+                                  <Link to="/technology/generative-ai" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Generative AI</Link>
+                                  <Link to="/technology/ai-ml" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">AI & ML</Link>
+                                  <Link to="/technology/blockchain" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Blockchain</Link>
+                                  <Link to="/technology/full-stack" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Full Stack</Link>
                                 </div>
+                              
                                 {/* OTHERS */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">OTHERS</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Wordpress</div>
-                                  <div className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Shopify</div>
+                                  <Link to="/technology/wordpress" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Wordpress</Link>
+                                  <Link to="/technology/shopify" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Shopify</Link>
                                 </div>
                               </div>
                             </div>

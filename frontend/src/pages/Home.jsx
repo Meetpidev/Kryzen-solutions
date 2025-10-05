@@ -10,7 +10,6 @@ import EngagementModels from "../components/EngagementModels.jsx";
 import TechnologiesTabs from "../components/TechnologiesTabs.jsx";
 import PremiumServices from "../components/PremiumServices.jsx";
 import SuccessMatrix from "../components/SuccessMatrix.jsx";
-import TestimonialSlider from "../components/TestimonialSlider.jsx";
 import BlogCards from "../components/BlogCards.jsx";
 import { CTASubscribe, CTAWorkTogether } from "../components/FeaturedLogos.jsx";
 import DigitalTransformationPopup from "../components/DigitalTransformationPopup.jsx";

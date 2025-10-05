@@ -4,9 +4,69 @@ import companyLogoPath from '../public/image.png';
 const Right_Nav = () => {
     const [open, setOpen] = useState(false);
     const [isHover, setisHover] = useState(false);
+    const [chatOpen, setChatOpen] = useState(false);
+    const [messages, setMessages] = useState([
+        { role: 'bot', text: 'Thank you for contacting Kryzen. An Award winning Web, Mobile App & Product Development Company 👋' }
+    ]);
+    const [chatInput, setChatInput] = useState('');
 
     const sendMsgWhatsapp = (number, message) => {
         window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, '_blank');
+    };
+
+    const handleSendMessage = async (e) => {
+        e.preventDefault();
+        const trimmed = chatInput.trim();
+        if (!trimmed) return;
+
+        setMessages(prev => ([...prev, { role: 'user', text: trimmed }]));
+        setChatInput('');
+
+        const typingToken = Symbol('typing');
+        setMessages(prev => ([...prev, { role: 'bot', text: 'Typing…', typing: typingToken }]));
+
+        try {
+            const response = await fetch('https://akdxenj.app.n8n.cloud/webhook/41b418b5-66ea-4701-93a1-fd6dd0132def', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json, text/plain, */*'
+                },
+                body: JSON.stringify({ question: trimmed })
+            });
+
+            const raw = await response.text();
+            let parsed = null;
+            try { parsed = raw ? JSON.parse(raw) : null; } catch (_) { parsed = null; }
+
+            const extractOutput = (payload) => {
+                if (!payload) return '';
+                if (typeof payload === 'string') return payload;
+                if (Array.isArray(payload)) {
+                    const first = payload[0];
+                    return extractOutput(first);
+                }
+                return (
+                    payload.output ||
+                    payload.answer ||
+                    (payload.data && (payload.data.output || payload.data.answer)) ||
+                    payload.message ||
+                    ''
+                );
+            };
+
+            const botReply = extractOutput(parsed) || raw || 'Thanks! Our team will get back to you shortly.';
+
+            setMessages(prev => {
+                const withoutTyping = prev.filter(m => m.typing !== typingToken);
+                return [...withoutTyping, { role: 'bot', text: String(botReply) }];
+            });
+        } catch (err) {
+            setMessages(prev => {
+                const withoutTyping = prev.filter(m => m.typing !== typingToken);
+                return [...withoutTyping, { role: 'bot', text: 'Sorry, something went wrong. Please try again.' }];
+            });
+        }
     };
 
     return (
@@ -178,10 +238,41 @@ const Right_Nav = () => {
             </div>
 
             <div className='w-21 fixed top-150 right-0 z-50'>
-                    <div className="w-22 h-15 text-white font-bold flex items-center justify-center animate-surprise-delayed-2">
-                        <img src={companyLogoPath} className="w-full h-full object-contain"></img>
+                    <div className="w-22 h-15 text-white font-bold flex items-center justify-center animate-surprise-delayed-2 cursor-pointer" onClick={() => setChatOpen(true)}>
+                        <img src={companyLogoPath} className="w-full h-full object-contain" />
                     </div>
                 </div>
+
+            {chatOpen && (
+                <div className="fixed bottom-4 right-4 z-50 w-80 bg-white rounded-xl shadow-2xl overflow-hidden border">
+                    <div className="bg-[#005D89] text-white flex items-center justify-between px-4 py-3">
+                        <div className="flex items-center gap-2">
+                            <div className="w-6 h-6 bg-white/20 rounded flex items-center justify-center font-bold">K</div>
+                            <div className="font-semibold">ChatBot</div>
+                        </div>
+                        <button className="text-white text-xl leading-none" onClick={() => setChatOpen(false)}>×</button>
+                    </div>
+                    <div className="p-3 h-64 overflow-y-auto bg-gray-50">
+                        {messages.map((m, idx) => (
+                            <div key={idx} className={`mb-2 flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                                <div className={`${m.role === 'user' ? 'bg-[#005D89] text-white' : 'bg-white text-gray-800'} px-3 py-2 rounded-lg max-w-[75%] shadow`}>
+                                    {m.text}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <form className="p-3 border-t flex items-center gap-2" onSubmit={handleSendMessage}>
+                        <input
+                            type="text"
+                            value={chatInput}
+                            onChange={(e) => setChatInput(e.target.value)}
+                            placeholder="Type your message..."
+                            className="flex-1 px-3 py-2 rounded border bg-white text-black focus:outline-none focus:ring"
+                        />
+                        <button type="submit" className="bg-[#005D89] text-white px-3 py-2 rounded">Send</button>
+                    </form>
+                </div>
+            )}
             </>
     );
 };
