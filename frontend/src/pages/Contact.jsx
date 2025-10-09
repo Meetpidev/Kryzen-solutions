@@ -7,7 +7,6 @@ const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(modul
 const InnovativeSlider = lazy(() => import("../components/InnovativeSlider"));
 const SuccessMatrix = lazy(() => import("../components/SuccessMatrix"));
 const LogoCarousel = lazy(() => import("../components/LogoCarousel"));
-const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));
 const Brands = lazy(() => import("../components/Brands"));
 
 const processes = [
@@ -229,8 +228,7 @@ export default function Contact() {
 
 
               <hr className="border-gray-300 mb-8" />
-
-              <TestimonialSlider />
+              
             </div>
 
             {/* Right Panel - Contact Form (unchanged) */}
@@ -507,7 +505,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <TestimonialSlider />
 
         <div className="relative bg-cover bg-center bg-no-repeat"
           style={{
