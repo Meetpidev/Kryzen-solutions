@@ -264,7 +264,7 @@ export default function Header() {
                                           CEO Message
                                         </Link> */}
                                         {/* <Link to='/events-activity' className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Events & Activities</Link> */}
-                                        <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Brochure</div>
+                                        {/* <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Brochure</div> */}
 
                                       </div>
                                       <div>

@@ -21,7 +21,14 @@ import IOS from "../public/ios1.svg";
 import Img_1 from "../public/Explore_1.png";
 import Img_2 from "../public/Explore_2.png";
 import Img_3 from "../public/Explore_3.png";
-
+import Flutter from "../public/flutter_banner.svg";
+import FlutterDev from "../public/flutterdev.png";
+import Flutter2 from "../public/flutterdev2.svg";
+import ProcessWeFollow from "../components/ProcessWeFollow";
+import FAQSection from "../components/FAQSection";
+import Upper from "../components/Upper";
+import ReactNative from "../public/reactnative_banner.svg";
+import ReactNativeDev from "../public/reactnativedev.png";
 
 const Common = () => null;
 
@@ -246,20 +253,93 @@ const TECHNOLOGY_CONTENT = {
         benefitCards={benefitCards}
         autoInterval={3500}
       />
-    
-    
     <Common />
   </>,
-  flutter: {
-    title: "Flutter Development",
-    description:
-      "High-quality cross-platform apps from a single codebase using Flutter, delivering native performance on Android and iOS.",
-  },
-  "react-native": {
-    title: "React Native Development",
-    description:
-      "Fast, maintainable cross-platform mobile apps powered by React Native, with shared code and near-native performance.",
-  },
+  flutter:
+    <>
+    <HeroSection
+      title="Top Flutter App Development Company "
+      description="We help businesses create native apps on a smaller budget and launch them on Android and iOS operating systems. Our team delivers Affordable flutter app development services to build high-quality Android and IOS apps. As a Highly Experienced Flutter app development company, we offer scalable and high-performance app solutions for every business need."
+      buttonText="Let's Talk"
+      buttonLink="#contact"
+      imageSrc={Flutter}
+      imageAlt="Digital Solutions illustration"
+    />
+
+    <LogoCarousel />
+    <Charts
+      img={FlutterDev}
+      img2={Flutter2}
+      h1="Meet the Reputable Flutter App Development Company"
+      p1="With Flutter, we assist contemporary businesses in creating dynamic, feature-rich apps for the web, desktop, and mobile platforms all from a single codebase. Sapphire has a long history of generating Flutter apps, and our developers are skilled at making unique apps. When developing apps, we focus on getting things done quickly and are dedicated to meeting deadlines. Being a Reliable Flutter app development company, we are experts at providing creative and superior Flutter app development services. As a Flutter app development agency, we streamline development workflows to ensure fast, flexible, and feature-rich app delivery."
+      h2="Result-Oriented Flutter App Development Services"
+      p2={"With a single codebase, our Flutter app development services let businesses build high-quality, cross-platform mobile apps. We use the comprehensive widget library, hot reload capability, and robust performance of Flutter for designing visually beautiful, responsive, and speedy apps. We use the versatile, scalable, and efficient Flutter platform to build or improve apps. Our Flutter backend development services ensure robust server-side performance to support seamless functionality. Our Flutter app development services let organizations reach more customers with uniform user experience. Your app gets the latest features and security updates thanks to the expanding community and Google support. We also integrate advanced Flutter API integration techniques to extend app functionality with third-party services and internal systems. Startups and large companies can quickly and efficiently implement ideas with Flutter." }
+    />
+    <Quotes
+      title="Count On Us for Reliable Flutter App Development Services "
+      highlightedText="Get Natively Compiled And Beautifully Designed Flutter Applications."
+      paragraphs={[
+        "We deliver Flutter app development services to build highly interactive and functional applications with native performance and flexible UI designs. As a top flutter app development company, we know how to turn your idea into a profitable and full-fledged application using Flutter. As a flutter app development company with rich experience and global footprints, our ",
+        "Our app developers code Dart and use Flutter’s widgets to ensure cross-platform compatibility of applications on both iOS and Android platforms. We have been delivering flutter cross-platform development services for mobile, web, and desktop. Our development team consists of highly skilled Flutter developers, testing & QA specialists, and UI/UX design experts with rich knowledge of Dart language who can deliver flutter mobile app development services for various platforms. We follow industry-best practices for Flutter app deployment to ensure smooth publishing across Google Play Store and Apple App Store. Additionally, we provide next-gen Flutter app development using AI to enhance performance, personalize user experience, and automate complex functions.",
+      ]}
+      emphasizeTextIndex={[1]}
+      emphasizePhrases={["hire mobile app developers"]}
+    />
+      <PremiumServices />
+      <SectorsSlider />
+    <Benefits
+      benifits={benefitsData}
+      sectionTitle="Benefits of Hiring our Mobile App Development Company"
+      sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+    />
+      <AboutUs />
+    <ProcessWeFollow />
+    <Technology_pannel techCards={mobileTech} />
+    <FAQSection />
+    <Upper />
+    <CTAWorkTogether />
+    <CTASubscribe />
+    <Common />
+  </>,
+  "react-native": 
+    <>
+    <HeroSection
+      title="Top React Native App Development Company in INDIA"
+      description="We are the #1 Reactive Native App Development company; we use React Native to build highly interactive, versatile React native applications for Android and iOS platforms. We are an established React native mobile app development company with decade-long experience and follow us  to deliver the best-in-quality services. With decade-long experience, we follow agile methodologies and strive to provide the best-in-class React Native Development services to our clients. Are you looking for developers or exploring React Native app development cost, we ensure transparency and cost-effectiveness in our approach."
+      buttonText="Let's Talk"
+      buttonLink="#contact"
+      imageSrc={ReactNative}
+      imageAlt="Digital Solutions illustration"
+    />
+
+    <LogoCarousel />
+    <Charts
+      img={ReactNativeDev}
+      h1="Quality React Native Application Development Services"
+      p1="We provide a variety of React Native mobile application development services tailored to your unique development goals and challenges, whether you're a startup, SMB, or corporate enterprise. As a best React Native app development Agency, we help businesses across industries grow by leveraging the power of React Native to create dynamic, scalable web products that meet their unique needs. We deliver seamless cross-platform applications using a single codebase, cutting development time and costs significantly. Our services include everything from UI/UX design to backend integrations, ensuring that each project is custom-tailored to your requirements."
+    />
+    <Quotes
+      title="Get Top-Notch React Native Development Services"
+      highlightedText="React Native Development Services Tailored For Your Needs"
+      paragraphs={[
+        "We are the #1 react native development company; we use React Native to build highly interactive, versatile React Native applications for Android and iOS platforms. As an established react native development agency with decade-long experience, we follow an agile system to deliver the best-in-quality services.",
+        "We take a step-by-step approach to ensure smooth and on-time delivery of React native app development services. Once we start working together, our React Native Web Development will work closely with you and keep you updated on each development process step. We are a top React Native app development company that offers end-to-end React Native app development services, including consulting, UI/UX design, development, testing, deployment, and post-launch support. Whether you need a simple app or a complex enterprise solution, our React Native developers have the expertise to deliver high-quality results that exceed your expectations.",
+      ]}
+      emphasizeTextIndex={[1]}
+      emphasizePhrases={["hire mobile app developers"]}
+    />
+      <PremiumServices />
+      <SectorsSlider />
+   
+      <AboutUs />
+    <ProcessWeFollow />
+    <Technology_pannel techCards={mobileTech} />
+    <FAQSection />
+    <Upper />
+    <CTAWorkTogether />
+    <CTASubscribe />
+    <Common />
+  </>,
   angular: {
     title: "Angular Development",
     description:
