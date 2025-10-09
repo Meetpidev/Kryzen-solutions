@@ -37,7 +37,6 @@ const LogoCarousel = lazy(() => import("../components/LogoCarousel"));
 const PremiumServices = lazy(() => import("../components/PremiumServices"));
 const AboutUs = lazy(() => import("../components/AboutUs"));
 const ProcessWeFollow = lazy(() => import("../components/ProcessWeFollow"));
-const TestimonialSlider = lazy(() => import("../components/TestimonialSlider"));
 const Brands = lazy(() => import("../components/Brands"));
 const SuccessMatrix = lazy(() => import("../components/SuccessMatrix"));
 const ClientReview = lazy(() => import("../components/ClientReview"));
@@ -744,7 +743,6 @@ const Common = () => {
   return (
     <>
       <ProcessWeFollow />
-      <TestimonialSlider />
       <Brands />
       <SuccessMatrix />
       <ClientReview />
