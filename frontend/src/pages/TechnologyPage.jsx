@@ -9,11 +9,18 @@ import AboutUs from "../components/AboutUs";
 const ImpactCards = lazy(() => import("../components/ImpactCards").then(module => ({ default: module.ImpactCards })));
 const SectorsSlider = lazy(() => import("../components/SectorsSlider").then(module => ({ default: module.SectorsSlider })));
 const ExpertiseSlider = lazy(() => import("../components/ExpertiseSlider").then(module => ({ default: module.ExpertiseSlider })));
-import Technology_pannel from "../components/Technology_pannel";
+const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
+const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 import MobileApp from "../public/mobile_app_development1.webp";
 import Chart from "../public/mobile_market_stats.webp";
 import PieChart from "../public/pie_chart.webp";
-import mobileTech from "../components/Technology_pannel";
+import android from "../public/android.png";
+import TechnologyStack from "../components/TechnologyStack";
+import Technology_pannel from "../components/Technology_pannel";
+import IOS from "../public/ios1.svg";
+import Img_1 from "../public/Explore_1.png";
+import Img_2 from "../public/Explore_2.png";
+import Img_3 from "../public/Explore_3.png";
 
 
 const Common = () => null;
@@ -94,9 +101,53 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
   );
 };
 
-const benefitCards = [];
 const expertiseCards = [];
 const benefitsData = [];
+const mobileTech = [
+   {
+    category: "iOS",
+    items: ["Swift", "Objective-C", "X-Code", "SwiftUI"]
+  },
+  {
+    category: "Android",
+    items: ["Java", "Kotlin", "Android Studio", "Version control tools (Git, GitLab, Bit Bucket)"]
+  },
+  {
+    category: "Cross Platform",
+    items: ["Flutter", "React Native", "Ionic", "NativeScript"]
+  },
+  {
+    category: "Database",
+    items: ["Firebase", "Redis", "PostgreSQL", "MongoDB", "MySQL", "DynamoDB", "SQLite"]
+  },
+  {
+    category: "Design Tool",
+    items: ["Figma", "Sketch", "Adobe XD", "Zeplin", "Photoshop", "Illustrator", "After Effects", "InVision"]
+  }
+];
+const benefitCards = [
+  {
+    img: Img_1,
+    title: "Enhanced Customer Engagement",
+    description:
+      "Mobile application give businesses the ability to give their users a more immersive and engaging experience by giving them a direct and personalized communication channel.",
+    bg: "bg-yellow-100",
+  },
+  {
+    img: Img_2,
+    title: "Increased Brand Visibility",
+    description:
+      "By actively interacting with your audience across many channels, you can use social media platforms to raise brand awareness for your mobile application.",
+    bg: "bg-teal-100",
+  },
+  {
+    img: Img_3,
+    title: "Improve Customer Loyalty and Retention",
+    description:
+      "Mobile apps aid in customer understanding and the creation of pleasurable shopping experiences. Customers are more loyal when they receive personalized recommendations and early access to promotions.",
+    bg: "bg-blue-100",
+  },
+];
 
 const TECHNOLOGY_CONTENT = {
   android:
@@ -106,7 +157,7 @@ const TECHNOLOGY_CONTENT = {
       description=" As a top Android app development company, we design Android apps by implementing your original ideas! We build high-quality, user-friendly Android apps to match your demands as a leading bespoke app developer. We specialize in Android mobile app development to help businesses scale efficiently across devices and markets. Contact us for a quote! "
       buttonText="Let's Talk"
       buttonLink="#contact"
-      imageSrc={MobileApp}
+      imageSrc={android}
       imageAlt="Digital Solutions illustration"
     />
 
@@ -141,16 +192,64 @@ const TECHNOLOGY_CONTENT = {
       sectionTitle="Benefits of Hiring our Mobile App Development Company"
       sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
     />
-    <AboutUs />
+      <AboutUs />
+      <Technology_pannel techCards={mobileTech} />
+      <CTAWorkTogether />
+      <CTASubscribe />
+    <Common />
+  </>,
+  ios: 
+    <>
+    <HeroSection
+      title="Top iOS App Development Company"
+      description="We specialize in iOS app development services, bringing your app ideas to life on the lively iOS platform. As a highly experienced ios app development company, we have the skills and ability to assist startups and existing businesses in making an impact or extending their digital services with custom iOS app development. If you are looking for a reliable iOS app development company USA that delivers top-notch solutions, you’re in the right place! "
+      buttonText="Let's Talk"
+      buttonLink="#contact"
+      imageSrc={IOS}
+      imageAlt="Digital Solutions illustration"
+    />
+
+    <LogoCarousel />
+    <Charts
+      img={Chart}
+      img2={PieChart}
+      h1="Mobile App Market Stats"
+      p1="The global mobile application market size was valued at nearly"
+      h2="The Mobile Application Development Market Size"
+      p2={
+        <>
+          According to one study, there will be <strong>4.74 billion smartphone users</strong> by the end of 2024, growing at a rate of 2.2% each year.
+          When examining the rise in smartphone users between 2020 to 2025, we find that the average yearly growth rate is 6.2%.
+        </>
+      }
+    />
+    <Quotes
+      title="Get 100% Customizable iOS App Development Services "
+      highlightedText="Not Just Another iOS App Development Company"
+      paragraphs={[
+        "As an iOS app development agency, our organization prides itself on providing customized solutions that match your vision and objectives. Our experienced iOS developers offer years of experience and skill. From ideation to coding, every stage of the iOS mobile application development services process is tailored to your needs.",
+        "As a Top-Rated iOS app development company, we collaborate with you to understand your goals and design an innovative app or improve an existing one. We want to turn your ideas into a fully working iOS app that surpasses your expectations. We make your app stand out in the crowded market with creativity and excellence. From user interface design to backend operations, your app is meticulously created through expert iOS mobile app design and development processes. Utilize our custom iOS application development services for full customization and innovative solutions. Contact us immediately to discuss your app concept and start realizing it.",
+      ]}
+      emphasizeTextIndex={[1]}
+      emphasizePhrases={["hire mobile app developers"]}
+    />
+      <PremiumServices />
+      <SectorsSlider />
+    <Benefits
+      benifits={benefitsData}
+      sectionTitle="Benefits of Hiring our Mobile App Development Company"
+      sectionDescription="As the top mobile app development company, we have the required expertise and skills to create out of the ox apps."
+    />
+      <AboutUs />
+      <ImpactCards
+        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        benefitCards={benefitCards}
+        autoInterval={3500}
+      />
     
     
     <Common />
   </>,
-  ios: {
-    title: "iOS Development",
-    description:
-      "Native iOS apps with Swift/SwiftUI, seamless performance, and delightful UX that meet Apple's guidelines and user expectations.",
-  },
   flutter: {
     title: "Flutter Development",
     description:
