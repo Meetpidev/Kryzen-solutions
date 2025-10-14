@@ -392,38 +392,38 @@ export default function Header() {
                                 {/* MOBILE */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">MOBILE</div>
-                                  <Link to="/technology/android" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</Link>
-                                  <Link to="/technology/ios" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">IOS</Link>
-                                  <Link to="/technology/flutter" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Flutter</Link>
-                                  <Link to="/technology/react-native" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React Native</Link>
+                                  <Link to="/technology/android" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</Link>
+                                  <Link to="/technology/ios" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">IOS</Link>
+                                  <Link to="/technology/flutter" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Flutter</Link>
+                                  <Link to="/technology/react-native" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React Native</Link>
 
                                   <div className="font-bold text-blue-800 text-lg mb-4 mt-6">FRONTEND</div>
-                                  <Link to="/technology/angular" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Angular</Link>
-                                  <Link to="/technology/react" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React</Link>
-                                  <Link to="/technology/vuejs" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Vuejs</Link>
+                                  <Link to="/technology/angular" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Angular</Link>
+                                  <Link to="/technology/react" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React</Link>
+                                  <Link to="/technology/vuejs" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Vuejs</Link>
                                 </div>
                                 {/* BACKEND & FRONTEND */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">BACKEND</div>
-                                  <Link to="/technology/dotnet" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">.NET</Link>
-                                  <Link to="/technology/php" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">PHP</Link>
-                                  <Link to="/technology/java" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Java</Link>
-                                  <Link to="/technology/nodejs" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</Link>
+                                  <Link to="/technology/dotnet" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">.NET</Link>
+                                  <Link to="/technology/php" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">PHP</Link>
+                                  <Link to="/technology/java" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Java</Link>
+                                  <Link to="/technology/nodejs" onClick={() => setmegaMenu(null)}  className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</Link>
                                 </div>
                                 {/* TRENDING */}
                                   <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">TRENDING</div>
-                                  <Link to="/technology/generative-ai" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Generative AI</Link>
-                                  <Link to="/technology/ai-ml" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">AI & ML</Link>
-                                  <Link to="/technology/blockchain" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Blockchain</Link>
-                                  <Link to="/technology/full-stack" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Full Stack</Link>
+                                  <Link to="/technology/generative-ai" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Generative AI</Link>
+                                  <Link to="/technology/ai-ml" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">AI & ML</Link>
+                                  <Link to="/technology/blockchain" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Blockchain</Link>
+                                  <Link to="/technology/full-stack" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Full Stack</Link>
                                 </div>
                               
                                 {/* OTHERS */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">OTHERS</div>
-                                  <Link to="/technology/wordpress" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Wordpress</Link>
-                                  <Link to="/technology/shopify" className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Shopify</Link>
+                                  <Link to="/technology/wordpress" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Wordpress</Link>
+                                  <Link to="/technology/shopify" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Shopify</Link>
                                 </div>
                               </div>
                             </div>

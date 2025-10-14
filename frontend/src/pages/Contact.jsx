@@ -472,7 +472,7 @@ export default function Contact() {
       </div>
       <div>
         <SuccessMatrix />
-        <InnovativeSlider />
+        {/* <InnovativeSlider /> */}
         <div className="w-full py-16 px-4 bg-gray-50">
           <h1 className="text-5xl font-bold text-center mb-16 text-gray-900">
             Process We Follow

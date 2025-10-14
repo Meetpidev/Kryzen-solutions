@@ -255,7 +255,7 @@ const Right_Nav = () => {
                     <div className="p-3 h-64 overflow-y-auto bg-gray-50">
                         {messages.map((m, idx) => (
                             <div key={idx} className={`mb-2 flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                                <div className={`${m.role === 'user' ? 'bg-[#005D89] text-white' : 'bg-white text-gray-800'} px-3 py-2 rounded-lg max-w-[75%] shadow`}>
+                                <div className={`${m.role === 'user' ? 'bg-[#005D89] text-white' : 'bg-white text-gray-800'} px-3 py-2 rounded-lg max-w-auto shadow`}>
                                     {m.text}
                                 </div>
                             </div>
