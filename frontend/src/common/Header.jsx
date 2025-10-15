@@ -213,7 +213,7 @@ export default function Header() {
           <div className="flex items-center h-14 sm:h-16 w-full">
             <div className="flex items-center whitespace-nowrap gap-3 mr-3 sm:mr-8 flex-shrink-0">
               <Link to='/' className="rounded p-1 sm:p-2 flex-shrink-0">
-                <img src={Kryzen} alt="Logo" className="h-10 w-auto lg:h-16 object-contain" />
+                <img src={Kryzen} alt="Logo" className="h-10 w-auto lg:h-16 object-contain translate-x-[7rem]" />
               </Link>
               {/* <Link to='/' style={{ transform: 'translateX(-0.5rem)' }}><span className={`text-xl sm:text-2xl font-bold ${(!isHome || isScrolled) ? "text-black " : "text-white "}`}>Kryzen</span><p className={`${(!isHome || isScrolled) ? "text-black" : "text-white"} text-xs sm:text-sm`}>Software solutions</p></Link> */}
             </div>
@@ -224,7 +224,7 @@ export default function Header() {
                 { label: "Technology", menu: "technology" },
                 { label: "Our Work", menu: "ourwork" }
               ].map(({ label, menu }) => (
-                <div key={label} className="relative"
+                <div key={label} className="relative translate-x-[24rem]"
                   onMouseEnter={() => setmegaMenu(menu)}
                   style={{ zIndex: 1000 }}
                 >
@@ -238,7 +238,7 @@ export default function Header() {
                   {megaMenu === menu && (
                     <div onMouseLeave={() => setmegaMenu(null)}>
                       {menu === 'company' && (
-                        <div className="absolute left-[32rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[3rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Company</div>
@@ -314,7 +314,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'service' && (
-                        <div className="absolute left-[23rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
+                        <div className="absolute left-[-4rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
                           <div className="bg-[#0178a8] text-white flex flex-col justify-between p-10 min-w-[330px] max-w-[390px]">
                             <div>
                               <div className="text-3xl font-bold mb-5">Service</div>
@@ -371,7 +371,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'technology' && (
-                        <div className="absolute left-[16rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-12rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Technology</div>
@@ -440,7 +440,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'ourwork' && (
-                        <div className="absolute left-[7rem] mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-21rem] mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="w-full flex bg-white text-gray-900 rounded shadow-xl pb-7 overflow-hidden" style={{ minHeight: 390 }}>
                             <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
                               <div>

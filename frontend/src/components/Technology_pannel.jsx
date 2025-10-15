@@ -18,13 +18,12 @@ export default function Technology_pannel({ techCards = [] }){
           <div key={section.category + idx}
             style={{
               display: 'flex', alignItems: 'center', marginBottom: '16px',
-              flexWrap: 'wrap'
             }}
             className="tech-row"
           >
             <div className="tech-category" style={{
-              minWidth: '200px', background: '#065a89', color: '#fff',
-              fontWeight: 'bold', fontSize: '1.17rem',
+              minWidth: '100px', background: '#065a89', color: '#fff',
+              fontWeight: 'bold', fontSize: '1.17rem',wordBreak: "break-word",
               padding: '18px 30px', borderRadius: '12px 0 0 12px',
               marginBottom: '8px', flex: 'none'
             }}>
@@ -42,7 +41,7 @@ export default function Technology_pannel({ techCards = [] }){
                     margin: '6px 8px 6px 0', padding: '10px 24px',
                     borderRadius: '10px', fontWeight: '500',
                     boxShadow: '0 1px 4px rgba(0,0,0,0.054)',
-                    fontSize: '1rem', whiteSpace: 'nowrap'
+                    fontSize: '1rem', wordBreak: "break-word"
                   }}>
                   {item}
                 </span>
