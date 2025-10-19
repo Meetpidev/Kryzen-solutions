@@ -271,7 +271,7 @@ export default function AppFooter() {
                     </Link>
                     <span className="mx-2 font-medium hidden sm:inline">|</span>
                     <Link
-                        href="/term-of-use"
+                        to="/term-of-use"
                         className="font-medium hover:underline"
                         data-testid="link-terms"
                     >

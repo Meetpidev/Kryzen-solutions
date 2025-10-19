@@ -53,7 +53,6 @@ export default function Upper() {
           Being unique is our quality! Sapphire Solutions believe in the things that give us an edge over our competitors. We are renowned software and mobile application development organization serving customers with end-to-end support. Our Idealization, feasibility assessment of the entire software development process stands us one level up the competitors.
         </p>
         <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-          {/* Left Features List */}
           <div className="flex-1 bg-blue-50 p-2">
             {features.map((item, idx) => (
               <FeatureItem key={item.title + idx} {...item} />

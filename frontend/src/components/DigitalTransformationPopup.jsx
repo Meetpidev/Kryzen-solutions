@@ -11,10 +11,9 @@ import L7 from "../public/L7.png";
 import L8 from "../public/L8.png";
 
 
-// Keys for localStorage
 const STORAGE_KEYS = {
-  impressions: "dtp_impressions", // number of times shown
-  lastShownAt: "dtp_last_shown_at", // timestamp (ms)
+  impressions: "dtp_impressions", 
+  lastShownAt: "dtp_last_shown_at", 
 };
 
 const FIVE_MIN_MS = 5 * 60 * 1000;
@@ -41,7 +40,7 @@ export default function DigitalTransformationPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const timerRef = useRef(null);
 
-  // Form state and validation (to mirror screenshot UX)
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,20 +59,16 @@ export default function DigitalTransformationPopup() {
     []
   );
 
-  // Decide when to show the popup
   useEffect(() => {
-    // Already shown twice: never show again
     if (impressions >= 2) return;
 
     const now = Date.now();
 
     if (impressions === 0) {
-      // First visit: show immediately
       openAndRecord();
       return;
     }
 
-    // impressions === 1 → schedule for 5 minutes since last shown
     const elapsed = now - lastShownAt;
     const remaining = Math.max(FIVE_MIN_MS - elapsed, 0);
 
@@ -136,7 +131,6 @@ export default function DigitalTransformationPopup() {
   return (
     <div className="fixed inset-0 bg-black/60 z-[1000] flex items-center justify-center p-3 sm:p-4" role="dialog" aria-modal="true">
       <div className="relative w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-xl">
-        {/* Close */}
         <button
           aria-label="Close"
           onClick={close}
@@ -146,13 +140,12 @@ export default function DigitalTransformationPopup() {
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 bg-white rounded-xl overflow-hidden shadow-2xl">
-          {/* Left side (visual + stats) */}
           <div className="bg-[#eaf3ff] p-4 sm:p-6 md:p-8">
             <h2 className="text-xl sm:text-2xl md:text-[28px] font-extrabold text-[#1a273b]">Let's Navigate Digital Transformation Together!!!</h2>
             <hr className="w-12 border-[#1a273b] my-2 sm:my-3" />
             <p className="text-[#1a273b] text-sm sm:text-base">Like a Caterpillar turning in to a Butterfly.</p>
 
-            {/* Badges */}
+
             <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-4 sm:mt-6 mb-4 sm:mb-6">
               <div className="flex flex-col items-center justify-center bg-white rounded p-2 shadow min-w-0">
                 <img src={google} alt="Google" className="w-16 sm:w-20" />
@@ -161,10 +154,6 @@ export default function DigitalTransformationPopup() {
               <div className="flex flex-col items-center justify-center bg-white rounded p-2 shadow min-w-0">
                 <img src={India} alt="make in india" className="w-17 sm:w-16" />
                 <span className="text-[#1a273b] font-semibold text-[10px] sm:text-[12px] mt-1">MADE IN INDIA</span>
-              </div>
-              <div className="flex flex-col items-center justify-center bg-white rounded p-2 shadow min-w-0">
-                <img src={google} alt="Google" className="w-12 sm:w-14" />
-                <span className="text-[#1a273b] font-semibold text-[10px] sm:text-[12px] mt-1">201 REVIEWS</span>
               </div>
             </div>
 
