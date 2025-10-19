@@ -80,7 +80,7 @@ function OfficeCard({ country, flag, address, highlight }) {
 
 function ReviewBadge({ platform, icon }) {
 
-    const MADE_IN_INDIA_SIZE_CLASSES = "h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain";
+    const MADE_IN_INDIA_SIZE_CLASSES = "h-26 sm:h-20 md:h-24 lg:h-28 w-26 object-contain";
 
     return (
         <div className="flex flex-col items-center justify-center text-center">
@@ -209,9 +209,7 @@ export default function AppFooter() {
                                <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
                     <ReviewBadge
                         platform="Google"
-                        // The 'icon' prop can be used if you have a custom star component or other dynamic icon
-                        // For now, the stars are directly within ReviewBadge as per the image
-                        icon={null} // Or pass your star component here if it's dynamic
+                        icon={null} 
                     />
                 </div>
 

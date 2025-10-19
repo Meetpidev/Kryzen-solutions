@@ -529,13 +529,10 @@ export default function Header() {
         </div>
       </nav>
 
-      
-
-      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-full w-[85%] max-w-sm sm:max-w-md bg-white shadow-2xl z-50 transform transition-transform duration-300 
-    ${isMobile ? "translate-x-0" : "translate-x-full"}`}
-      >
+    className={`fixed top-0 left-0 h-full w-[85%] max-w-sm sm:max-w-md bg-white shadow-2xl z-50 transform transition-transform duration-300 
+    ${isMobile ? "translate-x-0" : "-translate-x-full"}`}
+>
         <div className="flex items-center justify-between w-full p-4 border-b border-gray-200">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain" />
