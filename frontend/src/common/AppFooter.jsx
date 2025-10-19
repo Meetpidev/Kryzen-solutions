@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
     SiFacebook,
     SiX,
@@ -261,21 +262,21 @@ export default function AppFooter() {
                     © 2025 Kryzen Software Solutions. All rights reserved.
                 </p>
                 <div className="flex items-center justify-center space-x-4">
-                    <a
-                        href="/privacy-policy"
+                    <Link
+                        to="/privacy-policy"
                         className="font-medium hover:underline"
                         data-testid="link-privacy"
                     >
                         Privacy Policy
-                    </a>
+                    </Link>
                     <span className="mx-2 font-medium hidden sm:inline">|</span>
-                    <a
+                    <Link
                         href="/term-of-use"
                         className="font-medium hover:underline"
                         data-testid="link-terms"
                     >
                         Terms of Use
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>

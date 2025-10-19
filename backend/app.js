@@ -21,6 +21,9 @@ app.get("/", (req, res) => {
 app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) => {
   const formData = req.body;
   const file = req.file;
+  console.log('Received submission from:', formData.email);
+  console.log('File attached:', !!file);
+
   try {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
