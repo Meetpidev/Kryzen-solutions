@@ -63,32 +63,69 @@ const solutions = {
   ]
 };
 
-const getLinks = (category, links) => (
-  <ul className="space-y-2 mt-3 list-none ">
-    {links.map((link, index) => (
-      <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm hover:text-blue-600">
-        <span>•</span>
-        {link === "About Sapphire" ? (
-          <Link to="/about-Kryzen-Software-Solutions" className="block">
+const getLinks = (category, links) => {
+  // Map label to correct path
+  const linkMap = {
+    "Careers": "/careers",
+    "Contact-Us": "/contact-us",
+    "Web Development": "/service/mobile-app-development/progressive-web-app-development",
+    "Mobile App Development": "/service/mobile-app-development/mobile-app-development",
+    "Custom Software Development": "/service/mobile-app-development/custom-mobile-app-development",
+    "Graphics & UI/UX Design": "/service/other-services/ui/ux-designing",
+    "Digital Marketing": "/service/other-services/digital-marketing",
+    "ERP & CRM Solutions": "/service/software-development/crm",
+    "Domain & Hosting": "/service/software-development/web-application",
+    "AI Animations & Automation": "/service/ai-%26-ml-development/ai%2Fml-development",
+    ".NET": "/technology/dotnet",
+    "PHP": "/technology/php",
+    "Android": "/technology/android",
+    "iOS": "/technology/ios",
+    "Flutter": "/technology/flutter",
+    "About Sapphire": "/about-Kryzen-Software-Solutions",
+    "Why Choose Us": "/choose",
+  };
+
+  return (
+    <ul className="space-y-2 mt-3 list-none ">
+      {links.map((link, index) => (
+        <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm hover:text-blue-600">
+          <span>•</span>
+          <Link to={linkMap[link] || "#"} className="block">
             {link}
           </Link>
-        ) : link === "Why Choose Us" ? (
-          <Link to="/choose" className="block">
-            {link}
-          </Link>
-        ) : link === "Events & Activities" ? (
-          <Link to="/events-activity" className="block">
-            {link}
-          </Link>
-        ) : (
-          <Link to="#" className="block">
-            {link}
-          </Link>
-        )}
-      </li>
-    ))}
-  </ul>
-);
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+
+// const getLinks = (category, links) => (
+//   <ul className="space-y-2 mt-3 list-none ">
+//     {links.map((link, index) => (
+//       <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm hover:text-blue-600">
+//         <span>•</span>
+//         {link === "About Sapphire" ? (
+//           <Link to="/about-Kryzen-Software-Solutions" className="block">
+//             {link}
+//           </Link>
+//         ) : link === "Why Choose Us" ? (
+//           <Link to="/choose" className="block">
+//             {link}
+//           </Link>
+//         ) : link === "Events & Activities" ? (
+//           <Link to="/events-activity" className="block">
+//             {link}
+//           </Link>
+//         ) : (
+//           <Link to="#" className="block">
+//             {link}
+//           </Link>
+//         )}
+//       </li>
+//     ))}
+//   </ul>
+// );
 
 const getSolutionsLinks = links => (
   <ul className="space-y-2 mt-3">

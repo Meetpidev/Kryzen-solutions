@@ -8,6 +8,7 @@ import Google from "../public/google.webp";
 import Left from "../public/left-leaf.jpg";
 import Right from "../public/right-leaf.jpg";
 import Kryzen from "../public/kryzen.png";
+import MakeinIndia from "../public/Make_in_india-removebg-preview.png";
 
 const services = [
   {
@@ -208,7 +209,7 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className={`fixed left-0 right-0 z-50 shadow-lg transition-all duration-300 ${isScrolled ? "top-0 bg-white text-gray-900" : "md:top-12 top-0 bg-navbar-bg text-navbar-text"}`}>
+      <nav className={`fixed left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "top-0 bg-white text-gray-900" : "md:top-12 top-0 bg-navbar-bg text-navbar-text"}`}>
         <div className="container mx-auto px-3 sm:px-4">
           <div className="flex items-center h-14 sm:h-16 w-full">
             <div className="flex items-center whitespace-nowrap gap-3 mr-3 sm:mr-8 flex-shrink-0">
@@ -243,7 +244,7 @@ export default function Header() {
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Company</div>
                               <div className="mb-7 text-lg">
-                                We Partner You To Deliver A Innovative Solution To Your Needs With Our 20+ Year Of Technical Experience With Fortune 500 Organizations.
+                                We Partner You To Deliver A Innovative Solution To Your Needs With Our 2+ Year Of Technical Experience With Fortune 500 Organizations.
                               </div>
                               <Link to="/about-Kryzen-Software-Solutions" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap" onClick={() => setmegaMenu(null)}>
                                 About Company
@@ -268,12 +269,12 @@ export default function Header() {
 
                                       </div>
                                       <div>
-                                        <Link to='/choose' onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
-                                        <div className="py-3" onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
+                                        <Link to='/choose'  onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
+                                        <div className="py-3" onClick={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
                                       </div>
                                       <div>
-                                        <Link to="/blog" onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</Link>
-                                        <div onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)}><Link to="/careers"  className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</Link></div>
+                                        <Link to="/blog"  onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</Link>
+                                        <div  onClick={() => setmegaMenu(null)}><Link to="/careers"  className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</Link></div>
                                       </div>
                                     </div>
                                   </div>
@@ -282,29 +283,35 @@ export default function Header() {
                                 <div className="ml-[17rem] whitespace-nowrap group">
                                   <div className="font-bold text-blue-800 text-lg mb-4">MODELS</div>
                                   <div className="space-y-2 text-gray-800">
-                                    <div className="hover:text-blue-600  cursor-pointer rounded">Delivery Models</div>
-                                    <div className="hover:text-blue-600  cursor-pointer rounded">Engagement Models</div>
-                                    <div className="hover:text-blue-600  cursor-pointer py-1 rounded">Development Methodology</div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Delivery-Models" className="hover:text-blue-600  cursor-pointer rounded">Delivery Models</Link></div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Engagement-Models" className="hover:text-blue-600  cursor-pointer rounded">Engagement Models</Link></div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Development-Methodology" className="hover:text-blue-600  cursor-pointer py-1 rounded">Development Methodology</Link></div>
                                   </div>
                                 </div>
 
                                 {/* TESTIMONIAL */}
-                                <div className="ml-[17rem] whitespace-nowrap">
+                                {/* <div className="ml-[17rem] whitespace-nowrap">
                                   <div className="font-bold text-blue-800 text-lg mb-4">TESTIMONIAL</div>
                                   <div className="space-y-2 text-gray-800">
                                     <div className="hover:bg-white hover:p-1 hover:text-blue-800 cursor-pointer py-1 rounded">Client Testimonials</div>
                                   </div>
-                                </div>
+                                </div> */}
 
 
                               </div>
                               <div className="mt-4 flex flex-col gap-2 pt-5 border-t">
-                                <div className="font-bold text-blue-800 text-lg mb-4">REVIEWS AND RATING</div>
+                                <div className="flex font-bold text-blue-800 text-lg mb-4">REVIEWS AND RATING</div>
                                 <div className="flex flex-col items-start gap-2">
-                                  <div className="flex h-8 items-center gap-2 mb-1">
-                                    <img src={Left} alt="Left" className="pr-1" />
-                                    <img src={Google} alt="Google" className="h-12 w-25"/>
-                                    <img src={Right} alt="Right" className="pl-1" />
+                                  <div className="flex h-8 items-center gap-8 mb-1">
+                                    <div className="flex items-center gap-2">
+                                      <img src={Left} alt="Left" className="pr-1" />
+                                      <img src={Google} alt="Google" className="h-12 w-25" />
+                                      <img src={Right} alt="Right" className="pl-1" />
+                                    </div>
+                                    <div className="flex flex-col items-center ml-8">
+                                      <span className="flex font-bold text-blue-800 text-lg mb-4 translate-y-[1rem]">MADE IN INDIA</span>
+                                      <img src={MakeinIndia} alt="Make in India" className="h-30 w-25 translate-y-[-1.125rem]" />
+                                    </div>
                                   </div>
                                   <span className="text-black font-bold text-[1rem] mt-2 translate-x-7">50+ REVIEWS</span>
                                 </div>
@@ -322,7 +329,7 @@ export default function Header() {
                                 Our Portfolio Of Services Range From Designing Strategy To Delivering Impact.
                               </div>
                             </div>
-                            <button className="bg-white text-[#0178a8] px-8 py-3 rounded font-bold mt-5">Hire Now</button>
+                            <Link to="/contact-us" className="w-full"><button className="w-full bg-white text-[#0178a8] px-8 py-3 rounded font-bold mt-5">Hire Now</button></Link>
                           </div>
                           <div className="flex-1 flex">
                             <div className="bg-gray-50 min-w-[320px] max-w-[320px] divide-y">
@@ -442,7 +449,7 @@ export default function Header() {
                       {menu === 'ourwork' && (
                         <div className="absolute left-[-21rem] mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="w-full flex bg-white text-gray-900 rounded shadow-xl pb-7 overflow-hidden" style={{ minHeight: 390 }}>
-                            <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
+                            {/* <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
                               <div>
                                 <div className="text-3xl font-bold mb-5">Our Work</div>
                                 <div className="mb-7 text-xl leading-snug">
@@ -452,9 +459,11 @@ export default function Header() {
                               <button className="bg-white text-[#0178a8] px-8 py-3 rounded font-bold mt-5 hover:bg-blue-50 transition">
                                 Request A Quote
                               </button>
+                            </div> */}
+                            <div class="flex items-center justify-center ml-auto mr-auto">
+                              <h1 class="text-4xl font-bold text-gray-800">Coming Soon</h1>
                             </div>
-
-                            <div className="flex-1 flex px-6 py-8 items-start gap-9">
+                            {/* <div className="flex-1 flex px-6 py-8 items-start gap-9">
                               <div className="w-1/3">
                                 <div className="font-bold text-blue-800 text-xl mb-3 uppercase">SOLUTIONS</div>
                                 {solutions.map((sol) => (
@@ -473,7 +482,7 @@ export default function Header() {
                                   <img src='https://www.shutterstock.com/shutterstock/photos/1549501607/display_1500/stock-vector-two-people-shake-hands-as-a-result-of-agreement-successful-cooperation-happy-businessman-1549501607.jpg' alt="Portfolio" className="object-contain h-36" />
                                 </div>
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       )}

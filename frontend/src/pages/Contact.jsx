@@ -326,9 +326,9 @@ export default function Contact() {
                           className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent appearance-none"
                         >
                           <option value="">Select Budget</option>
-                          <option value="under-10k">Under $10,000</option>
-                          <option value="10k-50k">$10,000 - $50,000</option>
-                          <option value="50k-plus">$50,000+</option>
+                          <option value="under-10k">Under ₹ 10,000</option>
+                          <option value="10k-50k">₹ 10,000 - ₹ 50,000</option>
+                          <option value="50k-plus">₹ 50,000+</option>
                         </select>
 
                       </div>
@@ -528,7 +528,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
               {stats.map((stat, index) => (
                 <div key={index} className="bg-white rounded-2xl p-4 text-center shadow-lg">
                   <h2 className="text-4xl font-bold text-blue-700 mb-2">{stat.number}<span>{stat.suffix}</span></h2>

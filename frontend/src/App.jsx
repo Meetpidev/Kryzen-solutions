@@ -3,6 +3,9 @@ import { useEffect, lazy, Suspense } from "react";
 import AI from "./pages/AI.jsx";
 import Blog from "./pages/Blog.jsx";
 import Careers from "./pages/Careers.jsx";
+import DeliveryModels from "./pages/DeliveryModels.jsx";
+import DevelopmentMethodology from "./pages/DevelopmentMethodology.jsx";
+import EngagementModels from "./pages/EngagementModels.jsx";
 
 const Header = lazy(() => import("./common/Header.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
@@ -79,6 +82,9 @@ function App() {
           <Route path="/Ai" element={<AI />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/Delivery-Models" element={<DeliveryModels />} />
+          <Route path="/Engagement-Models" element={<EngagementModels />} />
+          <Route path="/Development-Methodology" element={<DevelopmentMethodology />} />
         </Routes>
         <Footer />
         <AppFooter />

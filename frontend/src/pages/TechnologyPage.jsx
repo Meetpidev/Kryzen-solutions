@@ -322,30 +322,29 @@ const React_TechCards = [
   {
     "title": "MEAN Stack App Development",
     "description": "When it comes to MEAN Stack development services, we are a reliable partner. Our team is skilled in using frameworks like AngularJS and Mongoose to create web apps that have several features and perform very well.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: <img src={cuttingEdge_2} alt="Icons" />,
   },
   {
     "title": "Fast API Development",
     "description": "Our group specializes in creating dynamic, high-performing online apps by using the FastAPI framework. Utilizing the newest Python frameworks, we guarantee that your project shines in terms of functionality, user experience, and smooth integration thanks to our knowledge of tools like Pydantic and Starlette.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: <img src={cuttingEdge_3} alt="Icons" />,
   },
-  [
   {
     "title": "Django App Development",
     "description": "View our Django development services, where we create robust, effective online applications using the Django framework. Our services are made to improve your online solutions, making them more dependable and speedier from the ground up.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: <img src={cuttingEdge_7} alt="Icons" />,
   },
   {
     "title": "Laravel Development",
     "description": "With Laravel development expertise dating back to 2011, we use Composer and Blade, among other technologies, to build scalable, effective, and powerful online apps. Together, we can use our Laravel knowledge to turn your concept into a high-performing product.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: <img src={cuttingEdge_5} alt="Icons" />,
   },
   {
     "title": "Node Js Development",
     "description": "For the purpose of developing scalable and quick online apps, we provide Node.js development services. We can handle complicated jobs and heavy traffic quickly by using JavaScript's event-driven nature for efficient real-time applications and a single JavaScript codebase for both the server and client sides.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: <img src={cuttingEdge_6} alt="Icons" />,
   }
-]
+
 ];
 
 const Php_Tech = [
@@ -911,32 +910,32 @@ const sopifyBenefits = [
   {
     "title": "Shopify store development",
     "description": "Our Shopify Store Development Services ensure your business is prepared for smooth operation, from picking the appropriate theme to setting up payment gateways and delivery choices.",
-    "icon": "Maintain"
+    icon: cuttingEdge_1,
   },
   {
     "title": "Shopify theme development",
     "description": "Custom Shopify themes our designers and developers make are tailored to match your brand’s identity. Our Shopify Custom Theme Development ensures the design is aesthetically pleasing and user-friendly.",
-    "icon": "Maintain"
+    icon: cuttingEdge_2,
   },
   {
     "title": "Shopify store optimization",
     "description": "We guarantee that your Shopify Store Setup looks and performs smoothly across all platforms and screen sizes, emphasizing mobile-first design and delivering a consistent and enjoyable experience for all visitors.",
-    "icon": "Maintain"
+    icon: cuttingEdge_3,
   },
   {
     "title": "Shopify store Integration",
     "description": "We are skilled in adding third-party applications and creating original ones to increase the functionality of your shop. We use the best applications to maximize the functioning of your shop, from marketing and analytics to inventory control.",
-    "icon": "Maintain"
+    icon: cuttingEdge_7,
   },
   {
     "title": "Shopify Marketing and SEO",
     "description": "Our team uses industry best practices to optimize your shop for search engines, resulting in increased exposure and organic traffic. Additionally, we provide pointers on efficient marketing techniques that can improve your internet visibility and promote sales.",
-    "icon": "Maintain"
+    icon: cuttingEdge_5,
   },
   {
     "title": "Custom Website Development",
     "description": "We are experts in enhancing the functionality of your shop to provide Shopify Custom Website Development Services for seamless customer experiences.",
-    "icon": "Maintain"
+    icon: cuttingEdge_6,
   }
 ];
 
@@ -1054,7 +1053,8 @@ const reactNativeTech = [
 const angularTech = [
   {
     "category": "Frameworks",
-    "items": ["AngularJS", "Angular 2+", "NGRX (Angular + Redux)"]
+    "items": ["AngularJS", "Angular 2+", "NGRX (Angular + Redux)"],
+    icon: FaCube,
   },
   {
     "category": "Libraries",
@@ -1070,15 +1070,18 @@ const angularTech = [
       "FullCalendar",
       "@Types/Fabric (For Canvas)",
       "@Types/Cropperjs (For Cropping)"
-    ]
+    ],
+    icon: FaDesktop,
   },
   {
     "category": "Databases",
-    "items": ["PostgreSQL", "RethinkDB", "MongoDB", "Firebase", "CouchDB", "MySQL"]
+    "items": ["PostgreSQL", "RethinkDB", "MongoDB", "Firebase", "CouchDB", "MySQL"],
+    icon: FaDatabase,
   },
   {
     "category": "Tools & Utilities",
-    "items": ["Sublime", "VS Code", "Webstorm"]
+    "items": ["Sublime", "VS Code", "Webstorm"],
+    icon: FaTasks,
   }
 ];
 
@@ -2439,9 +2442,7 @@ const TECHNOLOGY_CONTENT = {
     <Common />
   </>,
   "generative-ai": {
-    title: "Generative AI",
-    description:
-      "Solutions powered by LLMs and diffusion models: content automation, assistants, and intelligent workflows.",
+    title: "Comming Soon",
   },
   "ai-ml": 
     <>
@@ -2472,11 +2473,11 @@ const TECHNOLOGY_CONTENT = {
       emphasizeTextIndex={[1]}
       emphasizePhrases={["hire mobile app developers"]}
       />
+      <PremiumServices />
       <TechnologiesSlider
         title="Technology We Use For Artificial Intelligence Development" 
         techCards={Aiml_Tech}
     />
-      <PremiumServices />
       <ReasonChoose 
         title="Key benefits of choosing AI Development Services"
         des="As pioneers in the field of artificial intelligence software development, we advise companies to take advantage of the potential of data and AI to open up a multitude of doors"

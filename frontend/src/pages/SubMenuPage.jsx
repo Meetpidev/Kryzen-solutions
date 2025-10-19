@@ -15,6 +15,8 @@ import PieChart from "../public/pie_chart.webp";
 import Img_1 from "../public/Explore_1.png";
 import Img_2 from "../public/Explore_2.png";
 import Img_3 from "../public/Explore_3.png";
+import Img_4 from "../public/Explore_4.png";
+import Img_5 from "../public/Explore_5.png";
 import cuttingEdge_1 from "../public/cuttingEdge.png";
 import cuttingEdge_2 from "../public/cuttingEdge_2.png";
 import cuttingEdge_3 from "../public/cuttingEdge_4.png";
@@ -86,6 +88,8 @@ import StartupDev from "../public/startup_consulting_about.svg";
 import StartupSection from "../public/startup_consulting_section_1.svg";
 import UI from "../public/ui.png";
 import UISection from "../public/img_graphic.svg"
+import DigitalDev from "../public/2.svg";
+import DigitalSection from "../public/3.svg";
 
 
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
@@ -229,19 +233,19 @@ const expertiseCards = [
     title: "iOS App Development",
     description:
       "We create iOS App Development company with fresh concepts, a straightforward GUI and interactive elements to help users reach out to you in a convenient way.",
-    btn: "View More",
+    icon: Type_1,
   },
   {
     title: "Flutter App Development",
     description:
       "Our team can develop Flutter App Development Company for your business that will help you save money, time while providing you with visually appealing native apps to boost ROI.",
-    btn: "View More",
+    icon: Type_2,
   },
   {
     title: "Cross-Platform Mobile Apps",
     description:
       "Our team combines transparency, features, and sensitive interfaces by leveraging the best cross-platform development such as Ionic, Xamarin, and others.",
-    btn: "View More",
+    icon: Type_3,
   },
 ];
 
@@ -249,33 +253,39 @@ const ipadExpertise = [
   {
     title: "iPad App Design",
     description:
-      "We specialize in crafting intuitive and engaging iPad app designs, ensuring a seamless user experience tailored to your brand's identity."
+      "We specialize in crafting intuitive and engaging iPad app designs, ensuring a seamless user experience tailored to your brand's identity.",
+    icon: Type_1,
   },
   {
     title: "Enterprise iPad App Development",
     description:
-      "Our team develops robust enterprise-grade iPad applications, focusing on scalability, security, and performance to meet business needs."
-  },
+      "Our team develops robust enterprise-grade iPad applications, focusing on scalability, security, and performance to meet business needs.",
+    icon: Type_2,
+    },
   {
     title: "iPad Tech Support and Preventative Maintenance",
     description:
-      "We offer comprehensive technical support and maintenance services, ensuring your iPad applications remain up-to-date and perform optimally."
+      "We offer comprehensive technical support and maintenance services, ensuring your iPad applications remain up-to-date and perform optimally.",
+    icon: Type_3,
   },
   {
     title: "iPad App Development in Native Language",
     description:
-      "Leveraging native iOS technologies, we build high-performance iPad applications that fully utilize device capabilities and deliver superior user experiences."
+      "Leveraging native iOS technologies, we build high-performance iPad applications that fully utilize device capabilities and deliver superior user experiences.",
+    icon: Type_4,
   },
   {
     title: "Augmented Reality (AR) App Solutions",
     description:
-      "We develop interactive AR applications for iPad, enhancing user engagement by integrating real-world elements with digital content."
+      "We develop interactive AR applications for iPad, enhancing user engagement by integrating real-world elements with digital content.",
+    icon: Type_5,
   },
   {
     title: "Integration with Third-Party Services",
     description:
-      "Our expertise includes integrating iPad apps with various third-party services like WebRTC, Twilio, Stripe, PayPal, and more, to extend functionality."
-  }
+      "Our expertise includes integrating iPad apps with various third-party services like WebRTC, Twilio, Stripe, PayPal, and more, to extend functionality.",
+    icon: Type_6,
+    }
 ];
 
 const ipadAppBenefits = [
@@ -466,30 +476,35 @@ const Django_Impact = [
     description:
       "Leveraging agile methodologies and the Django framework, Sapphire Software Solutions enables businesses to launch web applications swiftly, reducing development timelines and accelerating time-to-market.",
     bg: "bg-yellow-100",
+    img: Img_1,
   },
   {
     title: "Enhanced Security",
     description:
       "By utilizing Django's built-in security features, Sapphire ensures that applications are protected against common threats like SQL injection, cross-site scripting, and cross-site request forgery, safeguarding sensitive data.",
     bg: "bg-teal-100",
+    img: Img_2,
   },
   {
     title: "Scalability and Flexibility",
     description:
       "Django's modular architecture allows for the development of scalable applications that can grow with your business needs, ensuring long-term adaptability and performance.",
     bg: "bg-blue-100",
+    img: Img_3,
   },
   {
     title: "Cost Efficiency",
     description:
       "The use of reusable components and rapid development capabilities of Django leads to reduced development costs, providing businesses with high-quality solutions within budget.",
     bg: "bg-blue-100",
+    img: Img_4,
   },
   {
     title: "Customizable Solutions",
     description:
       "Sapphire's expertise in Django allows for the creation of tailor-made applications that align with specific business requirements, offering personalized solutions that drive business success.",
     bg: "bg-teal-100",
+    img: Img_5,
   }
 ];
 
@@ -497,32 +512,38 @@ const Django_benifits = [
   {
     title: "Fast growth",
     description:
-      "We can create web apps using Django's batteries-included approach, which includes many built-in capabilities and tools. Developers can concentrate on crucial application functionalities using Django’s admin interface, authentication system, and ORM."
+      "We can create web apps using Django's batteries-included approach, which includes many built-in capabilities and tools. Developers can concentrate on crucial application functionalities using Django’s admin interface, authentication system, and ORM.",
+    icon: Maintain,
   },
   {
     title: "Versatility",
     description:
-      "Django is a flexible framework for building CMS, e-commerce, social network, and other online applications. Its large ecosystem of third-party packages and extensions allow developers to adapt it to their applications."
+      "Django is a flexible framework for building CMS, e-commerce, social network, and other online applications. Its large ecosystem of third-party packages and extensions allow developers to adapt it to their applications.",
+    icon: Crm,
   },
   {
     title: "Scalability and performance",
     description:
-      "Its easy scaling makes Django suited for startups and big companies. Django apps can withstand substantial traffic loads and remain responsive because of their scalable design and performance optimization methods like caching and database query optimization."
+      "Its easy scaling makes Django suited for startups and big companies. Django apps can withstand substantial traffic loads and remain responsive because of their scalable design and performance optimization methods like caching and database query optimization.",
+    icon: Accountibility,
   },
   {
     title: "Community and Help",
     description:
-      "To help developers at every level, the Django community includes documentation, tutorials, forums, and online tools. Due to Django’s open-source nature, developers may use many free and open-source tools and libraries to speed up development."
+      "To help developers at every level, the Django community includes documentation, tutorials, forums, and online tools. Due to Django’s open-source nature, developers may use many free and open-source tools and libraries to speed up development.",
+    icon: Scalability,
   },
   {
     title: "Security",
     description:
-      "Web developers prioritize security, and Django has several built-in security measures. Django prevents SQL injection, XSS, CSRF, and clickjacking. User login and permission are built into Django, making safe user authentication."
+      "Web developers prioritize security, and Django has several built-in security measures. Django prevents SQL injection, XSS, CSRF, and clickjacking. User login and permission are built into Django, making safe user authentication.",
+    icon: Maintain,
   },
   {
     title: "Flexibility",
     description:
-      "Its modular architecture and simple code refactoring let developers adapt to changing needs and iterate fast. Data manipulation and dynamic content generation are simplified by Django’s template system and ORM."
+      "Its modular architecture and simple code refactoring let developers adapt to changing needs and iterate fast. Data manipulation and dynamic content generation are simplified by Django’s template system and ORM.",
+    icon: Crm,
   }
 ];
 
@@ -923,59 +944,65 @@ const ProgressiveWeb_experties = [
   {
     "title": "Progressive Web App Consultation",
     "description": "As a PWA development company, we have experienced consultants working dedicated to help you create your progressive web application. Get in touch with us to receive our end-to-end progressive web application.",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_1,
   },
   {
     "title": "Custom PWA Development Solutions",
     "description": "Because the top progressive web app developers we employ have been active in the field for over a decade, we have a comprehensive understanding of progressive web application development.",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_2,
   },
   {
     "title": "Fluid Progressive Web App Design",
     "description": "Our progressive web app developers are skilled in creating intuitive and catchy progressive web apps. Try it out for yourself and discover how our designs can inadvertently interact with your users to raise engagement and conversion rates.",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_3,
   },
   {
     "title": "Progressive Web App Migration",
     "description": "Hire a Dedicated PWA developer who works on our progressive web apps and has the experience necessary to migrate your entire company from its current system to a progressive web app without endangering any of your sensitive data",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_4,
   },
   {
     "title": "PWA Quality Assurance Services",
     "description": "To provide higher quality and a more exciting user experience, we will analyze your progressive web app, locate and eliminate any bugs or glitches that we find, and guarantee that its performance is faultless and seamless.",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_5,
   },
   {
     "title": "PWA Maintenance & Support",
     "description": "Integration of PWA, migration, regular checks, web app audits, and even upgrades, among many other services, are all available. We create progressive web apps of better quality while assuring faultless performance and a wealth of features.",
-    "icon": "Android Logo to Apple Logo"
+    icon: Type_6,
   }
 ];
 
 const Chatbot_experties = [
   {
     "title": "Structure Of A Conversation",
-    "description": "To a large extent, UI/UX 2.0. Natural Language Interfaces (NLIs) will be used with more conventional user interface components such as buttons, menus, and pictures to make our interfaces conversational."
+    "description": "To a large extent, UI/UX 2.0. Natural Language Interfaces (NLIs) will be used with more conventional user interface components such as buttons, menus, and pictures to make our interfaces conversational.",
+    icon: Type_1,
   },
   {
     "title": "The Chatbot Architectural Framework",
-    "description": "Our chatbot software developers have created bots for usage both internally and by consumers. As a result, we are familiar with the specific combinations of frameworks, APIs, and chatbot development processes that will be most effective in various use scenarios."
+    "description": "Our chatbot software developers have created bots for usage both internally and by consumers. As a result, we are familiar with the specific combinations of frameworks, APIs, and chatbot development processes that will be most effective in various use scenarios.",
+    icon: Type_2,
   },
   {
     "title": "Natural Language Processing",
-    "description": "We use natural language understanding and processing to recognize different categories, such as intentions, actions, entities, and context, around which replies may be structured."
+    "description": "We use natural language understanding and processing to recognize different categories, such as intentions, actions, entities, and context, around which replies may be structured.",
+    icon: Type_3,
   },
   {
     "title": "Processing Pipeline",
-    "description": "Our chatbot developers use a pre-processing pipeline to handle typical issues with dependency parsing, lemmatization, POS-checking, and other tasks, which helps limit the number of false negatives and false positives."
+    "description": "Our chatbot developers use a pre-processing pipeline to handle typical issues with dependency parsing, lemmatization, POS-checking, and other tasks, which helps limit the number of false negatives and false positives.",
+    icon: Type_4,
   },
   {
     "title": "Deployment & Integration",
-    "description": "The Chatbot will be available for deployment as soon as the chatbot development life cycle has been completed. Our chatbot developers are capable of on-premise or cloud deployment, as well as microservices and REST-based design, for as little downtime as possible."
+    "description": "The Chatbot will be available for deployment as soon as the chatbot development life cycle has been completed. Our chatbot developers are capable of on-premise or cloud deployment, as well as microservices and REST-based design, for as little downtime as possible.",
+    icon: Type_5,
   },
   {
     "title": "Chatbot Consulting Company",
-    "description": "Please don't hesitate to contact us if you have questions about creating chatbots. Our expert will provide you with no-cost guidance and recommendations about the design and development of a Chatbot."
+    "description": "Please don't hesitate to contact us if you have questions about creating chatbots. Our expert will provide you with no-cost guidance and recommendations about the design and development of a Chatbot.",
+    icon: Type_6,
   }
 ];
 
@@ -3578,7 +3605,7 @@ const contentMap = {
   "digital marketing": (
     <>
       <HeroSection
-        title="#1 Digital Marketing Services in INDIA"
+        title="Digital Marketing Services in INDIA"
         description="Digital marketing is a type of marketing where digital platforms are used to connect with potential customers. AI-powered digital marketing company to increase leads and sales and promoting a purchase is the ultimate purpose of digital marketing for a buyer or customer. Methods like email, social media, and web-based advertising are used to connect with potential customers and increase brand visibility online. Contact us now to know how to achieve success through our digital marketing services."
         buttonText="Get Started"
         buttonLink="#contact"
@@ -3587,6 +3614,8 @@ const contentMap = {
       />
       <LogoCarousel />
       <Charts
+        img={DigitalDev}
+        img2={DigitalSection}
         h1="Get 360-Degree Ecommerce Digital Marketing Services"
         p1="Best digital marketing agency in USA for business growth provide 360-degree digital marketing services to help you put your company online and enhance your online visibility. We increase lead creation and business with a high customer acquisition rate and quality and focused lead creation. As an affordable digital marketing company, we use keyword research, competitive analysis, sponsored listings, and other search engine services to increase website traffic. Construct pay-per-click (PPC) search engine advertising campaigns to target a particular audience seeking products or services. Our Full-Service Digital Marketing Agency helps you reach new customers and improve visibility."
         h2="Hire Custom Digital Marketing Solutions for Best Results"

@@ -1,48 +1,73 @@
-export default function Technology_pannel({ techCards = [] }){
+import { Link } from "react-router-dom";
+
+// Note: techCards prop is assumed to be an array of objects like:
+// [{ category: "Frontend", items: ["React", "Vue", "Angular"] }, ...]
+
+export default function Technology_pannel({ techCards = [] }) {
+  // Define color constants for clarity
+  const PRIMARY_BLUE = "bg-[#065a89]";
+  const LIGHT_BLUE_BG = "bg-[#eaf2f8]";
+  const TEXT_PRIMARY = "text-[#065a89]";
+  const TEXT_WHITE = "text-white";
+
+  // The ROW_HEIGHT variable is removed as Tailwind handles flexible height better,
+  // letting the content dictate the height, especially on mobile.
+
   return (
-    <div style={{
-      width: '100%',
-      maxWidth: '1100px',
-      margin: '40px auto',
-      fontFamily: 'inherit',
-      padding: '0 20px'
-    }}>+
-      <h1 style={{
-        textAlign: 'center', fontSize: '2.5rem',
-        fontWeight: 'bold', marginBottom: '34px'
-      }}>
+    <div className="w-full max-w-7xl mx-auto my-10 px-4 md:px-6 font-sans">
+      {/* Title */}
+      <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12">
         Technology Stack That Krayzen Mobile Developers Use Proficiently
       </h1>
+      
+      {/* Technology Cards Container */}
       <div>
         {techCards.map((section, idx) => (
-          <div key={section.category + idx}
-            style={{
-              display: 'flex', alignItems: 'center', marginBottom: '16px',
-            }}
-            className="tech-row"
+          <div
+            key={section.category + idx}
+            className="flex flex-col md:flex-row items-stretch mb-4 tech-row"
           >
-            <div className="tech-category" style={{
-              minWidth: '100px', background: '#065a89', color: '#fff',
-              fontWeight: 'bold', fontSize: '1.17rem',wordBreak: "break-word",
-              padding: '18px 30px', borderRadius: '12px 0 0 12px',
-              marginBottom: '8px', flex: 'none'
-            }}>
+            {/* Category Panel (Left/Top) */}
+            <div
+              className={`
+                ${PRIMARY_BLUE} ${TEXT_WHITE} font-bold 
+                text-lg 
+                p-4 md:p-8 
+                md:w-[300px] // CATEGORY_WIDTH equivalent for desktop
+                flex items-center justify-start 
+                rounded-t-xl md:rounded-tr-none md:rounded-l-xl 
+                min-h-[54px] // ROW_HEIGHT equivalent min height
+                break-words normal-case // wordBreak and whiteSpace fixes
+              `}
+            >
               {section.category}
             </div>
-            <div className="tech-items" style={{
-              flex: '1', display: 'flex', flexWrap: 'wrap',
-              background: '#eaf2f8', borderRadius: '0 12px 12px 0',
-              padding: '12px 10px'
-            }}>
+
+            {/* Items Panel (Right/Bottom) */}
+            <div
+              className={`
+                flex-1 flex flex-wrap items-center 
+                ${LIGHT_BLUE_BG} 
+                rounded-b-xl md:rounded-bl-none md:rounded-r-xl 
+                p-2 md:p-3
+                min-w-0
+              `}
+            >
               {section.items.map((item, itemIdx) => (
-                <span key={item + itemIdx}
-                  style={{
-                    background: '#fff', color: '#065a89',
-                    margin: '6px 8px 6px 0', padding: '10px 24px',
-                    borderRadius: '10px', fontWeight: '500',
-                    boxShadow: '0 1px 4px rgba(0,0,0,0.054)',
-                    fontSize: '1rem', wordBreak: "break-word"
-                  }}>
+                <span
+                  key={item + itemIdx}
+                  className={`
+                    bg-white ${TEXT_PRIMARY} font-medium 
+                    text-sm md:text-base 
+                    m-1.5 md:m-2 
+                    px-4 md:px-5 py-2 
+                    rounded-xl 
+                    shadow-sm
+                    max-w-[210px] // To prevent overly wide chips
+                    truncate // Added truncate for text overflow (if needed)
+                    inline-block // Ensures margin and padding work consistently
+                  `}
+                >
                   {item}
                 </span>
               ))}
@@ -50,51 +75,25 @@ export default function Technology_pannel({ techCards = [] }){
           </div>
         ))}
       </div>
-      <div style={{
-        display: 'flex', justifyContent: 'center',
-        marginTop: '36px'
-      }}>
-        <button style={{
-          background: '#065a89', color: '#fff',
-          padding: '18px 46px', border: 'none',
-          borderRadius: '8px', fontSize: '1.22rem',
-          fontWeight: '600', cursor: 'pointer'
-        }}>
+
+      {/* Contact Link */}
+      <div className="flex justify-center mt-9 md:mt-12">
+        <Link 
+          to="/contact-us" 
+          className={`
+            ${PRIMARY_BLUE} ${TEXT_WHITE} 
+            px-8 py-4 
+            rounded-lg 
+            text-lg font-semibold 
+            cursor-pointer 
+            transition duration-300 ease-in-out 
+            hover:shadow-lg hover:brightness-110
+            inline-block
+          `}
+        >
           Share Your Requirement
-        </button>
+        </Link>
       </div>
-      <style>{`
-        @media (max-width: 880px) {
-          .tech-row {
-            flex-wrap: wrap;
-            flex-direction: column;
-          }
-          .tech-category {
-            min-width: unset;
-            border-radius: 12px 12px 0 0;
-            width: 100%;
-            text-align: left;
-          }
-          .tech-items {
-            border-radius: 0 0 12px 12px;
-            width: 100%;
-          }
-        }
-        @media (max-width: 600px) {
-          .tech-category {
-            padding: 14px 16px;
-            font-size: 1rem;
-          }
-          .tech-items span {
-            padding: 9px 13px;
-            font-size: .95rem;
-          }
-          h1 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-          }
-        }
-      `}</style>
     </div>
   );
 }
