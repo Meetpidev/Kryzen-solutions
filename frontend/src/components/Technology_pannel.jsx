@@ -6,7 +6,7 @@ export default function Technology_pannel({ techCards = [] }){
       margin: '40px auto',
       fontFamily: 'inherit',
       padding: '0 20px'
-    }}>
+    }}>+
       <h1 style={{
         textAlign: 'center', fontSize: '2.5rem',
         fontWeight: 'bold', marginBottom: '34px'

@@ -162,12 +162,12 @@ export default function Contact() {
   };
 
   const stats = [
-    { number: 20, suffix: '+', label: 'Years Experience' },
-    { number: 2800, suffix: '+', label: 'Satisfied Clients' },
-    { number: 1500, suffix: '+', label: 'Completed Projects' },
-    { number: 200, suffix: '+', label: 'IT Professional' },
-    { number: 95, suffix: '%', label: 'Client Retention' },
-    { number: 18, suffix: '+', label: 'Industry Served' }
+    { number: 2, suffix: '+', label: 'Years Experience' },
+    { number: 20, suffix: '+', label: 'Satisfied Clients' },
+    { number: 15, suffix: '+', label: 'Completed Projects' },
+    { number: 10, suffix: '+', label: 'IT Professional' },
+    { number: 99, suffix: '%', label: 'Client Retention' },
+    { number: 2, suffix: '+', label: 'Industry Served' }
   ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
@@ -457,17 +457,17 @@ export default function Contact() {
       <div className="grid gap-4 grid-cols-1 md:grid-cols-3 text-center">
         <div className="bg-white rounded shadow p-4">
           <p className="font-bold mb-1">Sales</p>
-          <p className="text-xs mb-1">IN: +91-942-070-8662<br />US: +1-754-236-7870</p>
-          <p className="text-xs mb-1">contact@sapphiresolutions.net</p>
+          <p className="text-xs mb-1">IN: +91-704-125-2829<br /></p>
+          <p className="text-xs mb-1">contact@kryzensoftwaresolutions.com</p>
         </div>
         <div className="bg-white rounded shadow p-4">
           <p className="font-bold mb-1">Careers (Jobs)</p>
-          <p className="text-xs mb-1">IN: +91-903-607-8054<br />US: +1-754-236-7870</p>
-          <p className="text-xs mb-1">careers@sapphiresolutions.net</p>
+          <p className="text-xs mb-1">IN: +91-704-125-2829<br /></p>
+          <p className="text-xs mb-1">contact@kryzensoftwaresolutions.com</p>
         </div>
         <div className="bg-white rounded shadow p-4">
           <p className="font-bold mb-1">Product</p>
-          <p className="text-xs mb-1">www.vidayalayachodaksoftware.com<br />www.eaccounts.co.in</p>
+          <p className="text-xs mb-1">contact@kryzensoftwaresolutions.com<br /></p>
         </div>
       </div>
       <div>

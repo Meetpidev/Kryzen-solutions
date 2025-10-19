@@ -215,22 +215,18 @@ const Iso_TechCards = [
   {
     "title": "Xamarin + C#",
     "description": "By allowing codebases to be shared between the iOS and Android platforms, this combination can expedite deployment and maintenance while streamlining the development process.",
-    "icon": "🧩 Xamarin-CSharp Icon Placeholder"
   },
   {
     "title": "Swift + Xcode",
     "description": "Swift is a contemporary, user-friendly language that helps developers save time with its clear syntax and automated management mechanisms.",
-    "icon": "🛠️ Swift-Xcode Icon Placeholder"
   },
   {
     "title": "Swift/SwiftUI + Node JS",
     "description": "Our developers use this combination to create iOS apps for real-time communication and e-commerce platforms, among other applications that need server-side functionality.",
-    "icon": "📱 Swift-NodeJS Icon Placeholder"
   },
   {
     "title": "Swift/SwiftUI + Python",
     "description": "Make use of Python's prowess in automation, machine learning, data processing, and backend programming to improve the features and performance of your iOS apps.",
-    "icon": "📱 Swift-NodeJS Icon Placeholder"
   }
 ];
 
@@ -238,27 +234,22 @@ const Flutter_TechCards = [
   {
     "title": "Flutter + Python",
     "description": "Because of this synergy, our developers combine the expressive UI capabilities of Flutter with the flexibility and strength of Python to create cross-platform applications.",
-    "icon": "🔷 Flutter-Python Icon Placeholder"
   },
   {
     "title": "Flutter + Dart",
     "description": "The ability to create high-performance applications with a single codebase is made possible by the smooth integration of Flutter’s UI toolkit with Dart’s language capabilities.",
-    "icon": "🔷 Flutter-Dart Icon Placeholder"
   },
   {
     "title": "Flutter + Firebase",
     "description": "The ideal combo for developing applications that will enable you to launch your MVP more quickly and create feature-rich, scalable, performant, and easily maintainable apps is a comprehensive toolset.",
-    "icon": "🔷 Flutter-Firebase Icon Placeholder"
   },
    {
     "title": "Flutter + Node.js",
     "description": "The best backend to utilize with Flutter is Node.js for creating backend applications that are fully written in JavaScript and RESTful APIs, which makes app development easier and promotes coherence in architecture.",
-    "icons": "🔷 Flutter-Firebase Icon Placeholder"
   },
   {
     "title": "Flutter + MongoDB",
     "description": "Our developers create robust, scalable, feature-rich apps that provide a flawless user experience across all platforms by combining Flutter with MongoDB.",
-    "icons": "🔷 Flutter-Firebase Icon Placeholder"
   },
 ];
 
@@ -266,32 +257,26 @@ const Angular_TechCards = [
   {
     "title": "Angular + Golang",
     "description": "Applications created with Golang are quick, dependable, and scalable because of its concurrency model and performance enhancements, which enhance AngularJS's frontend features.",
-    "icons": ["Angular", "Golang"]
   },
   {
     "title": "Angular + PHP",
     "description": "Through the combination of Angular and PHP, developers may create applications with a wealth of features and smooth front-end and back-end connections.",
-    "icons": ["Angular", "PHP"]
   },
   {
     "title": "Angular + Django",
     "description": "Django's sophisticated features, such as its admin interface, built-in security methods, and ORM system, can be utilized by developers in conjunction with AngularJS on the frontend.",
-    "icons": ["Angular", "Django"]
   },
    {
     "title": "Angular + FastAPI",
     "description": "The current, high-performance web framework FastAPI and AngularJS together provide a potent combo for online application development. FastAPI is used to build APIs with Python.",
-    "icons": ["Angular", "FastAPI"]
   },
   {
     "title": "Angular + Node",
     "description": "Our developers can use JavaScript on the client and server sides to create full-stack web apps that are highly scalable and performant by combining AngularJS with Node.js.",
-    "icons": ["Angular", "Node.js"]
   },
   {
     "title": "Angular + Laravel",
     "description": "An amazing user experience may be achieved by combining Angular and Laravel while developing an enterprise application, e-commerce platform, or content management system.",
-    "icons": ["Angular", "Laravel"]
   }
 ];
 
@@ -395,27 +380,22 @@ const Aiml_Tech = [
   {
     "title": "Scikit-learn + Python",
     "description": "This combination works especially well for applications that don't need the deep learning capabilities of frameworks like TensorFlow, as well as educational reasons and data science projects.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "MLlib + Apache Spark",
     "description": "This combination is ideal for big data analytics, which involves processing and analyzing large amounts of data effectively, like in fraud detection and recommendation systems.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },  
   {
     "title": "Edge Devices + TensorFlow Lite",
     "description": "This combination is ideal for applications like autonomous drones and smart home devices, where offline capabilities and low latency are critical.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "Power BI + Azure AI",
     "description": "This combination is appropriate for business applications like customer behavior research and sales forecasting that require scalable AI systems with potent data visualization capabilities.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "Kubernetes + Docker ",
     "description": "Applications can be containerized with Docker, guaranteeing consistency between various development and deployment environments. An effective orchestration tool for scaling containerized systems is Kubernetes.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   }
 ];
 
@@ -423,32 +403,26 @@ const BlockChanin_Tech = [
   {
     "title": "Blockchain + Artificial Intelligence (AI)",
     "description": "Integrating AI with blockchain can improve data processing and decision-making in decentralized networks. AI algorithms may analyze vast volumes of data on the blockchain, enhancing automation, fraud detection, and predictive analysis.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "Blockchain + Internet of Things (IoT)",
     "description": "For supply chain management, smart homes, and industrial applications, blockchain offers a decentralized framework for controlling data and interactions between IoT devices, guaranteeing security and trust.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
-  },
+      },
   {
     "title": "Blockchain + Cloud Computing",
     "description": "Blockchain gives an additional layer of decentralized security, while cloud computing offers scalable infrastructure. We use this combination to implement decentralized apps (dApps) globally while preserving effective data processing and storage capacities.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
    {
     "title": "Blockchain + Decentralized Finance (DeFi)",
     "description": "DeFi platforms—decentralized substitutes for conventional financial services—are built on top of blockchain technology. Asset management, trading, and lending are all made possible by combining blockchain technologies with DeFi applications.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "Blockchain + Smart Contracts",
     "description": "With the conditions of agreements encoded into code, smart contracts are self-executing contracts. Smart contract integration with blockchain minimizes the need for middlemen and ensures trustless execution by automating and securing complicated transactions.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "Blockchain + Interoperability Protocols",
     "description": "Multiple blockchain networks may easily communicate and share data because of interoperability protocols like Polkadot and Cosmos. Developers can design more scalable and diverse applications that take advantage of cross-chain features.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   }
 ];
 
@@ -456,17 +430,14 @@ const Fullstack_Tech = [
   {
     "title": "Express.js + Node.js",
     "description": "Express.js is a lightweight web application framework for Node.js that offers powerful functionality for developing web applications and APIs. Node.js is a runtime environment that lets you run JavaScript on the server side.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "JavaScript + HTML/CSS/PHP",
     "description": "PHP is a server-side scripting language that is frequently used to construct dynamic webpages; client-side presentation and interaction are handled by HTML, CSS, and JavaScript.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   },
   {
     "title": "MEAN Stack",
     "description": "Our full-stack developers create scalable, interactive, and effective online apps that rock in terms of responsiveness and performance by combining Node.js and Angular.js's dynamic front-end capabilities with Express.js for the backend.",
-    "icon": "<img src={cuttingEdge_1} alt=\"Icons\" />"
   }
 ];
 

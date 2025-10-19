@@ -26,7 +26,7 @@ const Right_Nav = () => {
         setMessages(prev => ([...prev, { role: 'bot', text: 'Typing…', typing: typingToken }]));
 
         try {
-            const response = await fetch('https://akdxenj.app.n8n.cloud/webhook/41b418b5-66ea-4701-93a1-fd6dd0132def', {
+            const response = await fetch('https://meetpidev.app.n8n.cloud/webhook/41b418b5-66ea-4701-93a1-fd6dd0132def', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

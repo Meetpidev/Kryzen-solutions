@@ -76,14 +76,17 @@ function OfficeCard({ country, flag, address, highlight }) {
     );
 }
 
-function ReviewBadge({ icon, reviewCount }) {
+function ReviewBadge({ icon }) {
     return (
+        <>
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 px-3 py-2 text-center sm:text-left">
             {icon}
-            <div className="sm:ml-2">
-                <p className="text-[1.125rem] text-gray-600 font-bold">{reviewCount}</p>
+            
             </div>
-        </div>
+            <div className="sm:ml-2 translate-x-12">
+                <p className="text-[1.125rem] text-gray-600 font-bold">50+ REVIEWS</p>
+            </div>
+            </>
     );
 }
 
@@ -180,7 +183,6 @@ export default function AppFooter() {
 
                                             </>
                                         }
-                                        reviewCount="50+ REVIEWS"
                                     />
                                 </div>
 

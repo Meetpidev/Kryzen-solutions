@@ -1,5 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, lazy, Suspense } from "react";
+import AI from "./pages/AI.jsx";
+import Blog from "./pages/Blog.jsx";
+import Careers from "./pages/Careers.jsx";
 
 const Header = lazy(() => import("./common/Header.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
@@ -8,7 +11,7 @@ const Choose = lazy(() => import("./pages/Choose.jsx"));
 const Events = lazy(() => import("./pages/Events.jsx"));
 const CeoMsg = lazy(() => import("./pages/CeoMsg.jsx"));
 const SubMenuPage = lazy(() => import("./pages/SubMenuPage.jsx"));
-  const TechnologyPage = lazy(() => import("./pages/TechnologyPage.jsx"));
+const TechnologyPage = lazy(() => import("./pages/TechnologyPage.jsx"));
 const Footer = lazy(() => import("./common/Footer.jsx"));
 const AppFooter = lazy(() => import("./common/AppFooter.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
@@ -73,6 +76,9 @@ function App() {
           <Route path="/technology/:tech" element={<TechnologyPage />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/term-of-use" element={<Terms />} />
+          <Route path="/Ai" element={<AI />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
         <Footer />
         <AppFooter />

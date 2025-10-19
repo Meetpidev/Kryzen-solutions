@@ -56,9 +56,9 @@ export default function InsightFulVideos() {
         <p className="text-center text-gray-600 mb-8">
           At Sapphire, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Sapphire!
         </p>
+        <h1 className="text-center">Comming Soon</h1>
 
-
-        <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
+        {/* <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
           {years.map((yr) => (
             <button
               key={yr}
@@ -72,9 +72,9 @@ export default function InsightFulVideos() {
               {yr}
             </button>
           ))}
-        </div>
+        </div> */}
 
-
+{/* 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((img, idx) => (
             <div
@@ -94,7 +94,7 @@ export default function InsightFulVideos() {
               No images available for {selectedYear}.
             </div>
           )}
-        </div>
+        </div> */}
       </section>
 
       <section>

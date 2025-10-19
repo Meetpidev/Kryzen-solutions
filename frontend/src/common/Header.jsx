@@ -184,7 +184,7 @@ export default function Header() {
               </div>
 
               <div className="flex items-center gap-2">
-                <img src={Email} alt="Mail" className="w-4 h-4" />
+                <img src={Email} alt="Mail" className="w-6 h-4" />
                 <a href="mailto:contact@kryzensoftwaresolutions.com" className={`text-xs lg:text-[1rem] ${(!isHome || isScrolled) ? "text-black hover:text-blue-700" : "text-white hover:text-blue-300"
                   }`}>contact@kryzensoftwaresolutions.com</a>
               </div>
@@ -268,12 +268,12 @@ export default function Header() {
 
                                       </div>
                                       <div>
-                                        <Link to='/choose' onMouseLeave={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
-                                        <div className="py-3" onMouseLeave={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
+                                        <Link to='/choose' onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
+                                        <div className="py-3" onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
                                       </div>
                                       <div>
-                                        <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</div>
-                                        <div className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</div>
+                                        <Link to="/blog" onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</Link>
+                                        <div onMouseLeave={() => setmegaMenu(null)} onClick={() => setmegaMenu(null)}><Link to="/careers"  className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</Link></div>
                                       </div>
                                     </div>
                                   </div>
@@ -485,7 +485,8 @@ export default function Header() {
 
             {/* Desktop-only buttons */}
             <div className="hidden lg:flex items-center ml-auto space-x-4">
-              <button
+              <Link
+                to="/Ai"
                 className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm hover:from-purple-600 hover:to-pink-600 transition-all duration-200 flex items-center"
                 data-testid="button-lets-talk-ai"
                 style={{ minWidth: 120 }}
@@ -494,7 +495,7 @@ export default function Header() {
               >
                <span className="mr-2">✨</span>
                 Let's Talk AI
-              </button>
+              </Link>
               <Link to="/contact-us">
                 <button
 
