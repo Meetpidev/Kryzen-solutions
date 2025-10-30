@@ -90,6 +90,13 @@ import UI from "../public/ui.png";
 import UISection from "../public/img_graphic.svg"
 import DigitalDev from "../public/2.svg";
 import DigitalSection from "../public/3.svg";
+import Softwaredevelopment from "../public/software_dev_service_banner.svg";
+import SoftwareDev from "../public/bestsoftwaredev.png";
+import Application from "../public/application_services1.svg";
+import ApplicationDev from "../public/appliacationservice.png";
+import CRM from "../public/crm_development_banner.svg";
+import CRMDev from "../public/crm_development_about.svg";
+import CRMSection from "../public/crm_development_section_1.svg";
 
 
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
@@ -640,6 +647,40 @@ const DigitalMarketing_benifits = [
   }
 ];
 
+const Application_benifits =  [
+  {
+    title: "Mobile App UI/UX Design",
+    description:
+      "By considering market trends and creating best practices that provide an enhanced app user experience, we can help you create a unique, sophisticated, and user-friendly mobile app user interface."
+  },
+  {
+    title: "MVP Development",
+    description:
+      "By creating an MVP with the necessary functionality, we increase your trust in the app idea. This enables you to swiftly release a test app onto the market and attract early users before moving on to complete app development."
+  },
+  {
+    title: "Custom App Development",
+    description:
+      "Whether you’re developing a mobile app for a business or a community, we can help you realize your unique idea by incorporating cutting-edge features that will make it stand out from the crowd."
+  },
+  {
+    title: "Startup App Development",
+    description:
+      "Our world-class app development solutions will help your startup take off by helping startups get the best app solution possible with the use of leading app development frameworks."
+  },
+  {
+    title: "Enterprise App Development",
+    description:
+      "Enhance your business operations through mobility by integrating third-party integrations and industry-leading technologies into your mobile app solutions to increase revenue and business operations."
+  },
+  {
+    title: "Embedded IoT App Development",
+    description:
+      "To control and fully exploit your IoT-enabled environment, get a highly customized embedded software solution built with cloud and AI/ML technology."
+  }
+];
+
+
 const Python_benifits = [
   {
     "title": "Versatility and Flexibility",
@@ -714,6 +755,40 @@ const BigCommerce_benifits = [
     "description": "The upkeep of a digital platform is just as necessary as the platform's initial construction, and maybe even more so. It is essential to do so consistently. Even after the completion of the project, we will continue to provide uninterrupted support and maintenance for your eCommerce platform."
   }
 ];
+
+const SoftwareBenifits = [
+  {
+    title: "Software Development for Startups",
+    description:
+      "Are you going to develop software for your company that will set you apart from the competition? We can deliver you an innovative startup software development solution that puts your brand front and center if we bring a team of knowledgeable business analysts, project managers, and tech leaders on board."
+  },
+  {
+    title: "Web App Development",
+    description:
+      "Our web development services span a wide range of options focused on helping you establish high-quality, responsive, and user-friendly web apps adapted to your company's needs. From sophisticated web app development to developing brand websites, we can help you achieve this goal."
+  },
+  {
+    title: "Enterprise Software Development",
+    description:
+      "Being a leading corporate software development firm, we provide complex software solutions that assist clients in increasing productivity, streamlining processes, and expanding their businesses. Our corporate software solutions are built with the newest technology and work smoothly with current systems."
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "We provide complete mobile app development services to build unique, captivating, and performance-optimized mobile apps for the iOS and Android platforms using native and cross-platform technologies."
+  },
+  {
+    title: "Software Product Development",
+    description:
+      "Have an original software concept? Hire a dedicated development team that helps you design market-ready solutions that contemporary people desire, from conception to validation, with MVP development, testing, and deployment."
+  },
+  {
+    title: "Legacy Software Modernization",
+    description:
+      "We are renowned for providing inventive and meticulous services for modernizing legacy software, which involve evaluating the software as it is today, pinpointing places in need of development, and reviving outdated programs with the help of contemporary technology."
+  }
+];
+
 
 const AppDev_experties = [
   {
@@ -1277,6 +1352,81 @@ const Laravel_Tech = [
     icon: <img src={cuttingEdge_6} alt="Icons" />,
   },
 ];
+
+const crmServices = [
+  {
+    title: "CRM Implementation",
+    description:
+      "We enhance the universal CRM experience using Robotic Process Automation (RPA) by utilizing many platforms, such as automatic data input and reporting.",
+    icon: <img src={cuttingEdge_1} alt="Icons" />,
+  },
+  {
+    title: "CRM Migration",
+    description:
+      "With CRM Migration, we seek to ensure the integrity of your data throughout its move from old to new CRM systems. Our CRM dynamics developer converts data from one system to another based on requirements."
+  },
+  {
+    title: "CRM Customization",
+    description:
+      "We provide CRM for software development with typical business CRM capabilities that assist entrepreneurs in achieving their sales and customer retention objectives."
+  },
+  {
+    title: "CRM Integration",
+    description:
+      "We provide a CRM system for business development accessible in real-time through many global communication channels to all CRM users. We integrate AI to analyze customer inputs and provide intelligent suggestions."
+  },
+  {
+    title: "Custom Module",
+    description:
+      "We provide a choice of modules based on the requirements of our customers if you are looking for outsourcing CRM development. Our modules work together to provide smooth sales and marketing operations for your company's clients. Our modules generate impressive processes, which our customers and detractors acknowledge."
+  },
+  {
+    title: "Custom Dashboard",
+    description:
+      "We provide CRM web development with analytical and user-friendly dashboards that provide your team with robust statistics and calculative tables. Hire CRM website developers to create unique dashboards that offer reports in a few seconds. Your service, marketing, and sales data are integrated into your CRM credentials and complex queries."
+  }
+];
+
+const crm_benifits = [
+  {
+    title: "Centralized Data",
+    description:
+      "CRM development lets companies concentrate customer data from several sources. Our complete perspective of consumer interactions, preferences, and history empowers organizations to customize and improve customer experiences.",
+    icon: Maintain,
+  },
+  {
+    title: "Customer Engagement",
+    description:
+      "CRMs enable customer contact via email, phone, social media, and chat. CRM creation services link different channels into a single platform, helping companies react quickly to consumer questions, nurture prospects, and strengthen relationships.",
+    icon: Scalability
+  },
+  {
+    title: "Automating Sales",
+    description:
+      "CRMs automate lead generation, scoring, email campaigns, and follow-up reminders. CRM developers optimize workflows, triggers, and automation rules to boost productivity and income.",
+    icon: Crm
+  },
+  {
+    title: "Data Insights",
+    description:
+      "CRM systems analyze customer data, provide reports, and reveal sales performance, customer behavior, and market trends. CRM development helps firms enhance strategy and make data-driven choices via dashboards, analytics, and predictive models.",
+    icon: Accountibility
+  },
+  {
+    title: "Scalability, Customization",
+    description:
+      "CRM developers customize CRM systems for corporate needs and scalability. CRM developers guarantee that the CRM system meets corporate operations and growth goals by customizing fields, workflows, and connectors.",
+    icon: Maintain
+  },
+  {
+    title: "Improved Efficiency",
+    description:
+      "CRMs let sales, marketing, and customer support teams share information. CRM development services design role-based access restrictions, collaboration tools, and mobile access to let teams collaborate on client interactions and exchange information.",
+    icon: Scalability
+  }
+];
+
+
 
 const IT_Tech = [
   {
@@ -1944,6 +2094,93 @@ const Product_Tech = [
     ]
   }
 ];
+
+const Software_Tech = [
+  {
+    category: "Frontend",
+    items: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Angular",
+      "React",
+      "Vue.js",
+      "Bootstrap",
+      "Typescript",
+      "Backbone.js"
+    ]
+  },
+  {
+    category: "Full-stack Frameworks",
+    items: ["NestJS", "Koa.js", "Nuxt.js", "MeteorJS", "Next.js"]
+  },
+  {
+    category: "Backend Frameworks",
+    items: [
+      "Node.js",
+      "Express.js",
+      "PHP",
+      "Laravel",
+      "Python",
+      "Django",
+      "Flask",
+      "FastAPI"
+    ]
+  },
+  {
+    category: "Monitoring and Logging Tools",
+    items: ["Prometheus", "Grafana", "Elasticsearch", "Logstash", "Kibana"]
+  },
+  {
+    category: "Code Management",
+    items: ["Bitbucket", "GitHub", "GitLab", "SonarQube", "Maven", "Gradle"]
+  },
+  {
+    category: "Database",
+    items: ["Firebase", "Redis", "PostgreSQL", "MongoDB", "MySQL", "DynamoDB", "SQLite"]
+  },
+  {
+    category: "Cloud",
+    items: [
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Google Cloud Platform (GCP)"
+    ]
+  }
+];
+
+const Application_Tech = [
+  {
+    category: "iOS",
+    items: ["Swift", "Objective-C", "X-Code", "SwiftUI"]
+  },
+  {
+    category: "Android",
+    items: ["Java", "Kotlin", "Android Studio", "Version control tools (Git, GitLab, Bit Bucket)"]
+  },
+  {
+    category: "Cross Platform",
+    items: ["Flutter", "React Native", "Ionic", "NativeScript"]
+  },
+  {
+    category: "Database",
+    items: ["Firebase", "Redis", "PostgreSQL", "MongoDB", "MySQL", "DynamoDB", "SQLite"]
+  },
+  {
+    category: "Design Tool",
+    items: [
+      "Figma",
+      "Sketch",
+      "Adobe XD",
+      "Zeplin",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "InVision"
+    ]
+  }
+];
+
 
 const Laravel_combo = [
   {
@@ -3246,37 +3483,55 @@ const contentMap = {
   "software development": (
     <>
       <HeroSection
-        title="Software Development"
-        description="Custom software solutions tailored to your workflows, users, and growth plans."
+        title="Best Software Development Company"
+        description="Our Top-Rated Software Development Firms for Business delivers innovative and tailored digital solutions designed to help your business thrive in the online world. Backed by a skilled team of developers, designers, and project managers, Software Development Company with High Ratings, Affordable Pricing ensure quality, scalability, and performance. Known for our high client ratings and affordable pricing, we’re committed to turning your ideas into powerful, result-driven software solutions. "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={Softwaredevelopment}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={Chart}
+        img2={SoftwareDev}
+        h1="Software Development Market Stats"
+        p1="Estimates Revenue in the Software market is projected to reach US$695.20bn in 2024. Revenue is expected to show an annual growth rate (CAGR 2024-2028) of 6.23%, resulting in a market volume of US$851.10bn by 2028."
+        h2=" Best Software Development Services Provider"
+        p2={
+          <>
+            Our skilled team of software development outsourcing services creates custom solutions that are tailored to each client's specific business requirements, translating intricate concepts into reality. Award Winning Software Development Company quality assurance offers real advantages that your software development outsourcing company needs to expand, whether you're revamping your consumer interactions or increasing operational effectiveness. We strive to always deliver the BEST in class, and our special approach combines the best practices of the business with the latest technological advancements. Contact us now to get started with a free quote! 
+          </>
+        }
+      />
       <Quotes
-        title="Reliable, Maintainable, and Secure Software"
-        highlightedText="Built for Scale and Longevity"
+        title="Get 100% Software Development Solutions "
+        highlightedText="Software Development Company"
         paragraphs={[
-          "We design modular architectures with strong testing, CI/CD, and observability to keep your software fast, secure, and easy to evolve.",
-          "Our agile approach and transparent communication ensure predictable delivery and measurable business impact.",
+          "Our Reliable Software Development Company with customized solutions unleash the potential of 100% customizable software creation. Our Software Development Comapny  understands that every organization has distinct issues and needs. Our software development agency can build unique software and collaborate with you from design to implementation to guarantee the product fulfills your expectations",
+          "With our flexible development strategy, you control every element of your software solution. Our 100% bespoke Top Software Development Comapny In INDIA  gives you a solution that solves your problems and grows your company. Stop using off-the-shelf software development solutions and start using software that works for you. Partner with our Offshore Software Development Company immediately to maximize bespoke software development to greater hight.",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["predictable delivery", "measurable impact"]}
       />
       <PremiumServices />
+      <ImpactCards
+        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        benefitCards={benefitCards}
+        autoInterval={3500}
+      />
       <Benefits
         benifits={benefits}
         sectionTitle="Why Choose Our Software Development"
         sectionDescription="Scalable code, robust QA, and thoughtful UX for high adoption."
       />
       <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Technology Expertise"
-        sectionDescription="Frontend, backend, cloud-native, and data engineering skills in one team."
+      <SectorsSlider />
+      <ReasonChoose 
+        title="Kryzen Custom Software Development Services"
+        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements."
+        benifits={SoftwareBenifits}
       />
+      <Technology_pannel techCards={Software_Tech}/>
       <Common />
     </>
   ),
@@ -3284,37 +3539,48 @@ const contentMap = {
   "application services": (
     <>
       <HeroSection
-        title="Application Services"
-        description="Modernize, maintain, and optimize applications to reduce costs and improve reliability."
+        title="Application Services in INDIA"
+        description="As a DOT NET application development company, our .NET developers create web applications by using ASP.NET, .NET Core, C#, VB. Contact us now to get your DOT Net apps developed quickly by professionals."
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={Application}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={ApplicationDev}
+        h1="Custom Business Application Development Services"
+        p1="With the speed and agility of Top-rated application service providers, you can quickly and easily reinvent your application environment while consistently innovating to gain commercial value. With the speed and agility of our application services, you can quickly and easily reinvent your application environment while consistently innovating to gain commercial value. Best application development services company successfully assist in refactoring, modernization, upgrading, and scalability of their business applications with our custom application development and migration services. Whether you need on-premises, hybrid, or cloud application services, we provide the finest. "
+      />
       <Quotes
-        title="Modernization and Managed Services"
-        highlightedText="Enhance Performance and Stability"
+        title="We Deliver Innovation-Led Applications Services To Businesses"
+        highlightedText="End-To-End Application, Intelligent Platforms"
         paragraphs={[
-          "We upgrade legacy stacks, migrate to cloud-native platforms, and improve resilience with monitoring and alerting.",
-          "Our managed services cover incident response, performance tuning, and continuous improvement.",
+          "Your organization's lifeline is its applications. However, if your IT environment is complex and has high maintenance costs, you may be unable to keep up with market trends, new delivery models, and technological advances. Sapphire Solutions, an Cross-platform application development company provide streamlined, standardized, and future-proof business application development . We will help you achieve a new level of resilience to meet tomorrow's challenges by leveraging our expertise and a wide variety of technology solutions and applications.",
+          "We are a trusted leader in business applications, providing a wide array of services ranging from planning and evaluating to design, develop, run, and optimize. Our  App development consultance  can help direct you from idea to transition. With our assistance, you can create, incorporate, or modernize your application infrastructure to keep your company running efficiently, effectively, and affordably.",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["cloud-native", "continuous improvement"]}
       />
       <PremiumServices />
+      <ImpactCards
+        sectionTitle="Explore The Transformative Impact Of Mobile App On Your Business Success"
+        benefitCards={benefitCards}
+        autoInterval={3500}
+      />
+      <ReasonChoose 
+        title="Kryzen’s Comprehensive Suite of Mobile App Development Services"
+        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements. "
+        benifits={Application_benifits}
+      />
+      <SectorsSlider />
       <Benefits
         benifits={benefits}
         sectionTitle="Benefits of Application Services"
         sectionDescription="Lower TCO, improved uptime, and faster change delivery."
       />
       <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Capabilities"
-        sectionDescription="Refactoring, replatforming, SRE, and DevOps automation."
-      />
+      <Technology_pannel techCards={Application_Tech}/>
       <Common />
     </>
   ),
@@ -3372,37 +3638,47 @@ const contentMap = {
   "crm": (
     <>
       <HeroSection
-        title="CRM"
-        description="Design and implement CRM solutions that unify data and boost conversions."
+        title="CRM Development Services in INDIA"
+        description="We are experts in the design, deployment, migration, and maintenance of customer relationship management (CRM) and CRM for economic development that is both scalable and unique to each client. "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={CRM}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={CRMSection}
+        img2={CRMDev}
+        h1="Cost-Effective CRM Software Development for Businesses "
+        p1="Our affordable CRM development for startups handle customer data and interactions, enjoy a solid workflow within a complicated organizational structure, use the possibilities of scalable automation, and monitor staff and resource performance by employing CRM integration and automation services. As one of the End-to-end CRM development solutions, we provide Custom CRM Development Services for several sectors. From on-premises to cloud implementations, we are adept at generating comprehensive customer reports. Our CRM Platform Development for Small Businesses ensures scalable and efficient solutions tailored to unique organizational needs. "
+        h2="Brief About CRM Development "
+        p2={
+          <>
+            When implementing a CRM development strategy, one of the most important things to do is to ensure that you have the correct goals in mind and that you have mapped out your target objectives into a proper step-by-step plan. As a trusted CRM Software Development Company, your company may develop the quality of its customer connection with the assistance of customized CRM software. Utilizing CRM software through professional CRM System Development for Businesses can significantly improve the efficiency of your workflow and allow it to be scaled across all your digital activities. Hire CRM developers for custom solution our Enterprise CRM Development Services ensure seamless integration and long-term scalability for growing organizations.
+          </>
+        }
+      />
       <Quotes
-        title="Data-Driven Customer Journeys"
-        highlightedText="Personalization and Automation"
+        title="Get A 100% Customizable CRM Development By Experts"
+        highlightedText="Improve lead generation, automate tasks"
         paragraphs={[
-          "We integrate CRMs with marketing, support, and billing to create a single customer view.",
-          "Automation and analytics improve pipeline visibility and customer lifetime value.",
+          "Our CRM Development Company can tailor a customer relationship development (CRM) solution to meet your organization's unique requirements to assist you in achieving even the most ambitious of your organization's strategic goals. As an Affordable CRM Development Services provider and a Top-rated CRM Development Agency, we want to be able to assist you in achieving measurable business outcomes with CRM development and implementation services. We are constantly working on expanding our knowledge and skill set in the area of CRM app development for a wide variety of industries and sectors, such as the pharmaceutical industry, the financial industry, and the healthcare appdevelopment industry. We build bespoke solutions using the most recent technology on the market and can provide rapid results. "
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["automation", "lifetime value"]}
       />
       <PremiumServices />
       <Benefits
-        benifits={benefits}
+        benifits={crmServices}
+        sectionTitle="The Expertise Of Our CRM Development Services"
+        sectionDescription="To enhance customer relationship management procedures, we offer end-to-end bespoke development services"
+      />
+      <Benefits
+        benifits={crm_benifits}
         sectionTitle="Benefits of CRM"
         sectionDescription="Higher conversion rates and better retention via insights and workflows."
       />
       <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="CRM Expertise"
-        sectionDescription="Custom integrations, dashboards, and workflow automation."
-      />
       <Common />
     </>
   ),

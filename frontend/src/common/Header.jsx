@@ -39,7 +39,7 @@ const services = [
   {
     label: "Software Development",
     sub: [
-      "product Development", "Software Development", "Application services", "Startup consulting",
+      "product Development", "Software Development", "Application services",
       "CRM", "Web application", "App development consulting", "Business Application consulting",
       "Full stack development",
     ]
