@@ -1241,37 +1241,37 @@ const Web_Experties = [
     title: "Custom Web App Development",
     description:
       "From developing basic landing pages to complex customized web applications, our custom web development services can build custom websites that align with your business goals.",
-    icon: "Custom Web App Development",
+    icon: Type_1,
   },
   {
     title: "Technology Consulting",
     description:
       "We are committed to becoming your reliable web app development partner by providing functional know-how, services, and domain knowledge, ensuring that you receive a good ROI. Contact us now for a quote!",
-    icon: "Technology Consulting",
+    icon: Type_2,
   },
   {
     title: "ECommerce Solutions",
     description:
       "Our eCommerce web application development team is well-versed in Microsoft and open-source technologies like ASP.Net, Magento, PHP, Java, and JavaScript to develop full-fledged web applications.",
-    icon: "ECommerce Solutions",
+    icon: Type_3,
   },
   {
     title: "Web Portal Development",
     description:
       "Our web portal development team can develop web-based platforms with an easy-to-use interface with varied functionality and content for your B2B and B2C businesses. Contact us now for a quote!",
-    icon: "Web Portal Development",
+    icon: Type_4,
   },
   {
     title: "Enterprise Web Development",
     description:
       "Our talented team of enterprise website developers have several years of experience developing high-performing and secure custom websites and web applications for enterprise-level businesses.",
-    icon: "Enterprise Web Development",
+    icon: Type_5,
   },
   {
     title: "CMS Web Development",
     description:
       "Our CMS web development team uses cutting-edge technologies and the latest industry trends to deliver SEO-optimized, user-friendly and high-performing websites for our clients.",
-    icon: "CMS Web Development",
+    icon: Type_6,
   },
 ];
 
@@ -1487,32 +1487,37 @@ const crmServices = [
     title: "CRM Implementation",
     description:
       "We enhance the universal CRM experience using Robotic Process Automation (RPA) by utilizing many platforms, such as automatic data input and reporting.",
-    icon: <img src={cuttingEdge_1} alt="Icons" />,
+    icon: Type_1,
   },
   {
     title: "CRM Migration",
     description:
-      "With CRM Migration, we seek to ensure the integrity of your data throughout its move from old to new CRM systems. Our CRM dynamics developer converts data from one system to another based on requirements."
+      "With CRM Migration, we seek to ensure the integrity of your data throughout its move from old to new CRM systems. Our CRM dynamics developer converts data from one system to another based on requirements.",
+      icon: Type_2,
   },
   {
     title: "CRM Customization",
     description:
-      "We provide CRM for software development with typical business CRM capabilities that assist entrepreneurs in achieving their sales and customer retention objectives."
+      "We provide CRM for software development with typical business CRM capabilities that assist entrepreneurs in achieving their sales and customer retention objectives.",
+    icon: Type_3,
   },
   {
     title: "CRM Integration",
     description:
-      "We provide a CRM system for business development accessible in real-time through many global communication channels to all CRM users. We integrate AI to analyze customer inputs and provide intelligent suggestions."
+      "We provide a CRM system for business development accessible in real-time through many global communication channels to all CRM users. We integrate AI to analyze customer inputs and provide intelligent suggestions.",
+    icon: Type_4,
   },
   {
     title: "Custom Module",
     description:
-      "We provide a choice of modules based on the requirements of our customers if you are looking for outsourcing CRM development. Our modules work together to provide smooth sales and marketing operations for your company's clients. Our modules generate impressive processes, which our customers and detractors acknowledge."
+      "We provide a choice of modules based on the requirements of our customers if you are looking for outsourcing CRM development. Our modules work together to provide smooth sales and marketing operations for your company's clients. Our modules generate impressive processes, which our customers and detractors acknowledge.",
+    icon: Type_5,
   },
   {
     title: "Custom Dashboard",
     description:
-      "We provide CRM web development with analytical and user-friendly dashboards that provide your team with robust statistics and calculative tables. Hire CRM website developers to create unique dashboards that offer reports in a few seconds. Your service, marketing, and sales data are integrated into your CRM credentials and complex queries."
+      "We provide CRM web development with analytical and user-friendly dashboards that provide your team with robust statistics and calculative tables. Hire CRM website developers to create unique dashboards that offer reports in a few seconds. Your service, marketing, and sales data are integrated into your CRM credentials and complex queries.",
+    icon: Type_6,
   }
 ];
 
