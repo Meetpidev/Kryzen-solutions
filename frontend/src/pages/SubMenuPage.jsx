@@ -97,8 +97,17 @@ import ApplicationDev from "../public/appliacationservice.png";
 import CRM from "../public/crm_development_banner.svg";
 import CRMDev from "../public/crm_development_about.svg";
 import CRMSection from "../public/crm_development_section_1.svg";
+import Web from "../public/web_application_development_services1.svg";
+import WebDev from "../public/bestwebdev.png";
+import WebSection from "../public/digital_revolution_around_the_world.png";
+import Bussiness from "../public/business_application_banner.svg";
+import BussinessSection from "../public/business_application_about.svg";
+import BussinessDev from "../public/business_application_section_1.svg";
+import FullStack from "../public/full_stack_development_banner.svg";
+import FullStackDev from "../public/full_stack_development_section_1.svg";
+import FullStackSection from "../public/image4.svg";
 
-
+const Charts = lazy(() => import("../components/Charts"));
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
 const SectorsSlider = lazy(() => import("../components/SectorsSlider").then(module => ({ default: module.SectorsSlider })));
 const ExpertiseSlider = lazy(() => import("../components/ExpertiseSlider").then(module => ({ default: module.ExpertiseSlider })));
@@ -1114,6 +1123,46 @@ const StartupConsulting_eexperties = [
   }
 ];
 
+const app_experties = [
+  {
+    title: "MVP",
+    description:
+      "Consult with our industry professionals on the viability of your Mobile App Development Services in light of the most recent market and technological developments so that you may create a feature-rich minimum viable product version.",
+    icon: Type_1,
+  },
+  {
+    title: "Competitor Analysis",
+    description:
+      "To establish a product design and development strategy that is pertinent and realistic, we do a parameterized investigation of all of the essential traits shared by your primary rivals.",
+    icon: Type_2,
+  },
+  {
+    title: "Technology Stack",
+    description:
+      "After we have gathered all of the criteria for the project, our app development specialists will assist you in selecting the technological stack that is both the most suitable and resourceful, ensuring the highest possible level of product effectiveness.",
+    icon: Type_3,
+  },
+  {
+    title: "Ecosystem Integration",
+    description:
+      "We assist companies in the incorporation of safe and reliable ecosystems that are powered by cutting-edge technological resources. Our software development and consulting services range from managing data flow to monitoring all simultaneous operations inside the application environment.",
+    icon: Type_4,
+  },
+  {
+    title: "Post-Delivery Support",
+    description:
+      "Your post-delivery project needs will be visualized by an innovative team of mobile app development experts, who will carve out a one-of-a-kind, thorough, practical, and pragmatic product maintenance plan.",
+    icon: Type_5,
+  },
+  {
+    title: "Testing",
+    description:
+      "Using a testing strategy that is more focused on experience, our app development consultant will walk you through the process of scrutinizing your application’s functionality, usability, and performance.",
+    icon: Type_6,
+  },
+];
+
+
 const AppDev_benifits = [
   {
     "title": "Strategy and Roadmap",
@@ -1146,6 +1195,86 @@ const AppDev_benifits = [
     icon: Accountibility,
   }
 ];
+
+const Web_benifits = [
+  {
+    title: "Data Recovery And Better Security",
+    description:
+      "Web apps allow you to restore data quickly in data failure or technical errors. Web apps provide more excellent protection to users, which contributes to increased customer loyalty for your business.",
+    icon: Maintain,
+  },
+  {
+    title: "Competitive Edge",
+    description:
+      "You can put your imaginative hats on and create brilliant apps to keep consumers entertained and interested in your business. With relentless creativity, you can be confident in maintaining your competitive advantage.",
+    icon: Accountibility,
+  },
+  {
+    title: "Improved Efficiency",
+    description:
+      "Our highly experienced team develops web applications to help you achieve great productivity, more customers, and enhanced business performance.",
+    icon: Scalability,
+  },
+  {
+    title: "Greater Visibility",
+    description:
+      "Web apps assist you in streamlining your business processes, resulting in greater accuracy. Furthermore, with all of the data in one location, the company will benefit from increased visibility.",
+    icon: Crm,
+  },
+  {
+    title: "24/7 Accessibility",
+    description:
+      "One of the most valuable advantages is the availability of services 24 hours a day, seven days a week. Consumers can use web apps whenever they want, as long as they have an internet connection.",
+    icon: Maintain,
+  },
+  {
+    title: "Flexibility And Scalability",
+    description:
+      "Since a custom web application is created specifically for your company’s needs, it is fully adaptable and responsive to your company’s demands and development.",
+    icon: Accountibility,
+  },
+];
+
+
+const Web_Experties = [
+  {
+    title: "Custom Web App Development",
+    description:
+      "From developing basic landing pages to complex customized web applications, our custom web development services can build custom websites that align with your business goals.",
+    icon: "Custom Web App Development",
+  },
+  {
+    title: "Technology Consulting",
+    description:
+      "We are committed to becoming your reliable web app development partner by providing functional know-how, services, and domain knowledge, ensuring that you receive a good ROI. Contact us now for a quote!",
+    icon: "Technology Consulting",
+  },
+  {
+    title: "ECommerce Solutions",
+    description:
+      "Our eCommerce web application development team is well-versed in Microsoft and open-source technologies like ASP.Net, Magento, PHP, Java, and JavaScript to develop full-fledged web applications.",
+    icon: "ECommerce Solutions",
+  },
+  {
+    title: "Web Portal Development",
+    description:
+      "Our web portal development team can develop web-based platforms with an easy-to-use interface with varied functionality and content for your B2B and B2C businesses. Contact us now for a quote!",
+    icon: "Web Portal Development",
+  },
+  {
+    title: "Enterprise Web Development",
+    description:
+      "Our talented team of enterprise website developers have several years of experience developing high-performing and secure custom websites and web applications for enterprise-level businesses.",
+    icon: "Enterprise Web Development",
+  },
+  {
+    title: "CMS Web Development",
+    description:
+      "Our CMS web development team uses cutting-edge technologies and the latest industry trends to deliver SEO-optimized, user-friendly and high-performing websites for our clients.",
+    icon: "CMS Web Development",
+  },
+];
+
 
 const mobileTech = [
    {
@@ -1426,6 +1555,38 @@ const crm_benifits = [
   }
 ];
 
+const FullStack_benifits = [
+  {
+    title: "Comprehensive Expertise",
+    description:
+      "Because we are proficient in front-end and back-end technologies, our full-stack engineers can manage every facet of development. They manage databases, create strong server-side logic, and create responsive user interfaces, all without compromising on functionality.",
+  },
+  {
+    title: "Cost-Efficient",
+    description:
+      "Development cycles are accelerated through speedier decision-making and more efficient processes made possible by the ability to manage the complete project stack. Our full-stack development services are quite budget friendly.",
+  },
+  {
+    title: "Faster Time to Market",
+    description:
+      "Quicker changes between development phases are possible because our full-stack developers can manage various project aspects. Project schedules are accelerated, and this all-encompassing strategy ensures speedy deployment.",
+  },
+  {
+    title: "Enhanced Flexibility",
+    description:
+      "Our full-stack developers possess flexibility and are adept at switching between jobs. Whether you need help with database query optimization, front-end experience improvement, or application deployment, they can help.",
+  },
+  {
+    title: "Better Problem-Solving",
+    description:
+      "The ability to comprehend both client-side and server-side operations gives full-stack engineers an advantage in identifying and resolving problems throughout the application stack. Their thorough comprehension leads to improved performance and fewer bottlenecks.",
+  },
+  {
+    title: "End-to-End Project Ownership",
+    description:
+      "The entire development process, from conception to deployment and beyond, can be fully owned by full-stack developers. We ensure responsibility, consistency, and a clear vision throughout the project.",
+  },
+];
 
 
 const IT_Tech = [
@@ -1771,6 +1932,106 @@ const AI_Tech = [
     ]
   }
 ];
+
+const FullStack_Tech = [
+  {
+    category: "Front-end",
+    items: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Angular",
+      "React",
+      "Vue",
+      "Bootstrap",
+      "Typescript",
+      "Backbone.js"
+    ]
+  },
+  {
+    category: "Backend Frameworks",
+    items: [
+      "Node.js",
+      "Express.js",
+      "PHP",
+      "Laravel",
+      "Python",
+      "Django",
+      "Flask",
+      "FastAPI"
+    ]
+  },
+  {
+    category: "Full-stack Frameworks or Middlewares",
+    items: [
+      "NestJS",
+      "Koa.js",
+      "Nuxt.js",
+      "MeteorJS",
+      "Next.js"
+    ]
+  },
+  {
+    category: "Database Management",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Firebase",
+      "GraphQL"
+    ]
+  },
+  {
+    category: "Cloud",
+    items: [
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Google Cloud Platform (GCP)"
+    ]
+  },
+  {
+    category: "Microservices Architecture",
+    items: [
+      "Docker",
+      "Kubernetes",
+      "Amazon ECS",
+      "Apache Kafka"
+    ]
+  },
+  {
+    category: "CI/CD",
+    items: [
+      "Jenkins",
+      "CircleCI",
+      "CHEF",
+      "ANSIBLE",
+      "Puppet",
+      "Terraform"
+    ]
+  },
+  {
+    category: "Code Management",
+    items: [
+      "Bitbucket",
+      "GitHub",
+      "GitLab",
+      "SonarQube",
+      "Maven",
+      "Gradle"
+    ]
+  },
+  {
+    category: "Monitoring and Logging Tools",
+    items: [
+      "Prometheus",
+      "Grafana",
+      "Elasticsearch",
+      "Logstash",
+      "Kibana"
+    ]
+  }
+];
+
 
 const UI_UX_Tech = [
   {
@@ -2200,6 +2461,40 @@ const Laravel_combo = [
   },
 ];
 
+const FullStack_TechCardse = [
+  {
+    title: "MEAN Stack",
+    description:
+      "Our full-stack developers create scalable, interactive, and effective online apps that rock in terms of responsiveness and performance by combining Node.js and Angular.js’s dynamic front-end capabilities with Express.js for the backend."
+  },
+  {
+    title: "JAM Stack",
+    description:
+      "Our teams employ JAM Stack, a modern web development methodology that combines JavaScript, APIs, and Markup to create applications and websites that are quick, safe, scalable, and offer a seamless user experience."
+  },
+  {
+    title: "Flask Stack",
+    description:
+      "With the help of front-end technologies like Angular or React and Flask, our Python framework, our developers create web apps that are incredibly flexible, nimble, and lean."
+  },
+  {
+    title: "Next.js + Node.js",
+    description:
+      "Our full-stack engineers create scalable, quick, and search engine-friendly online apps by utilizing Next.js for server-side rendering and static generation and Node.js for reliable server-side procedures."
+  },
+  {
+    title: "Express.js + Node.js",
+    description:
+      "Express.js is a lightweight web application framework for Node.js that offers powerful functionality for developing web applications and APIs. Node.js is a runtime environment that lets you run JavaScript on the server side."
+  },
+  {
+    title: "JavaScript + HTML/CSS/PHP",
+    description:
+      "PHP is a server-side scripting language that is frequently used to construct dynamic webpages; client-side presentation and interaction are handled by HTML, CSS, and JavaScript."
+  },
+];
+
+
 const Laravel_benifits = [
   {
     title: "Easy Documentation Process",
@@ -2251,6 +2546,46 @@ const TypeScript_benifits = [
   },
 ];
 
+const businessAppFeatures = [
+  {
+    icon: Maintain,
+    title: "Personalized Solutions Customized for You",
+    description:
+      "Organization application development services provide customized solutions for your organization. These businesses can build CRM, ERP, and project management apps to solve your problems and improve processes.",
+  },
+  {
+    icon: Crm,
+    title: "More efficient operations",
+    description:
+      "Custom business software simplifies and streamlines everyday activities, boosting productivity. These apps decrease human labor, mistakes, and processing time by merging many operations into one platform.",
+  },
+  {
+    icon: Scalability,
+    title: "Better Data Analytics and Management",
+    description:
+      "Businesses can organize, safeguard, and access their data with professional business application development services. These apps may use advanced analytics to provide real-time insights and thorough reports.",
+  },
+  {
+    icon: Accountibility,
+    title: "Scalability, Flexibility",
+    description:
+      "Scalable and adaptable business software supports company development and changing demands. This adaptability keeps your applications fresh and compelling, adjusting to changing market circumstances and business needs without rework.",
+  },
+  {
+    icon: Maintain,
+    title: "Smooth System Integration",
+    description:
+      "Your systems and third-party apps can effortlessly interface with custom business apps, improving operational efficiency. Professional development services help you maximize your investments and usefulness.",
+  },
+  {
+    icon: Crm,
+    title: "Constant Support",
+    description:
+      "Maintenance includes bug repairs, feature additions, and compliance updates from professional development services. This ongoing maintenance keeps your apps safe, functional, and up-to-date with technology.",
+  },
+];
+
+
 const typescriptExpertise = [
   {
     "title": "TypeScript App Development",
@@ -2284,84 +2619,44 @@ const typescriptExpertise = [
   }
 ];
 
-
-
-
-const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
-  
-  if (!img && !img2 && !h1 && !p1 && !h2) {
-    return null;
-  }
-
-  return (
-    <section className="py-10 px-4 sm:px-8 md:px-16 lg:px-24">
-      <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-12">
-
-        {/* First Block */}
-        {(img || h1 || p1) && (
-          <div className="flex flex-col md:flex-row md:space-x-8 mb-12">
-            {img && (
-              <div className="flex-1 rounded-lg bg-white p-6 flex justify-center items-center mb-6 md:mb-0">
-                <img
-                  src={img}
-                  alt="Mobile Application Market Size"
-                  className="w-full max-w-sm object-contain"
-                />
-              </div>
-            )}
-
-            {(h1 || p1) && (
-              <div className="flex-1 rounded-lg bg-white p-6 flex flex-col justify-between">
-                {h1 && <h3 className="text-2xl font-bold mb-4 text-center md:text-left">{h1}</h3>}
-                {p1 && (
-                  <p className="text-gray-700 mb-6 text-center md:text-left">
-                    {p1} <strong>USD 250.75 billion</strong> in 2023 and is projected to grow at a CAGR of 15% from 2024 to 2030.
-                  </p>
-                )}
-                <a
-                  href="#contact"
-                  className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 py-3 rounded-lg transition self-center md:self-start"
-                >
-                  Connect With An Expert &rarr;
-                </a>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* Second Block */}
-        {(img2 || h2) && (
-          <div className="flex flex-col md:flex-row md:space-x-8">
-            {h2 && (
-              <div className="flex-1 rounded-lg bg-white p-6 mb-6 md:mb-0">
-                <h2 className="text-2xl font-bold mb-3 text-center md:text-left">{h2}</h2>
-                <div className="text-gray-700 mb-6 text-center md:text-left">
-                  {p2}
-                </div>
-                <a
-                  href="#contact"
-                  className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 py-3 rounded-lg transition self-center md:self-start"
-                >
-                  Connect With An Expert &rarr;
-                </a>
-              </div>
-            )}
-
-            {img2 && (
-              <div className="flex-1 rounded-lg bg-white p-6 flex justify-center items-center">
-                <img
-                  src={img2}
-                  alt="Global Smartphone Users 2020-2025"
-                  className="w-full max-w-lg h-auto object-contain"
-                />
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-};
+const BussinessDev_experties = [
+  {
+    icon: Type_1,
+    title: "ERP Development",
+    description:
+      "We provide the complete ERP services essential for effectively managing your expanding business. We know what it takes to assure business development, enhance financial performance and optimize operations, and bring value to your organization due to our experience in various sectors, including retail, wholesale distribution, and manufacturing and distribution.",
+  },
+  {
+    icon: Type_2,
+    title: "CRM Development",
+    description:
+      "We provide a comprehensive suite of customer relationship management (CRM) solutions that may assist your sales teams in streamlining, automating, and synchronizing business operations. We know what it takes to help you thrive since we have experience in many areas, including sales and marketing, customer support, and field service operations.",
+  },
+  {
+    icon: Type_3,
+    title: "E-Commerce Development",
+    description:
+      "You may enhance your online presence and effectively manage it with the assistance of our expert suite of e-commerce software services, which can help you create satisfying experiences for your customers. Our tried-and-true implementation allows you to develop a great shopping experience compatible with various operating systems, form factors, and device kinds.",
+  },
+  {
+    icon: Type_4,
+    title: "Service Management",
+    description:
+      "We tailor a suite of services ServiceNow offers to assist businesses in standardizing their information technology. We help our customers realize the full potential of their ServiceNow investments by providing complete services in assessing, implementing, and providing support for ServiceNow.",
+  },
+  {
+    icon: Type_5,
+    title: "Finance Services",
+    description:
+      "We build solutions for Dynamics 365 Finance that are adaptable enough to meet your specific business requirements while being versatile enough to allow you to keep up with the ever-evolving landscape of your business. We offer a pool of Microsoft Dynamics 365 certified professionals that have worked on several projects in this area.",
+  },
+  {
+    icon: Type_6,
+    title: "Migration/ Upgrade/ Modernization",
+    description:
+      "We will guarantee a smooth transfer to the most recent version of SAP by developing an SAP ERP migration, upgrade, and modernization plan for your company by using our knowledge, which is both flexible and value-driven. This roadmap will best meet the demands of your firm.",
+  },
+];
 
 
 const Common = () => {
@@ -3686,36 +3981,47 @@ const contentMap = {
   "web application": (
     <>
       <HeroSection
-        title="Web Application"
-        description="Responsive, secure, and fast web apps tailored to your business goals."
+        title="Trusted Web Development Company"
+        description="Our team of experienced specialists offer web development services to boost your web visibility and commercial success. From affordable web application development for startups to major corporations, we can design and develop websites that meet and exceed your needs. Contact us for a free quote! "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={Web}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={WebDev}
+        img2={WebSection}
+        h1="Affordable Custom Web Development Services"
+        p1="Let's build a website that converts and creates a strong online presence. Our speciality is creating websites that offer an amazing user experience. Get in touch with our website development and design team right now to talk about your project. Delivering websites or web apps, UX/UI design, eCommerce solutions, website architectures, QA testing, maintenance, consultancy, and even a custom content management system are all included in the broad category of web development services. You can improve the functionality of an existing website or create a new one from scratch with the help of web development services."
+        h2="Digital Revolution Around the World"
+        p2={
+          <>
+            The world’s population passed 8 billion on 15 November and has now reached more than 8.01 billion with more than 58 % of the world’s population living in Urban areas. Approx 5.66 billion( 69% of world's population) uses mobiles with a 3.5% increase in the past year, and around 178 million new users have joined over the past 12 months. There are 5.18 billion internet users which is 64.4 percent of the world’s total population while global internet users have increased by 1.9 percent over the past 12 months. There are 4.86 billion social media users globally which is 60 percent of the global population while recently,138 million new users have joined, equating to an annual growth of approximately 3%.
+          </>
+        }
+      />
       <Quotes
-        title="Modern Web Engineering"
-        highlightedText="Performance and Accessibility"
+        title="Result-driven Web Development Services from experts"
+        highlightedText="Intuitive and user-friendly website"
         paragraphs={[
-          "We build accessible, SEO-friendly web apps with modern tooling, strong testing, and observability.",
-          "Our architectures support scale, localization, and progressive enhancement.",
+          "As a custom web application development company, we provide website design, e-commerce, content management, and web application development. We utilize cutting-edge technology and best practices to make your website attractive, functional, and user-friendly. We provide 100% personalized web development solutions for your particular demands! Our talented developers build custom websites representing your brand, engaging your audience, and getting results. ",
+          "Whether you're a tiny company an enterprise web app development firm starting or a major multinational optimizing your digital platform, we can build a website that matches your needs. We excel in web application development that surpasses your expectations, from elegant and contemporary looks to complicated functionality and connections. Hire expert web developers that deliver custom web development solutions that drive success with responsive design, front-end and back-end development, content management systems, and continuous maintenance and support. Ready to boost your online presence? Discuss your idea with our best web development company now to see how we can help you succeed! ",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["accessibility", "SEO-friendly"]}
       />
       <PremiumServices />
       <Benefits
-        benifits={benefits}
-        sectionTitle="Benefits of Modern Web Apps"
-        sectionDescription="Better UX, faster load times, and improved conversion."
+        benifits={Web_Experties}
+        sectionTitle="Our Expertise in Web Development Services"
+        sectionDescription="You can avail of our custom web application development services for e-commerce portals, CMS, ERP solutions, chatbots, custom software, and more."
       />
       <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Web Expertise"
-        sectionDescription="SPAs, SSR, PWAs, and headless CMS integrations."
+      <Benefits
+        benifits={Web_benifits}
+        sectionTitle="Benefits Of Web Application Development"
+        sectionDescription="Web applications have several benefits to offer for businesses."
       />
       <Common />
     </>
@@ -3724,37 +4030,49 @@ const contentMap = {
   "app development consulting": (
     <>
       <HeroSection
-        title="App Development Consulting"
-        description="Architecture reviews, audits, and roadmaps to unblock delivery and scale."
+        title="App Development Consulting Services in INDIA"
+        description="Our app development consulting is geared toward the business needs of startups, small and medium-sized businesses, and large, well-established Best app consultants for startups companies. "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={AppDevelopment}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={AppDev}
+        img2={AppSection}
+        h1="Leading Mobile App Development Consulting Company"
+        p1="Our App strategy and consulting firm use their knowledge of the latest industry trends and technology to provide recommendations for app solutions that are likely to result in the most favorable outcomes for best android app development comapny   in the context of competitive growth. All industry practices are included in the finished items that we create. To provide Enterprise App Development Consulting Services with a primary emphasis on conversion and success, we go the additional mile while analyzing your target market, company competitors, user personas, and a great deal more should you choose to use our consulting services. "
+        h2="Brief About Best App Consultants for Startups "
+        p2={
+          <>
+            Our mobile app development consultants use the appropriate technologies to analyze the audience in-depth, taking into account their routines, geographic location, preferences, age, employment, and other factors. As an Affordable App Development and Consulting Agency, we plan a user-first interface and user experience (UI and UX) for your solution optimized for increased user engagement. 
+          </>
+        }
+      />
       <Quotes
-        title="Expert Guidance, Practical Outcomes"
-        highlightedText="Actionable, Prioritized Plans"
+        title="Get 100% Customizable App Development Consulting Experts "
+        highlightedText="Research, Suggest, And Implement Improvements"
         paragraphs={[
-          "We assess code quality, infrastructure, and processes to recommend focused improvements.",
-          "Engagements include quick wins, risk mitigation, and measurable milestones.",
+          "Even if you have an excellent concept for an app, it alone will not guarantee that the app will be successful unless you also have a solid digital strategy and a roadmap. When assessing ios iphone app development  concepts and deciding on revenue models, you need the direction and assistance of an expert Best App Development Consulting Company to avoid potential traps. Our Mobile App Consulting Services assist customers in determining whether or not their proposal is viable, developing a plan, and outlining the likely compliances, in addition to selecting the appropriate technology stacks, processes, and trends to achieve the desired outcomes. ",
+          "Utilize the software development and consulting services we provide for the web, Android, or iOS to identify potential problems, discover solutions to those problems, and formulate a mobile strategy to ensure the success of your app. If you want the most benefits from your concept, you should hire app development consultant for business through our Mobile Application Development Consulting Services, regardless of whether you run a startup or an enterprise firm. Our Mobile App Development Consulting Company will assist you in determining your target audience, budget, and various strategies for developing your mobile app. ",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["quick wins", "risk mitigation"]}
       />
       <PremiumServices />
       <Benefits
-        benifits={benefits}
-        sectionTitle="Consulting Benefits"
-        sectionDescription="Clarity, speed, and reduced technical debt."
+        benifits={app_experties}
+        sectionTitle="Expertise In Our App Development Consulting"
+        sectionDescription="As a Leading Mobile App Consulting Company, we have years of experience in this field."
       />
       <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Consulting Expertise"
-        sectionDescription="Architecture, DevOps, performance, and security."
+       <Benefits
+        benifits={AppDev_benifits}
+        sectionTitle="Benefits of App Development Consulting Services"
+        sectionDescription="Our App Development Consulting Services help companies develop their app concepts and succeed in the digital age."
       />
+      <TechnologyStack data={TypeScript_Tech} />
       <Common />
     </>
   ),
@@ -3762,37 +4080,48 @@ const contentMap = {
   "business application consulting": (
     <>
       <HeroSection
-        title="Business Application Consulting"
-        description="Optimize processes and systems to improve efficiency and visibility."
+        title="Business Application Development Services in INDIA"
+        description="In the current hypercompetitive business environment, continual optimization of business applications throughout the whole company is necessary to stay ahead of the competition."
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={Bussiness}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={BussinessDev}
+        img2={BussinessSection}
+        h1="Best Business Application Development Company "
+        p1="Suppose a company does not invest in business application development. In that case, it will be difficult to continually analyze and deploy new systems, update existing systems, and guarantee that their corporate ecosystem is maintained securely and cost-effectively. On the other hand, monitoring and enhancing these systems becomes more challenging for most businesses with complex application ecosystems. Our technical professionals of Enterprise business app development have an in-depth operational understanding of business application development such as ERP, CRM, ITSM, E-commerce, and Service Management platforms. "
+        h2="Brief About Business Application Development Services "
+        p2={
+          <>
+            Scalable, flexible, and dependable business applications. Our team of experts has a great deal of professional experience, several splendidly completed projects for a variety of companies, a variety of time-tested development strategies that have already proven their efficacy for a variety of objectives, and a desire to create masterpieces that deserve a prominent place among the best software applications. All our goods comply Cloud-based business application development services with the most adaptable and dependable business sector trends. Our business application development company offers specialized services geared toward the rapid and substantial development, installation, and total integration of corporate applications in various industries. Modern mobile applications, technical business applications, and project management are areas in which our team specializes.           </>
+        }
+      />
       <Quotes
-        title="Process and Platform Alignment"
-        highlightedText="From Audit to Execution"
+        title="Get 100% Custom Enterprise Application Development Services by Experts "
+        highlightedText="Get the Right Business Application Development Services"
         paragraphs={[
-          "We map workflows, remove bottlenecks, and align technology with business goals.",
-          "Deliverables include implementation plans, KPIs, and change management support.",
+          "We collaborate with businesses of all sizes and types, operating in various market sectors. Our group has an in-depth comprehension of the adoption of business application platforms in a variety of sectors, including but not limited to the following: the financial services industry; the manufacturing sector; the healthcare sector; the pharmaceutical industry; and the technology sector; as well as public sector institutions such as governments and universities. Thanks to our exceptional functional and technical expertise, we can assist you in identifying, assessing, and filling in the gaps in your Business Applications stack. As a business plan software development company, our business Applications consultants are available to assist you at every stage of the decision-making process. ",
+          "Our business application development for startups and enterprises includes helping you choose new systems compatible with one another in the sandbox, discontinuing an aging system, migrating to cloud-based business applications, and deciding whether to buy or build a solution. As a business application development company, we also have an experienced staff that can provide the assistance you need to ensure that your systems are constantly operating without hiccups. We employ industry-standard service performance indicators to improve your capability to prioritize and handle problems and boost openness and accountability with Business App Development Services. ",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["bottlenecks", "change management"]}
       />
       <PremiumServices />
       <Benefits
-        benifits={benefits}
+        benifits={BussinessDev_experties}
+        sectionTitle="The Expertise Of Our Business Application Developers"
+        sectionDescription="Our developers have year-long expertise in developing business applications."
+      />
+      <AboutUs />
+      <Benefits
+        benifits={businessAppFeatures}
         sectionTitle="Benefits"
         sectionDescription="Streamlined operations and better decision-making."
       />
-      <AboutUs />
-      <ExpertiseSlider
-        expertiseCards={expertiseCards}
-        sectionTitle="Domains"
-        sectionDescription="ERP, CRM, finance, HR, and data integrations."
-      />
+      <TechnologyStack data={TypeScript_Tech} />
       <Common />
     </>
   ),
@@ -3800,26 +4129,47 @@ const contentMap = {
   "full stack development": (
     <>
       <HeroSection
-        title="Full Stack Development"
-        description="End-to-end engineering across frontend, backend, databases, and cloud."
+        title="Reliable Full Stack Development Services"
+        description="Every business needs affordable full stack development services to thrive online and achieve better results. Our Full Stack Web Development Services ensure you stay ahead of the competition by leveraging the best technologies and practices. "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={MobileApp}
+        imageSrc={FullStack}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
-      <Charts />
+      <Charts
+        img={FullStackDev}
+        img2={FullStackSection}
+        h1="Cost-Effectively Smarter Full Stack Developers for Entrepreneurs "
+        p1="Hire Full Stack Web Development Company to launch your web and mobile applications using a variety of frontend and backend technology stacks. Our best full stack development agency makes it even more affordable and dependable for entrepreneurs to hire a full-stack web developer company. You can achieve excellent results at friendly costs to your wallet if you use our end-to-end full stack development services. "
+        h2="Get Full Stack Development Services "
+        p2={
+          <>
+            Our comprehensive end-to-end full stack IT services company help you improve the features and functionalities of your website all under one roof. With deep knowledge and industry expertise, our full-stack developers specialize in creating complete Full Stack apps for your company. We can create dependable, scalable apps that are customized to your needs because of our experience with cutting-edge technologies like Node.js, Deno, Spring Boot, and Django. For smooth containerization and deployment, we also use Docker, guaranteeing effective operations in any setting.
+          </>
+        }
+      />
       <Quotes
-        title="One Team, Full Lifecycle"
-        highlightedText="From UI to Infrastructure"
+        title="Get 100% Customizable Full Stack Web Development from Experts "
+        highlightedText="Reliable And Cost-Effective Applications"
         paragraphs={[
-          "We deliver cohesive solutions with shared context across the stack, reducing handoffs and delays.",
-          "Our practices include code reviews, automation, and observability for long-term reliability.",
+          "The tasks of the two other categories of developers are combined into one role by full-stack development. They are a massive benefit to your team because they can do the duties related to both of these developers. Our full stack development agency has experience creating mobile and web apps",
+          "The need for Full Stack Development with AI is increasing as businesses become more competitive. Engineers and developers gain knowledge of the stack that creates and manages comprehensive software from front to backend in our fully loaded development company. The easiest way to save time, eliminate mistakes, and get the most out of your investment is to work with a reputable Full Web Stack Development Company that can handle the process from conception to finished product.",
         ]}
         emphasizeTextIndex={[1]}
         emphasizePhrases={["automation", "observability"]}
       />
       <PremiumServices />
+      <TechnologiesSlider
+        title="Technology Combinations Used By Kryzen For Full Stack Development"
+        techCards={FullStack_TechCardse}
+      />
+      <SectorsSlider />
+      <ReasonChoose 
+        title="Key Benefits of Our Full Stack Development Services"
+        des="Full-stack development offers the know-how required to see your project through to completion, regardless of your need for reduced development time or economic alternatives."
+        benifits={FullStack_benifits}
+      />
       <Benefits
         benifits={benefits}
         sectionTitle="Benefits of Full Stack"
@@ -3831,6 +4181,7 @@ const contentMap = {
         sectionTitle="Stack Expertise"
         sectionDescription="React, Angular, Node, Python, Django, cloud-native, and more."
       />
+       <Technology_pannel techCards={FullStack_Tech} />
       <Common />
     </>
   ),

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import companyLogoPath from '../public/image.png';
+import Logo from "../public/Kryzen_Software.png";
 
 const Right_Nav = () => {
     const [open, setOpen] = useState(false);
@@ -239,7 +240,7 @@ const Right_Nav = () => {
 
             <div className='w-21 fixed top-150 right-0 z-50'>
                     <div className="w-22 h-15 text-white font-bold flex items-center justify-center animate-surprise-delayed-2 cursor-pointer" onClick={() => setChatOpen(true)}>
-                        <img src={companyLogoPath} className="w-full h-full object-contain" />
+                        <img src={Logo} className="w-full h-full object-contain" />
                     </div>
                 </div>
 

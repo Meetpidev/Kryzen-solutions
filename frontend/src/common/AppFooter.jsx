@@ -8,6 +8,7 @@ import {
     SiYoutube,
 } from "react-icons/si";
 import logo from "../public/logo.png";
+import Logo from "../public/Kryzen_Software.png";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.svg";
 import Right from "../public/right-leaf.svg";
@@ -182,7 +183,7 @@ export default function AppFooter() {
                         <div className="flex flex-col">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-26 h-26 rounded-lg flex items-center justify-center">
-                                    <img src={logo} alt="Logo" />
+                                    <img src={Logo} alt="Logo" className="h-15 w-16"/>
                                 </div>
                                 <div>
                                     <h2 className="text-3xl font-bold text-blue-900">Kryzen</h2>
