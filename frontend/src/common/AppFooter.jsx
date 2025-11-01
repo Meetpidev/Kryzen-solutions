@@ -7,6 +7,7 @@ import {
     SiInstagram,
     SiYoutube,
 } from "react-icons/si";
+import Kryzen from "../public/kryzen.png"
 import logo from "../public/logo.png";
 import Logo from "../public/Kryzen_Software.png";
 import Google from "../public/google.webp";
@@ -182,12 +183,8 @@ export default function AppFooter() {
                     <div className="flex-1 flex flex-col justify-between">
                         <div className="flex flex-col">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="w-26 h-26 rounded-lg flex items-center justify-center">
-                                    <img src={Logo} alt="Logo" className="h-15 w-16"/>
-                                </div>
-                                <div>
-                                    <h2 className="text-3xl font-bold text-blue-900">Kryzen</h2>
-                                    <p className="text-[1rem] text-gray-600">Software Solutions</p>
+                                <div className="w-56 h-26 rounded-lg flex items-center justify-center">
+                                    <img src={Kryzen} alt="Logo" className="h-15 w-[44rem]"/>
                                 </div>
                             </div>
 
