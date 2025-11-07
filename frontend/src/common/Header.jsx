@@ -101,6 +101,19 @@ const navigationItems = [
     ],
   },
   {
+    label: "Let's Talk AI",
+    items: [
+      { label: "Android", to: "/technology/android" },
+      { label: "iOS", to: "/technology/ios" },
+      { label: "Flutter", to: "/technology/flutter" },
+      { label: "React Native", to: "/technology/react-native" },
+      { label: "Angular", to: "/technology/angular" },
+      { label: "React", to: "/technology/react" },
+      { label: "Vuejs", to: "/technology/vuejs" },
+      { label: ".NET", to: "/technology/dotnet" },
+    ]
+  },
+  {
     label: "Our Work",
     items: [{ label: "Cases", to: "/our-work/cases" }],
   },
@@ -223,7 +236,7 @@ export default function Header() {
                 { label: "Company", menu: "company" },
                 { label: "Service", menu: "service" },
                 { label: "Technology", menu: "technology" },
-                { label: "Our Work", menu: "ourwork" }
+                { label: "Our Work", menu: "ourwork" },
               ].map(({ label, menu }) => (
                 <div key={label} className="relative translate-x-[24rem]"
                   onMouseEnter={() => setmegaMenu(menu)}
@@ -494,20 +507,25 @@ export default function Header() {
 
             {/* Desktop-only buttons */}
             <div className="hidden lg:flex items-center ml-auto space-x-4">
-              <Link
-                to="/Ai"
-                className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm hover:from-purple-600 hover:to-pink-600 transition-all duration-200 flex items-center"
-                data-testid="button-lets-talk-ai"
-                style={{ minWidth: 120 }}
-                onMouseEnter={() => setmegaMenu(true)}
-                onMouseLeave={() => setmegaMenu(null)}
-              >
-               <span className="mr-2">✨</span>
-                Let's Talk AI
-              </Link>
+            <div
+  className="relative"
+  onMouseEnter={() => setmegaMenu(true)}
+  onMouseLeave={() => setmegaMenu(false)}
+>
+  <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm flex items-center cursor-pointer">
+    <span className="mr-2">✨</span>
+    <span>Let's Talk AI</span>
+  </div>
+
+    {megaMenu && (
+    <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md p-4">
+      {/* Mega menu content */}
+    </div>
+  )}
+</div>
+
               <Link to="/contact-us">
                 <button
-
                   className="relative bg-[#005D89] text-white px-3 py-2 font-medium text-sm border-white hover:shadow-lg hover:shadow-blue-400/50 transition-shadow duration-300 rounded-sm"
                   data-testid="button-contact-us"
                   style={{ minWidth: 120 }}
