@@ -7,7 +7,7 @@ import { email } from "./template/email.js";
 import multer from "multer";
 import fs from "fs";
 
-const upload = multer({ dest: '/uploads' });
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 app.use(bodyParser.json());
