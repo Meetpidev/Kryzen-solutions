@@ -7,7 +7,7 @@ import { email } from "./template/email.js";
 import multer from "multer";
 import fs from "fs";
 
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: '/uploads' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -43,7 +43,7 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
       to: process.env.EMAIL,
       subject: 'New Meeting Scheduled',
       html: email(formData),
-      attachments: file ? [{ filename: file.originalname, path: file.path }] : [],
+      attachments: file && file.path ? [{ filename: file.originalname, path: file.path }] : [],
     };
 
     const mailOptionsToUser = {
@@ -51,13 +51,12 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
       to: formData.email,
       subject: 'Your Meeting is scheduled, some of our team will contact you soon.',
       html: email(formData),
-      attachments: file ? [{ filename: file.originalname, path: file.path }] : [],
+      attachments: file && file.path ? [{ filename: file.originalname, path: file.path }] : [],
     };
 
-    await Promise.all([
-     transporter.sendMail(mailOptionsToAdmin),
-     transporter.sendMail(mailOptionsToUser),
-    ]);
+    await transporter.sendMail(mailOptionsToAdmin);
+    await transporter.sendMail(mailOptionsToUser);
+
 
     if (file) {
       fs.unlink(file.path, (err) => {
@@ -68,8 +67,9 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
     return res.status(200).json({ message: 'Emails sent successfully' });
   
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Failed to send email' });
+    console.error("Email send failed:", error.message);
+  console.error("Full error:", error);
+  res.status(500).json({ error: 'Failed to send email', details: error.message });
   }
 });
 
@@ -99,8 +99,9 @@ app.post("/api/send-email", async (req, res) => {
 
     res.status(200).json({ success: true, message: "Email sent successfully!" });
   } catch (err) {
-    console.error("Email send error:", err);
-    res.status(500).json({ success: false, message: "Failed to send email" });
+    console.error("Email send failed:", err.message);
+  console.error("Full error:", err);
+  res.status(500).json({ err: 'Failed to send email', details: err.message });
   }
 });
 
