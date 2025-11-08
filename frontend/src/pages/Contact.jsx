@@ -38,6 +38,8 @@ export default function Contact() {
   });
 
   const [file, setFile] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const onFileChange = (e) => {
     setFile(e.target.files.length > 0 ? e.target.files[0] : null);
@@ -53,9 +55,11 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     if (!form.notRobot) {
       alert("Please confirm you are not a robot.");
+      setIsLoading(false);
       return;
     }
 
@@ -73,7 +77,7 @@ export default function Contact() {
     if (file) {
       formDataToSend.append("attachment", file);
     }
-
+//https://kryzen-solutions.onrender.com/api/schedule-meeting
     try {
       const response = await axios.post(
         "https://kryzen-solutions.onrender.com/api/schedule-meeting",
@@ -103,7 +107,9 @@ export default function Contact() {
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("An error occurred while scheduling the meeting.");
-    }
+    } finally {
+    setIsLoading(false);
+  }
   };
 
   const stats = [
@@ -377,9 +383,38 @@ export default function Contact() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <button
                       type="submit"
-                      className="bg-[#005D89] w-full text-white px-8 py-3 rounded-md hover:shadow-[0_0_12px_rgba(0,0,0,0.5)] hover:bg-[#005D89]"
+                      disabled={isLoading}
+  className={`w-full flex justify-center items-center gap-2 text-white px-8 py-3 rounded-md 
+    ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-[#005D89] hover:bg-[#004b70] hover:shadow-[0_0_12px_rgba(0,0,0,0.5)]"}
+  `}
                     >
-                      Submit
+                      {isLoading ? (
+    <>
+      <svg
+        className="animate-spin h-5 w-5 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        ></circle>
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+      <span>Submitting...</span>
+    </>
+  ) : (
+    "Submit"
+  )}
                     </button>
                   </div>
                 </form>

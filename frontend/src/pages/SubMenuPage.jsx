@@ -106,6 +106,26 @@ import BussinessDev from "../public/business_application_section_1.svg";
 import FullStack from "../public/full_stack_development_banner.svg";
 import FullStackDev from "../public/full_stack_development_section_1.svg";
 import FullStackSection from "../public/image4.svg";
+import AiMarketing from "../public/img_banner.svg";
+import AiAbout from "../public/img_about.svg";
+import AiStockk from "../public/ai_stock.png";
+import AiStockAbout from "../public/ai_stockabout.png";
+import AiSocial from "../public/ai_social.png";
+import AiSocialAbout from "../public/ai_socialabout.png";
+import AiConsult from "../public/ai_consult.png";
+import AiConsultAbout from "../public/ai_consultabout.png";
+import AiAppp from "../public/ai_app.png";
+import AiAppAbout from "../public/ai_appabout.png";
+import AiServicess from "../public/ai_service.png";
+import AiServiceAbout from "../public/ai_serviceabout.png";
+import AiIntegrations from "../public/ai_integration.png";
+import AiIntegrationAbout from "../public/ai_integrationabout.png";
+import AiChatbots from "../public/ai_chatbot.png";
+import AiChatbotDev from "../public/ai_chatbotde.png";
+import AiChatbotSection from "../public/ai_chatbotsection.png";
+import LLMs from "../public/llmabout.png";
+import LLMAbout from "../public/llm.png";
+
 
 const Charts = lazy(() => import("../components/Charts"));
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
@@ -242,6 +262,53 @@ const services = [
     ]
   },
 
+];
+
+const AiServices = [
+  {
+    label: "Artificial Intelligence",
+    sub: [
+      "AI Development",
+      "AI Voice Assistant",
+      "AI Copilot",
+      "AI Ionic App Development",
+      "Enterprise AI Development",
+      "Agentic AI",
+      "AI Consulting",
+      "AIOps Solutions",
+      "Ethical AI Development",
+      "AI Prompt Engineering",
+      "AI Powered Website Builder",
+      "AI Content Generation System",
+      "Conversational AI Development",
+      "Computer Vision",
+      "Adaptive AI Development",
+      "Rag As a Service"
+    ]
+  },
+  {
+    label: "Generative AI",
+    sub: [
+      "Generative AI Development",
+      "Generative AI Consulting",
+      "Generative AI Application",
+      "Generative AI Services",
+      "Generative AI Integration",
+      "AI Agent Development",
+      "AI Chatbot Development",
+      "LLM Development",
+      "LLM Fine Tuning Services"
+    ]
+  },
+  {
+    label: "AI Use Cases",
+    sub: [
+      "AI In Marketing Services",
+      "AI In Cybersecurity Services",
+      "AI In Stock Trading",
+      "AI In Social Media",
+    ]
+  }
 ];
 
 const expertiseCards = [
@@ -2663,6 +2730,704 @@ const BussinessDev_experties = [
   },
 ];
 
+const AiConsulting = [
+  {
+    "title": "Increased Productivity",
+    "description": "Free up human resources for strategic thinking and decision-making by automating repetitive tasks and content generation.",
+    icon: Maintain,
+  },
+  {
+    "title": "Cost-Efficiency",
+    "description": "Save operational costs by deploying AI-based solutions that need little to no human intervention once implemented.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Faster Time to Market",
+    "description": "Bring digital products, content, and services to market faster through AI-powered tools that speed up ideation, design, and execution.",
+    icon: Scalability,
+  },
+  {
+    "title": "Scalability & Adaptability",
+    "description": "Solutions founded on cloud infrastructure grow with you and automatically adjust to evolving business requirements.",
+    icon: Crm,
+  },
+  {
+    "title": "Competitive Differentiation",
+    "description": "Provide differentiated, AI-powered customer experiences and services that differentiate you within your industry.",
+    icon: Maintain,
+  },
+  {
+    "title": "Data-Driven Innovation",
+    "description": "Transform raw data into smart actions through machine learning and generative capabilities designed for your business.",
+    icon: Accountibility,
+  }
+];
+
+const AiConsulting_services = [
+  {
+    "title": "AI Content & Text Generation",
+    "description": "Use text generation models trained on your data to automate writing blogs, social media posts, product descriptions, or summaries."
+  },
+  {
+    "title": "AI-Powered Chatbots & Virtual Assistants",
+    "description": "Employ natural language understanding intelligent agents to deliver human-like conversations for support, sales, and beyond."
+  },
+  {
+    "title": "Generative Design & Media Creation",
+    "description": "Utilize AI to produce logos, layouts, product mockups, and even video or animations—instantly and with efficiency."
+  },
+  {
+    "title": "Document Summarization & Knowledge Mining",
+    "description": "Mine key insights from massive amounts of data with AI summarization, question-answering, and document clustering."
+  },
+  {
+    "title": "Model Fine-Tuning & Custom Training",
+    "description": "Fine-tune pre-trained AI models using your proprietary data for accuracy, privacy, and performance."
+  },
+  {
+    "title": "Custom LLM Development & Integration",
+    "description": "Develop or integrate large language models (LLMs) such as GPT for domain-specific knowledge use cases, chatbots, or enterprise automation."
+  },
+];
+
+const AiApp = [
+  {
+    "title": "Smart Automation",
+    "description": "Cut labor by automating customer support, internal processes, and content creation with custom AI solutions.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Faster Time to Market",
+    "description": "Tools powered by AI cut down dramatically on the time required to design, develop, and deploy features or content.",
+    icon: Maintain,
+  },
+  {
+    "title": "Highly Personalized User Experiences",
+    "description": "Provide personalized content, recommendations, and services to every user through dynamic AI-driven interactions.",
+    icon: Crm,
+  },
+  {
+    "title": "Cost-Effective Innovation",
+    "description": "Reduce the requirement for big creative or support teams by streamlining workflows through AI-enabling long-term cost savings.",
+    icon: Scalability,
+  },
+  {
+    "title": "Scalable Cloud-Native Solutions",
+    "description": "Scalable by design, our applications can manage growing traffic and data volumes without sacrificing performance.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Data-Driven Decision Making",
+    "description": "Embed analytics and AI insights in your application to reveal trends, automate reports, and inform better business decisions.",
+    icon: Maintain,
+  }
+];
+
+const AiApp_service = [
+  {
+    "title": "Integration of Natural Language Processing (NLP)",
+    "description": "Make your apps capable of understanding, processing, and responding in natural human language for intelligent interactions and automation of tasks."
+  },
+  {
+    "title": "AI Chatbot & Virtual Assistant Development",
+    "description": "Use conversational agents driven by Generative AI for 24/7 customer care, onboarding, FAQs, and lead qualification."
+  },
+  {
+    "title": "Text, Image & Video Generation Solutions",
+    "description": "Mimic creative work through AI that creates dynamic content—marketing updates, reports, designs, videos, and more."
+  },
+  {
+    "title": "Predictive Maintenance and Diagnostics",
+    "description": "Utilize sensor data and machine learning to forecast equipment failures before they occur, scheduling proactive maintenance and reducing downtime."
+  },
+  {
+    "title": "Personalized Recommendation Engines",
+    "description": "Develop systems that analyze user behavior, preferences, and historical data to deliver highly relevant product, content, or service suggestions in real-time."
+  },
+  {
+    "title": "Advanced Fraud and Risk Modeling",
+    "description": "Implement deep learning models to detect subtle patterns indicative of financial fraud, cyber-attacks, or credit default risks with greater accuracy than traditional rule-based systems."
+  }
+];
+
+const AiService = [
+  {
+    "title": "Faster Product Launches",
+    "description": "Streamline routine content creation, design workflows, and development processes to bring offerings to market more quickly.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Operational Savings",
+    "description": "Minimize manual work and personnel expenses throughout departments by implementing AI systems that function continuously.",
+    icon: Scalability,
+  },
+  {
+    "title": "Tailored Customer Interactions",
+    "description": "Create distinctive user experiences across platforms—adjusting messaging, communication style, and visual elements in real-time.",
+    icon: Crm,
+  },
+  {
+    "title": "Informed Strategic Choices",
+    "description": "Utilize AI-powered analytics, projections, and documentation to back important organizational decisions with greater certainty.",
+    icon: Maintain,
+  },
+  {
+    "title": "Expanded Creative Output",
+    "description": "Enable marketing, design, and content professionals to generate increased volume while maintaining superior quality and brand alignment.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Smooth Technology Adoption",
+    "description": "Incorporate generative AI capabilities within your current digital infrastructure for streamlined operations and quicker return on investment.",
+    icon: Scalability,
+  }
+];
+
+const AiService_services = [
+  {
+    "title": "Content & Image Generation Tools",
+    "description": "AI writes your blogs, creates images, handles marketing copy. Sounds like you wrote it, saves you hours."
+  },
+  {
+    "title": "Intelligent Document Processing",
+    "description": "Tired of reading through stacks of papers? AI does it faster and doesn't miss anything important."
+  },
+  {
+    "title": "AI-Enhanced Product Design & Prototyping",
+    "description": "See what your product looks like before building it. Try different designs, test ideas without wasting materials."
+  },
+  {
+    "title": "Automated Quality Assurance (QA) Testing",
+    "description": "AI bots can execute complex test cases, identify bugs, and generate reports across different environments faster and more reliably than manual testing."
+  },
+  {
+    "title": "Supply Chain Demand Forecasting",
+    "description": "Predict future product demand with high accuracy by analyzing historical sales, seasonal trends, and external economic factors using machine learning models."
+  },
+  {
+    "title": "Hyper-Personalized Learning Paths",
+    "description": "For education and training, AI adapts content, pace, and testing methods instantly to match an individual user's specific knowledge gaps and learning style."
+  }
+];
+
+const AiIntegration = [
+  {
+    "title": "Improve Operational Efficiency",
+    "description": "Automate routine work and minimize labor, liberating teams for high-leverage activities.",
+    icon: Scalability,
+  },
+  {
+    "title": "Faster Content Creation",
+    "description": "Create high-quality content at scale, reducing turnaround time and expense.",
+    icon: Crm,
+  },
+  {
+    "title": "Personalize Customer Experiences",
+    "description": "Employ AI to deliver experiences across platforms, improving engagement and satisfaction.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Empower Scalable AI Workflows",
+    "description": "Deploy cloud-optimized AI systems that scale with business needs seamlessly.",
+    icon: Maintain,
+  },
+  {
+    "title": "Future-Proof Technology Stack",
+    "description": "Get ahead of the curve with the newest AI frameworks and LLMs embedded within your infrastructure.",
+    icon: Scalability,
+  },
+  {
+    "title": "Data-Driven Decision Making",
+    "description": "Make data-driven, predictive, and strategic business decisions by leveraging AI insights.",
+    icon: Crm,
+  }
+];
+
+const AiIntegration_services = [
+  {
+    "title": "Custom LLM Fine-Tuning & Deployment",
+    "description": "Train and deploy custom large language models to fit particular use cases and domains."
+  },
+  {
+    "title": "Workflow Automation & Integration",
+    "description": "Improve operations with AI capabilities embedded in CRMs, ERPs, and internal processes."
+  },
+  {
+    "title": "AI Chatbot & Virtual Assistant Development",
+    "description": "Intelligent, 24/7 support solutions using NLP and LLMs to improve customer experience."
+  },
+  {
+    "title": "Data Governance and Compliance Automation",
+    "description": "Use AI to automatically classify sensitive data, monitor access patterns, and ensure continuous adherence to regulatory standards like GDPR and CCPA."
+  },
+  {
+    "title": "Dynamic Pricing and Revenue Optimization",
+    "description": "Implement machine learning models to analyze real-time market data, competitor pricing, and demand elasticity to set optimal prices for maximum revenue and profit."
+  },
+  {
+    "title": "Synthetic Data Generation for Training",
+    "description": "Create high-fidelity, privacy-preserving artificial datasets to train complex AI models, especially in scenarios where real-world data is scarce or sensitive."
+  }
+];
+
+const AiChatbot = [
+  {
+    "title": "Structure Of A Conversation",
+    "description": "To a large extent, UI/UX 2.0. Natural Language Interfaces (NUls) will be used with more conventional user interface components such as buttons, menus, and pictures to make our interfaces conversational.",
+    icon: Type_1,
+  },
+  {
+    "title": "The Chatbot Architectural Framework",
+    "description": "Our chatbot software developers have created bots for usage both internally and by consumers. As a result, we are familiar with the specific combinations of frameworks, APIs, and chatbot development processes that will be most effective in various use scenarios.",
+    icon: Type_2,
+  },
+  {
+    "title": "Natural Language Processing",
+    "description": "We use natural language understanding and processing to recognize different categories, such as intentions, actions, entities, and context, around which replies may be structured.",
+    icon: Type_3,
+  },
+  {
+    "title": "Processing Pipeline",
+    "description": "Our chatbot developers use a pre-processing pipeline to handle typical issues with dependency parsing, lemmatization, POS-checking, and other tasks, which helps limit the number of false negatives and false positives.",
+    icon: Type_4,
+  },
+  {
+    "title": "Deployment & Integration",
+    "description": "The Chatbot will be available for deployment as soon as the chatbot development life cycle has been completed. Our chatbot developers are capable of on-premise or cloud deployment, as well as microservices and REST-based design, for as little downtime as possible.",
+    icon: Type_5,
+  },
+  {
+    "title": "Chatbot Consulting Company",
+    "description": "Please don't hesitate to contact us if you have questions about creating chatbots. Our expert will provide you with no-cost guidance and recommendations about the design and development of a Chatbot.",
+    icon: Type_6,
+  }
+];
+
+const AiChatbot_benifits = [
+  {
+    "title": "Constantly Available",
+    "description": "Chatbots provide 24/7 customer assistance for organizations. Chatbot Development Services help organizations boost client satisfaction and loyalty by giving fast service regardless of time zone or operation hours.",
+    icon: Crm,
+  },
+  {
+    "title": "Personalization of Service",
+    "description": "Businesses provide tailored and contextually relevant experiences using chatbots. Chatbots employ data and machine learning algorithms to customize replies and suggestions based on user preferences, offering a rewarding customer experience.",
+     icon: Scalability,
+  },
+  {
+    "title": "Efficiency, scalability",
+    "description": "Chatbots allow human agents to work on more challenging activities and strategic projects by managing routine queries, order processing, appointment scheduling, and more improving productivity and cost savings.",
+    icon: Accountibility,
+  },
+  {
+    "title": "The Multichannel Integration",
+    "description": "Chatbots fit effortlessly into websites, smartphone applications, chat systems, and social media which help increase omnichannel engagement and brand loyalty by using Chatbots across several touchpoints to provide consumers with a consistent experience.",
+    icon: Maintain,
+  },
+  {
+    "title": "Analyses of Data",
+    "description": "Businesses can use chatbot data to enhance operations and decision-making. Through user interactions, sentiment analysis, and conversion data, organizations can learn about client preferences and behavior patterns to customize their offers and marketing tactics.",
+    icon: Crm,
+  },
+  {
+    "title": "Creativeness and Difference",
+    "description": "Advanced Chatbots with NLP, sentiment analysis, and predictive analytics can provide cutting-edge customer experiences that differentiate enterprises, build brand awareness, and attract new consumers.",
+    icon: Accountibility,
+  }
+];
+
+const LLM = [
+  {
+    "title": "Tailor-Made Solutions for Any Sector",
+    "description": "From financial LLMs and law to medicine and education, we create custom solutions tailored to your needs.",
+    icon: Scalability,
+  },
+  {
+    "title": "Cost-Effective Enterprise Deployment",
+    "description": "High-quality LLM development at affordable prices, so you can grow without breaking the bank.",
+    icon: Maintain,
+  },
+  {
+    "title": "Employ On-Demand LLM Professionals",
+    "description": "Easily scale your AI initiatives with targeted, screened experts in Large Language Model development.",
+    icon: Crm,
+  },
+  {
+    "title": "Cloud-Native Scalability",
+    "description": "Our LLM development services ensure deployment on modern cloud infrastructure to provide seamless performance and availability.",
+   icon: Accountibility,
+  },
+  {
+    "title": "Secure and Compliant",
+    "description": "Worldwide compliance with standards of privacy, data processing, and AI ethics to safeguard your systems and data.",
+    icon: Scalability,
+  },
+  {
+    "title": "Faster Time-to-Market",
+    "description": "Agile methodology and pre-configured accelerators to deploy your solution quickly and efficiently.",
+   icon: Crm,
+  }
+];
+
+const LLM_service = [
+  {
+    "title": "Integration of LLM with Current Systems",
+    "description": "Integrate your LLM-powered solutions with CRMs, ERPs, customer portals, or analytics platforms."
+  },
+  {
+    "title": "Azure and Cloud LLM Deployment",
+    "description": "Expert deployment and tuning of LLMs on Azure, AWS, or Google Cloud for high-performance scalability and security."
+  },
+  {
+    "title": "Custom LLM Development",
+    "description": "Complete LLM development to your data, language, and business rules—whether internal use or customer applications."
+  },
+  {
+    "title": "LLM Observability and Monitoring",
+    "description": "Implement tools to track LLM performance, latency, cost, and drift in production, ensuring model reliability and accuracy over time."
+  },
+  {
+    "title": "Retrieval-Augmented Generation (RAG) Implementation",
+    "description": "Design and deploy RAG architectures to connect LLMs to your private knowledge base, allowing for contextually rich and factually grounded responses."
+  },
+  {
+    "title": "Prompt Engineering and Optimization",
+    "description": "Develop and refine specialized prompts and few-shot examples to maximize the output quality and consistency of LLMs for specific tasks."
+  }
+];
+
+const AiMarketing_Tech = [
+  {
+    "title": "Explainable AI (XAI)",
+    "description": "It contributes to defining model correctness, fairness, transparency, and decision-making results driven by AI. When implementing AI models into production, an organization needs to be able to explain AI to gain the confidence of its stakeholders.",
+    icon: Type_1,
+  },
+  {
+    "title": "Quantum Machine Learning",
+    "description": "At the vanguard of AI research and application, quantum machine learning holds the potential to solve some of the most difficult issues in a variety of industries.",
+    icon: Type_2,
+  },
+  {
+    "title": "Multimodal AI",
+    "description": "AI systems are able to comprehend and react to users in a more instinctive and natural way because of multimodal artificial intelligence. It improves user experience and the efficacy and efficiency of interactions across a range of industries.",
+    icon: Type_3,
+  },
+  {
+    "title": "Generative AI",
+    "description": "We use top-notch models such as GAN, Diffusion, and LLM to help construct Autonomous AI agents, multi-modal virtual assistants and customer support, automated content generation, conversation intelligence, and other unique solutions.",
+    icon: Type_4,
+  },
+  {
+    "title": "OpenAI's GPT-4",
+    "description": "The big multimodal language model GPT-4 from OpenAI creates text based on both textual and visual input. We employ it for the analysis of qualitative data, including transcripts and conversations with customer service.",
+    icon: Type_5,
+  },
+  {
+    "title": "Neuro-Symbolic AI",
+    "description": "In order to overcome the shortcomings of both neural and symbolic AI architectures, neuro-symbolic AI combines both to create a strong AI that is able to reason, learn, and model cognitive processes.",
+    icon: Type_6,
+  }
+];
+
+const AiMarketing_benifits = [
+  {
+    "title": "Increased Customer Personalization",
+    "description": "Provide hyper-personalized experiences and content that enhance engagement and loyalty.",
+    icon: Maintain,
+  },
+  {
+    "title": "Accelerated Decision-Making",
+    "description": "Use real-time analysis of data for smarter, faster marketing optimizations and strategies.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Improved Campaign ROI",
+    "description": "Maximize ad spend and returns with intelligent targeting and campaign tracking.",
+    icon: Scalability,
+  },
+  {
+    "title": "24/7 Campaign Management",
+    "description": "Operate always-on marketing campaigns with automated never-sleeping systems.",
+    icon: Crm,
+  },
+  {
+    "title": "Scalable Across Business Sizes",
+    "description": "Our AI Marketing for Small Business and large enterprises guarantees customized scalability and flexibility for each brand.",
+    icon: Maintain,
+  },
+  {
+    "title": "Data-Driven Insights",
+    "description": "Obtain reliable insights and projections that facilitate strategic planning and future growth.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Explainable AI (XAI)",
+    "description": "It contributes to defining model correctness, fairness, transparency, and decision-making results driven by AI. When implementing AI models into production, an organization needs to be able to explain AI to gain the confidence of its stakeholders.",
+    icon: Scalability,
+  },
+  {
+    "title": "Quantum Machine Learning",
+    "description": "At the vanguard of AI research and application, quantum machine learning holds the potential to solve some of the most difficult issues in a variety of industries.",
+    icon: Crm,
+  },
+  {
+    "title": "Multimodal AI",
+    "description": "AI systems are able to comprehend and react to users in a more instinctive and natural way because of multimodal artificial intelligence. It improves user experience and the efficacy and efficiency of interactions across a range of industries.",
+    icon: Maintain,
+  }
+];
+
+const AiMarketing_services = [
+  {
+    "title": "Predictive Analytics & Lead Scoring",
+    "description": "Predict customer behavior and rank leads using data-driven AI models to drive conversion rates and sales."
+  },
+  {
+    "title": "Automated Campaign Management",
+    "description": "Plan, automate, and track cross-channel campaigns with AI-driven orchestration technology that saves time and improves efficiency."
+  },
+  {
+    "title": "Chatbot & Virtual Assistant Integration",
+    "description": "Drive user experience and lead generation using AI-powered chatbots providing instant, smart responses across devices."
+  },
+  {
+    "title": "Increased Customer Personalization",
+    "description": "Provide hyper-personalized experiences and content that enhance engagement and loyalty."
+  },
+  {
+    "title": "Accelerated Decision-Making",
+    "description": "Use real-time analysis of data for smarter, faster marketing optimizations and strategies."
+  },
+  {
+    "title": "Improved Campaign ROI",
+    "description": "Maximize ad spend and returns with intelligent targeting and campaign tracking."
+  },
+  {
+    "title": "24/7 Campaign Management",
+    "description": "Operate always-on marketing campaigns with automated never-sleeping systems."
+  },
+  {
+    "title": "Scalable Across Business Sizes",
+    "description": "Our AI Marketing for Small Business and large enterprises guarantees customized scalability and flexibility for each brand."
+  },
+  {
+    "title": "Data-Driven Insights",
+    "description": "Obtain reliable insights and projections that facilitate strategic planning and future growth."
+  },
+  {
+    "title": "Explainable AI (XAI)",
+    "description": "It contributes to defining model correctness, fairness, transparency, and decision-making results driven by AI. When implementing AI models into production, an organization needs to be able to explain AI to gain the confidence of its stakeholders."
+  },
+  {
+    "title": "Quantum Machine Learning",
+    "description": "At the vanguard of AI research and application, quantum machine learning holds the potential to solve some of the most difficult issues in a variety of industries."
+  },
+  {
+    "title": "Multimodal AI",
+    "description": "AI systems are able to comprehend and react to users in a more instinctive and natural way because of multimodal artificial intelligence. It improves user experience and the efficacy and efficiency of interactions across a range of industries."
+  },
+  {
+    "title": "Generative AI",
+    "description": "We use top-notch models such as GAN, Diffusion, and LLM to help construct Autonomous AI agents, multi-modal virtual assistants and customer support, automated content generation, conversation intelligence, and other unique solutions."
+  },
+  {
+    "title": "OpenAI's GPT-4",
+    "description": "The big multimodal language model GPT-4 from OpenAI creates text based on both textual and visual input. We employ it for the analysis of qualitative data, including transcripts and conversations with customer service."
+  },
+  {
+    "title": "Neuro-Symbolic AI",
+    "description": "In order to overcome the shortcomings of both neural and symbolic AI architectures, neuro-symbolic AI combines both to create a strong AI that is able to reason, learn, and model cognitive processes."
+  }
+];
+
+const AiCyber = [
+  {
+    "title": "Proactive Threat Management",
+    "description": "Stop attacks before they occur by utilizing predictive analytics and machine learning-based threat identification.",
+    icon: Maintain,
+  },
+  {
+    "title": "24/7 Security Operations",
+    "description": "Support locked-down drone security and incident reporting in a 24/7 mode with minimal manual intervention due to automated security bots.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Less False Positives",
+    "description": "Intelligent algorithms drastically reduce alert fatigue by effectively discerning real threats from harmless anomalies.",
+    icon: Scalability,
+  },
+  {
+    "title": "Better Regulatory Compliance",
+    "description": "Automated documentation, alert, and reporting features cover your GDPR, HIPAA, and ISO27001 compliance.",
+    icon: Crm,
+  },
+  {
+    "title": "Increased Investigation Speed",
+    "description": "Compared to human analysts, AI drastically decreases detection to responding time, allowing teams to interrupt breaches in seconds, not hours.",
+    icon: Maintain,
+  },
+  {
+    "title": "Cost-effective Security Scaling",
+    "description": "As your infrastructure grows, so does your ability to utilize our AI (without needing to grossly increase security man-power).",
+    icon: Accountibility,
+  }
+];
+
+const AiCyber_services = [
+  {
+    "title": "Threat Intelligence Integration and Reporting",
+    "description": "Integration with global threat intelligence feeds and custom dashboards for real-time protections and compliance reporting."
+  },
+  {
+    "title": "AI-Led Threat Detection & Prevention",
+    "description": "Prevention and detection of malicious activities in real time through machine learning using the large datasets of threats trained against."
+  },
+  {
+    "title": "Automated Incident Response Systems",
+    "description": "AI bots to identify, analyze, and respond to threats in real-time with no human involvement and downtime."
+  },
+  {
+    "title": "Behavioral Analytics & Anomaly Detection",
+    "description": "Study user and system behavior to detect something suspicious to the organization, insider threats, or unauthorized attempts of access."
+  },
+  {
+    "title": "Email & Phishing Protection",
+    "description": "AI analysis of email and filtering to block phishing, spoofing and ransomware threats before they reach the user."
+  },
+  {
+    "title": "End-Point Protection & Monitoring",
+    "description": "AI-powered end-point agents provide device protection in real-time along with behavioral tracking of all examines and forensic examinations."
+  },
+];
+
+const AiStock = [
+  {
+    "title": "Increased Accuracy in Executing trades",
+    "description": "AI systems reduce emotional and human forms of mistakes to provide greater accuracy in trades.",
+    icon: Maintain,
+  },
+  {
+    "title": "Improved Time to Respond to Market Fluctuations",
+    "description": "By using AI to analyze trades and implement automation you can respond to market changes in a matter of milliseconds.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Better Early Risk Identification",
+    "description": "AI can predict and help identify at-risk or negative trades through anomaly detection and predictive modeling and alerts.",
+    icon: Scalability,
+  },
+  {
+    "title": "Increased Trading Up-Time",
+    "description": "You can have AI bots execute trades and monitor even when you're off the clock in the regular market hours or in global markets when you're asleep without risk of fatigue.",
+    icon: Crm,
+  },
+  {
+    "title": "Customized Strategies",
+    "description": "Use a configurable AI, allowing you to implement your unique or proprietary business strategies.",
+    icon: Maintain,
+  },
+  {
+    "title": "Improved Decision Making",
+    "description": "With data you can view data insights, visual dashboards, real-time key performance indicators (KPIs), all leading to easier and smarter decision making.",
+    icon: Accountibility,
+  }
+];
+
+const AiStock_services = [
+  {
+    "title": "AI-Driven Trading Strategies",
+    "description": "AI can predict and help identify at-risk or negative trades through anomaly detection and predictive modeling and alerts."
+  },
+  {
+    "title": "Automated Trading Systems",
+    "description": "AI bots to execute trades and monitor even when you're off the clock in the regular market hours or in global markets when you're asleep without risk of fatigue."
+  },
+  {
+    "title": "Customized Strategies",
+    "description": "Use a configurable AI, allowing you to implement your unique or proprietary business strategies."
+  },
+  {
+    "title": "Data Insights & Dashboards",
+    "description": "View data insights, visual dashboards, real-time key performance indicators (KPIs), all leading to easier and smarter decision making."
+  },
+  {
+    "title": "Machine Learning & Artificial Intelligence",
+    "description": "AI can predict and help identify at-risk or negative trades through anomaly detection and predictive modeling and alerts."
+  },
+ {
+    "title": "AI Trading Bots",
+    "description": "Automate buy or sell transactions based on signals from the market in real-time, operations that are based on your outcomes for your trading strategy or from AI learning models."
+  },
+  {
+    "title": "Predictive Analytics",
+    "description": "Use machine learning to determine future stock value trends based on technical indicators, historical data, or when compiling sentiment."
+  },
+  {
+    "title": "Real-time Trade Execution Engines",
+    "description": "Provide the trader instant trade capabilities with little latency. These transactions use a state-of-the-art backend development system using secure APIs."
+  }
+];
+
+const AiSocialMedia = [
+  {
+    "title": "Increased Engagement",
+    "description": "Utilizing AI generated insights, you can post content that resonates with your audiences, at the right time, and on the right platform.",
+    icon: Maintain,
+  },
+  {
+    "title": "More Data Driven Decisions",
+    "description": "Replace guessing with assuredness. AI tools provide in-depth audience analytics and live audience interactions.",
+    icon: Accountibility,
+  },
+  {
+    "title": "More Efficient Campaigns",
+    "description": "AI tools can reduce manual labour and human error through the automation of generating and publishing content, monitoring progress and reporting.",
+    icon: Scalability,
+  },
+  {
+    "title": "More Revenue",
+    "description": "With audience segmentation, targeting and conversion recommendations, your social campaigns yield more revenue.",
+    icon: Crm,
+  },
+  {
+    "title": "Consistent Branding across multiple Platforms",
+    "description": "Many AI tools allow for centralised control, so your company can have a consistent voice, brand, and image across all social media platforms.",
+    icon: Maintain,
+  },
+  {
+    "title": "Crisis Prevention",
+    "description": "AI sentiment monitoring and social listening can catch crises before they spiral out of control.",
+    icon: Accountibility,
+  }
+];
+
+const AiSocialMedia_services = [
+  {
+    "title": "Audience Segmentation & Personalization",
+    "description": "Deliver personalized messaging using insightful segmentation based on behavior, location, interests, and platform behavior."
+  },
+  {
+    "title": "Social Listening & Brand Monitoring",
+    "description": "Track mentions, monitor brand health, or engage in conversations using automated real-time alerts, reports, and dashboards powered by AI."
+  },
+  {
+    "title": "AI Content Creation & Curation",
+    "description": "Automatically create, edit, recommend based on user behavior, past engagement, and brand tone"
+  },
+  
+  {
+    "title": "Holistic Security Posture Management",
+    "description": "Continuously scan and assess the entire technology stack (cloud, on-prem, and hybrid environments) to identify configuration drift, weak policies, and misconfigurations, automatically generating remediation steps."
+  },
+  {
+    "title": "Automated Portfolio Rebalancing",
+    "description": "Monitor market movements and the user's financial goals in real-time to automatically execute trades necessary to keep the investment portfolio aligned with the specified risk tolerance and target asset allocation."
+  },
+  {
+    "title": "Cross-Platform Performance Attribution",
+    "description": "Use advanced analytics to accurately attribute conversions and revenue generated back to the initial touchpoint across diverse social media platforms, providing a clear ROI for each channel."
+  }
+];
 
 const Common = () => {
   return (
@@ -4433,6 +5198,393 @@ const contentMap = {
       <Common />
     </>
   ),
+
+  "generative ai consulting": (
+    <>
+      <HeroSection
+        title="Generative AI Consulting Company"
+        description="Transform your business with cutting-edge Generative AI Consultant, designed specifically for startups, enterprises, and innovation-focused brands. We have expertise in developing AI-driven web and mobile platforms that fuel automation, creativity, and competitive edge. From optimizing operations to customer experience and next-generation product development, we provide future-proof, scalable, and cost-effective solutions."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiConsult}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiConsultAbout}
+        h1="Leading Experts in Generative AI Consulting Service"
+        p1="Being a pioneering Generative AI consulting company, we combine secure cloud technology, smart automation, and bespoke software development to empower organizations to unleash the power of AI. Generative AI for Consultants experts are relied upon by international customers for web-based system development and AI-based applications that serve various sectors such as healthcare, eCommerce, finance technology, and media. With decades of experience and a nimble approach, we bring AI solutions into your workflows that blend effortlessly. From AI content creation to smart agents, we specialize in the entire range of machine learning, LLMs (Large Language Models), and generative design—providing industry-vertical, measurable results."
+      />
+      <Quotes
+        title="Building Smarter Solutions Using Generative AI in Consulting"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "Our Generative AI for Consultants offerings are aimed at empowering companies with the capabilities they require in order to grow, differentiate, and innovate. We specialize in providing secure, scalable, and high-performance web platforms that utilize AI for content automation, smart recommendations, chatbot applications, creative design creation, and beyond.",
+          "Having delivered global AI projects for different industries, our data scientists, AI engineers, and solution architects develop platforms that are not only functional—but smart. We collaborate closely with clients to develop business-specific applications using cutting-edge tools such as OpenAI, Stability AI, Hugging Face, and more, so that you remain competitive.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Social Media" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiConsulting}
+        sectionTitle="Benefits of Generative AI Services for Businesses"
+        sectionDescription="Here's how our Generative AI solutions benefit customers with concrete results and competitive advantage"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Our Generative AI Consulting Services" techCards={AiConsulting_services} />
+      <Common />
+    </>
+  ),
+
+  "generative ai application": (
+    <>
+      <HeroSection
+        title="Our Generative AI Application Development Services"
+        description="In a digital-first world, companies of all sizes are looking for brighter, more intuitive solutions beyond the conventional software. Our Generative AI Application Development capabilities enable organizations to unlock the power of artificial intelligence to automate the creation of content, optimize their operations, and improve user experiences. From smart chatbots to adaptive content generators, we develop scalable and economical AI-based web and mobile applications that fit your specific business requirements."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiAppp}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiAppAbout}
+        h1="Next-Gen App Experiences with Generative AI Development Services"
+        p1="We are a top Generative AI Application Development Company, dedicated to providing secure, bespoke, AI-driven platforms for international businesses, startups, and innovators. Our expertise is in integrating secure cloud-based infrastructure, API-based integrations, and our own proprietary AI models to provide applications that revolutionize the way organizations work and engage customers. From developing smart virtual assistants and adaptive content generators to real-time recommendation engines and design automation software, we draw on extensive experience and a forward-thinking approach."
+      />
+      <Quotes
+        title="Generative AI App Developers Driving Future of App Innovation"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "We excel at designing scalable and safe AI applications that embed generative features like natural language generation (NLG), AI automation, image generation, and predictive analytics. Having worked with deploying generative solutions across various industries—healthcare, education, eCommerce, media, and fintech—we enable companies to enhance operational efficiency and customer experience through customized AI models.",
+          "Our development team includes AI engineers, full-stack developers, ML ops experts, and domain specialists who work together in collaboration with customers to design solutions from conception to rollout. We develop applications using cutting-edge AI tools and platforms such as OpenAI, Stability AI, Hugging Face, and in-house LLMs, ensuring every application is not just intelligent but also compliant, scalable, and high-performing.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiApp}
+        sectionTitle="Benefits of Generative AI Services for App Development"
+        sectionDescription="Here's how our Generative AI solutions benefit customers with concrete results and competitive advantage"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Our Generative AI Application Development Services" techCards={AiApp_service} />
+      <Common />
+    </>
+  ),
+
+  "generative ai services": (
+    <>
+      <HeroSection
+        title="Our Core Generative AI Services Capabilities"
+        description="Need AI that works for your business? We build custom web apps and tools that fit what you actually need. Small startup testing ideas or big company wanting to automate messy workflows - doesn't matter. Here's what we've learned: most AI projects fail because they're built for demos, not real work. We focus on stuff that solves actual problems. Content creation that saves hours, automation that cuts through boring tasks, systems that grow with your team. Budget matters too. We build things that make sense financially, whether you're bootstrapping or have deep pockets. No point in fancy AI if it bankrupts you."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiServicess}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiServiceAbout}
+        h1="Game Changing Generative AI in Financial Services"
+        p1="We build software that actually works for real businesses. Been doing this for years across different industries - startups, established companies, solo entrepreneurs. AI tech and making it useful for your specific situation. Security matters, so we don't cut corners there. Web-based stuff, AI-powered tools, whatever you need. We've seen what works and what doesn't, so we focus on solutions that make your team more productive and keep customers happy. Your business grows, your software should too. We build things that scale without breaking. Got an AI idea that could change your game? Let's make it happen."
+      />
+      <Quotes
+        title="Smart Generative AI Cloud Services"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "Our generative AI offerings extend beyond general use cases to provide high-performance, scalable platforms that are specific to your business model. Whether developing smart chatbots, designing workflow automation, content generation, or custom model training Microsoft Generative AI Services for enterprise intelligence, our AI solutions are crafted for precision and scalability.",
+          "With successful implementations on worldwide projects, our seasoned developers, AI engineers, and domain consultants present a rich mix of technical expertise and creativity. We know that every business is unique, and that's why we consultatively approach each project—developing applications that address actual issues, minimize overhead, and enhance operational efficiency by means of AI-first logic.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiService}
+        sectionTitle="Business Benefits of Generative AI Services"
+        sectionDescription="Here's how our Generative AI solutions benefit customers with concrete results and competitive advantage"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Our Core Generative AI Services Capabilities" techCards={AiService_services} />
+      <Common />
+    </>
+  ),
+
+  "generative ai integration": (
+    <>
+      <HeroSection
+        title="Generative AI Integration Services "
+        description="Join the age of intelligent automation with Generative AI Integration Services, designed for companies looking to enhance operations, customer experience, and innovation. As a startup, an SME, or an international company, we focus on building affordable and tailored AI solutions in line with your specific objectives. Unleash the capabilities of AI to create content, automate functions, and make informed decisions. Contact us today for a complimentary consultation and learn how Generative AI can transform your business environment."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiIntegrations}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiIntegrationAbout}
+        h1="Leading AI Solutions through Industry-Specific Innovation"
+        p1="With a leadership position in AI-based development, we provide secure, scalable, and robust Generative AI Integration services solutions customized to the requirements of contemporary businesses, startups, and entrepreneurs. With extensive knowledge in web-based systems, machine learning, and natural language processing, we enable organizations to embed AI into their operations seamlessly. Our background ranges across industries such as retail, healthcare, finance, and education—enabling us to develop smart, industry-specific applications that drive tangible outcomes."
+      />
+      <Quotes
+        title="Smart, Scalable, and Business-Ready Generative AI Solutions"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "Our Generative AI Integration Services enable companies to leverage the power of state-of-the-art AI models such as GPT, DALL·E, and bespoke LLMs to automate work, tailor user experiences, and generate new types of content. We develop enterprise-class applications that can produce text, images, audio, code, and even predictive output—totally aligned with your brand and business rules.",
+          "From chatbot integration and AI copilots to intelligent document processing and personalized marketing tools, we specialize in developing AI solutions that are scalable, secure, and easy to deploy. Our experienced AI engineers and data scientists partner with your team to guarantee each AI solution maximizes efficiency, improves customer satisfaction, and delivers long-term value.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiIntegration}
+        sectionTitle="Key Advantages of Generative AI Integration Services "
+        sectionDescription="Implement AI strategically and become a market leader. Our services are designed to provide long-term benefits across business segments."
+      />
+      <AboutUs />
+      <TechnologiesSlider title="AI-Powered Business Acceleration with Generative AI Services " techCards={AiIntegration_services} />
+      <Common />
+    </>
+  ),
+
+  "ai chatbot development": (
+    <>
+      <HeroSection
+        title=" AI Chatbot Development Company in INDIA "
+        description="Are you interested in Custom AI Chatbot development services? As a leading AI chatbot development company in USA, we specialize in developing ai chatbots, AI-powered chatbots, chatbot integration services, Open-source chatbot customization services and conversational AI Chatbot Solutions tailored to your business needs. "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiChatbots}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiChatbotDev}
+        img2={AiChatbotSection}
+        h1="Hire Chatbot Developers for Business Automation"
+        p1="We provide individualized enterprise Chatbot development solutions that use cutting-edge technology to take the amount of interaction and engagement with your customers to the next level. In addition, Enterprise AI chatbot solutions provider procedures are well-defined and easily controllable, and they strike a healthy balance between cost, time, and quality while maintaining open lines of communication. Chatbot development company for customer service automation offer voice-activated chatbots and chat bot service perfectly designed to fit your demands, whether you want to develop your conversation bots, IVR bots, online chatbots, text bots, transactional chatbots or messaging bots. "
+        h2="Brief About Chatbot Development Services"
+        p2="With our AI-based chatbot development services, you can use a chatbot to deliver proper replies, respond to questions, and even escalate requests. In addition, it may provide answers to commonly asked queries or information that is up to date. It is very capable of taking the role of live chat operator. As an Top chatbot development company in USA, our team off chatbot developers creates a machine learning chatbots and builds automated assistants to transform how companies communicate with consumers, providing automated customer assistance and engaging experiences through the chatbot platform. "
+      />
+      <Quotes
+        title="Get 100% Customizable Chatbot Development Services "
+        highlightedText="AI-Based Chatbot Applications"
+        paragraphs={[
+          "You can improve communication with your consumers and simplify company interactions by using social media chatbots. Dialog Flow, IBM Watson, Amazon Lex, fastText, Rasa NLU, and the Microsoft Bot Framework are the platforms we use to develop speech bots and chatbots. Chatbot development for startups and enterprises enhance customer engagement with ai chatbot development company let's innovate together! ",
+          "Chatbots can be used across various industry verticals because they can manage multiple services, including complaints, customer care, feedback, booking, searching, and the management of payment processes, amongst others. Hire Chatbot developers  to produce solutions for the web and mobile apps that are brilliant, and these solutions may be incorporated into a variety of different areas like e-commerce, customer support, entertainment, delivery services, and healthcare. ",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiChatbot}
+        sectionTitle="The Expertise In Our Chatbot Development"
+        sectionDescription="Our chatbot development service is all you need to deliver an exceptional customer experience. Our expertise includes:"
+      />
+      <AboutUs />
+      <Benefits
+        benifits={AiChatbot_benifits}
+        sectionTitle="Benefits of Chatbot Development Services"
+        sectionDescription="Chatbot Development Services may transform customer engagement, operations, and growth. Here are six benefits of Chatbot Development company:"
+      />
+      <Common />
+    </>
+  ),
+
+   "llm development": (
+    <>
+      <HeroSection
+        title="LLM Development Company"
+        description="Wish to revolutionize your business with cutting-edge AI strength? Our LLM Development Company provides strong, tailored Large Language Model development solutions for small businesses, medium-sized businesses, and large enterprises. From conception to deployment, we enable companies to incorporate advanced LLM development services at a fraction of the price tag. Whether you are constructing smart chatbots, automated content platforms, or domain-specific AI assistants, our solutions are future-proof and scalable. Contact us today for a free estimate and see how LLMs can transform your workflows."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={LLMs}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={LLMAbout}
+        h1="Hire expert LLM developers for enterprise AI"
+        p1="A leading Large Language Model Development Company , we focus on crafting secure, scalable, and high-performance Large Language Model development solutions. Our seasoned developers and AI engineers possess extensive knowledge in LLM consulting, data management, cloud infrastructure, and enterprise-class deployments. With a passion for innovation and customer success, we design customized LLM development services for organizations, entrepreneurs, and businesses from various industries. Whether you require an NLP-driven assistant or an industry-specific AI engine, we provide end-to-end solutions with unparalleled accuracy and security."
+      />
+      <Quotes
+        title="Customized Large Language Model Development Services"
+        highlightedText="Smart Software Development for Secure Applications"
+        paragraphs={[
+          "Our team of veteran developers and data scientists has built LLM-powered platforms across sectors like finance, healthcare, education, and customer service. As a trusted LLM Consulting and Development Agency, we understand that every business is special, and that is why our LLM development offerings are fully customized for your application—ranging from context-aware virtual assistants to intelligent content automation platforms. Focusing on performance, language understanding, and user experience, we empower you to extract maximum value from each model.",
+          "Our worldwide delivery model ensures quality delivery across geos. We've worked with leading enterprises and agile startups worldwide, delivering enterprise-grade LLMs to scale. Our flexible development mindset coupled with expert experience in LLM architecture and optimization ensures your solution is optimized for scale, regulation, and compatibility within your ecosystem. When you work with us, you're not hiring developers—but LLM experts for enterprise AI transformation.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={LLM}
+        sectionTitle="Key Benefits to Choose Us for Your LLM Development Needs"
+        sectionDescription="Our LLM Development Firm offers a robust blend of technical excellence, industry knowledge, and innovation that produces excellent outcomes. Here's why our international customers trust us"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="LLM Development Services Built for Real-World Applications" techCards={LLM_service} />
+      <Common />
+    </>
+  ),
+
+  "ai in marketing services": (
+    <>
+      <HeroSection
+        title="AI in Marketing Services"
+        description="Leverage the full potential of your business with custom AI in the Marketing Industry. We are experts in developing smart, data-based marketing strategies that help businesses of all sizes—startups to enterprises—win over audiences, forecast behavior, and drive ROI. Whether you're an emerging brand or an enterprise, our AI Marketing Company offers AI-Driven Digital Marketing Services that are cost-effective, scalable, and completely customizable. Ready to supercharge your marketing smarts? Contact us today for a free quote."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiMarketing}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiAbout}
+        h1="Leading AI-Driven Digital Marketing Services"
+        p1="Being an established AI Marketing for Small Business, we leverage a robust combination of technology, strategy, and creativity in every association. Our staff is excellent at crafting AI Based Marketing Services that interact harmoniously with your business systems, providing safe, easy-to-use, and robust marketing solutions. We engage with startups, small businesses, and large firms to provide measurable results. Our strategy is based on profound industry knowledge, innovation, and a tested history of delivering AI in the Marketing Industry that creates lasting value."
+      />
+      <Quotes
+        title="Transforming AI Based Marketing Services with Best Outcome"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "Our development team has provided AI in Marketing solutions for numerous global clients across various businesses, enabling firms to leverage machine learning and predictive analytics to make better, quicker, and more targeted marketing decisions. With a clear emphasis on security, scalability, and performance, we guarantee every project provides high-impact results.",
+          "We have expertise in developing business-specific AI Marketing for Small Business and enterprise-level applications that automate campaign management, audience segmentation, content creation, and customer engagement. Whether you want to optimize your email campaigns, personalize customer journeys, or improve digital ads, our expert team develops strategies that convert.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Artificial Intelligence Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiMarketing_benifits}
+        sectionTitle="Benefits of AI in Marketing Services"
+        sectionDescription="Collaborate with us on AI-driven marketing software and know that your operations are efficient, flexible, and data-driven. Here's how we make it happen"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Our AI in Marketing Services Include" techCards={AiMarketing_services} />
+      <Common />
+    </>
+  ),
+
+  "ai in cybersecurity services": (
+    <>
+      <HeroSection
+        title="AI in Cybersecurity Services"
+        description="Protect your business with innovative AI-enabled security solutions that are cost effective, flexible, and scalable. We develop intelligent security solutions for websites and applications, designed for organizations of all sizes- from startups to multinational organizations. Our AI tools, successfully deploy, ability to detect threats, automate responses, and make sure you are compliant across the digital environment. Let us build a solution to fit your business and budget. Reach out for a free quote today and start building a safer AI Cybersecurity Solutions digital environment."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiAbout}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiAbout}
+        h1="Build Digital Future with Gen AI in Cybersecurity"
+        p1="As a leader in secure software development and intelligent threat management, we have extensive know how in using AI-based cybersecurity, web-based protection systems and custom solutions for today's complex digital ecosystems. Our team has decades of experience delivering mission-critical platforms for companies, startups, and security-sensitive sectors like finance, healthcare, and government. We create innovative, scalable solutions to protect your data, systems, and users by merging cutting-edge machine learning algorithms with solid development practices—anywhere, any time."
+      />
+      <Quotes
+        title="Secure and Smarter AI in Cyber Security Solutions"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "We create AI-based systems that constantly learn and change as a result of advancing cyber threats. Our applications are built for performance, security, and compliance and deliver real-time threat detection, automated incident remediation, and behavioral analysis. These systems protect your networks, applications and user endpoints against malware, phishing, DDoS and zero-day attacks ensuring business continuity.",
+          "Having been successful in implementing cybersecurity solutions throughout America, Europe and the Middle East, our goal is to keep our clients ahead of the threat and with our, business-specific, AI-enabled business partnerships. Our teams consist of AI engineers, ethical hackers, security analysts and cloud specialists who work together to create effective and accountable mission-specific protection strategies with supportable, SIEM integration, and 24/7 monitoring capabilities to provide the most secure digital environment possible.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Cyber Security Development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiCyber}
+        sectionTitle="Benefits of AI in Cybersecurity Services"
+        sectionDescription="Collaborate with us on AI-driven marketing software and know that your operations are efficient, flexible, and data-driven. Here's how we make it happen"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Core Services Offered Under AI in Cybersecurity Services" techCards={AiCyber_services} />
+      <Common />
+    </>
+  ),
+
+  "ai in stock trading": (
+    <>
+      <HeroSection
+        title="AI in Stock Trading Development"
+        description="With the evolution of technology in rapid paced financial universe, artificial intelligence for stock trading with AI driven automated stock trading systems are reinventing decision making for investors at all levels. We provide low cost, high-impact web and application development services exclusively for stock trading platforms, specifically for fintech start-ups or for a brokerage firm, or for investment advisers. Our proprietary AI engines can offer smart predictions, processing data in real time, and execute trades automatically and accurately. Please ask for a free quote today to find out how we can transform your investment technology system. "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiStockk}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiStockAbout}
+        h1="Maximize Profits Using a Smart AI Stock Trading Assistant"
+        p1="As a trusted AI Stock Trading Bot technology partner for fintech innovators around the world, we build highly secure, scalable and intelligent trading systems that comply with global regulations. From a Best AI Stock Trading Software development to real-time portfolio tracking dashboards, we build powerful web-based systems for business, start-ups, and entrepreneurs that want a competitive advantage in the capital markets. We have deep experience with machine learning, cloud based integrations, and domain based compliance. We help our clients change and modernize AI Stock Trading App Development with their trading strategies and operations through custom software development."
+      />
+      <Quotes
+        title="Trade Smarter, Not Harder with AI in Stock Trading"
+        highlightedText="Secure, Scalable & Future-Ready Apps"
+        paragraphs={[
+          "We build AI trading systems that will not only be scalable but are secured by known high-level security protocols and can flag possible threats in real-time, a requirement in the financial sector. Our platforms secure ultra-low trade latency, smart analytics, and delta rebalancing for trades both High-Frequency and Algorithmic.",
+          "We have successfully implemented AI stock trading platforms in the US, UK, UAE, and India. We partner with Hedge Funds, brokerage firms, and Fintech startups to build their tools that are solution-based for the client's specific market strategy, whether it is sentiment-based trading, pattern trading, or predictive modelling. We aim at making every line of code fast and accurate and adaptable.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Stock Trading" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiStock}
+        sectionTitle="Key Benefits of AI-Powered Stock Trading Solutions"
+        sectionDescription="Using AI as a tool in trading will provide a mix of benefits that will transform the efficiency and profitability of your investments"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Core Services Offered Under AI in Stock Trading" techCards={AiStock_services} />
+      <Common />
+    </>
+  ),
+
+   "ai in social media": (
+    <>
+      <HeroSection
+        title="AI in Social Media Services"
+        description="In a world dominated by online engagement, competition for attention on artificial intelligence in media industry requires more than content, it requires intelligence. Our advanced AI powered services create intelligent, data-driven social media strategies irrespective of size. We empower organizations of all sizes to build data driven real-time strategies to increase visibility, engagement and ultimately ROI. By combining social media with our ability to build AI Social Media AD Generator and implement websites and applications, we help organizations develop entertainment ai tools affordable high-performance solutions that automate posting, improve relevance of content and analyze user behavior. Request a free quote today and learn how AI can help transform your brand's digital identity."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiSocial}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiSocialAbout}
+        h1="Build Online Presence with AI Social Media Marketing Agency "
+        p1="As a leading ai in media and entertainment technology company, we focus on secure, AI-driven solutions for digital marketing and social engagement. We built our custom software development technology, intelligent automation, and large web systems to help brands and influencers succeed in a fast-paced social media ecosystem. With years of experience working with global startups, enterprises, and marketing teams, we provide AI Social Media Post Generator powerful tools that integrate seamlessly with major platforms like Meta, X (formerly Twitter), LinkedIn, Instagram, and TikTok—all powered by advanced machine learning technologies and secure cloud architecture. "
+      />
+      <Quotes
+        title="Future of Digital Engagement Lies on AI in Social Media Services"
+        highlightedText="Secure, Scalable & Future-Ready Apps  "
+        paragraphs={[
+          "With our global execution capabilities, AI Social Media Marketing Agency have delivered AI-based social media systems globally for clients in the USA, Europe, and the Middle East. Our systems, which range from automated content curation to predictive analytical reports, are custom-built to deliver the maximum performance, security, and scalability. Our solutions are adaptable and customizable to your company's unique industry needs; so your digital identity can grow as your audience does.",
+          "We've assembled a diverse team of AI engineers, UX strategists, and data scientists who build software applications that deliver on your marketing goals, while also having a measurable impact on your overall business. We don't limit ourselves to engagement and analytics; our team is capable of developing engaging tools that track engagement in real time, support influencer collaboration, sentiment analysis etc. Our applications provide business-specific capabilities that not only report likes and shares but provide real brand intelligence from the data at hand.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Social Media" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiSocialMedia}
+        sectionTitle="Key Benefits of AI-Powered Social Media Services"
+        sectionDescription="Using AI-based social media tools can be transformative for how your business engages with, grows, and understands your audiences"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Core Services Offered Under AI Social Media" techCards={AiSocialMedia_services} />
+      <Common />
+    </>
+  ),
 };
 
 function SubMenuContent({ subItemName }) {
@@ -4454,7 +5606,7 @@ export default function SubMenuPage() {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
 
-  const serviceEntry = services.find((s) => toSlug(s.label) === toSlug(service));
+  const serviceEntry = services.find((s) => toSlug(s.label) === toSlug(service)) || AiServices.find((s) => toSlug(s.label) === toSlug(service));
 
   const subItemSlug = toSlug(subItem);
 

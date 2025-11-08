@@ -9,7 +9,7 @@ import L5 from "../public/L5.png";
 import L6 from "../public/L6.png";
 import L7 from "../public/L7.png";
 import L8 from "../public/L8.png";
-
+import axios from "axios";
 
 const STORAGE_KEYS = {
   impressions: "dtp_impressions", 
@@ -41,14 +41,17 @@ export default function DigitalTransformationPopup() {
   const timerRef = useRef(null);
 
 
-  const [formData, setFormData] = useState({
+ const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
-    project: "",
+    phone: "",
+   message: "",
+    countryCode: "+91",
   });
   const [touched, setTouched] = useState({});
   const [formErrors, setFormErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [statusMsg, setStatusMsg] = useState("");
 
   const impressions = useMemo(
     () => readNumberFromStorage(STORAGE_KEYS.impressions, 0),
@@ -111,18 +114,40 @@ export default function DigitalTransformationPopup() {
     const errors = {};
     if (!formData.name.trim()) errors.name = "Name is required";
     if (!formData.email.trim()) errors.email = "Email is required";
-    if (!formData.mobile.trim() || !/^\d{10,}$/.test(formData.mobile.trim())) {
-      errors.mobile = "Please enter valid mobile number";
+    if (!formData.phone.trim() || !/^\d{10,}$/.test(formData.phone.trim())) {
+      errors.phone = "Please enter valid mobile number";
     }
-    if (!formData.project.trim()) errors.project = "Message is required";
+    if (!formData.message.trim()) errors.message = "Message is required";
     setFormErrors(errors);
   }, [formData]);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setTouched({ name: true, email: true, mobile: true, project: true });
-    if (Object.keys(formErrors).length === 0) {
-      close();
+    setTouched({ name: true, email: true, phone: true, message: true });
+    setStatusMsg("");
+
+    if (Object.keys(formErrors).length !== 0) return;
+
+    setLoading(true);
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      countryCode: e.target.countryCode.value,
+    };
+
+    try {
+      await axios.post("https://kryzen-solutions.onrender.com/api/send-email", formData);
+      setStatusMsg("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", message: "", countryCode: "+91" });
+      setTimeout(() => close(), 1500);
+    } catch (err) {
+      console.error("Email send error:", err);
+      setStatusMsg("❌ Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -180,8 +205,7 @@ export default function DigitalTransformationPopup() {
               ))}
             </div>
           </div>
-
-          {/* Right side (form) */}
+        
           <div className="bg-white p-4 sm:p-6 md:p-8">
             <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a273b] mb-4 sm:mb-6">Contact With Our Experts</h3>
 
@@ -190,6 +214,7 @@ export default function DigitalTransformationPopup() {
                 <input
                   type="text"
                   placeholder="Your name *"
+                  name="name"
                   value={formData.name}
                   onChange={(e) => handleChange("name", e.target.value)}
                   onBlur={() => handleBlur("name")}
@@ -205,8 +230,9 @@ export default function DigitalTransformationPopup() {
                 <input
                   type="email"
                   placeholder="Email ID *"
+                  name="email"
                   value={formData.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
+      onChange={(e) => handleChange("email", e.target.value)}
                   onBlur={() => handleBlur("email")}
                   className={`w-full rounded border p-3 text-sm sm:text-base focus:outline-none ${touched.email && formErrors.email ? "border-red-500" : "border-gray-300"}`}
                   required
@@ -218,15 +244,16 @@ export default function DigitalTransformationPopup() {
 
               <div>
                 <div className="flex gap-2">
-                  <select className="w-[70px] sm:w-[90px] rounded border p-3 focus:outline-none border-gray-300 text-sm sm:text-base" defaultValue={"+91"}>
+                  <select name="countryCode" className="w-[70px] sm:w-[90px] rounded border p-3 focus:outline-none border-gray-300 text-sm sm:text-base" defaultValue={"+91"}>
                     <option value="+91">+91</option>
                   </select>
                   <input
-                    type="text"
+                    type="tel"
                     placeholder="Mobile Number *"
-                    value={formData.mobile}
-                    onChange={(e) => handleChange("mobile", e.target.value)}
-                    onBlur={() => handleBlur("mobile")}
+                    name="phone"
+                    value={formData.phone}
+        onChange={(e) => handleChange("phone", e.target.value)}
+                    onBlur={() => handleBlur("phone")}
                     className={`flex-1 rounded border p-3 text-sm sm:text-base focus:outline-none ${touched.mobile && formErrors.mobile ? "border-red-500" : "border-gray-300"}`}
                     required
                   />
@@ -240,9 +267,10 @@ export default function DigitalTransformationPopup() {
                 <textarea
                   placeholder="Tell us more about your project*"
                   rows={4}
-                  value={formData.project}
-                  onChange={(e) => handleChange("project", e.target.value)}
-                  onBlur={() => handleBlur("project")}
+                  name="message"
+                  value={formData.message}
+      onChange={(e) => handleChange("message", e.target.value)}
+                  onBlur={() => handleBlur("message")}
                   className={`w-full resize-none rounded border p-3 text-sm sm:text-base focus:outline-none ${touched.project && formErrors.project ? "border-red-500" : "border-gray-300"}`}
                   required
                 />
@@ -251,7 +279,34 @@ export default function DigitalTransformationPopup() {
                 )}
               </div>
 
-              <button type="submit" className="w-full bg-[#034078] hover:bg-[#04315f] text-white font-bold py-3 rounded text-sm sm:text-base">Submit</button>
+              <button
+                type="submit"
+                disabled={loading}
+                className={`w-full bg-[#034078] hover:bg-[#04315f] text-white font-bold py-3 rounded text-sm sm:text-base flex items-center justify-center ${
+                  loading ? "opacity-70 cursor-not-allowed" : ""
+                }`}
+              >
+                {loading ? (
+                  <div className="flex items-center gap-2">
+                    <span className="w-4 h-4 border-2 border-t-transparent border-white rounded-full animate-spin"></span>
+                    Sending...
+                  </div>
+                ) : (
+                  "Submit"
+                )}
+              </button>
+
+              {statusMsg && (
+                <p
+                  className={`mt-2 text-center text-sm font-semibold ${
+                    statusMsg.startsWith("✅")
+                      ? "text-green-500"
+                      : "text-red-500"
+                  }`}
+                >
+                  {statusMsg}
+                </p>
+              )}
             </form>
           </div>
         </div>

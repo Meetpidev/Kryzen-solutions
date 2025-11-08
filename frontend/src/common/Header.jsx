@@ -58,6 +58,54 @@ const services = [
   },
 ];
 
+const AiServices = [
+  {
+    label: "Artificial Intelligence",
+    sub: [
+      "AI Development",
+      "AI Voice Assistant",
+      "AI Copilot",
+      "AI Ionic App Development",
+      "Enterprise AI Development",
+      "Agentic AI",
+      "AI Consulting",
+      "AIOps Solutions",
+      "Ethical AI Development",
+      "AI Prompt Engineering",
+      "AI Powered Website Builder",
+      "AI Content Generation System",
+      "Conversational AI Development",
+      "Computer Vision",
+      "Adaptive AI Development",
+      "Rag As a Service"
+    ]
+  },
+  {
+    label: "Generative AI",
+    sub: [
+      "Generative AI Development",
+      "Generative AI Consulting",
+      "Generative AI Application",
+      "Generative AI Services",
+      "Generative AI Integration",
+      "AI Agent Development",
+      "AI Chatbot Development",
+      "LLM Development",
+      "LLM Fine Tuning Services"
+    ]
+  },
+  {
+    label: "AI Use Cases",
+    sub: [
+      "AI In Marketing Services",
+      "AI In Cybersecurity Services",
+      "AI In Stock Trading",
+      "AI In Social Media",
+    ]
+  }
+];
+
+
 const solutions = [
   "Health Care App Development", "Education App Development", "Uber Like App Development", "Spotify Like App Development",
   "Zomato Like App Development", "Amazon Like App Development", "Visitor Management System", "Warehouse Management System",
@@ -101,19 +149,6 @@ const navigationItems = [
     ],
   },
   {
-    label: "Let's Talk AI",
-    items: [
-      { label: "Android", to: "/technology/android" },
-      { label: "iOS", to: "/technology/ios" },
-      { label: "Flutter", to: "/technology/flutter" },
-      { label: "React Native", to: "/technology/react-native" },
-      { label: "Angular", to: "/technology/angular" },
-      { label: "React", to: "/technology/react" },
-      { label: "Vuejs", to: "/technology/vuejs" },
-      { label: ".NET", to: "/technology/dotnet" },
-    ]
-  },
-  {
     label: "Our Work",
     items: [{ label: "Cases", to: "/our-work/cases" }],
   },
@@ -126,6 +161,7 @@ export default function Header() {
   const [megaMenu, setmegaMenu] = useState(null);
   const [active, setactive] = useState("Mobile App Development");
   const [openDropdown, setOpenDropdown] = useState({});
+  const [ai, setAI] = useState(false);
 
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -508,21 +544,83 @@ export default function Header() {
             {/* Desktop-only buttons */}
             <div className="hidden lg:flex items-center ml-auto space-x-4">
             <div
-  className="relative"
-  onMouseEnter={() => setmegaMenu(true)}
-  onMouseLeave={() => setmegaMenu(false)}
+                className="relative"
+                onMouseEnter={() => setAI(true)}
 >
   <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm flex items-center cursor-pointer">
     <span className="mr-2">✨</span>
     <span>Let's Talk AI</span>
   </div>
 
-    {megaMenu && (
-    <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md p-4">
-      {/* Mega menu content */}
-    </div>
-  )}
-</div>
+                {ai && (
+                  <div onMouseLeave={() => setAI(null)}>
+                        <div className="absolute left-[-31rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
+                          <div className="flex">
+                            <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
+                              <div className="text-3xl font-bold mb-5">Let's Talk AI</div>
+                              <div className="mb-7 text-lg">
+                               AI Isn’t Just Technology—It’s A Vision.
+From Chatbots To Deep Learning, The AI Revolution Is Where Ideas
+Transform Into Intelligent Solutions.
+                              </div>
+                              <Link to="/contact-us" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap" onClick={() => setmegaMenu(null)}>
+                                Request a Quote
+                              </Link>
+                            </div>
+                             <div className="flex-1 flex">
+                            <div className="bg-gray-50 min-w-[320px] max-w-[320px] divide-y">
+                              {AiServices.map((svc) => (
+                                <div
+                                  key={svc.label}
+                                  className={`px-8 py-3 flex items-center justify-between cursor-pointer font-semibold text-lg ${active === svc.label
+                                    ? "bg-white text-[#0178a8]"
+                                    : "hover:bg-gray-100"
+                                    }`}
+                                  onMouseEnter={() => setactive(svc.label)}
+                                >
+                                  {svc.label}
+                                  {svc.sub?.length > 0 && (
+                                    <span className="ml-auto text-[#0178a8]">&gt;</span>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                            {AiServices.find((s) => s.label === active)?.sub?.length > 0 && (
+                              <div className="bg-white flex-1 flex flex-wrap p-8">
+                                {[
+                                  AiServices
+                                    .find((s) => s.label === active)
+                                    .sub.slice(0, 7),
+                                  AiServices
+                                    .find((s) => s.label === active)
+                                    .sub.slice(7),
+                                ].map((col, i) => (
+                                  <div key={i} className="w-1/2">
+                                    {col.map((item) => (
+                                      <Link
+                                        key={item}
+                                        to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
+                                        className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block"
+                                        onClick={() => setmegaMenu(null)}
+                                      >
+                                        {item}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                ))}
+                              </div>
+                          )}
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                </div>
+)}
+    
+                </div>
 
               <Link to="/contact-us">
                 <button

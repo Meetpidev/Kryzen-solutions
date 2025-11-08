@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import companyLogoPath from '../public/image.png';
 import Logo from "../public/Kryzen_Software.png";
+import axios from "axios";
 
 const Right_Nav = () => {
     const [open, setOpen] = useState(false);
@@ -10,6 +10,31 @@ const Right_Nav = () => {
         { role: 'bot', text: 'Thank you for contacting Kryzen. An Award winning Web, Mobile App & Product Development Company 👋' }
     ]);
     const [chatInput, setChatInput] = useState('');
+    const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+      const formData = {
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      countryCode: e.target.countryCode.value,
+      message: e.target.message.value,
+    };
+
+    try {
+      await axios.post("https://kryzen-solutions.onrender.com/api/send-email", formData);
+      setMessage("✅ Message sent successfully!");
+      e.target.reset();
+    } catch (err) {
+      setMessage("❌ Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
     const sendMsgWhatsapp = (number, message) => {
         window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, '_blank');
@@ -113,30 +138,67 @@ const Right_Nav = () => {
                                 </div>
                             </div>
                             <div className="text-center my-3 font-semibold">OR</div>
-                            <form className="flex flex-col gap-2">
-                                <div className="flex w-full">
-                                    <select className="rounded-l px-2 py-1 text-black bg-gray-200">
-                                        <option value="+91">+91</option>
-                                        <option value="+1">+1</option>
-                                    </select>
+                            <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-full max-w-md mx-auto">
                                     <input
-                                        type="tel"
-                                        placeholder="81234 56789"
-                                        className="rounded-r px-2 py-1 w-full text-black bg-gray-200"
-                                    />
-                                </div>
-                                <textarea
-                                    placeholder="Message"
-                                    className="rounded px-2 py-1 w-full resize-none text-black bg-gray-200"
-                                    rows={2}
-                                />
-                                <button
-                                    type="submit"
-                                    className="bg-yellow-400 text-black rounded px-2 py-1 font-bold cursor-pointer hover:bg-yellow-300 mt-2"
-                                >
-                                    Submit
-                                </button>
-                            </form>
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          className="rounded-r px-2 py-1 w-full text-black bg-gray-200"
+        />
+                                    <div className="flex w-full">
+                                        
+        <select
+          name="countryCode"
+          className="rounded-l px-2 py-1 text-black bg-gray-200"
+        >
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+        </select>
+         <input
+          type="tel"
+          name="phone"
+          placeholder="81234 56789"
+          required
+          className="rounded-r px-2 py-1 w-full text-black bg-gray-200"
+        />
+      </div>
+
+      <textarea
+        name="message"
+        placeholder="Message"
+        required
+        className="rounded px-2 py-1 w-full resize-none text-black bg-gray-200"
+        rows={2}
+      />
+
+      <button
+        type="submit"
+        disabled={loading}
+        className={`bg-yellow-400 text-black rounded px-2 py-1 font-bold cursor-pointer hover:bg-yellow-300 mt-2 flex justify-center items-center ${
+          loading ? "opacity-70 cursor-not-allowed" : ""
+        }`}
+      >
+        {loading ? (
+          <div className="flex items-center gap-2">
+            <span className="w-4 h-4 border-2 border-t-transparent border-black rounded-full animate-spin"></span>
+            Sending...
+          </div>
+        ) : (
+          "Submit"
+        )}
+      </button>
+
+      {message && (
+        <p
+          className={`mt-2 text-sm font-semibold ${
+            message.startsWith("✅") ? "text-green-500" : "text-red-500"
+          }`}
+        >
+          {message}
+        </p>
+      )}
+    </form>
                             <div className="mt-4 text-center">
                                 Contact for <span className="text-yellow-300 font-semibold">Careers</span>
                                 <div className="flex justify-center items-center gap-2 mt-1">

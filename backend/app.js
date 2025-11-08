@@ -73,6 +73,36 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
   }
 });
 
+app.post("/api/send-email", async (req, res) => {
+  const { email, phone, countryCode, message, name = "" } = req.body;
+
+  try {
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASS,
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
+    });
+
+    const nameLine = name ? `Name: ${name}\n` : "";
+
+    await transporter.sendMail({
+      from: email,
+      to: process.env.EMAIL, 
+      subject: "New Contact Form Message",
+      text: `${nameLine}From: ${countryCode} ${phone}\nEmail: ${email}\nMessage: ${message}`,
+    });
+
+    res.status(200).json({ success: true, message: "Email sent successfully!" });
+  } catch (err) {
+    console.error("Email send error:", err);
+    res.status(500).json({ success: false, message: "Failed to send email" });
+  }
+});
 
 app.listen(3000, () => {
   console.log('Server listening on port 3000');

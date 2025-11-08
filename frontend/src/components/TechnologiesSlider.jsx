@@ -64,7 +64,7 @@ export function TechnologiesSlider({ title, techCards = [] }) {
             key={idx}
             className="bg-blue-100 rounded-lg p-8 mx-2 shadow-md flex flex-col items-start w-full max-w-xs min-h-[215px]"
           >
-            <div className="mb-3">{card.icon}</div>
+            <img src={card.icon} className="mb-3"></img>
             <h4 className="font-bold text-lg mb-2">{card.title}</h4>
             <p className="text-gray-700 text-base">{card.description}</p>
           </div>
