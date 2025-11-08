@@ -27,6 +27,7 @@ app.post('/api/schedule-meeting', upload.single('attachment'), async (req, res) 
   try {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
+      port: 465,
       secure: true,
       auth: {
         user: process.env.EMAIL,
