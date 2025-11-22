@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { useParams } from "react-router-dom";
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
+
 import MobileApp from "../public/mobile_app_development1.webp";
 import Maintain from "../public/ic_easy_maintain_mobile_app_development.png";
 import Crm from "../public/ic_crm_mobile_app_development.png";
@@ -125,6 +126,13 @@ import AiChatbotDev from "../public/ai_chatbotde.png";
 import AiChatbotSection from "../public/ai_chatbotsection.png";
 import LLMs from "../public/llmabout.png";
 import LLMAbout from "../public/llm.png";
+import AiCopilots from "../public/aicopilot.png";
+import AicoplotAbout from "../public/aicopilotabout.png";
+import AiAgent from "../public/aiagent.png";
+import AiAgentAbout from "../public/aiagentabout.png";
+import Aiconsult from "../public/aiconsult.png";
+import AiconsultAbout from "../public/aiconsuilabout.png";
+
 
 
 const Charts = lazy(() => import("../components/Charts"));
@@ -271,19 +279,10 @@ const AiServices = [
       "AI Development",
       "AI Voice Assistant",
       "AI Copilot",
-      "AI Ionic App Development",
-      "Enterprise AI Development",
       "Agentic AI",
       "AI Consulting",
-      "AIOps Solutions",
-      "Ethical AI Development",
       "AI Prompt Engineering",
-      "AI Powered Website Builder",
-      "AI Content Generation System",
-      "Conversational AI Development",
       "Computer Vision",
-      "Adaptive AI Development",
-      "Rag As a Service"
     ]
   },
   {
@@ -3429,6 +3428,226 @@ const AiSocialMedia_services = [
   }
 ];
 
+const AiCopilot = [
+  {
+    "title": "AI-Powered Virtual Assistants",
+    "description": "Intelligent AI copilots that automate customer interactions and provide real-time assistance.",
+    icon: Type_1,
+  },
+  {
+    "title": "Machine Learning Integration",
+    "description": "Advanced AI algorithms that analyze data patterns and enhance business decision-making.",
+    icon: Type_2,
+  },
+  {
+    "title": "AI-Powered Workflow Automation",
+    "description": "Automate repetitive tasks and optimize operational processes with smart AI integration.",
+    icon: Type_3,
+  },
+  {
+    "title": "Conversational AI & NLP Solutions",
+    "description": "AI copilots with natural language processing (NLP) to enhance user engagement.",
+    icon: Type_4,
+  },
+  {
+    "title": "Predictive Analytics & Insights",
+    "description": "AI models that forecast trends, enabling data-driven decision-making.",
+    icon: Type_5,
+  },
+  {
+    "title": "Custom AI Development",
+    "description": "Tailored AI solutions designed to meet specific business challenges and requirements.",
+    icon: Type_6,
+  }
+];
+
+const AiCopiliot_benifits = [
+  {
+    "title": "Enhanced Productivity",
+    "description": "Automate repetitive tasks, allowing employees to focus on high-value activities.",
+    icon: Maintain,
+  },
+  {
+    "title": "Improved Decision-Making",
+    "description": "AI-driven insights help businesses make data-backed strategic decisions.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Cost Savings",
+    "description": "Reduce operational costs by leveraging AI-powered automation and efficiency.",
+    icon: Scalability,
+  },
+  {
+    "title": "Scalability & Flexibility",
+    "description": "Our AI solutions are designed to grow alongside your business needs.",
+    icon: Crm,
+  },
+  {
+    "title": "Seamless Integration",
+    "description": "Easily integrate AI copilots with existing business systems and software.",
+    icon: Maintain,
+  },
+  {
+    "title": "Enhanced User Experience",
+    "description": "AI-powered chatbots and virtual assistants improve customer interactions and engagement.",
+    icon: Accountibility,
+  }
+];
+
+const AiAgentic = [
+  {
+    title: "Enhanced Efficiency",
+    description: "Free your team for high-value work by automating time-consuming and repetitive tasks.",
+    icon: Scalability,
+  },
+  {
+    title: "Cost Savings",
+    description: "Minimize manual effort and optimize resource utilization to lower your operational costs.",
+    icon: Accountibility,
+  },
+  {
+    title: "Real-Time Decision Making",
+    description: "Empower agents to take instant decisions with live data and AI logic.",
+    icon: Crm,
+  },
+  {
+    title: "Simple Scalability",
+    description: "Our systems scale with your business, efficiently handling more loads and complexity.",
+    icon: Maintain,
+  },
+  {
+    title: "Better Customer Experience",
+    description: "Serve smarter, faster, and more personalized with AI-fueled interactions.",
+    icon: Scalability,
+  },
+  {
+    title: "Futuristic Technology Edge",
+    description: "Be at the forefront of competition with next-generation AI technology that evolves as the industry needs.",
+    icon: Accountibility,
+  },
+];
+
+const AiAgentic_service = [
+  {
+    title: "Third-Party Integrations",
+    description: "Integrate agents with CRMs, ERPs, data pipelines, and cloud platforms in a seamless manner.",
+  },
+  {
+    title: "Custom Agent Development",
+    description: "We set up and customize your CRM instance to suit your processes, business objectives, and user roles.",
+  },
+  {
+    title: "Multi-Agent Orchestration",
+    description: "Easily integrate your CRM with applications such as Mailchimp, QuickBooks, Google Workspace, and others.",
+  },
+  
+  {
+    title: "Robust Security & Compliance",
+    description: "Ensure data privacy and meet regulatory requirements with built-in encryption and comprehensive audit logs.",
+  },
+  {
+    title: "Predictive Analytics Engine",
+    description: "Anticipate customer needs and market trends by leveraging advanced machine learning models on historical data.",
+  },
+  {
+    title: "Self-Service Knowledge Base",
+    description: "Automate answers to common questions, allowing customers and employees to find information instantly.",
+  },
+];
+
+const AiConsultings = [
+  {
+    title: "Higher Operational Efficiency",
+    description: "Use AI to eliminate redundant processes and strategic actions based on data-driven meaningful insight when there are more complex workflows.",
+    icon: Maintain,
+  },
+  {
+    title: "Better Decision Making",
+    description: "Use predictive analytics and intelligent dashboards that you leverage to quickly (< 2 seconds) make faster decisions that are market-driven and data-empowered in comparison to making guess-work assumptions.",
+    icon: Accountibility,
+  },
+  {
+    title: "Scalability",
+    description: "Build AI Models and platforms that offer scalability in your organization to accommodate staggering higher loads of data and increase in users.",
+    icon: Scalability,
+  },
+  {
+    title: "Cost Efficiency",
+    description: "Finding less waste, use of manual labor inefficient processes through strategic intelligent automation and process design.",
+    icon: Crm,
+  },
+  {
+    title: "Increasing Customer Engagement",
+    description: "Personalizing customer sales through smart AI tools like chatbots, recommendation engines, and sentiment analysis.",
+    icon: Maintain,
+  },
+  {
+    title: "Higher Ease of Integration",
+    description: "Connecting independent AI solutions quickly with your existing systems to help avoid delays in implementation and accelerate your go-to-market strategy.",
+    icon: Accountibility,
+  },
+];
+
+const Promt_Service = [
+  {
+    "title": "Prompt Templates for Automation",
+    "description": "Prompt templates for marketing, customer service, legal, and internal knowledge base use cases that enable faster delivery."
+  },
+  {
+    "title": "AI Chatbot Workflow Engineering",
+    "description": "Design and build prompt chains with layered prompts and contextual memory flows that create intelligent, multi-turn conversations with NLP models."
+  },
+  {
+    "title": "Evaluation & Testing Frameworks",
+    "description": "Evaluation and testing of prompt performance, accuracy, and completeness against quantitative and qualitative metrics using custom test cases."
+  },
+  {
+    "title": "RAG System Integration",
+    "description": "Implementation of Retrieval-Augmented Generation (RAG) architectures to securely connect LLMs with your private enterprise data, ensuring outputs are grounded in your specific business facts."
+  },
+  {
+    "title": "AI Security & Guardrails",
+    "description": "Development of robust safety layers and adversarial defense mechanisms to prevent data leakage, hallucinations, and jailbreaks, ensuring compliance with industry standards."
+  },
+  {
+    "title": "Fine-Tuning & Model Optimization",
+    "description": "Customizing base models through parameter-efficient fine-tuning (PEFT) to specialize the AI's tone, vocabulary, and reasoning capabilities for highly specific domain tasks."
+  }
+];
+
+const AiPromtEng = [
+  {
+    "title": "Quality of Output",
+    "description": "an established prompt promotes reproducible, human-targeted and context-aware results from LLMs.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Cost & Time Effective",
+    "description": "Established single prompts enhance productivity by using fewer compute cycles, tokens, and enabling staff to be less wasteful.",
+    icon: Maintain,
+  },
+  {
+    "title": "More Tailoring",
+    "description": "Establishing a domain relevant prompt tuning allows organizations to link AI behavior closer to internal goals, intention and voice.",
+    icon: Crm,
+  },
+  {
+    "title": "Better User Experience",
+    "description": "Better AI outputs lead to more human, streamlined and meaningful interpersonal experience for customers, and any stakeholder interaction.",
+    icon: Scalability,
+  },
+  {
+    "title": "Scalable in any case",
+    "description": "Whether for marketing, customer support, legal review, documentation and much more implications, established prompt modeled prompts fit the bill on many fronts.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Future proof",
+    "description": "our prompt designs can evolve alongside advances in AI model releases and keep obsolescence at bay while improving updating ease.",
+    icon: Maintain,
+  }
+];
+
 const Common = () => {
   return (
     <>
@@ -5198,6 +5417,176 @@ const contentMap = {
       <Common />
     </>
   ),
+
+  "ai copilot": (
+    <>
+      <HeroSection
+        title="AI Copilot Development Company"
+        description="Unlock the power of artificial intelligence and AI copilot integration and automation services with expert AI Copilot development services. We specialize in building intelligent, secure, and scalable AI-driven solutions for businesses of all sizes. Our Custom AI copilot platform development services enhance productivity, streamline operations, and optimize workflows—all at an affordable cost. Whether you are a startup or a large enterprise, our team ensures a seamless AI integration tailored to your business needs. Contact us today for a free quote and elevate your operations with AI-driven automation!"
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiCopilots}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AicoplotAbout}
+        img2={Chart}
+        h1="A Trusted Leader in AI Assistant Development"
+        p1="As a leading Generative AI Copilot development company, we provide secure and innovative web-based AI systems designed to empower businesses, startups, and entrepreneurs. With years of experience in AI, machine learning, and automation, we develop intelligent copilots that enhance decision-making, reduce manual efforts, and improve overall efficiency. Our Enterprise AI copilot solution providers and industry-specific AI solutions ensure reliability, adaptability, and superior performance. Trust us to deliver cutting-edge AI solutions that drive business success."
+        h2="Revolution in the AI Market"
+        p2="The global artificial intelligence (AI) software market is anticipated to expand swiftly in the coming years, with a projected value of approximately 126 billion U.S. dollars by 2025. It is expected that this extraordinary expansion will persist, with the market surpassing 826 billion U.S. dollars by 2030. Apple is the most significant AI company in terms of market capitalization, with Microsoft, NVIDIA, and Alphabet following in that order. The artificial intelligence market is experiencing growth due to the increasing potential of research and development (R&D) in the development of AI systems and technological innovations worldwide, as well as the growing adoption of big data and analytics."
+      />
+      <Quotes
+        title="High-Performance AI Copilot Solutions for Global Businesses"
+        highlightedText="Innovative and intuitive websites "
+        paragraphs={[
+          "Our AI Copilot solutions are designed to be secure, scalable, and high-performing, catering to businesses across various industries. We leverage cutting-edge AI and machine learning technologies to develop intelligent copilots that streamline operations and drive innovation. Our expertise in AI-driven automation, predictive analytics, and real-time data processing ensures that businesses can optimize their workflows and enhance productivity.",
+          "With extensive experience in global projects, our skilled development team creates AI copilots that seamlessly integrate with existing systems, providing valuable insights and automation capabilities. We work closely with clients to understand their specific business needs and deliver customized AI solutions that drive measurable results. Whether you need AI-driven customer support, workflow automation, or predictive analytics, we build business-specific AI applications that enhance efficiency and scalability.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Social Media" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiCopilot}
+        sectionTitle="Comprehensive Copilot Software Development"
+        sectionDescription="Our expertise in AI-powered applications ensures seamless integration and optimal performance. We offer a wide range of services to help businesses harness AI technology effectively"
+      />
+      <AboutUs />
+      <Benefits
+        benifits={AiCopiliot_benifits}
+        sectionTitle="Key Benefits of AI Copilot Solutions "
+        sectionDescription="Our AI Copilot development services provide businesses with numerous advantages, driving efficiency and growth"
+      />
+      <TechnologyStack data={TypeScript_Tech} />
+      <Common />
+    </>
+  ),
+
+  "agentic ai": (
+    <>
+      <HeroSection
+        title="Agentic AI Company "
+        description="Here at Agentic AI, we focus on creating smart systems that automate processes, improve productivity, and evolve dynamically according to business requirements. Whether you are a startup wanting to integrate smart agents into your functions or an enterprise wanting to streamline decision-making with automation, we provide cost-effective, scalable, and Custom Agentic AI solutions for businesses. Contact us now for a free quote and begin shaping your digital capabilities with smart automation. "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiAgent}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiAgentAbout}
+        h1="Pioneering Agentic AI Automation Solutions for Modern Business"
+        p1="We are a top Agentic AI automation company with a solid core in secure, cloud-native systems and smart automation. Our experts possess rich expertise in designing sophisticated software that caters to the distinctive needs of entrepreneurs, startups, and businesses. With the latest AI technologies—such as LLMs, autonomous agents, and machine reason—we build systems that reason, learn, and act to enable organizations to lead the way. Our service is based on innovation, domain knowledge, and a thorough insight into real-world business issues. "
+      />
+      <Quotes
+        title="Smart Agentic AI for Enterprise and Industry-Grade Performance"
+        highlightedText="Secure, Scalable & Future-Ready Apps  "
+        paragraphs={[
+          "Our Agentic AI financial services concentrate on creating secure, scalable, and high-performance autonomous systems that benefit a wide range of industries. From financials to logistics, healthcare, and eCommerce, our AI agents automate complicated workflows, interoperate with various data sources, and make real-time decisions. With robust integrations and robust architectural bases, our solutions scale with your business. ",
+          "We have executed successful Enterprise Agentic AI Development Services worldwide, addressing operational impediments and opening new avenues for automation. Our cross-functional team of AI engineers, data scientists, and full-stack developers work together to provide impact-driven products specifically designed for each customer's requirements. ",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Agentic Ai" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiAgentic}
+        sectionTitle="Why Choose Agentic AI Services?"
+        sectionDescription="Selecting us is adopting a more intelligent way of doing business. Our AI solutions deliver unprecedented agility, efficiency, and performance to your operations."
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Professional Agentic AI Development Services" techCards={AiAgentic_service} />
+      <Common />
+    </>
+  ),
+
+  "ai consulting": (
+    <>
+      <HeroSection
+        title="AI Consulting Company"
+        description="Our best AI Consulting company is geared towards providing smart, scalable web and application development solutions for companies big and small. From a startup desiring to build AI from the ground up to an enterprise seeking to optimize current processes, we develop cost-effective, fully customized solutions geared towards your business objectives. Our solutions are designed to minimize operational expense, maximize efficiency, and access new business opportunity through strategic AI and ML Consulting Services. Get a free quote today and see how AI can take your business to new heights."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={Aiconsult}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiconsultAbout}
+        h1="Industry-Leading AI Consulting Services for Modern Enterprises"
+        p1="Being a top AI consulting services company, we focus on creating secure, data-centric solutions and enterprise-level web platforms that benefit from the strength of artificial intelligence. We cater to an array of clients—spanning agile startups to multinational organizations—by providing bespoke software that addresses sophisticated issues with accuracy. With several years of experience in AI design, machine learning, and intelligent automation, our organization takes an innovative approach that combines business strategy with leading-edge technology. From initial-stage advisory to large-scale implementation, we create intelligent systems that are intelligent, scalable, and secure."
+      />
+      <Quotes
+        title="Intelligent Solutions for AI Strategy Consulting Services"
+        highlightedText="Secure, Scalable & Future-Ready Apps  "
+        paragraphs={[
+          "We assist businesses in building Gen AI Consulting Services based solutions that are secure, scalable, and designed with performance in real-world contexts. Our focus is to apply techniques including natural language processing (NLP), machine learning (ML), and predictive analytics for creating applications that learn, adapt, and grow with your business.",
+          "We have cross-border experience from around the world working in finance, healthcare, manufacturing, retail and logistics. We have worked with clients in multiple regions to design and develop relevant smart user-focused AI applications based on their particular business models. Our talented developers, data scientists, and consultant's work side by side with clients through the complete lifecycle of a development project ensuring that the designs are sound, technically sound, and market-ready.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Agentic Ai" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiConsultings}
+        sectionTitle="Benefits of AI Consulting Services"
+        sectionDescription="Our AI solutions are built to help people work smarter, move faster, and provide greater value through less manual work. Partnering with us means that we will provide you with great tools and expert knowledge at every stage of your digital transformation."
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Professional Agentic AI Development Services" techCards={AiAgentic_service} />
+      <Common />
+    </>
+  ),
+
+    "ai prompt engineering": (
+    <>
+      <HeroSection
+        title="AI Prompt Engineering Services"
+        description="Empower your business with AI Prompt Engineering Services that drive intelligent automation, boost efficiency, and improve decision-making. At Sapphire Software Solutions, we design AI-driven web and app development solutions that scale seamlessly from startups to enterprises. Whether you’re building AI chatbots, content automation tools, or smart decision-support systems, our experts ensure your prompts deliver accurate, context-aware, and goal-oriented outputs. Contact us for a free consultation today and discover how prompt engineering can revolutionize your business! "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={Aiconsult}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiconsultAbout}
+        img2={IpedDev}
+        h1="Rise of Prompt Engineering AI"
+        p1="AI prompt engineering is transforming how organizations harness the potential of Large Language Models (LLMs) like GPT, Claude, Gemini, and LLaMA. High-performance AI platforms using Natural Language Processing (NLP) and Generative AI technologies. Our tailored prompt engineering models align with your industry-specific workflows, ensuring enhanced accuracy, faster automation, and data security. "
+        h2="Why Hire Prompt Engineers from Sapphire Software Solutions? "
+        p2={
+          <>
+           Our company is well-versed in developing highly interactive augmented reality app solutions, both those based on markers and those that do not need features. We see these apps as an extension of the actual world. We adhere to the most acceptable standards in the industry, which are related to Apple's Human Interface Guidelines and the stringent use policy for the iOS SDK.
+           We provide audio and video call solutions using the WebRTC framework and other third-party calling solutions such as TokBox, Twilio, and others. Our iPad developers have expertise with several payment gateways, including Stripe, Authorize.Net, PayPal, and 2Checkout. They can assist you with making the most appropriate choice for your project.
+          </>
+        }
+          
+      />
+      <Quotes
+        title="Prompt Engineering Consulting Services for Business"
+        highlightedText="Secure, Scalable & Future-Ready Apps  "
+        paragraphs={[
+          "We assist businesses in building Gen AI Consulting Services based solutions that are secure, scalable, and designed with performance in real-world contexts. Our focus is to apply techniques including natural language processing (NLP), machine learning (ML), and predictive analytics for creating applications that learn, adapt, and grow with your business.",
+          "We have cross-border experience from around the world working in finance, healthcare, manufacturing, retail and logistics. We have worked with clients in multiple regions to design and develop relevant smart user-focused AI applications based on their particular business models. Our talented developers, data scientists, and consultant's work side by side with clients through the complete lifecycle of a development project ensuring that the designs are sound, technically sound, and market-ready.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Agentic Ai" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiPromtEng}
+        sectionTitle="Benefits of Expert AI Prompt Engineering Services"
+        sectionDescription="Transform your digital capabilities with quality craftAI prompt Design and Optimization that elevate AI performance"
+      />
+      <AboutUs />
+      <TechnologiesSlider title="Professional AI Promt Engineering Services" techCards={Promt_Service} />
+      <Common />
+    </>
+  ),
+
 
   "generative ai consulting": (
     <>

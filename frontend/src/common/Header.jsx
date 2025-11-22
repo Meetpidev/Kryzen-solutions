@@ -65,19 +65,10 @@ const AiServices = [
       "AI Development",
       "AI Voice Assistant",
       "AI Copilot",
-      "AI Ionic App Development",
-      "Enterprise AI Development",
       "Agentic AI",
       "AI Consulting",
-      "AIOps Solutions",
-      "Ethical AI Development",
       "AI Prompt Engineering",
-      "AI Powered Website Builder",
-      "AI Content Generation System",
-      "Conversational AI Development",
       "Computer Vision",
-      "Adaptive AI Development",
-      "Rag As a Service"
     ]
   },
   {
