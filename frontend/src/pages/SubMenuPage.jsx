@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { useParams } from "react-router-dom";
+import { CheckCircle } from 'lucide-react';
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
 
 import MobileApp from "../public/mobile_app_development1.webp";
@@ -58,6 +59,7 @@ import HybridSection from "../public/hybrid_app_section_1.svg";
 import Progressive from "../public/progressive_web_app_banner.svg";
 import ProgressiveDev from "../public/progressive_web_app_about.svg";
 import ProgressiveSection from "../public/progressive_web_app_section_1.svg";
+import DotNet from "../public/dotnetbanner.svg";
 import B2B from "../public/b2b_mobile_app_banner.png";
 import B2BDev from "../public/b2b_mobile_app_about.svg";
 import B2BSection from "../public/blockchain_development_section_1.svg";
@@ -132,7 +134,15 @@ import AiAgent from "../public/aiagent.png";
 import AiAgentAbout from "../public/aiagentabout.png";
 import Aiconsult from "../public/aiconsult.png";
 import AiconsultAbout from "../public/aiconsuilabout.png";
-
+import ComputerVision from "../public/computer_vision.png";
+import ComputerVisionAbout from "../public/computervision_about.png";
+import AiPrompt from "../public/AiPrompt.png";
+import AiPromptAbout from "../public/AiPrompAbout.png";
+import AiPromptWhy from "../public/AiPromptWhy.png";
+import AiAgents from "../public/ai_agent.png";
+import AiAgentAbouts from "../public/ai_agent_about.png";
+import AiGen from "../public/image copy.png";
+import AiVoiceAbout from "../public/ai_voiceabout.png";
 
 
 const Charts = lazy(() => import("../components/Charts"));
@@ -296,7 +306,6 @@ const AiServices = [
       "AI Agent Development",
       "AI Chatbot Development",
       "LLM Development",
-      "LLM Fine Tuning Services"
     ]
   },
   {
@@ -3648,6 +3657,349 @@ const AiPromtEng = [
   }
 ];
 
+const AiComputerVision = [
+  {
+    "title": "Image & Video Processing",
+    "description": "Advanced algorithms for object detection, classification, and enhancement.",
+    icon: Type_1,
+  },
+  {
+    "title": "Facial & Emotion Recognition",
+    "description": "Secure biometric authentication and sentiment analysis for improved customer engagement.",
+    icon: Type_2,
+  },
+  {
+    "title": "Object Detection & Tracking",
+    "description": "AI-powered real-time object tracking for security, retail, and industrial applications.",
+    icon: Type_3,
+  },
+  {
+    "title": "Automated Quality Inspection",
+    "description": "AI-driven defect detection and quality control in manufacturing and production.",
+    icon: Type_4,
+  },
+  {
+    "title": "Optical Character Recognition (OCR)",
+    "description": "Intelligent text recognition for document automation and data extraction.",
+    icon: Type_5,
+  },
+  {
+    "title": "AI-Powered Surveillance & Security",
+    "description": "Automated monitoring systems for threat detection and anomaly identification.",
+    icon: Type_6,
+  }
+];
+
+const AiCompiuterVision_benifit = [
+  {
+    "title": "Enhanced Business Intelligence",
+    "description": "Gain real-time insights to improve decision-making and operational efficiency.",
+    icon: Maintain,
+  },
+  {
+    "title": "Automation & Process Optimization",
+    "description": "Reduce manual efforts and human errors with AI-driven automation.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Scalability & Flexibility",
+    "description": "Solutions designed to adapt and grow with your business needs.",
+    icon: Scalability,
+  },
+  {
+    "title": "High Security & Compliance",
+    "description": "Secure and GDPR-compliant AI models for safe data handling.",
+    icon: Crm,
+  },
+  {
+    "title": "Seamless Integration",
+    "description": "Easily integrates with existing software, hardware, and cloud platforms.",
+    icon: Maintain,
+  },
+  {
+    "title": "Increased ROI & Competitive Advantage",
+    "description": "Leverage AI-powered vision to enhance efficiency and profitability.",
+    icon: Accountibility,
+  }
+];
+
+const AiAgent_services = [
+  {
+    "title": "Custom AI Agent Development",
+    "description": "We design Custom AI Agent Development Services using advanced AI frameworks to meet unique business needs. From chatbots to intelligent automation, our solutions are built for flexibility and scalability.",
+    icon: Type_1,
+  },
+  {
+    "title": "AI-Powered Workflow Optimization",
+    "description": "AI agents streamline complex workflows, reducing processing time and enhancing overall business efficiency.",
+    icon: Type_2,
+  },
+  {
+    "title": "Enhanced Customer Engagement",
+    "description": "Leverage AI-powered chatbots and virtual assistants to deliver personalized customer interactions and improve satisfaction levels.",
+    icon: Type_3,
+  },
+  {
+    "title": "Seamless AI Integration",
+    "description": "Our AI solutions integrate effortlessly with existing enterprise systems, ensuring smooth functionality without disrupting operations.",
+    icon: Type_4,
+  },
+  {
+    "title": "AI-Driven Business Intelligence",
+    "description": "AI agents analyze massive datasets in real time, providing businesses with actionable insights to drive strategic decisions.",
+    icon: Type_5,
+  },
+  {
+    "title": "Automated Risk Management",
+    "description": "AI-powered solutions detect anomalies, predict risks, and provide security recommendations to protect businesses from potential threats.",
+    icon: Type_6,
+  }
+];
+
+const AiAgent_benifits = [
+  {
+    "title": "Real-Time AI Interaction",
+    "description": "AI agents provide instant responses and adaptive interactions for an enhanced user experience.",
+    icon: Maintain,
+  },
+  {
+    "title": "Self-Learning AI Algorithms",
+    "description": "Advanced machine learning models allow AI agents to improve performance over time.",
+    icon: Accountibility,
+  },
+  {
+    "title": "Industry-Specific AI Customization",
+    "description": "AI solutions tailored to meet unique business requirements in different sectors.",
+    icon: Scalability,
+  },
+  {
+    "title": "AI-Powered Sentiment Analysis",
+    "description": "AI systems analyze customer sentiments to refine marketing and customer service strategies.",
+    icon: Crm,
+  },
+  {
+    "title": "Robust Data Encryption & Security",
+    "description": "Ensuring AI-driven processes adhere to strict security and privacy regulations.",
+    icon: Maintain,
+  },
+  {
+    "title": "Seamless Cross-Platform Integration",
+    "description": "AI agents integrate effortlessly across web, mobile, and enterprise applications.",
+    icon: Accountibility,
+  }
+];
+
+const AiAgentWhy = [
+  {
+    "title": "Proven Expertise",
+    "description": "With years of experience in AI Agent Development Services, we have successfully delivered AI-powered solutions across diverse industries."
+  },
+  {
+    "title": "Dedicated AI Experts",
+    "description": "Our team consists of AI architects, machine learning engineers, and data scientists who build intelligent solutions tailored to your business needs."
+  },
+  {
+    "title": "Scalable Solutions",
+    "description": "We ensure that our AI agent solutions are adaptable, scalable, and future proof for seamless business growth."
+  },
+  {
+    "title": "Global Recognition",
+    "description": "We are recognized as a top AI Agent Development Company, trusted by enterprises and startups worldwide."
+  },
+  {
+    "title": "Comprehensive AI Ecosystem",
+    "description": "Our solutions include AI-powered automation, analytics, NLP, and machine learning integration for diverse applications."
+  },
+  {
+    "title": "Client-Centric Approach",
+    "description": "We work closely with businesses to develop AI strategies aligned with their objectives and industry standards."
+  }
+];
+
+const steps = [
+    {
+      title: "Requirement Analysis",
+      description: "Understanding your business needs and defining the AI agent development roadmap.",
+      colorClass: "bg-purple-200"
+    },
+    {
+      title: "AI Model Selection",
+      description: "Choosing the right AI architecture and machine learning models for optimal performance.",
+      colorClass: "bg-emerald-200"
+    },
+    {
+      title: "Development and Integration",
+      description: "Creating and integrating AI agents into your systems for seamless operations.",
+      colorClass: "bg-red-200"
+    },
+    {
+      title: "Testing and Deployment",
+      description: "Ensuring AI agents perform efficiently before deploying them into live environments.",
+      colorClass: "bg-cyan-200"
+    },
+    {
+      title: "Ongoing Maintenance",
+      description: "Providing continuous monitoring, updates, and improvements for enhanced AI performance.",
+      colorClass: "bg-amber-100"
+    }
+];
+
+const industries = [
+    {
+      title: "AI-Powered Smart Assistants",
+      items: [
+        "Intelligent Virtual Assistants",
+        "AI-Powered Chatbots",
+        "Voice AI Solutions"
+      ]
+    },
+    {
+      title: "AI in Logistics and Supply Chain",
+      items: [
+        "Inventory Management",
+        "AI-Powered Route Optimization",
+        "Predictive Demand Forecasting"
+      ]
+    },
+    {
+      title: "AI-Powered Legal Tech",
+      items: [
+        "Contract Analysis",
+        "AI-Assisted Compliance Management",
+        "Document Automation"
+      ]
+    },
+    {
+      title: "AI in Human Resources",
+      items: [
+        "AI-Powered Recruitment",
+        "Employee Sentiment Analysis",
+        "AI-Driven Performance Evaluations"
+      ]
+    },
+    {
+      title: "AI for Smart Cities",
+      items: [
+        "Traffic Management",
+        "AI-Powered Energy Optimization",
+        "Smart Infrastructure Development"
+      ]
+    },
+    {
+      title: "AI for Gaming & Entertainment",
+      items: [
+        "AI-Based Game Development",
+        "AI-Powered Content Recommendations",
+        "Virtual AI Characters"
+      ]
+    }
+];
+  
+const AiAgent_tech = [
+  {
+    "category": "Machine learning platforms and services",
+    "items": [
+      "Azure Machine Learning",
+      "Azure Cognitive Services",
+      "Bot framework",
+      "Amazon Sagemaker",
+      "Amazon Transcribe",
+      "Amazon Lex",
+      "Amazon Polly",
+      "Google Cloud AI Platform"
+    ]
+  },
+  {
+    "category": "Machine learning frameworks and libraries",
+    "items": [
+      "Mahout",
+      "Mxnet",
+      "Caffe",
+      "TensorFlow",
+      "Keras",
+      "torch",
+      "Open CV"
+    ]
+  },
+  {
+    "category": "Libraries",
+    "items": [
+      "Apache Spark Mllib",
+      "Theano",
+      "Scikit Learn",
+      "Gensim",
+      "SpaCy"
+    ]
+  },
+  {
+    "category": "Programming languages",
+    "items": [
+      "Scala",
+      "Python",
+      "Java",
+      "C++",
+      "R"
+    ]
+  },
+  {
+    "category": "Big data",
+    "items": [
+      "Hadoop",
+      "apache spark Tm",
+      "Cassandra",
+      "Apache Kafka"
+    ]
+  },
+  {
+    "category": "Data visualization",
+    "items": [
+      "Power Bi",
+      "Microsoft SQL Server",
+      "Microsoft Excel",
+      "Grafana"
+    ]
+  }
+];
+
+const AiGen_benifits = [
+  {
+    title: "Enhanced Creativity",
+    description: "Generative AI enables authors to create unique and diversified material independently. Generators allow artists, designers, authors, and musicians to experiment with new styles, ideas, and expressions, pushing creativity beyond human limits.",
+    icon: Type_1,
+  },
+  {
+    title: "Personalization",
+    description: "Generative AI creates customized information that meets individual interests and demands. Through Generative AI Development Solutions, generative models improve user experiences by providing valuable information.",
+    icon: Type_2,
+  },
+  {
+    title: "Cost Savings",
+    description: "Generative AI automates content development and streamlines procedures, reducing operating costs and resources needed. Marketing, advertising, and content creation, where producing high-quality content at scale is costly and time-consuming, benefit from this.",
+    icon: Type_3,
+  },
+];
+
+const solutions = [
+  {
+    text: "AI processes voice commands with high accuracy for seamless interactions"
+  },
+  {
+    text: "AI-driven assistants understand and maintain context for natural, fluid dialogues"
+  },
+  {
+    text: "AI-powered speech assistants support multiple languages, catering to global users"
+  },
+  {
+    text: "AI enhances home automation and workplace productivity by connecting with smart technology"
+  },
+  {
+    text: "AI adapts responses based on user preferences and past interactions"
+  },
+  {
+    text: "AI-driven voice assistants ensure data protection and secure communication"
+  },
+];
+
 const Common = () => {
   return (
     <>
@@ -5418,6 +5770,67 @@ const contentMap = {
     </>
   ),
 
+  "ai voice assistant": (
+    <>
+      <HeroSection
+        title="AI Voice Assistant Development "
+        description="Revolutionize user interactions with AI-powered voice assistants that enhance convenience, streamline workflows, and automate everyday tasks. Utilizing advanced natural language processing (NLP), deep learning, and real-time speech recognition, these intelligent virtual assistants enable hands-free control, personalized responses, and seamless integration with smart devices. From voice-activated smart home automation to AI-driven customer support and productivity tools, this cutting-edge technology transforms communication, boosts efficiency, and enhances user experiences across industries. For businesses seeking to leverage this innovation, choosing the Custom AI Voice Assistant Development Services, Voice App Developers or to Hire AI Voice Assistant Development Team ensures high-quality, scalable solutions tailored to diverse user needs. "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={DotNet}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiVoiceAbout}
+        h1="Key Challenges Faced in AI Voice Assistant Development "
+        p1="Traditional voice assistants face limitations in natural language understanding, context awareness, and multilingual support. Achieving human-like conversational abilities requires sophisticated AI models capable of recognizing accents, slang, and speech nuances. Conversational AI Development Experts ensuring real-time response accuracy while minimizing errors in speech recognition is another significant challenge. Additionally, privacy and security concerns related to voice data collection and processing must be addressed. Continuous learning and adaptation to user preferences, along with seamless integration with various devices and platforms, further add to the complexity Hire developers for AI-powered voice Assistant app. Partnering with a Best AI Voice Assistant Development Company can help overcome these challenges through expert solutions and advanced development practices. "
+      />
+      <div style={{ backgroundColor: '#056288' }} className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 text-white">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 md:mb-5">
+          Solutions We Offer for AI-Powered Voice Assistants
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl mb-10 sm:mb-12 opacity-90">
+          Our specialized AI platforms deliver intelligent, connected voice experiences.
+        </p>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {solutions.map((solution, index) => (
+            <div
+              key={index}
+              className="bg-white text-gray-800 rounded-xl shadow-lg p-5 sm:p-6 flex items-start space-x-4 transform transition duration-300 hover:scale-[1.03] hover:shadow-xl group"
+            >
+              <CheckCircle className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 text-green-500 mt-1 group-hover:text-green-600 transition duration-300" />
+              <p className="text-left text-base sm:text-lg flex-grow font-medium">
+                {solution.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For AI voice assistant" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiCopilot}
+        sectionTitle="Comprehensive Copilot Software Development"
+        sectionDescription="Our expertise in AI-powered applications ensures seamless integration and optimal performance. We offer a wide range of services to help businesses harness AI technology effectively"
+      />
+      <AboutUs />
+      <Benefits
+        benifits={AiCopiliot_benifits}
+        sectionTitle="Key Benefits of AI Copilot Solutions "
+        sectionDescription="Our AI Copilot development services provide businesses with numerous advantages, driving efficiency and growth"
+      />
+       <Technology_pannel
+        techCards={Software_Tech}
+      />
+      <SectorsSlider />
+      <Common />
+    </>
+  ),
+
   "ai copilot": (
     <>
       <HeroSection
@@ -5547,13 +5960,13 @@ const contentMap = {
         description="Empower your business with AI Prompt Engineering Services that drive intelligent automation, boost efficiency, and improve decision-making. At Sapphire Software Solutions, we design AI-driven web and app development solutions that scale seamlessly from startups to enterprises. Whether you’re building AI chatbots, content automation tools, or smart decision-support systems, our experts ensure your prompts deliver accurate, context-aware, and goal-oriented outputs. Contact us for a free consultation today and discover how prompt engineering can revolutionize your business! "
         buttonText="Get Started"
         buttonLink="#contact"
-        imageSrc={Aiconsult}
+        imageSrc={AiPrompt}
         imageAlt="Digital Solutions illustration"
       />
       <LogoCarousel />
       <Charts
-        img={AiconsultAbout}
-        img2={IpedDev}
+        img={AiPromptAbout}
+        img2={AiPromptWhy}
         h1="Rise of Prompt Engineering AI"
         p1="AI prompt engineering is transforming how organizations harness the potential of Large Language Models (LLMs) like GPT, Claude, Gemini, and LLaMA. High-performance AI platforms using Natural Language Processing (NLP) and Generative AI technologies. Our tailored prompt engineering models align with your industry-specific workflows, ensuring enhanced accuracy, faster automation, and data security. "
         h2="Why Hire Prompt Engineers from Sapphire Software Solutions? "
@@ -5587,6 +6000,92 @@ const contentMap = {
     </>
   ),
 
+  "computer vision": (
+    <>
+      <HeroSection
+        title="Computer Vision Software Development Company"
+        description="Harness the power of computer vision as a service to automate processes, enhance decision-making, and unlock new opportunities. Our custom computer vision development team specializes in developing AI-driven computer vision and image recognition software development solutions tailored to your business needs. Whether you need object detection, facial recognition, or real-time video analytics, we deliver affordable, scalable, and custom solutions that drive innovation. Get a free quote today and discover how computer vision development services expertise can transform your operations."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={ComputerVision}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={ComputerVisionAbout}
+        h1="Trusted Leader in Computer Vision Software Development Solutions"
+        p1="As a leading computer vision software development company, we specialize in secure, high-performance, and industry-specific AI solutions. With extensive experience in machine learning, image processing, and web-based AI systems, we empower businesses, startups, and entrepreneurs with cutting-edge technology. Our innovative approach ensures seamless integration, optimized performance, and business-driven results, helping companies leverage real-time data analysis, automation, and intelligent decision-making."
+      />
+      <Quotes
+        title="Building Scalable, High-Performance Computer Vision Applications"
+        highlightedText="Expertise in Secure & Scalable AI-Powered Vision Systems "
+        paragraphs={[
+          "Our team excels in designing secure, scalable, and high-performance computer vision applications for diverse industries. We leverage advanced deep learning models and AI frameworks to extract meaningful insights from images, videos, and real-time data streams. From automated surveillance to industrial defect detection, our solutions enhance efficiency, security, and operational accuracy.",
+          "With a proven track record in global AI projects, we bring expertise in developing customized, industry-specific applications. Our developers specialize in real-time analytics, object recognition, and intelligent automation, catering to industries like healthcare, retail, manufacturing, and smart cities. We ensure seamless integration with existing systems, providing businesses with actionable insights, improved decision-making, and increased automation.  ",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For Agentic Ai" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiComputerVision}
+        sectionTitle="Comprehensive Computer Vision Software Development Services"
+        sectionDescription="We provide end-to-end AI-powered computer vision solutions to enhance business operations "
+      />
+      <AboutUs />
+      <Benefits
+        benifits={AiCompiuterVision_benifit}
+        sectionTitle="Key Benefits of AI Computer Vision Software Development"
+        sectionDescription="Our RPA services offer numerous advantages, ensuring long-term efficiency, scalability, and cost-effectiveness for your business operations."
+      />
+      <Common />
+    </>
+  ),
+
+  "generative ai development": (
+    <>
+       <div className="max-w-7xl mx-auto my-[10rem]">
+        <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
+          No. 1 Generative AI Development Company
+        </h1>
+
+        
+        <div className=" overflow-hidden mb-16 p-6 sm:p-10 ">
+          <div className="relative h-[350px] sm:h-[450px] flex flex-col items-center justify-center text-center">
+            <img src={AiGen} alt="Genarative Ai"  className="fit-content w-fit rounded-2xl"/>
+          </div>
+        </div>
+
+        
+        <div className="bg-white p-6 sm:p-8 mb-12 ">
+          <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+            Generative AI research is crucial for several reasons, including its revolutionary potential across sectors and applications. hire generative ai developers, which lets robots create information, visuals, and storylines, might boost creativity, efficiency, and problem-solving. Top generative AI development services enhance creativity by making it possible to produce unique and varied material. Enterprise generative ai solutions provider lets artists push limits in art, music, literature, and design. Generative models may create unique compositions from large datasets, inspiring creativity. As generative AI technologies advance, they become more accessible to a broader audience. Open-source frameworks, pre-trained models, and user-friendly interfaces make generative application creation and deployment accessible to amateurs, small enterprises, and enthusiasts for creative expression, experimentation, and innovation. Hiring the best generative AI development companies is vital because it might transform creativity, efficiency, and problem-solving across fields. Using artificial intelligence to produce material, simulate situations, and boost creativity, generative AI opens up new technical and social possibilities. 
+          </p>
+        </div>
+         
+         <div>
+          <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
+          Why hire Kryzen for Generative AI Development Services?
+        </h1>
+         <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Sapphire indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Sapphire Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Sapphire uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
+        </div>
+        </div>
+      <LogoCarousel />
+      <Charts
+        img={Chart}
+        h1="Web Development  Market Stats"
+        p1="The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period."
+      />
+      <PremiumServices />
+      <Benefits
+        benifits={AiGen_benifits}
+        sectionTitle="Benefits of Generative AI Services for Businesses"
+        sectionDescription="Here's how our Generative AI solutions benefit customers with concrete results and competitive advantage"
+      />
+      <AboutUs />
+      <Common />
+    </>
+  ),
 
   "generative ai consulting": (
     <>
@@ -5736,6 +6235,115 @@ const contentMap = {
       />
       <AboutUs />
       <TechnologiesSlider title="AI-Powered Business Acceleration with Generative AI Services " techCards={AiIntegration_services} />
+      <Common />
+    </>
+  ),
+
+  "ai agent development": (
+    <>
+      <HeroSection
+        title="AI Agent Development Company"
+        description="Empower your business with intelligent automation and decision-making capabilities with custom AI Agent Development Services. As a leading AI Agent Development Company, we specialize in crafting cutting-edge AI Agent Development Solutions Our expertise in Autonomous AI Agents Development Services enables businesses to integrate intelligent virtual assistants, automate workflows, and enhance customer experiences seamlessly."
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiAgents}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AiAgentAbouts}
+        h1="Brief Conversational AI Agent Development Company "
+        p1="Our Custom AI Agent Development Services are designed to revolutionize business operations across various industries. Enterprise AI agent solutions provider streamlines processes, provide cognitive insights, and enhance decision-making. Whether you're looking to Hire AI Agent Developers for advanced conversational AI, predictive analytics, or automated customer service, our expert team ensures tailor-made AI solutions that align perfectly with your business goals."
+      />
+      <Benefits
+        benifits={AiAgent_services}
+        sectionTitle="Smart Solutions and Services We Offer for AI Agent Development "
+        sectionDescription="Unlock the power of AI with smart solutions and services bring up your business with AI-driven solutions tailored to your needs for a smarter, faster, and more efficient future. "
+      />
+      <PremiumServices />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For App Development" techCards={AiMarketing_Tech} />
+      <AboutUs />
+      <Benefits
+        benifits={AiAgent_benifits}
+        sectionTitle="Key Features Making AI Agent Development Smarter"
+        sectionDescription="Experience the future of AI-driven solutions designed to optimize workflows and transform business operations seamlessly with cutting-edge development services:"
+      />
+      <ReasonChoose 
+       title="Why Choose Kryzen for AI Agent Development Solutions?"
+       des="Enhance user experiences with Sapphire that craft intelligent AI agents for streamline operations. Our experts leverage AI/ML development service to develop custom AI solutions tailored to your business needs ensuring your AI agents drive real value."
+       benifits={AiAgentWhy}
+      />
+      <SectorsSlider />
+      <div className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="max-w-7xl mx-auto text-center">
+        
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 max-w-4xl mx-auto leading-tight">
+          Our AI Agent Development Process – Business Friendly Hiring Models
+        </h2>
+        
+        <div className="flex flex-wrap justify-center gap-6">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`
+                ${step.colorClass} 
+                w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] 
+                p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300
+                flex flex-col text-left
+              `}
+            >
+              <h3 className="text-xl font-bold text-slate-900 mb-3">
+                {step.title}
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+      </div>
+      </div>
+      
+      <div className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="max-w-7xl mx-auto">
+        
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
+            AI Agent Development Company for Diverse Industries
+          </h2>
+          <p className="text-slate-600 text-lg">
+            We develop AI solutions across multiple domains:
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {industries.map((industry, index) => (
+            <div 
+              key={index}
+              className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
+            >
+              <h3 className="text-xl font-bold text-slate-900 mb-4">
+                {industry.title}
+              </h3>
+              <ul className="space-y-3">
+                {industry.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start text-slate-600">
+                    <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0" />
+                    <span className="text-base leading-relaxed">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+      </div>
+      </div>
+      
+      <Technology_pannel techCards={AiAgent_tech} />
       <Common />
     </>
   ),

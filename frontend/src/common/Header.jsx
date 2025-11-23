@@ -82,7 +82,6 @@ const AiServices = [
       "AI Agent Development",
       "AI Chatbot Development",
       "LLM Development",
-      "LLM Fine Tuning Services"
     ]
   },
   {

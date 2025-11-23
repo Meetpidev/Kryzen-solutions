@@ -46,9 +46,9 @@ function Careers() {
 
   const tabs = [
     { id: "who", label: "Who we are" },
-    { id: "why", label: "Why Sapphire" },
+    { id: "why", label: "Why Kryzen" },
     { id: "benefits", label: "Benefits / What we offer" },
-    { id: "life", label: "Life at Sapphire" },
+    { id: "life", label: "Life at Kryzen" },
     { id: "hiring", label: "Hiring Process" },
     { id: "openings", label: "Current Openings" },
   ];
@@ -217,7 +217,7 @@ function Careers() {
                   className="w-64"
                 />
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Kryzen Solutions,</strong> an ISO 27001:2013 certified Web and Mobile App Development Company, has been delivering cutting-edge IT solutions since 2002. We provide a comprehensive suite of IT services and domain-specific solutions tailored for enterprises, ISVs, digital agencies, and startups.
+                  <strong>Kryzen Solutions,</strong> a Web and Mobile App Development Company, has been delivering cutting-edge IT solutions since 2025. We provide a comprehensive suite of IT services and domain-specific solutions tailored for enterprises, ISVs, digital agencies, and startups.
                   <br />
                   <br />
                   Driven by innovation and excellence, our highly skilled team combines industry best practices, deep technological expertise, and extensive business domain knowledge to accelerate digital transformation. With over 23+ years of experience, our diverse team engages closely with clients, offering high-end technology solutions and pioneering innovations that drive business success.
