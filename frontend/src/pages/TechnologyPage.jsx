@@ -63,6 +63,10 @@ import cuttingEdge_5 from "../public/cuttingEdge_6.png";
 import cuttingEdge_6 from "../public/cuttingEdge_7.png";
 import cuttingEdge_7 from "../public/cuttingEdge_8.png";
 import ReasonChoose from "../components/ReasonChoose.jsx";
+import AiGen from "../public/image copy.png";
+import Type_1 from "../public/typescript_development_ic_1.svg";
+import Type_2 from "../public/typescript_development_ic_2.svg";
+import Type_3 from "../public/typescript_development_ic_3.svg";
 
 const Common = () => null;
 
@@ -1874,6 +1878,24 @@ const Custom_Technology = [
   },
 ];
 
+const AiGen_benifits = [
+  {
+    title: "Enhanced Creativity",
+    description: "Generative AI enables authors to create unique and diversified material independently. Generators allow artists, designers, authors, and musicians to experiment with new styles, ideas, and expressions, pushing creativity beyond human limits.",
+    icon: Type_1,
+  },
+  {
+    title: "Personalization",
+    description: "Generative AI creates customized information that meets individual interests and demands. Through Generative AI Development Solutions, generative models improve user experiences by providing valuable information.",
+    icon: Type_2,
+  },
+  {
+    title: "Cost Savings",
+    description: "Generative AI automates content development and streamlines procedures, reducing operating costs and resources needed. Marketing, advertising, and content creation, where producing high-quality content at scale is costly and time-consuming, benefit from this.",
+    icon: Type_3,
+  },
+];
+
 const TECHNOLOGY_CONTENT = {
   android:
     <>
@@ -2441,9 +2463,48 @@ const TECHNOLOGY_CONTENT = {
     <CTASubscribe />
     <Common />
   </>,
-  "generative-ai": {
-    title: "Comming Soon",
-  },
+  "generative-ai":<>
+           <div className="max-w-7xl mx-auto my-[10rem]">
+            <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
+              No. 1 Generative AI Development Company
+            </h1>
+    
+            
+            <div className=" overflow-hidden mb-16 p-6 sm:p-10 ">
+              <div className="relative h-[350px] sm:h-[450px] flex flex-col items-center justify-center text-center">
+                <img src={AiGen} alt="Genarative Ai"  className="fit-content w-fit rounded-2xl"/>
+              </div>
+            </div>
+    
+            
+            <div className="bg-white p-6 sm:p-8 mb-12 ">
+              <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+                Generative AI research is crucial for several reasons, including its revolutionary potential across sectors and applications. hire generative ai developers, which lets robots create information, visuals, and storylines, might boost creativity, efficiency, and problem-solving. Top generative AI development services enhance creativity by making it possible to produce unique and varied material. Enterprise generative ai solutions provider lets artists push limits in art, music, literature, and design. Generative models may create unique compositions from large datasets, inspiring creativity. As generative AI technologies advance, they become more accessible to a broader audience. Open-source frameworks, pre-trained models, and user-friendly interfaces make generative application creation and deployment accessible to amateurs, small enterprises, and enthusiasts for creative expression, experimentation, and innovation. Hiring the best generative AI development companies is vital because it might transform creativity, efficiency, and problem-solving across fields. Using artificial intelligence to produce material, simulate situations, and boost creativity, generative AI opens up new technical and social possibilities. 
+              </p>
+            </div>
+             
+             <div>
+              <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
+              Why hire Kryzen for Generative AI Development Services?
+            </h1>
+             <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Sapphire indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Sapphire Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Sapphire uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
+            </div>
+            </div>
+          <LogoCarousel />
+          <Charts
+            img={Chart}
+            h1="Web Development  Market Stats"
+            p1="The global web development market size was roughly USD 55500.0 million in 2021. As per our research, the market is expected to reach USD 89015.19 million by 2027, exhibiting a CAGR of 8.03% during the forecast period."
+          />
+          <PremiumServices />
+          <Benefits
+            benifits={AiGen_benifits}
+            sectionTitle="Benefits of Generative AI Services for Businesses"
+            sectionDescription="Here's how our Generative AI solutions benefit customers with concrete results and competitive advantage"
+          />
+          <AboutUs />
+          <Common />
+        </>,
   "ai-ml": 
     <>
     <HeroSection
@@ -2685,7 +2746,7 @@ const TECHNOLOGY_CONTENT = {
     <CTAWorkTogether />
     <CTASubscribe />
     <Common />
-  </>,
+    </>,
 };
 
 function toTitleCase(slug) {

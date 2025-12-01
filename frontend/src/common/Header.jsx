@@ -139,8 +139,12 @@ const navigationItems = [
     ],
   },
   {
+    label: "Let's Talk AI",
+    items: AiServices,
+  },
+  {
     label: "Our Work",
-    items: [{ label: "Cases", to: "/our-work/cases" }],
+    items: [{ label: "Our Work", to: "/our-work/cases" }],
   },
 ];
 
@@ -194,6 +198,12 @@ export default function Header() {
   }));
 };
 
+  const handleLinkClick = () => {
+    // These functions simulate closing the mobile menu and resetting dropdowns
+    if (setisMobile) setisMobile(false);
+    setOpenDropdown({});
+    document.body.style.overflow = "auto";
+  };
 
   return (
     <div className="relative">
@@ -658,7 +668,81 @@ Transform Into Intelligent Solutions.
         </div>
 
       <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
-  {navigationItems.map(({ label, items }) => (
+ {navigationItems.map(({ label, items }) => (
+          <div key={label}>
+            {/* Top Level Dropdown Button */}
+            <button
+              className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
+              onClick={() => toggleDropdown(label)}
+              aria-expanded={!!openDropdown[label]}
+            >
+              {label}
+              <ChevronDown
+                className={`transition-transform duration-300 ${openDropdown[label] ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {/* Sub-Items List */}
+            {openDropdown[label] && (
+              <ul className="pl-4 space-y-1 border-l border-blue-200">
+
+                {/* DYNAMIC CONDITIONAL LOGIC: 
+                    Check if the current 'items' array has a nested structure (i.e., if items[0] has a 'sub' property).
+                    This correctly directs flat lists (Company, Technology) to the 'else' block, 
+                    and nested lists (Service, Let's Talk AI) to the 'if' block.
+                */}
+                {Array.isArray(items) && items.length > 0 && items[0].sub ? (
+                  // --- NESTED LIST LOGIC (Level 2 & 3) ---
+                  items.map((svc) => (
+                    <li key={svc.label}>
+                      {/* Level 2: Sub-category Button (e.g., Artificial Intelligence) */}
+                      <button
+                        className="flex justify-between items-center w-full text-gray-700 hover:text-blue-700 py-1"
+                        onClick={() => toggleDropdown(svc.label)}
+                        aria-expanded={!!openDropdown[svc.label]}
+                      >
+                        {svc.label}
+                        <ChevronDown className={`transition-transform duration-300 ${openDropdown[svc.label] ? "rotate-180" : ""}`} />
+                      </button>
+
+                      {/* Level 3: Final Links */}
+                      {openDropdown[svc.label] && (
+                        <ul className="pl-4 space-y-1 border-l border-blue-300">
+                          {svc.sub.map((subItem) => (
+                            <li key={subItem}>
+                              <Link
+                                // Dynamic routing for nested items (adjusted to be more generic)
+                                to={`/${label.toLowerCase().replace(/\s+/g, "-")}/${encodeURIComponent(svc.label.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(subItem.toLowerCase().replace(/\s+/g, "-"))}`}
+                                className="block py-1 text-gray-600 hover:text-blue-600"
+                                onClick={handleLinkClick}
+                              >
+                                {subItem}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))
+                ) : (
+                  // --- FLAT LIST LOGIC (Level 2 only) ---
+                  items.map(({ label: itemLabel, to }) => (
+                    <li key={itemLabel}>
+                      <Link
+                        to={to}
+                        className="block py-1 text-gray-700 hover:text-blue-700"
+                        onClick={handleLinkClick}
+                      >
+                        {itemLabel}
+                      </Link>
+                    </li>
+                  ))
+                )}
+              </ul>
+            )}
+          </div>
+        ))}
+          {/* {navigationItems.map(({ label, items }) => (
     <div key={label}>
       <button
         className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
@@ -725,16 +809,9 @@ Transform Into Intelligent Solutions.
         </ul>
       )}
     </div>
-  ))}
+  ))} */}
 
   <div className="flex items-center justify-between w-full p-4 border-t border-gray-200">
-    <button
-      className="bg-[#D2497E] mr-4 whitespace-nowrap hover:bg-cyan-600 text-white px-4 py-2 font-bold rounded-lg transition"
-      data-testid="button-lets-talk-ai"
-      style={{ minWidth: 120 }}
-    >
-      Let's Talk AI
-    </button>
     <Link to="/contact-us">
       <button
         className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"

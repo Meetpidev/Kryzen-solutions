@@ -300,11 +300,11 @@ const Right_Nav = () => {
       `}</style>
             </div>
 
-            <div className='w-21 fixed top-150 right-0 z-50'>
+            {/* <div className='w-21 fixed top-150 right-0 z-50'>
                     <div className="w-22 h-15 text-white font-bold flex items-center justify-center animate-surprise-delayed-2 cursor-pointer" onClick={() => setChatOpen(true)}>
                         <img src={Logo} className="w-full h-full object-contain" />
                     </div>
-                </div>
+                </div> */}
 
             {chatOpen && (
                 <div className="fixed bottom-4 right-4 z-50 w-80 bg-white rounded-xl shadow-2xl overflow-hidden border">

@@ -2522,6 +2522,72 @@ const Application_Tech = [
   }
 ];
 
+const AiDevelopment_Tech = [
+  {
+    "category": "Machine learning platforms and services",
+    "items": [
+      "Azure Machine Learning",
+      "Azure Cognitive Services",
+      "Bot framework",
+      "Amazon Sagemaker",
+      "Amazon Transcribe",
+      "Amazon Lex",
+      "Amazon Polly",
+      "Google Cloud AI Platform"
+    ]
+  },
+  {
+    "category": "Machine learning frameworks and libraries",
+    "items": [
+      "Mahout",
+      "Mxnet",
+      "Caffe",
+      "TensorFlow",
+      "Keras",
+      "Torch",
+      "Open CV"
+    ]
+  },
+  {
+    "category": "Libraries",
+    "items": [
+      "Apache Spark Mllib",
+      "Theano",
+      "Scikit Learn",
+      "Gensim",
+      "SPaCy"
+    ]
+  },
+  {
+    "category": "Programming languages",
+    "items": [
+      "Scala",
+      "Python",
+      "Java",
+      "C++",
+      "R"
+    ]
+  },
+  {
+    "category": "Big data",
+    "items": [
+      "Hadoop",
+      "Apache Spark",
+      "Cassandra",
+      "Apache Kafka"
+    ]
+  },
+  {
+    "category": "Data visualization",
+    "items": [
+      "Power BI",
+      "Microsoft SQL Server",
+      "Microsoft Excel",
+      "Grafana"
+    ]
+  }
+];
+
 
 const Laravel_combo = [
   {
@@ -3998,6 +4064,66 @@ const solutions = [
   {
     text: "AI-driven voice assistants ensure data protection and secure communication"
   },
+];
+
+const AiDevelopment = [
+  {
+    icon: Type_1,
+    "title": "$30 Billion",
+    "description": "The expected expansion of the AI-powered automation market by 2030."
+  },
+  {
+    icon: Type_2,
+    "title": "60%",
+    "description": "The percentage of global enterprises implementing AI technologies by 2024, showing its widespread adoption."
+  },
+  {
+    icon: Type_3,
+    "title": "$3 Trillion",
+    "description": "Projected economic value AI will bring to industries like healthcare, finance, and manufacturing by 2025."
+  },
+  {
+    icon: Type_4,
+    "title": "$350 Billion",
+    "description": "The anticipated value of the European AI market by 2027, reflecting increasing investment across regions."
+  },
+  {
+    icon: Type_5,
+    "title": "12% – 18%",
+    "description": "The forecasted growth rate of the AI-driven cybersecurity market, underlining AI's impact in safeguarding digital spaces."
+  },
+  {
+    icon: Type_6,
+    "title": "$500 Billion",
+    "description": "The estimated value of the global AI-driven fraud detection market by 2030, demonstrating its growing importance in financial security."
+  }
+];
+
+const AI_Development_benifits = [
+  {
+    "title": "Enhanced Efficiency and Productivity",
+    "description": "Using advanced AI solutions, businesses may increase overall efficiency and production by streamlining procedures, automating repetitive jobs, and completing complicated computations quickly and accurately."
+  },
+  {
+    "title": "Data-oriented Decision-making",
+    "description": "Businesses with a strong online presence can benefit greatly from the accurate, fast, and large-scale data analysis and actionable insights provided by AI-powered systems, which support data-driven strategy and success."
+  },
+  {
+    "title": "Custom Experience Enhancement",
+    "description": "Artificial intelligence (AI)-driven technologies such as chatbots, personalization algorithms, and predictive analytics increase customer expectations for your platform services by improving customer experience."
+  },
+  {
+    "title": "Market Competitiveness",
+    "description": "The integration of AI in commercial applications delights clients with individualized services by efficiently utilizing data. Additionally, it automates time-consuming procedures, giving you more time to focus on original business ideas."
+  },
+  {
+    "title": "AI Integration Services",
+    "description": "Our AI integration services guarantee seamless adoption by integrating AI-driven tools and models with your existing applications. We assist you in maximizing operations by smoothly integrating AI into your enterprise environment."
+  },
+  {
+    "title": "Data Engineering",
+    "description": "We create and put into place reliable data pipelines that provide clear, accessible, and well-organized data. We offer the framework required for AI and machine learning projects to be successful, from data warehousing to ETL procedures."
+  }
 ];
 
 const Common = () => {
@@ -5766,6 +5892,55 @@ const contentMap = {
         sectionDescription="Our App Development Consulting Services help companies develop their app concepts and succeed in the digital age."
       />
       <TechnologyStack data={AppDev_Tech} />
+      <Common />
+    </>
+  ),
+
+  
+  "ai development": (
+    <>
+      <HeroSection
+        title="Artificial Intelligence Development Company"
+        description="Are you looking to Mold the future of your company ability to thrive with Artificial Intelligence Solutions for Business? We are the industry leader as a Custom AI Software Development Company in Artificial intelligence development services that are more intelligent. "
+        buttonText="Get Started"
+        buttonLink="#contact"
+        imageSrc={AiCopilots}
+        imageAlt="Digital Solutions illustration"
+      />
+      <LogoCarousel />
+      <Charts
+        img={AicoplotAbout}
+        img2={Chart}
+        h1="Delivering Top Rated AI Development Services Globally"
+        p1="We guarantee Affordable AI development services and innovative AI Software Development Services, online apps, and mobile software by combining the efforts of our skilled professionals. Our best artificial intelligence development company will aid decision-makers in obtaining a better understanding of their respective business ecosystems, whether those decision-makers work for tech startups, retail companies, hospitals, or corporations. Top Rated AI app development company guarantee additional digital possibilities are made available to Best AI Development Company by minimizing the associated risks using our cutting-edge artificial intelligence software development. "
+        h2="AI Driven Solutions for Enterprise"
+        p2="We assist companies in their revolutionary AI journey by bringing a group of AI specialists on board. With the aid of our AI development services, companies can investigate opportunities driven by AI and building your ai app with complete AI models that are tailored to their goals. We create AI-powered apps tailored to your business requirements. Our products provide ai application development platform, cognitive insights, process automation, and increased operational efficiency. We offer end-to-end services that integrate cutting-edge AI capabilities into your operations from conception to implementation."
+      />
+      <Benefits
+        benifits={AiDevelopment}
+        sectionTitle="The Growing Influence of AI"
+        sectionDescription="AI is revolutionizing industries worldwide. It’s time to harness its potential and stay ahead in the competitive landscape."
+      />
+      <Quotes
+        title="Get A 100% Customizable Artificial Intelligence Development By Experts."
+        highlightedText="Scale your business with our AI solutions"
+        paragraphs={[
+          "We have a large pool of committed deep learning engineers working hard to reduce operating expenses, optimize efficiency, increase customer happiness, and drive company development. We will enable your company to adopt a strategy for wiser decision-making by integrating our AI technology into your mainstream business processes. This will simplify your company's resolve unforeseen business mistakes and increase customer demand.",
+          "Our specialists provide artificial intelligence development tools that do not replace human talents; instead, they should be regarded as a potent business enhancement. We put in a lot of effort to modernize your company situation quicker by making it possible for you to take advantage of our artificial intelligence web development.",
+        ]}
+        emphasizeTextIndex={[1]}
+      />
+      <TechnologiesSlider title="Cutting Edge Technology Kryzen Use For AI development" techCards={AiMarketing_Tech} />
+      <PremiumServices />
+      <Benefits
+        benifits={AiCopilot}
+        sectionTitle="Comprehensive Copilot Software Development"
+        sectionDescription="Our expertise in AI-powered applications ensures seamless integration and optimal performance. We offer a wide range of services to help businesses harness AI technology effectively"
+      />
+      <ReasonChoose title="Key benefits of choosing AI Development Services" des="As pioneers in the field of artificial intelligence software development, we advise companies to take advantage of the potential of data and AI to open up a multitude of doors. Here are the key benefits" benifits={AI_Development_benifits} />
+      <SectorsSlider />
+      <AboutUs />
+      <Technology_pannel techCards={AiDevelopment_Tech}/>
       <Common />
     </>
   ),

@@ -138,11 +138,11 @@ function Careers() {
   ];
 
   const jobs = [
-    { title: "BDE", experience: "1 – 4 Years", openings: 4 },
-    { title: "Technical Support", experience: "Fresher", openings: 3 },
-    { title: "PHP Lead", experience: "7 – 8 Years", openings: 1 },
-    { title: "HR Executive", experience: "Fresher", openings: 1 },
-    { title: "Full Stack Developer", experience: "5 – 6 Years", openings: 1 },
+    { title: "Full Stack Developer", experience: "0 – Fresher", openings: 4 },
+    { title: "App Developer", experience: "0 – Fresher", openings: 3 },
+    { title: "SEO", experience: "0 – Fresher", openings: 1 },
+    { title: "Digital Marketing", experience: "0 – Fresher", openings: 1 },
+    { title: "AI/ML Developer", experience: "0 – Fresher", openings: 1 },
   ];
 
   const slides = [
@@ -343,7 +343,7 @@ function Careers() {
 
           {activeTab === "openings" && (
             <div className="min-h-screen bg-gray-50 flex flex-col items-center py-10">
-      <h1 className="text-3xl font-bold mb-8">Current Job Openings</h1>
+      <h1 className="text-3xl font-bold mb-8">Current Internship Openings</h1>
 
       <div className="w-full max-w-3xl space-y-4">
         {jobs.map((job, index) => (
