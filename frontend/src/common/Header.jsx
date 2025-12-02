@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Menu, X, MapPin, Briefcase, Link2 } from "lucide-react";
+import { ChevronDown, Menu, X, MapPin } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../public/logo.png";
 import Schedule from "../public/schedule.jpg";
@@ -142,10 +142,10 @@ const navigationItems = [
     label: "Let's Talk AI",
     items: AiServices,
   },
-  {
-    label: "Our Work",
-    items: [{ label: "Our Work", to: "/our-work/cases" }],
-  },
+  // {
+  //   label: "Our Work",
+  //   items: [{ label: "Our Work", to: "/our-work/cases" }],
+  // },
 ];
 
 export default function Header() {
@@ -192,11 +192,11 @@ export default function Header() {
   // };
 
   const toggleDropdown = (key) => {
-  setOpenDropdown((prev) => ({
-    ...prev,
-    [key]: !prev[key],
-  }));
-};
+    setOpenDropdown((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
 
   const handleLinkClick = () => {
     // These functions simulate closing the mobile menu and resetting dropdowns
@@ -252,7 +252,7 @@ export default function Header() {
             </div>
 
             <div className="flex items-center gap-4">
-              
+
             </div>
           </div>
         </div>
@@ -272,9 +272,8 @@ export default function Header() {
                 { label: "Company", menu: "company" },
                 { label: "Service", menu: "service" },
                 { label: "Technology", menu: "technology" },
-                { label: "Our Work", menu: "ourwork" },
               ].map(({ label, menu }) => (
-                <div key={label} className="relative translate-x-[24rem]"
+                <div key={label} className="relative translate-x-[32rem]"
                   onMouseEnter={() => setmegaMenu(menu)}
                   style={{ zIndex: 1000 }}
                 >
@@ -288,7 +287,7 @@ export default function Header() {
                   {megaMenu === menu && (
                     <div onMouseLeave={() => setmegaMenu(null)}>
                       {menu === 'company' && (
-                        <div className="absolute left-[3rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-5rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Company</div>
@@ -318,12 +317,12 @@ export default function Header() {
 
                                       </div>
                                       <div>
-                                        <Link to='/choose'  onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
+                                        <Link to='/choose' onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Why Choose Us</Link>
                                         <div className="py-3" onClick={() => setmegaMenu(null)}><Link to="/insightful-videos" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Insightful videos</Link></div>
                                       </div>
                                       <div>
-                                        <Link to="/blog"  onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</Link>
-                                        <div  onClick={() => setmegaMenu(null)}><Link to="/careers"  className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</Link></div>
+                                        <Link to="/blog" onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Blog</Link>
+                                        <div onClick={() => setmegaMenu(null)}><Link to="/careers" className="hover:bg-blue-600 hover:text-white cursor-pointer py-1 rounded">Careers</Link></div>
                                       </div>
                                     </div>
                                   </div>
@@ -332,9 +331,9 @@ export default function Header() {
                                 <div className="ml-[17rem] whitespace-nowrap group">
                                   <div className="font-bold text-blue-800 text-lg mb-4">MODELS</div>
                                   <div className="space-y-2 text-gray-800">
-                                    <div onClick={() => setmegaMenu(null)}><Link to="/Delivery-Models" className="hover:text-blue-600  cursor-pointer rounded">Delivery Models</Link></div>
-                                    <div onClick={() => setmegaMenu(null)}><Link to="/Engagement-Models" className="hover:text-blue-600  cursor-pointer rounded">Engagement Models</Link></div>
-                                    <div onClick={() => setmegaMenu(null)}><Link to="/Development-Methodology" className="hover:text-blue-600  cursor-pointer py-1 rounded">Development Methodology</Link></div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Delivery-Models" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Delivery Models</Link></div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Engagement-Models" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Engagement Models</Link></div>
+                                    <div onClick={() => setmegaMenu(null)}><Link to="/Development-Methodology" className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Development Methodology</Link></div>
                                   </div>
                                 </div>
 
@@ -370,7 +369,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'service' && (
-                        <div className="absolute left-[-4rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
+                        <div className="absolute left-[-13rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
                           <div className="bg-[#0178a8] text-white flex flex-col justify-between p-10 min-w-[330px] max-w-[390px]">
                             <div>
                               <div className="text-3xl font-bold mb-5">Service</div>
@@ -413,11 +412,12 @@ export default function Header() {
                                       <Link
                                         key={item}
                                         to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
-                                        className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block"
+                                        className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block w-fit"
                                         onClick={() => setmegaMenu(null)}
                                       >
                                         {item}
                                       </Link>
+
                                     ))}
                                   </div>
                                 ))}
@@ -427,7 +427,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'technology' && (
-                        <div className="absolute left-[-12rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-20rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Technology</div>
@@ -448,7 +448,7 @@ export default function Header() {
                                 {/* MOBILE */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">MOBILE</div>
-                                  <Link to="/technology/android" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</Link>
+                                  <Link to="/technology/android" onClick={() => setmegaMenu(null)} className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Android</Link>
                                   <Link to="/technology/ios" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">IOS</Link>
                                   <Link to="/technology/flutter" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Flutter</Link>
                                   <Link to="/technology/react-native" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">React Native</Link>
@@ -464,17 +464,17 @@ export default function Header() {
                                   <Link to="/technology/dotnet" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">.NET</Link>
                                   <Link to="/technology/php" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">PHP</Link>
                                   <Link to="/technology/java" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Java</Link>
-                                  <Link to="/technology/nodejs" onClick={() => setmegaMenu(null)}  className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</Link>
+                                  <Link to="/technology/nodejs" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Nodejs</Link>
                                 </div>
                                 {/* TRENDING */}
-                                  <div>
+                                <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">TRENDING</div>
                                   <Link to="/technology/generative-ai" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Generative AI</Link>
                                   <Link to="/technology/ai-ml" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">AI & ML</Link>
                                   <Link to="/technology/blockchain" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Blockchain</Link>
                                   <Link to="/technology/full-stack" onClick={() => setmegaMenu(null)} className="block hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded">Full Stack</Link>
                                 </div>
-                              
+
                                 {/* OTHERS */}
                                 <div>
                                   <div className="font-bold text-blue-800 text-lg mb-4">OTHERS</div>
@@ -495,10 +495,10 @@ export default function Header() {
                           </div>
                         </div>
                       )}
-                      {menu === 'ourwork' && (
+                      {/* {menu === 'ourwork' && (
                         <div className="absolute left-[-21rem] mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="w-full flex bg-white text-gray-900 rounded shadow-xl pb-7 overflow-hidden" style={{ minHeight: 390 }}>
-                            {/* <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
+                             <div className="bg-[#0178a8] flex flex-col justify-between text-white p-10 min-w-[350px] max-w-[390px]">
                               <div>
                                 <div className="text-3xl font-bold mb-5">Our Work</div>
                                 <div className="mb-7 text-xl leading-snug">
@@ -508,11 +508,11 @@ export default function Header() {
                               <button className="bg-white text-[#0178a8] px-8 py-3 rounded font-bold mt-5 hover:bg-blue-50 transition">
                                 Request A Quote
                               </button>
-                            </div> */}
+                            </div> 
                             <div class="flex items-center justify-center ml-auto mr-auto">
                               <h1 class="text-4xl font-bold text-gray-800">Coming Soon</h1>
                             </div>
-                            {/* <div className="flex-1 flex px-6 py-8 items-start gap-9">
+                             <div className="flex-1 flex px-6 py-8 items-start gap-9">
                               <div className="w-1/3">
                                 <div className="font-bold text-blue-800 text-xl mb-3 uppercase">SOLUTIONS</div>
                                 {solutions.map((sol) => (
@@ -531,10 +531,10 @@ export default function Header() {
                                   <img src='https://www.shutterstock.com/shutterstock/photos/1549501607/display_1500/stock-vector-two-people-shake-hands-as-a-result-of-agreement-successful-cooperation-happy-businessman-1549501607.jpg' alt="Portfolio" className="object-contain h-36" />
                                 </div>
                               </div>
-                            </div> */}
+                            </div> 
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </div>
                   )}
                 </div>
@@ -543,84 +543,84 @@ export default function Header() {
 
             {/* Desktop-only buttons */}
             <div className="hidden lg:flex items-center ml-auto space-x-4">
-            <div
+              <div
                 className="relative"
                 onMouseEnter={() => setAI(true)}
->
-  <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm flex items-center cursor-pointer">
-    <span className="mr-2">✨</span>
-    <span>Let's Talk AI</span>
-  </div>
+              >
+                <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-2 py-2 pr-3 rounded-lg font-medium text-sm flex items-center cursor-pointer">
+                  <span className="mr-2">✨</span>
+                  <span>Let's Talk AI</span>
+                </div>
 
                 {ai && (
                   <div onMouseLeave={() => setAI(null)}>
-                        <div className="absolute left-[-31rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
-                          <div className="flex">
-                            <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
-                              <div className="text-3xl font-bold mb-5">Let's Talk AI</div>
-                              <div className="mb-7 text-lg">
-                               AI Isn’t Just Technology—It’s A Vision.
-From Chatbots To Deep Learning, The AI Revolution Is Where Ideas
-Transform Into Intelligent Solutions.
+                    <div className="absolute left-[-31rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
+                      <div className="flex">
+                        <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
+                          <div className="text-3xl font-bold mb-5">Let's Talk AI</div>
+                          <div className="mb-7 text-lg">
+                            AI Isn’t Just Technology—It’s A Vision.
+                            From Chatbots To Deep Learning, The AI Revolution Is Where Ideas
+                            Transform Into Intelligent Solutions.
+                          </div>
+                          <Link to="/contact-us" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap" onClick={() => setmegaMenu(null)}>
+                            Request a Quote
+                          </Link>
+                        </div>
+                        <div className="flex-1 flex">
+                          <div className="bg-gray-50 min-w-[320px] max-w-[320px] divide-y">
+                            {AiServices.map((svc) => (
+                              <div
+                                key={svc.label}
+                                className={`px-8 py-3 flex items-center justify-between cursor-pointer font-semibold text-lg ${active === svc.label
+                                  ? "bg-white text-[#0178a8]"
+                                  : "hover:bg-gray-100"
+                                  }`}
+                                onMouseEnter={() => setactive(svc.label)}
+                              >
+                                {svc.label}
+                                {svc.sub?.length > 0 && (
+                                  <span className="ml-auto text-[#0178a8]">&gt;</span>
+                                )}
                               </div>
-                              <Link to="/contact-us" className="bg-white border-0 text-blue-900 text-xl font-bold px-10 py-3 rounded shadow hover:bg-slate-50 transition mb-6 whitespace-nowrap" onClick={() => setmegaMenu(null)}>
-                                Request a Quote
-                              </Link>
-                            </div>
-                             <div className="flex-1 flex">
-                            <div className="bg-gray-50 min-w-[320px] max-w-[320px] divide-y">
-                              {AiServices.map((svc) => (
-                                <div
-                                  key={svc.label}
-                                  className={`px-8 py-3 flex items-center justify-between cursor-pointer font-semibold text-lg ${active === svc.label
-                                    ? "bg-white text-[#0178a8]"
-                                    : "hover:bg-gray-100"
-                                    }`}
-                                  onMouseEnter={() => setactive(svc.label)}
-                                >
-                                  {svc.label}
-                                  {svc.sub?.length > 0 && (
-                                    <span className="ml-auto text-[#0178a8]">&gt;</span>
-                                  )}
+                            ))}
+                          </div>
+                          {AiServices.find((s) => s.label === active)?.sub?.length > 0 && (
+                            <div className="bg-white flex-1 flex flex-wrap p-8">
+                              {[
+                                AiServices
+                                  .find((s) => s.label === active)
+                                  .sub.slice(0, 7),
+                                AiServices
+                                  .find((s) => s.label === active)
+                                  .sub.slice(7),
+                              ].map((col, i) => (
+                                <div key={i} className="w-1/2">
+                                  {col.map((item) => (
+                                    <Link
+                                      key={item}
+                                      to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
+                                      className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block w-fit"
+                                      onClick={() => setmegaMenu(null)}
+                                    >
+                                      {item}
+                                    </Link>
+                                  ))}
                                 </div>
                               ))}
                             </div>
-                            {AiServices.find((s) => s.label === active)?.sub?.length > 0 && (
-                              <div className="bg-white flex-1 flex flex-wrap p-8">
-                                {[
-                                  AiServices
-                                    .find((s) => s.label === active)
-                                    .sub.slice(0, 7),
-                                  AiServices
-                                    .find((s) => s.label === active)
-                                    .sub.slice(7),
-                                ].map((col, i) => (
-                                  <div key={i} className="w-1/2">
-                                    {col.map((item) => (
-                                      <Link
-                                        key={item}
-                                        to={`/service/${encodeURIComponent(active.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(item.toLowerCase().replace(/\s+/g, "-"))}`}
-                                        className="hover:bg-blue-600 hover:text-white hover:p-1 cursor-pointer py-1 rounded block"
-                                        onClick={() => setmegaMenu(null)}
-                                      >
-                                        {item}
-                                      </Link>
-                                    ))}
-                                  </div>
-                                ))}
-                              </div>
                           )}
-                          
+
                         </div>
-                        
+
                       </div>
-                      
+
                     </div>
-                    
-                </div>
-)}
-    
-                </div>
+
+                  </div>
+                )}
+
+              </div>
 
               <Link to="/contact-us">
                 <button
@@ -629,9 +629,9 @@ Transform Into Intelligent Solutions.
                   style={{ minWidth: 120 }}
                 >
                   Contact Us
-                   <div className="absolute -inset-1 border-2 border-[#00A3D9] pointer-events-none rounded-sm"></div>
-                <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-1 pointer-events-none rounded-sm"></div>
-                <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-2 pointer-events-none rounded-sm"></div>
+                  <div className="absolute -inset-1 border-2 border-[#00A3D9] pointer-events-none rounded-sm"></div>
+                  <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-1 pointer-events-none rounded-sm"></div>
+                  <div className="absolute -inset-1 border-2 border-[#00A3D9] animate-pop-pulse-2 pointer-events-none rounded-sm"></div>
                 </button>
               </Link>
             </div>
@@ -646,9 +646,9 @@ Transform Into Intelligent Solutions.
       </nav>
 
       <div
-    className={`fixed top-0 left-0 h-full w-[85%] max-w-sm sm:max-w-md bg-white shadow-2xl z-50 transform transition-transform duration-300 
+        className={`fixed top-0 left-0 h-full w-[85%] max-w-sm sm:max-w-md bg-white shadow-2xl z-50 transform transition-transform duration-300 
     ${isMobile ? "translate-x-0" : "-translate-x-full"}`}
->
+      >
         <div className="flex items-center justify-between w-full p-4 border-b border-gray-200">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain" />
@@ -667,81 +667,81 @@ Transform Into Intelligent Solutions.
           </button>
         </div>
 
-      <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
- {navigationItems.map(({ label, items }) => (
-          <div key={label}>
-            {/* Top Level Dropdown Button */}
-            <button
-              className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
-              onClick={() => toggleDropdown(label)}
-              aria-expanded={!!openDropdown[label]}
-            >
-              {label}
-              <ChevronDown
-                className={`transition-transform duration-300 ${openDropdown[label] ? "rotate-180" : ""}`}
-              />
-            </button>
+        <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
+          {navigationItems.map(({ label, items }) => (
+            <div key={label}>
+              {/* Top Level Dropdown Button */}
+              <button
+                className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
+                onClick={() => toggleDropdown(label)}
+                aria-expanded={!!openDropdown[label]}
+              >
+                {label}
+                <ChevronDown
+                  className={`transition-transform duration-300 ${openDropdown[label] ? "rotate-180" : ""}`}
+                />
+              </button>
 
-            {/* Sub-Items List */}
-            {openDropdown[label] && (
-              <ul className="pl-4 space-y-1 border-l border-blue-200">
+              {/* Sub-Items List */}
+              {openDropdown[label] && (
+                <ul className="pl-4 space-y-1 border-l border-blue-200">
 
-                {/* DYNAMIC CONDITIONAL LOGIC: 
+                  {/* DYNAMIC CONDITIONAL LOGIC: 
                     Check if the current 'items' array has a nested structure (i.e., if items[0] has a 'sub' property).
                     This correctly directs flat lists (Company, Technology) to the 'else' block, 
                     and nested lists (Service, Let's Talk AI) to the 'if' block.
                 */}
-                {Array.isArray(items) && items.length > 0 && items[0].sub ? (
-                  // --- NESTED LIST LOGIC (Level 2 & 3) ---
-                  items.map((svc) => (
-                    <li key={svc.label}>
-                      {/* Level 2: Sub-category Button (e.g., Artificial Intelligence) */}
-                      <button
-                        className="flex justify-between items-center w-full text-gray-700 hover:text-blue-700 py-1"
-                        onClick={() => toggleDropdown(svc.label)}
-                        aria-expanded={!!openDropdown[svc.label]}
-                      >
-                        {svc.label}
-                        <ChevronDown className={`transition-transform duration-300 ${openDropdown[svc.label] ? "rotate-180" : ""}`} />
-                      </button>
+                  {Array.isArray(items) && items.length > 0 && items[0].sub ? (
+                    // --- NESTED LIST LOGIC (Level 2 & 3) ---
+                    items.map((svc) => (
+                      <li key={svc.label}>
+                        {/* Level 2: Sub-category Button (e.g., Artificial Intelligence) */}
+                        <button
+                          className="flex justify-between items-center w-full text-gray-700 hover:text-blue-700 py-1"
+                          onClick={() => toggleDropdown(svc.label)}
+                          aria-expanded={!!openDropdown[svc.label]}
+                        >
+                          {svc.label}
+                          <ChevronDown className={`transition-transform duration-300 ${openDropdown[svc.label] ? "rotate-180" : ""}`} />
+                        </button>
 
-                      {/* Level 3: Final Links */}
-                      {openDropdown[svc.label] && (
-                        <ul className="pl-4 space-y-1 border-l border-blue-300">
-                          {svc.sub.map((subItem) => (
-                            <li key={subItem}>
-                              <Link
-                                // Dynamic routing for nested items (adjusted to be more generic)
-                                to={`/${label.toLowerCase().replace(/\s+/g, "-")}/${encodeURIComponent(svc.label.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(subItem.toLowerCase().replace(/\s+/g, "-"))}`}
-                                className="block py-1 text-gray-600 hover:text-blue-600"
-                                onClick={handleLinkClick}
-                              >
-                                {subItem}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))
-                ) : (
-                  // --- FLAT LIST LOGIC (Level 2 only) ---
-                  items.map(({ label: itemLabel, to }) => (
-                    <li key={itemLabel}>
-                      <Link
-                        to={to}
-                        className="block py-1 text-gray-700 hover:text-blue-700"
-                        onClick={handleLinkClick}
-                      >
-                        {itemLabel}
-                      </Link>
-                    </li>
-                  ))
-                )}
-              </ul>
-            )}
-          </div>
-        ))}
+                        {/* Level 3: Final Links */}
+                        {openDropdown[svc.label] && (
+                          <ul className="pl-4 space-y-1 border-l border-blue-300">
+                            {svc.sub.map((subItem) => (
+                              <li key={subItem}>
+                                <Link
+                                  // Dynamic routing for nested items (adjusted to be more generic)
+                                  to={`/${label.toLowerCase().replace(/\s+/g, "-")}/${encodeURIComponent(svc.label.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(subItem.toLowerCase().replace(/\s+/g, "-"))}`}
+                                  className="block py-1 text-gray-600 hover:text-blue-600"
+                                  onClick={handleLinkClick}
+                                >
+                                  {subItem}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))
+                  ) : (
+                    // --- FLAT LIST LOGIC (Level 2 only) ---
+                    items.map(({ label: itemLabel, to }) => (
+                      <li key={itemLabel}>
+                        <Link
+                          to={to}
+                          className="block py-1 text-gray-700 hover:text-blue-700"
+                          onClick={handleLinkClick}
+                        >
+                          {itemLabel}
+                        </Link>
+                      </li>
+                    ))
+                  )}
+                </ul>
+              )}
+            </div>
+          ))}
           {/* {navigationItems.map(({ label, items }) => (
     <div key={label}>
       <button
@@ -811,19 +811,19 @@ Transform Into Intelligent Solutions.
     </div>
   ))} */}
 
-  <div className="flex items-center justify-between w-full p-4 border-t border-gray-200">
-    <Link to="/contact-us">
-      <button
-        className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
-        data-testid="button-contact-us"
-        style={{ minWidth: 120 }}
-      >
-        Contact Us
-      </button>
-    </Link>
-  </div>
-</nav>
-        
+          <div className="flex items-center justify-between w-full p-4 border-t border-gray-200">
+            <Link to="/contact-us">
+              <button
+                className="bg-cyan-500 hover:bg-cyan-600 text-black py-2 font-bold rounded-lg transition"
+                data-testid="button-contact-us"
+                style={{ minWidth: 120 }}
+              >
+                Contact Us
+              </button>
+            </Link>
+          </div>
+        </nav>
+
       </div>
       {isMobile && (
         <div

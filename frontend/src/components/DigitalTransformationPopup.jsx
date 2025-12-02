@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import google from "../public/google.webp";
 import India from "../public/Make_in_india-removebg-preview.png";
 import L1 from "../public/L1.png";
@@ -279,6 +280,7 @@ export default function DigitalTransformationPopup() {
                 )}
               </div>
 
+              <Link to="/">
               <button
                 type="submit"
                 disabled={loading}
@@ -295,7 +297,8 @@ export default function DigitalTransformationPopup() {
                   "Submit"
                 )}
               </button>
-
+              </Link>
+              
               {statusMsg && (
                 <p
                   className={`mt-2 text-center text-sm font-semibold ${

@@ -4150,7 +4150,7 @@ const contentMap = {
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -4210,7 +4210,7 @@ const contentMap = {
         title="Best Cross-Platform App Development Company in INDIA"
         description="At Kryzen Solutions, we provide cross-platform app development services for multiple platforms and devices using programming languages like HTML5, CSS3, and JavaScript."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={CrossDes}
         imageAlt="Digital Solutions illustration"
       />
@@ -4251,7 +4251,7 @@ const contentMap = {
         title="iPad App Development Services in INDIA"
         description="Our iPad App Development firm is well-known for its ability to build and design individualized iPad applications while adhering to the standards set by the Apple App Store."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Iped}
         imageAlt="Digital Solutions illustration"
       />
@@ -4302,7 +4302,7 @@ const contentMap = {
         title="Hybrid App Development Company in INDIA"
         description="We are your one-stop shop for affordable Hybrid App Development services. We incorporate the best features of native programs to create robust cross-platform mobile applications that function identically to native applications on Android, iOS, and Windows."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Hybrid}
         imageAlt="Digital Solutions illustration"
       />
@@ -4361,7 +4361,7 @@ const contentMap = {
         title="Progressive Web App Development Company in INDIA"
         description="Our PWA developers encourage small and medium-sized organizations and new companies to use progressive web apps for their operations."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Progressive}
         imageAlt="Digital Solutions illustration"
       />
@@ -4414,7 +4414,7 @@ const contentMap = {
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -4459,7 +4459,7 @@ const contentMap = {
         title="Custom Mobile App Development Company In India"
         description="We have a team of skilled custom app developers who are well-versed in creating custom applications. Connect with us today to get your free quote!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={CostomApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -4507,7 +4507,7 @@ const contentMap = {
         title="B2B Mobile App Development Company in INDIA"
         description="Our best B2B app development services will provide your company with a new gateway to exciting growth prospects, allowing you to dominate your industry and gain an advantage over your rivals."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={B2B}
         imageAlt="Digital Solutions illustration"
       />
@@ -4555,7 +4555,7 @@ const contentMap = {
         title="Django Development Company in INDIA"
         description="Django Is A Free, Open-Source, High-Level Django Web Development Framework Based On Python Programming"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={DJango}
         imageAlt="Digital Solutions illustration"
       />
@@ -4612,7 +4612,7 @@ const contentMap = {
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -4657,7 +4657,7 @@ const contentMap = {
         title="Top Laravel Development Company"
         description="We are best Laravel development company that has achieved a high degree of skill in Laravel, which is now one of the most popular PHP-based frameworks that can be purchased on the market today. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Laravel}
         imageAlt="Digital Solutions illustration"
       />
@@ -4709,7 +4709,7 @@ const contentMap = {
         title="Best Python App Development in INDIA"
         description="Python is a wonderful time saver due to its many time-saving advantages, such as its simple programming interface and its rapid application development."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Python}
         imageAlt="Digital Solutions illustration"
       />
@@ -4767,7 +4767,7 @@ const contentMap = {
         title="Big Commerce Development Services in INDIA"
         description="Dealing with e-commerce in an industry with a lot of competition is challenging. Best BigCommerce development company provide endless chances to build, innovate, and grow as part of our commitment to our core value of 'Ignite Growth and Avoid Complexity'. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={BigCommerce}
         imageAlt="Digital Solutions illustration"
       />
@@ -4817,7 +4817,7 @@ const contentMap = {
         title="Artificial Intelligence Development Company"
         description="Are you looking to Mold the future of your company ability to thrive with Artificial Intelligence Solutions for Business? We are the industry leader as a Custom AI Software Development Company in Artificial intelligence development services that are more intelligent. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AI}
         imageAlt="Digital Solutions illustration"
       />
@@ -4879,7 +4879,7 @@ const contentMap = {
         title=" AI Chatbot Development Company in INDIA"
         description="Are you interested in Custom AI Chatbot development services? As a leading AI chatbot development company in USA, we specialize in developing ai chatbots, AI-powered chatbots, chatbot integration services, Open-source chatbot customization services and conversational AI Chatbot Solutions tailored to your business needs. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Chatbot}
         imageAlt="Digital Solutions illustration"
       />
@@ -4929,7 +4929,7 @@ const contentMap = {
         title="Data Analytics Services Provider"
         description="Turn raw data into clear dashboards and actionable insights so teams can move faster with confidence."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -4974,7 +4974,7 @@ const contentMap = {
         title="Data Migration Services"
         description="Move data between systems and clouds safely with validation, minimal downtime, and full auditability."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -5019,7 +5019,7 @@ const contentMap = {
         title="Business Intelligence Company"
         description="Define KPIs, model your data, and create interactive dashboards that turn complex operations into clear, trackable outcomes."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -5064,7 +5064,7 @@ const contentMap = {
         title="Typescript Development Services in INDIA"
         description="As a leading full-stack TypeScript development company, we have a decade of experience in TypeScript with frameworks like Angular, React, and Vue.js. Contact us now to get your free quote!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={TypeScript}
         imageAlt="Digital Solutions illustration"
       />
@@ -5113,7 +5113,7 @@ const contentMap = {
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -5160,7 +5160,7 @@ const contentMap = {
                              we strive to offer cutting-edge solutions tailored to our clients' needs. Let's design an app
                              that surpasses your expectations and makes you an industry leader. Contact us now!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={MobileApp}
         imageAlt="Digital Solutions illustration"
       />
@@ -5205,7 +5205,7 @@ const contentMap = {
         title="Product Development Company in INDIA"
         description="We develop superior, data-backed software products fuelled by our affordable product development services and innovative design thinking. We have a team of experienced product developers ready to partner closely with clients to quickly and successfully build products."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Product}
         imageAlt="Digital Solutions illustration"
       />
@@ -5248,7 +5248,7 @@ const contentMap = {
         title="Best Software Development Company"
         description="Our Top-Rated Software Development Firms for Business delivers innovative and tailored digital solutions designed to help your business thrive in the online world. Backed by a skilled team of developers, designers, and project managers, Software Development Company with High Ratings, Affordable Pricing ensure quality, scalability, and performance. Known for our high client ratings and affordable pricing, we’re committed to turning your ideas into powerful, result-driven software solutions. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Softwaredevelopment}
         imageAlt="Digital Solutions illustration"
       />
@@ -5304,7 +5304,7 @@ const contentMap = {
         title="Application Services in INDIA"
         description="As a DOT NET application development company, our .NET developers create web applications by using ASP.NET, .NET Core, C#, VB. Contact us now to get your DOT Net apps developed quickly by professionals."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Application}
         imageAlt="Digital Solutions illustration"
       />
@@ -5353,7 +5353,7 @@ const contentMap = {
         title="The best Startup Consulting Services"
         description="New enterprises get aid from Business consulting for startups services. Our startup management consulting firm may considerably increase the likelihood of success."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Startup}
         imageAlt="Digital Solutions illustration"
       />
@@ -5403,7 +5403,7 @@ const contentMap = {
         title="CRM Development Services in INDIA"
         description="We are experts in the design, deployment, migration, and maintenance of customer relationship management (CRM) and CRM for economic development that is both scalable and unique to each client. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={CRM}
         imageAlt="Digital Solutions illustration"
       />
@@ -5451,7 +5451,7 @@ const contentMap = {
         title="Trusted Web Development Company"
         description="Our team of experienced specialists offer web development services to boost your web visibility and commercial success. From affordable web application development for startups to major corporations, we can design and develop websites that meet and exceed your needs. Contact us for a free quote! "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Web}
         imageAlt="Digital Solutions illustration"
       />
@@ -5500,7 +5500,7 @@ const contentMap = {
         title="App Development Consulting Services in INDIA"
         description="Our app development consulting is geared toward the business needs of startups, small and medium-sized businesses, and large, well-established Best app consultants for startups companies. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AppDevelopment}
         imageAlt="Digital Solutions illustration"
       />
@@ -5550,7 +5550,7 @@ const contentMap = {
         title="Business Application Development Services in INDIA"
         description="In the current hypercompetitive business environment, continual optimization of business applications throughout the whole company is necessary to stay ahead of the competition."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Bussiness}
         imageAlt="Digital Solutions illustration"
       />
@@ -5599,7 +5599,7 @@ const contentMap = {
         title="Reliable Full Stack Development Services"
         description="Every business needs affordable full stack development services to thrive online and achieve better results. Our Full Stack Web Development Services ensure you stay ahead of the competition by leveraging the best technologies and practices. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={FullStack}
         imageAlt="Digital Solutions illustration"
       />
@@ -5659,7 +5659,7 @@ const contentMap = {
         title="Best UI/UX Design Company in INDIA"
         description="Our UI/UX design services are aimed at creating visually appealing, brand strengthening digital interfaces to attract and retain users. We offer the best UI/UX design and graphic designing services for your web and mobile apps."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={UI}
         imageAlt="Digital Solutions illustration"
       />
@@ -5702,7 +5702,7 @@ const contentMap = {
         title="Digital Marketing Services in INDIA"
         description="Digital marketing is a type of marketing where digital platforms are used to connect with potential customers. AI-powered digital marketing company to increase leads and sales and promoting a purchase is the ultimate purpose of digital marketing for a buyer or customer. Methods like email, social media, and web-based advertising are used to connect with potential customers and increase brand visibility online. Contact us now to know how to achieve success through our digital marketing services."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Mobile}
         imageAlt="Digital Solutions illustration"
       />
@@ -5747,7 +5747,7 @@ const contentMap = {
         title="Mobile App Porting in INDIA"
         description="Obtain the highest quality mobile app porting services from the app migration business with the most years of expertise."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Mobile}
         imageAlt="Digital Solutions illustration"
       />
@@ -5798,7 +5798,7 @@ const contentMap = {
         title="IT Consulting Services in INDIA"
         description="Many firms depend on IT consulting services to stay up with today's rapidly changing IT world. Whether it's infrastructure, security, cloud, or digital transformation, having the right IT partner is critical for business success."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={IT_Consulting}
         imageAlt="Digital Solutions illustration"
       />
@@ -5851,7 +5851,7 @@ const contentMap = {
         title="App Development Consulting Services in INDIA"
         description="Our app development consulting is geared toward the business needs of startups, small and medium-sized businesses, and large, well-established Best app consultants for startups companies."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AppDevelopment}
         imageAlt="Digital Solutions illustration"
       />
@@ -5903,7 +5903,7 @@ const contentMap = {
         title="Artificial Intelligence Development Company"
         description="Are you looking to Mold the future of your company ability to thrive with Artificial Intelligence Solutions for Business? We are the industry leader as a Custom AI Software Development Company in Artificial intelligence development services that are more intelligent. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiCopilots}
         imageAlt="Digital Solutions illustration"
       />
@@ -5951,7 +5951,7 @@ const contentMap = {
         title="AI Voice Assistant Development "
         description="Revolutionize user interactions with AI-powered voice assistants that enhance convenience, streamline workflows, and automate everyday tasks. Utilizing advanced natural language processing (NLP), deep learning, and real-time speech recognition, these intelligent virtual assistants enable hands-free control, personalized responses, and seamless integration with smart devices. From voice-activated smart home automation to AI-driven customer support and productivity tools, this cutting-edge technology transforms communication, boosts efficiency, and enhances user experiences across industries. For businesses seeking to leverage this innovation, choosing the Custom AI Voice Assistant Development Services, Voice App Developers or to Hire AI Voice Assistant Development Team ensures high-quality, scalable solutions tailored to diverse user needs. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={DotNet}
         imageAlt="Digital Solutions illustration"
       />
@@ -6012,7 +6012,7 @@ const contentMap = {
         title="AI Copilot Development Company"
         description="Unlock the power of artificial intelligence and AI copilot integration and automation services with expert AI Copilot development services. We specialize in building intelligent, secure, and scalable AI-driven solutions for businesses of all sizes. Our Custom AI copilot platform development services enhance productivity, streamline operations, and optimize workflows—all at an affordable cost. Whether you are a startup or a large enterprise, our team ensures a seamless AI integration tailored to your business needs. Contact us today for a free quote and elevate your operations with AI-driven automation!"
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiCopilots}
         imageAlt="Digital Solutions illustration"
       />
@@ -6058,7 +6058,7 @@ const contentMap = {
         title="Agentic AI Company "
         description="Here at Agentic AI, we focus on creating smart systems that automate processes, improve productivity, and evolve dynamically according to business requirements. Whether you are a startup wanting to integrate smart agents into your functions or an enterprise wanting to streamline decision-making with automation, we provide cost-effective, scalable, and Custom Agentic AI solutions for businesses. Contact us now for a free quote and begin shaping your digital capabilities with smart automation. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiAgent}
         imageAlt="Digital Solutions illustration"
       />
@@ -6096,7 +6096,7 @@ const contentMap = {
         title="AI Consulting Company"
         description="Our best AI Consulting company is geared towards providing smart, scalable web and application development solutions for companies big and small. From a startup desiring to build AI from the ground up to an enterprise seeking to optimize current processes, we develop cost-effective, fully customized solutions geared towards your business objectives. Our solutions are designed to minimize operational expense, maximize efficiency, and access new business opportunity through strategic AI and ML Consulting Services. Get a free quote today and see how AI can take your business to new heights."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={Aiconsult}
         imageAlt="Digital Solutions illustration"
       />
@@ -6134,7 +6134,7 @@ const contentMap = {
         title="AI Prompt Engineering Services"
         description="Empower your business with AI Prompt Engineering Services that drive intelligent automation, boost efficiency, and improve decision-making. At Sapphire Software Solutions, we design AI-driven web and app development solutions that scale seamlessly from startups to enterprises. Whether you’re building AI chatbots, content automation tools, or smart decision-support systems, our experts ensure your prompts deliver accurate, context-aware, and goal-oriented outputs. Contact us for a free consultation today and discover how prompt engineering can revolutionize your business! "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiPrompt}
         imageAlt="Digital Solutions illustration"
       />
@@ -6181,7 +6181,7 @@ const contentMap = {
         title="Computer Vision Software Development Company"
         description="Harness the power of computer vision as a service to automate processes, enhance decision-making, and unlock new opportunities. Our custom computer vision development team specializes in developing AI-driven computer vision and image recognition software development solutions tailored to your business needs. Whether you need object detection, facial recognition, or real-time video analytics, we deliver affordable, scalable, and custom solutions that drive innovation. Get a free quote today and discover how computer vision development services expertise can transform your operations."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={ComputerVision}
         imageAlt="Digital Solutions illustration"
       />
@@ -6268,7 +6268,7 @@ const contentMap = {
         title="Generative AI Consulting Company"
         description="Transform your business with cutting-edge Generative AI Consultant, designed specifically for startups, enterprises, and innovation-focused brands. We have expertise in developing AI-driven web and mobile platforms that fuel automation, creativity, and competitive edge. From optimizing operations to customer experience and next-generation product development, we provide future-proof, scalable, and cost-effective solutions."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiConsult}
         imageAlt="Digital Solutions illustration"
       />
@@ -6306,7 +6306,7 @@ const contentMap = {
         title="Our Generative AI Application Development Services"
         description="In a digital-first world, companies of all sizes are looking for brighter, more intuitive solutions beyond the conventional software. Our Generative AI Application Development capabilities enable organizations to unlock the power of artificial intelligence to automate the creation of content, optimize their operations, and improve user experiences. From smart chatbots to adaptive content generators, we develop scalable and economical AI-based web and mobile applications that fit your specific business requirements."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiAppp}
         imageAlt="Digital Solutions illustration"
       />
@@ -6344,7 +6344,7 @@ const contentMap = {
         title="Our Core Generative AI Services Capabilities"
         description="Need AI that works for your business? We build custom web apps and tools that fit what you actually need. Small startup testing ideas or big company wanting to automate messy workflows - doesn't matter. Here's what we've learned: most AI projects fail because they're built for demos, not real work. We focus on stuff that solves actual problems. Content creation that saves hours, automation that cuts through boring tasks, systems that grow with your team. Budget matters too. We build things that make sense financially, whether you're bootstrapping or have deep pockets. No point in fancy AI if it bankrupts you."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiServicess}
         imageAlt="Digital Solutions illustration"
       />
@@ -6382,7 +6382,7 @@ const contentMap = {
         title="Generative AI Integration Services "
         description="Join the age of intelligent automation with Generative AI Integration Services, designed for companies looking to enhance operations, customer experience, and innovation. As a startup, an SME, or an international company, we focus on building affordable and tailored AI solutions in line with your specific objectives. Unleash the capabilities of AI to create content, automate functions, and make informed decisions. Contact us today for a complimentary consultation and learn how Generative AI can transform your business environment."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiIntegrations}
         imageAlt="Digital Solutions illustration"
       />
@@ -6420,7 +6420,7 @@ const contentMap = {
         title="AI Agent Development Company"
         description="Empower your business with intelligent automation and decision-making capabilities with custom AI Agent Development Services. As a leading AI Agent Development Company, we specialize in crafting cutting-edge AI Agent Development Solutions Our expertise in Autonomous AI Agents Development Services enables businesses to integrate intelligent virtual assistants, automate workflows, and enhance customer experiences seamlessly."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiAgents}
         imageAlt="Digital Solutions illustration"
       />
@@ -6529,7 +6529,7 @@ const contentMap = {
         title=" AI Chatbot Development Company in INDIA "
         description="Are you interested in Custom AI Chatbot development services? As a leading AI chatbot development company in USA, we specialize in developing ai chatbots, AI-powered chatbots, chatbot integration services, Open-source chatbot customization services and conversational AI Chatbot Solutions tailored to your business needs. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiChatbots}
         imageAlt="Digital Solutions illustration"
       />
@@ -6574,7 +6574,7 @@ const contentMap = {
         title="LLM Development Company"
         description="Wish to revolutionize your business with cutting-edge AI strength? Our LLM Development Company provides strong, tailored Large Language Model development solutions for small businesses, medium-sized businesses, and large enterprises. From conception to deployment, we enable companies to incorporate advanced LLM development services at a fraction of the price tag. Whether you are constructing smart chatbots, automated content platforms, or domain-specific AI assistants, our solutions are future-proof and scalable. Contact us today for a free estimate and see how LLMs can transform your workflows."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={LLMs}
         imageAlt="Digital Solutions illustration"
       />
@@ -6612,7 +6612,7 @@ const contentMap = {
         title="AI in Marketing Services"
         description="Leverage the full potential of your business with custom AI in the Marketing Industry. We are experts in developing smart, data-based marketing strategies that help businesses of all sizes—startups to enterprises—win over audiences, forecast behavior, and drive ROI. Whether you're an emerging brand or an enterprise, our AI Marketing Company offers AI-Driven Digital Marketing Services that are cost-effective, scalable, and completely customizable. Ready to supercharge your marketing smarts? Contact us today for a free quote."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiMarketing}
         imageAlt="Digital Solutions illustration"
       />
@@ -6650,7 +6650,7 @@ const contentMap = {
         title="AI in Cybersecurity Services"
         description="Protect your business with innovative AI-enabled security solutions that are cost effective, flexible, and scalable. We develop intelligent security solutions for websites and applications, designed for organizations of all sizes- from startups to multinational organizations. Our AI tools, successfully deploy, ability to detect threats, automate responses, and make sure you are compliant across the digital environment. Let us build a solution to fit your business and budget. Reach out for a free quote today and start building a safer AI Cybersecurity Solutions digital environment."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiAbout}
         imageAlt="Digital Solutions illustration"
       />
@@ -6688,7 +6688,7 @@ const contentMap = {
         title="AI in Stock Trading Development"
         description="With the evolution of technology in rapid paced financial universe, artificial intelligence for stock trading with AI driven automated stock trading systems are reinventing decision making for investors at all levels. We provide low cost, high-impact web and application development services exclusively for stock trading platforms, specifically for fintech start-ups or for a brokerage firm, or for investment advisers. Our proprietary AI engines can offer smart predictions, processing data in real time, and execute trades automatically and accurately. Please ask for a free quote today to find out how we can transform your investment technology system. "
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiStockk}
         imageAlt="Digital Solutions illustration"
       />
@@ -6726,7 +6726,7 @@ const contentMap = {
         title="AI in Social Media Services"
         description="In a world dominated by online engagement, competition for attention on artificial intelligence in media industry requires more than content, it requires intelligence. Our advanced AI powered services create intelligent, data-driven social media strategies irrespective of size. We empower organizations of all sizes to build data driven real-time strategies to increase visibility, engagement and ultimately ROI. By combining social media with our ability to build AI Social Media AD Generator and implement websites and applications, we help organizations develop entertainment ai tools affordable high-performance solutions that automate posting, improve relevance of content and analyze user behavior. Request a free quote today and learn how AI can help transform your brand's digital identity."
         buttonText="Get Started"
-        buttonLink="#contact"
+        buttonLink="/contact-us"
         imageSrc={AiSocial}
         imageAlt="Digital Solutions illustration"
       />

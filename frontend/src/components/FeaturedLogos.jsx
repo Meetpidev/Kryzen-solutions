@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const logos = [
     {
         src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
@@ -93,9 +95,11 @@ export function CTAWorkTogether() {
                 <p className="text-blue-100 text-lg mb-8 max-w-3xl mx-auto">
                     Ready to start your next project ? We would love to hear from you. Let's discuss how we can help you achieve your business goals.
                 </p>
+                <Link to="/contact-us">
                 <button className="bg-white text-blue-800 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors">
                     Request A Free Quote
                 </button>
+                </Link>
             </div>
         </section>
     );
@@ -129,9 +133,11 @@ export function CTASubscribe() {
                             className="placeholder-gray-700 flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:outline-none bg-white focus:ring-2 focus:ring-blue-500"
                         />
                     </div>
+                    <Link to="/">
                     <button className="bg-blue-800 shadow-lg text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-900 transition-colors">
                         Subscribe
                     </button>
+                </Link>
                 </div>
             </div>
         </section>

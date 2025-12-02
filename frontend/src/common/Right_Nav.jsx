@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from "../public/Kryzen_Software.png";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Right_Nav = () => {
@@ -171,7 +171,7 @@ const Right_Nav = () => {
         className="rounded px-2 py-1 w-full resize-none text-black bg-gray-200"
         rows={2}
       />
-
+      <Link to="/">
       <button
         type="submit"
         disabled={loading}
@@ -188,7 +188,8 @@ const Right_Nav = () => {
           "Submit"
         )}
       </button>
-
+</Link>
+                    
       {message && (
         <p
           className={`mt-2 text-sm font-semibold ${

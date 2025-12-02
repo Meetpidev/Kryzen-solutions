@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import Bg from "../public/why_us_bg.45bce6d4.png";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
@@ -381,6 +382,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
+                    <Link to="/" className="w-full">
                     <button
                       type="submit"
                       disabled={isLoading}
@@ -415,7 +417,8 @@ export default function Contact() {
   ) : (
     "Submit"
   )}
-                    </button>
+                      </button>
+                      </Link>
                   </div>
                 </form>
 

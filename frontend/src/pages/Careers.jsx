@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Career from "../public/career_bannner.svg";
 import Who1 from "../public/career_and_culture_1.svg";
 import Who2 from "../public/career_and_culture_2.svg";
@@ -438,9 +439,11 @@ function Careers() {
               />
 
               <div className="col-span-2 flex justify-center mt-4">
+              <Link to ="/">
                 <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
                   Submit
                 </button>
+                </Link>
               </div>
             </form>
 
