@@ -32,29 +32,31 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
-  useEffect(() => {
-    const scriptId = 'google-translate-script';
+useEffect(() => {
+  const scriptId = "google-translate-script";
 
-    if (!document.querySelector(`#${scriptId}`)) {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.gtranslate.net/widgets/latest/float.js';
-      script.defer = true;
-      script.id = scriptId;
-      document.body.appendChild(script);
+  if (!document.getElementById(scriptId)) {
+    // Step 1: set settings BEFORE loading script
+    window.gtranslateSettings = {
+      default_language: "en",
+      detect_browser_language: true,
+      wrapper_selector: ".gtranslate_wrapper",
+    };
 
-      script.onload = () => {
-        window.gtranslateSettings = {
-          default_language: 'en',
-          detect_browser_language: true,
-          wrapper_selector: '.gtranslate_wrapper',
-        };
-      };
-    }
-  }, []);
+    // Step 2: load script
+    const script = document.createElement("script");
+    script.src = "https://cdn.gtranslate.net/widgets/latest/float.js";
+    script.defer = true;
+    script.id = scriptId;
+    document.body.appendChild(script);
+  }
+}, []);
+
 
   return (
     <>
        <div className="gtranslate_wrapper z-50"></div>
+
       <Suspense fallback={
         <div className="loader-container">
           <div className="loader">

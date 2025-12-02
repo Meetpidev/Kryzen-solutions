@@ -369,7 +369,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'service' && (
-                        <div className="absolute left-[-13rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
+                        <div className="absolute left-[-10rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
                           <div className="bg-[#0178a8] text-white flex flex-col justify-between p-10 min-w-[330px] max-w-[390px]">
                             <div>
                               <div className="text-3xl font-bold mb-5">Service</div>
@@ -427,7 +427,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'technology' && (
-                        <div className="absolute left-[-20rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-16rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Technology</div>
