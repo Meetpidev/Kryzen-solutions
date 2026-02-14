@@ -143,6 +143,7 @@ import AiAgents from "../public/ai_agent.png";
 import AiAgentAbouts from "../public/ai_agent_about.png";
 import AiGen from "../public/image copy.png";
 import AiVoiceAbout from "../public/ai_voiceabout.png";
+import Odoodev from "./Odoodev";
 
 
 const Charts = lazy(() => import("../components/Charts"));
@@ -264,7 +265,7 @@ const services = [
     sub: [
       "product Development", "Software Development", "Application services",
       "CRM", "Web application", "App development consulting", "Business Application consulting",
-      "Full stack development",
+      "Full stack development", "Odoo development"
     ]
   },
   {
@@ -4126,6 +4127,8 @@ const AI_Development_benifits = [
   }
 ];
 
+
+
 const Common = () => {
   return (
     <>
@@ -4140,6 +4143,7 @@ const Common = () => {
     </>
   )
 }
+
 
 const contentMap = {
   "mobile app development": (
@@ -5653,6 +5657,10 @@ const contentMap = {
     </>
   ),
 
+  "odoo development": (
+    <Odoodev />
+  ),
+
   "ui/ux designing": (
     <>
       <HeroSection
@@ -6771,6 +6779,8 @@ function SubMenuContent({ subItemName }) {
 
 export default function SubMenuPage() {
   const { service, subItem } = useParams();
+
+  
 
   const toSlug = (text) =>
     (text || "")

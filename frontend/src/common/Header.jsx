@@ -41,7 +41,7 @@ const services = [
     sub: [
       "product Development", "Software Development", "Application services",
       "CRM", "Web application", "App development consulting", "Business Application consulting",
-      "Full stack development",
+      "Full stack development","Odoo development"
     ]
   },
   {
