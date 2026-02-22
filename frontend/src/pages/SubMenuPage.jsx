@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import { useParams } from "react-router-dom";
-import {, RefreshCcw, Puzzle, CheckCircle, Play,ArrowRight, ArrowUpRight, Link,Zap,TrendingUp,Globe,FileText, Sparkles} from 'lucide-react';
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
 
 
@@ -6817,4 +6816,5 @@ export default function SubMenuPage() {
       <SubMenuContent subItemName={subItemName} />
     </div>
   );
+
 }
