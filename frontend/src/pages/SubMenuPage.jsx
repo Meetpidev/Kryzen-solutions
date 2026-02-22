@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import { useParams } from "react-router-dom";
-import {, RefreshCcw, Puzzle, CheckCircle, Play,ArrowRight, ArrowUpRight, Link,Zap,TrendingUp,Globe,FileText, Sparkles} from 'lucide-react';
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
 
 
@@ -144,15 +143,6 @@ import AiAgents from "../public/ai_agent.png";
 import AiAgentAbouts from "../public/ai_agent_about.png";
 import AiGen from "../public/image copy.png";
 import AiVoiceAbout from "../public/ai_voiceabout.png";
-import OdooAccounting from "../components/OdooAccounting";
-import InvoiceCTA from "../components/InvoiceCTA";
-import OdooImplement from "../components/OdooImplement";
-import OdooFaq from "../components/OdooFaq";
-import OdooInventory from "../components/OdooInventory";
-import Overview from "../components/OverView";
-import Erp from "../components/Erp";
-import IndustriesSection from "../components/IndustriesSection";
-import FeaturesSection from "../components/FeaturesSection";
 
 const Charts = lazy(() => import("../components/Charts"));
 const TechnologiesSlider = lazy(() => import("../components/TechnologiesSlider").then(module => ({ default: module.TechnologiesSlider })));
@@ -175,9 +165,6 @@ const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(modul
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 const Technology_pannel = lazy(() => import("../components/Technology_pannel"));
 
-
-
- 
   
 const techCards = [
   {

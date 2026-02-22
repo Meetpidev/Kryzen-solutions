@@ -778,7 +778,7 @@ const serviceContent = {
             <div className="max-w-7xl mx-auto">
       
               <h2 className="text-4xl font-bold text-gray-900 leading-snug">
-                Why Choose Aktiv For Odoo Manufacturing Implementation?
+                Why Choose Kryzen For Odoo Manufacturing Implementation?
               </h2>
       
               <div className="w-16 h-[3px] bg-red-500 mx-auto mt-4 mb-8"></div>
