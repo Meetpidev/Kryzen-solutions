@@ -780,7 +780,6 @@ const serviceContent = {
               <h2 className="text-4xl font-bold text-gray-900 leading-snug">
                 Why Choose Kryzen For Odoo Manufacturing Implementation?
               </h2>
-      
               <div className="w-16 h-[3px] bg-red-500 mx-auto mt-4 mb-8"></div>
       
               <p className="text-gray-700 max-w-5xl mx-auto leading-relaxed mb-4">
