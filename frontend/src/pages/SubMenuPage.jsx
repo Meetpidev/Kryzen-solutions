@@ -6804,4 +6804,5 @@ export default function SubMenuPage() {
       <SubMenuContent subItemName={subItemName} />
     </div>
   );
+
 }
