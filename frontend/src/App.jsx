@@ -24,6 +24,7 @@ const Terms = lazy(() => import("./pages/Terms.jsx"));
 const Protect = lazy(() => import("./common/Protect.jsx"));
 const Right_Nav = lazy(() => import("./common/Right_Nav.jsx"));
 import "./App.css";
+import OdooService from "./pages/OdooService.jsx";
 
 function App() {
   const { pathname } = useLocation();
@@ -79,6 +80,7 @@ useEffect(() => {
           <Route path="/insightful-videos" element={<InsightFulVideos />} />
           <Route path="/service/:service/:subItem" element={<SubMenuPage />} />
           <Route path="/technology/:tech" element={<TechnologyPage />} />
+          <Route path="/odoo/:service" element={<OdooService />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/term-of-use" element={<Terms />} />
           <Route path="/Ai" element={<AI />} />

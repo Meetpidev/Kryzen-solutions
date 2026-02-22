@@ -54,7 +54,7 @@ export default function InsightFulVideos() {
       <section className="px-2 md:px-8 py-12 max-w-7xl mx-auto">
         <h2 className="text-center text-4xl font-bold mb-3">Life @Kryzen</h2>
         <p className="text-center text-gray-600 mb-8">
-          At Kryzen, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Sapphire!
+          At Kryzen, we constantly try new ways to make our work environment, enjoyable and inspiring. From company outings to birthdays, we just need a reason to celebrate. Have a glimpse at life and culture @Kryzen!
         </p>
         <h1 className="text-center">Comming Soon</h1>
 

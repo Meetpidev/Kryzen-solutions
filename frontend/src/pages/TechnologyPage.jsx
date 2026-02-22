@@ -80,7 +80,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
     <section className="py-10 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-12">
 
-        {/* First Block */}
+        
         {(img || h1 || p1) && (
           <div className="flex flex-col md:flex-row md:space-x-8 mb-12">
             {img && (
@@ -112,7 +112,7 @@ const Charts = ({ img, img2, h1, p1, h2, p2 }) => {
           </div>
         )}
 
-        {/* Second Block */}
+        
         {(img2 || h2) && (
           <div className="flex flex-col md:flex-row md:space-x-8">
             {h2 && (

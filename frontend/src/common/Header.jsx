@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Menu, X, MapPin } from "lucide-react";
+import { ChevronDown, Menu, X, MapPin,ChevronRight,  Check, ArrowUpRight, BookText, Boxes, Factory, Users, Zap } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../public/logo.png";
 import Schedule from "../public/schedule.jpg";
@@ -44,6 +44,7 @@ const services = [
       "Full stack development","Odoo development"
     ]
   },
+  
   {
     label: "Other services",
     sub: [
@@ -57,6 +58,13 @@ const services = [
     ]
   },
 ];
+
+const OdooService = [
+      { label: "Odoo Accounting", to: "/odoo-accounting" },
+      { label: "Odoo Inventory", to: "/odoo-inventory" },
+      { label: "Odoo Manufacturing", to: "/odoo-manufacturing" },
+      { label: "Odoo CRM", to: "/odoo-crm" }
+]
 
 const AiServices = [
   {
@@ -96,11 +104,11 @@ const AiServices = [
 ];
 
 
-const solutions = [
-  "Health Care App Development", "Education App Development", "Uber Like App Development", "Spotify Like App Development",
-  "Zomato Like App Development", "Amazon Like App Development", "Visitor Management System", "Warehouse Management System",
-  "Clover App Development"
-];
+// const solutions = [
+//   "Health Care App Development", "Education App Development", "Uber Like App Development", "Spotify Like App Development",
+//   "Zomato Like App Development", "Amazon Like App Development", "Visitor Management System", "Warehouse Management System",
+//   "Clover App Development"
+// ];
 
 const navigationItems = [
   {
@@ -111,6 +119,15 @@ const navigationItems = [
       { label: "Careers", to: "/careers" },
       { label: "Contact Us", to: "/contact" }
     ],
+  },
+  {
+     label: "Odoo",
+     items: [
+      { label: "Odoo Accounting", to: "/odoo-accounting" },
+      { label: "Odoo Inventory", to: "/odoo-inventory" },
+      { label: "Odoo Manufacturing", to: "/odoo-manufacturing" },
+      { label: "Odoo CRM", to: "/odoo-crm" }
+     ]
   },
   {
     label: "Service",
@@ -142,12 +159,16 @@ const navigationItems = [
     label: "Let's Talk AI",
     items: AiServices,
   },
+  
   // {
   //   label: "Our Work",
   //   items: [{ label: "Our Work", to: "/our-work/cases" }],
   // },
 ];
-
+const slugify = (text) => {
+  if (typeof text !== "string") return "";
+  return encodeURIComponent(text.toLowerCase().replace(/\s+/g, "-"));
+};
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setisMobile] = useState(false);
@@ -270,10 +291,11 @@ export default function Header() {
             <div className="hidden lg:flex flex-1 flex-wrap items-center space-x-3">
               {[
                 { label: "Company", menu: "company" },
+                { label: "Odoo", menu: "odoo" },
                 { label: "Service", menu: "service" },
                 { label: "Technology", menu: "technology" },
               ].map(({ label, menu }) => (
-                <div key={label} className="relative translate-x-[32rem]"
+                <div key={label} className="relative translate-x-[16rem]"
                   onMouseEnter={() => setmegaMenu(menu)}
                   style={{ zIndex: 1000 }}
                 >
@@ -283,11 +305,11 @@ export default function Header() {
                     <ChevronDown className="w-4 h-4 ml-1" />
                   </button>
 
-                  {/* -------- BIG MENUS -------- */}
+                  
                   {megaMenu === menu && (
                     <div onMouseLeave={() => setmegaMenu(null)}>
                       {menu === 'company' && (
-                        <div className="absolute left-[-5rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[12rem] top-full mt-3 w-screen max-w-[1750px] -translate-x-1/2 bg-white z-50 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Company</div>
@@ -368,8 +390,94 @@ export default function Header() {
                           </div>
                         </div>
                       )}
+        {menu === "odoo" && (
+  <div className="absolute left-1/2 -translate-x-1/2 mt-6 w-[100vw] max-w-[1600px] bg-white shadow-2xl overflow-hidden z-50 flex">
+
+    <div className="w-[32%] bg-gradient-to-br from-[#0f5f7f] to-[#0a4e68] text-white p-14 flex flex-col justify-between">
+      <div>
+        <h1 className="text-5xl font-bold mb-6 tracking-tight">
+          Odoo
+        </h1>
+
+        <p className="text-lg leading-relaxed text-white/80 max-w-md">
+          Transform your business with fully integrated Odoo ERP solutions.
+          We help companies streamline operations, automate workflows,
+          and scale efficiently.
+        </p>
+      </div>
+
+      <button className="mt-12 bg-white text-[#0f5f7f] font-semibold py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-md hover:shadow-lg">
+        Hire Now
+      </button>
+    </div>
+
+   
+    <div className="w-[28%] bg-gray-50 border-x border-gray-200 rounded-md overflow-hidden shadow-sm">
+  {[
+    { label: "Odoo Accounting", to: "/odoo/odoo-accounting" },
+    { label: "Odoo Inventory", to: "/odoo/odoo-inventory" },
+    { label: "Odoo Manufacturing", to: "/odoo/odoo-manufacturing" },
+    { label: "Odoo CRM", to: "/odoo/odoo-crm" },
+  ].map((item, idx) => (
+    <Link
+      key={idx}
+      to={item.to}
+      onClick={() => setmegaMenu(null)}
+      className="flex items-center justify-between px-6 py-3 border-b last:border-b-0 transition-all duration-200
+                 hover:bg-blue-100 hover:text-white hover:pl-8 hover:pr-6 rounded-tr-md rounded-tl-md cursor-pointer"
+    >
+      <span className="font-medium text-gray-800 group-hover:text-white transition">{item.label}</span>
+      <span className="text-gray-400 group-hover:text-white transition">→</span>
+    </Link>
+  ))}
+</div>
+
+ 
+    <div className="w-[40%] bg-white p-14 flex flex-col justify-center">
+      <div>
+        <h3 className="text-3xl font-bold text-gray-900 mb-6">
+          Odoo ERP Implementation
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed mb-8 max-w-xl">
+          We provide end-to-end Odoo ERP implementation tailored to your
+          business model. From requirement gathering and customization to
+          deployment and ongoing support — we ensure a seamless digital
+          transformation experience.
+        </p>
+
+        <div className="space-y-5 text-gray-700">
+          <div className="flex items-start gap-4">
+            <div className="w-3 h-3 mt-2 bg-[#0f5f7f] rounded-full"></div>
+            <p>Business process analysis & ERP architecture planning</p>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-3 h-3 mt-2 bg-[#0f5f7f] rounded-full"></div>
+            <p>Custom module development & configuration</p>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-3 h-3 mt-2 bg-[#0f5f7f] rounded-full"></div>
+            <p>Third-party integrations & workflow automation</p>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-3 h-3 mt-2 bg-[#0f5f7f] rounded-full"></div>
+            <p>Training, optimization & post-launch support</p>
+          </div>
+        </div>
+
+        <button className="mt-10 px-8 py-3 bg-[#0f5f7f] text-white rounded-lg hover:bg-[#0a4e68] transition-all duration-300 shadow-md hover:shadow-lg">
+          Get Consultation
+        </button>
+      </div>
+    </div>
+
+  </div>
+)}
                       {menu === 'service' && (
-                        <div className="absolute left-[-10rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
+                        <div className="absolute left-[-3rem] w-screen mt-3 max-w-[1750px] -translate-x-1/2 bg-white z-50 shadow-xl flex rounded overflow-x-hidden">
                           <div className="bg-[#0178a8] text-white flex flex-col justify-between p-10 min-w-[330px] max-w-[390px]">
                             <div>
                               <div className="text-3xl font-bold mb-5">Service</div>
@@ -427,7 +535,7 @@ export default function Header() {
                         </div>
                       )}
                       {menu === 'technology' && (
-                        <div className="absolute left-[-16rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
+                        <div className="absolute left-[-10rem] top-full mt-3 w-screen max-w-[1800px] -translate-x-1/2 bg-white z-50 shadow-xl rounded transition-all duration-200 py-0 px-0 overflow-x-hidden">
                           <div className="flex">
                             <div className="bg-[#005D89] text-white flex flex-col items-start p-10 min-w-[330px] max-w-[390px]">
                               <div className="text-3xl font-bold mb-5">Technology</div>
@@ -670,7 +778,7 @@ export default function Header() {
         <nav className="px-4 py-6 space-y-6 overflow-y-auto h-full">
           {navigationItems.map(({ label, items }) => (
             <div key={label}>
-              {/* Top Level Dropdown Button */}
+             
               <button
                 className="flex justify-between items-center w-full font-semibold text-blue-700 text-lg mb-2"
                 onClick={() => toggleDropdown(label)}
@@ -682,20 +790,16 @@ export default function Header() {
                 />
               </button>
 
-              {/* Sub-Items List */}
+          
               {openDropdown[label] && (
                 <ul className="pl-4 space-y-1 border-l border-blue-200">
 
-                  {/* DYNAMIC CONDITIONAL LOGIC: 
-                    Check if the current 'items' array has a nested structure (i.e., if items[0] has a 'sub' property).
-                    This correctly directs flat lists (Company, Technology) to the 'else' block, 
-                    and nested lists (Service, Let's Talk AI) to the 'if' block.
-                */}
+              
                   {Array.isArray(items) && items.length > 0 && items[0].sub ? (
-                    // --- NESTED LIST LOGIC (Level 2 & 3) ---
+
                     items.map((svc) => (
                       <li key={svc.label}>
-                        {/* Level 2: Sub-category Button (e.g., Artificial Intelligence) */}
+                       
                         <button
                           className="flex justify-between items-center w-full text-gray-700 hover:text-blue-700 py-1"
                           onClick={() => toggleDropdown(svc.label)}
@@ -705,13 +809,13 @@ export default function Header() {
                           <ChevronDown className={`transition-transform duration-300 ${openDropdown[svc.label] ? "rotate-180" : ""}`} />
                         </button>
 
-                        {/* Level 3: Final Links */}
+
                         {openDropdown[svc.label] && (
                           <ul className="pl-4 space-y-1 border-l border-blue-300">
                             {svc.sub.map((subItem) => (
                               <li key={subItem}>
                                 <Link
-                                  // Dynamic routing for nested items (adjusted to be more generic)
+                                 
                                   to={`/${label.toLowerCase().replace(/\s+/g, "-")}/${encodeURIComponent(svc.label.toLowerCase().replace(/\s+/g, "-"))}/${encodeURIComponent(subItem.toLowerCase().replace(/\s+/g, "-"))}`}
                                   className="block py-1 text-gray-600 hover:text-blue-600"
                                   onClick={handleLinkClick}
@@ -725,7 +829,7 @@ export default function Header() {
                       </li>
                     ))
                   ) : (
-                    // --- FLAT LIST LOGIC (Level 2 only) ---
+                    
                     items.map(({ label: itemLabel, to }) => (
                       <li key={itemLabel}>
                         <Link
