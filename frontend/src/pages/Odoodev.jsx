@@ -12,6 +12,9 @@ import odoo_6 from "../public/odoo_inventory.svg";
 import odoo_7 from "../public/odoo_manu.svg";
 import odoo_8 from "../public/odoo_maintance.svg";
 import odoo_9 from "../public/odoo_invoice.svg";
+import odoo_build from "../public/odoo_build.jpeg";
+import odoo_scale from "../public/odoo_scale.jpeg";
+import odoo_optimize from "../public/odoo_optimize.jpeg";
 
 function Odoodev() {
      const words = ["SCALE", "BUILD", "OPTIMIZE"];
@@ -467,9 +470,9 @@ const odooServices = [
           
                   <div className="flex justify-center mt-10 lg:mt-0">
                     <img
-                      src="https://via.placeholder.com/450x450"
+                      src={odoo_build}
                       alt="Build Optimize Scale"
-                      className="w-72 md:w-96 lg:w-[420px] object-contain"
+                      className="w-72 h-72 md:w-96 lg:w-[520px] lg:h-[20rem] object-contain"
                     />
                   </div>
           
@@ -511,9 +514,9 @@ const odooServices = [
           
                   <div className="flex justify-center mt-10 lg:mt-0">
                     <img
-                      src="https://via.placeholder.com/450x450"
+                      src={odoo_optimize}
                       alt="Build Optimize Scale"
-                      className="w-72 md:w-96 lg:w-[420px] object-contain"
+                      className="w-72 h-72 md:w-96 lg:w-[520px] lg:h-[20rem] object-contain"
                     />
                   </div>
           
@@ -556,9 +559,9 @@ const odooServices = [
           
                   <div className="flex justify-center mt-10 lg:mt-0">
                     <img
-                      src="https://via.placeholder.com/450x450"
+                      src={odoo_scale}
                       alt="Build Optimize Scale"
-                      className="w-72 md:w-96 lg:w-[420px] object-contain"
+                      className="w-72 h-72 md:w-96 lg:w-[520px] lg:h-[20rem] object-contain"
                     />
                   </div>
           

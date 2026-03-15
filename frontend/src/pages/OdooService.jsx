@@ -14,10 +14,11 @@ import Overview from "../components/OverView";
 import Erp from "../components/Erp";
 import IndustriesSection from "../components/IndustriesSection";
 import FeaturesSection from "../components/FeaturesSection";
-
+import Odoodev from "../pages/Odoodev";
 
 
 const OdooServices = [
+  { label: "Odoo Development", to: "/odoo-development" },
   { label: "Odoo Accounting", to: "/odoo-accounting" },
   { label: "Odoo Inventory", to: "/odoo-inventory" },
   { label: "Odoo Manufacturing", to: "/odoo-manufacturing" },
@@ -244,6 +245,9 @@ const OdooInventoryFaq = [
 ];
   
 const serviceContent = {
+  "odoo-development": (
+    <Odoodev />
+  ),
     "odoo-accounting": (
          <>
     <section id="hero">

@@ -414,6 +414,7 @@ export default function Header() {
    
     <div className="w-[28%] bg-gray-50 border-x border-gray-200 rounded-md overflow-hidden shadow-sm">
   {[
+    { label: "Odoo Development", to: "/odoo/odoo-development" },
     { label: "Odoo Accounting", to: "/odoo/odoo-accounting" },
     { label: "Odoo Inventory", to: "/odoo/odoo-inventory" },
     { label: "Odoo Manufacturing", to: "/odoo/odoo-manufacturing" },
