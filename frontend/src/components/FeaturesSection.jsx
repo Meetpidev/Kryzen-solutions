@@ -1,6 +1,13 @@
 import { useState } from "react";
 import FeaturesSidebar from "./FeaturesSidebar";
 import FeatureContent from "./FeatureContent";
+import OdooCrmFeature from "../public/odoo-crm-features.jpg";
+import OdooPlan from "../public/Flexible-Master-Data.png";
+import OdooMaintance from "../public/Maintenance.png";
+import OdooQuality from "../public/Quality.png";
+import OdooPlm from "../public/PLM.png";
+import OdooReport from "../public/Reporting.png";
+import OdooControl from "../public/Workcenter-Control-Panel.png";
 
 export default function FeaturesSection() {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,7 +20,7 @@ export default function FeaturesSection() {
         "Use barcodes to scan lot/serial numbers and trigger maintenance",
         "Disassemble finished products and recover components",
       ],
-      image: "/images/feature1.png",
+      image: OdooCrmFeature,
     },
     {
       title: "Schedule and Plan Manufacturing",
@@ -22,7 +29,7 @@ export default function FeaturesSection() {
         "Smart scheduling tools",
         "Capacity management system",
       ],
-      image: "/images/feature2.png",
+      image: OdooPlan,
     },
     {
       title: "Flexible Master Data",
@@ -31,32 +38,32 @@ export default function FeaturesSection() {
         "Version control",
         "Product lifecycle tracking",
       ],
-      image: "/images/feature3.png",
+      image: OdooPlan,
     },
     {
       title: "PLM",
       points: ["ECO management", "Approval workflows", "Document control"],
-      image: "/images/feature4.png",
+      image: OdooPlm,
     },
     {
       title: "Quality",
       points: ["Quality checks", "Root cause analysis", "Control panels"],
-      image: "/images/feature5.png",
+      image: OdooQuality,
     },
     {
       title: "Maintenance",
       points: ["Preventive maintenance", "Equipment tracking", "Repair logs"],
-      image: "/images/feature6.png",
+      image: OdooMaintance,
     },
     {
       title: "Workcenter Control Panel",
       points: ["Live shop floor view", "Operator interface", "Time tracking"],
-      image: "/images/feature7.png",
+      image: OdooControl,
     },
     {
       title: "Reporting",
       points: ["Custom dashboards", "KPI tracking", "Export reports"],
-      image: "/images/feature8.png",
+      image: OdooReport,
     },
   ];
 

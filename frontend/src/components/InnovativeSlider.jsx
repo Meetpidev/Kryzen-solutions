@@ -5,9 +5,9 @@ const dummyData = [
   { title: "Hide App", desc: "Best Mobile App...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
   { title: "Team Communication", desc: "Innovative Team...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
   { title: "Real Estate App", desc: "Leading Real Estate...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
-  { title: "Sapphire Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
-  { title: "Sapphire Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
-  { title: "Sapphire Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
+  { title: "Kryzen Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
+  { title: "Kryzen Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
+  { title: "Kryzen Software", desc: "Software Development...", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnpT7fGp9UW4UaXtCTh-wGpV8admcfogoOA&s" },
 ];
 
 export default function InnovativeSlider() {

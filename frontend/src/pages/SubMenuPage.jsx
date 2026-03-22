@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { useParams } from "react-router-dom";
 import { FaCube, FaDesktop, FaDatabase, FaCogs, FaAward, FaTasks } from "react-icons/fa";
-
+import { CheckCircle } from "lucide-react";
 
 import MobileApp from "../public/mobile_app_development1.webp";
 import Maintain from "../public/ic_easy_maintain_mobile_app_development.png";
@@ -566,14 +566,14 @@ const Django_Impact = [
   {
     title: "Accelerated Time-to-Market",
     description:
-      "Leveraging agile methodologies and the Django framework, Sapphire Software Solutions enables businesses to launch web applications swiftly, reducing development timelines and accelerating time-to-market.",
+      "Leveraging agile methodologies and the Django framework, Kryzen Software Solutions enables businesses to launch web applications swiftly, reducing development timelines and accelerating time-to-market.",
     bg: "bg-yellow-100",
     img: Img_1,
   },
   {
     title: "Enhanced Security",
     description:
-      "By utilizing Django's built-in security features, Sapphire ensures that applications are protected against common threats like SQL injection, cross-site scripting, and cross-site request forgery, safeguarding sensitive data.",
+      "By utilizing Django's built-in security features, Kryzen ensures that applications are protected against common threats like SQL injection, cross-site scripting, and cross-site request forgery, safeguarding sensitive data.",
     bg: "bg-teal-100",
     img: Img_2,
   },
@@ -594,7 +594,7 @@ const Django_Impact = [
   {
     title: "Customizable Solutions",
     description:
-      "Sapphire's expertise in Django allows for the creation of tailor-made applications that align with specific business requirements, offering personalized solutions that drive business success.",
+      "Kryzen's expertise in Django allows for the creation of tailor-made applications that align with specific business requirements, offering personalized solutions that drive business success.",
     bg: "bg-teal-100",
     img: Img_5,
   }
@@ -4221,7 +4221,7 @@ const contentMap = {
       <LogoCarousel />
       <Charts img={CrossDev}
         h1="Hire Cross-Platform App Developers for Project"
-        p1="Regardless of the platform, device, sector, or user base, our affordable cross-platform app development specializes in developing robust cross-platform applications that stand out and produce outcomes. By utilizing universal code, developing a common user interface, and testing cross-platform mobile apps to make sure all essential functions work with both iOS and Android, we guarantee the same user experience. With their expertise in cross-platform development, Sapphire's developers can design a multi-platform experience that fits your needs as a user, business, sector, or vertical."
+        p1="Regardless of the platform, device, sector, or user base, our affordable cross-platform app development specializes in developing robust cross-platform applications that stand out and produce outcomes. By utilizing universal code, developing a common user interface, and testing cross-platform mobile apps to make sure all essential functions work with both iOS and Android, we guarantee the same user experience. With their expertise in cross-platform development, Kryzen's developers can design a multi-platform experience that fits your needs as a user, business, sector, or vertical."
       />
       <Quotes
         title="Build High-Quality Hybrid Applications Using Latest Technologies"
@@ -5217,7 +5217,7 @@ const contentMap = {
       <Charts
         img={ProductDev}
         h1="Hire Top-Rated Product Design and Development Company "
-        p1="Allow Best product development company to handle product management, monitoring, and support while you concentrate on user acquisition. You may scale your product as needed using our on-demand app hosting infrastructure, which is powered by AWS, Google Cloud, and Azure. As a trusted End-to-end product development agency and software product development company, we work with cutting-edge technologies to deliver a flawless product development experience for you and an excellent user experience for your customers, whether it be for product design, development, or testing. With Sapphire's Product Development Services, businesses can create innovative products quickly and affordably."
+        p1="Allow Best product development company to handle product management, monitoring, and support while you concentrate on user acquisition. You may scale your product as needed using our on-demand app hosting infrastructure, which is powered by AWS, Google Cloud, and Azure. As a trusted End-to-end product development agency and software product development company, we work with cutting-edge technologies to deliver a flawless product development experience for you and an excellent user experience for your customers, whether it be for product design, development, or testing. With Kryzen's Product Development Services, businesses can create innovative products quickly and affordably."
       />
       <Quotes
         title="Flexible Product Development Company"
@@ -5294,7 +5294,7 @@ const contentMap = {
       <SectorsSlider />
       <ReasonChoose 
         title="Kryzen Custom Software Development Services"
-        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements."
+        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Kryzen provides full-service mobile app development customized to meet your requirements."
         benifits={SoftwareBenifits}
       />
       <Technology_pannel techCards={Software_Tech}/>
@@ -5322,7 +5322,7 @@ const contentMap = {
         title="We Deliver Innovation-Led Applications Services To Businesses"
         highlightedText="End-To-End Application, Intelligent Platforms"
         paragraphs={[
-          "Your organization's lifeline is its applications. However, if your IT environment is complex and has high maintenance costs, you may be unable to keep up with market trends, new delivery models, and technological advances. Sapphire Solutions, an Cross-platform application development company provide streamlined, standardized, and future-proof business application development . We will help you achieve a new level of resilience to meet tomorrow's challenges by leveraging our expertise and a wide variety of technology solutions and applications.",
+          "Your organization's lifeline is its applications. However, if your IT environment is complex and has high maintenance costs, you may be unable to keep up with market trends, new delivery models, and technological advances. Kryzen Solutions, an Cross-platform application development company provide streamlined, standardized, and future-proof business application development . We will help you achieve a new level of resilience to meet tomorrow's challenges by leveraging our expertise and a wide variety of technology solutions and applications.",
           "We are a trusted leader in business applications, providing a wide array of services ranging from planning and evaluating to design, develop, run, and optimize. Our  App development consultance  can help direct you from idea to transition. With our assistance, you can create, incorporate, or modernize your application infrastructure to keep your company running efficiently, effectively, and affordably.",
         ]}
         emphasizeTextIndex={[1]}
@@ -5336,7 +5336,7 @@ const contentMap = {
       />
       <ReasonChoose 
         title="Kryzen’s Comprehensive Suite of Mobile App Development Services"
-        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides full-service mobile app development customized to meet your requirements. "
+        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Kryzen provides full-service mobile app development customized to meet your requirements. "
         benifits={Application_benifits}
       />
       <SectorsSlider />
@@ -5841,7 +5841,7 @@ const contentMap = {
       />
       <ReasonChoose 
         title="Kryzen Custom IT Service"
-        des="Sapphire developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Sapphire provides complete customized It Services to meet your requirements."
+        des="Kryzen developers thrive at developing compelling mobile applications by utilizing our knowledge of the latest app development frameworks. Kryzen provides complete customized It Services to meet your requirements."
         benifits={IT_benifits}
       />
       <Technology_pannel techCards={IT_Tech} />
@@ -6136,7 +6136,7 @@ const contentMap = {
     <>
       <HeroSection
         title="AI Prompt Engineering Services"
-        description="Empower your business with AI Prompt Engineering Services that drive intelligent automation, boost efficiency, and improve decision-making. At Sapphire Software Solutions, we design AI-driven web and app development solutions that scale seamlessly from startups to enterprises. Whether you’re building AI chatbots, content automation tools, or smart decision-support systems, our experts ensure your prompts deliver accurate, context-aware, and goal-oriented outputs. Contact us for a free consultation today and discover how prompt engineering can revolutionize your business! "
+        description="Empower your business with AI Prompt Engineering Services that drive intelligent automation, boost efficiency, and improve decision-making. At Kryzen Software Solutions, we design AI-driven web and app development solutions that scale seamlessly from startups to enterprises. Whether you’re building AI chatbots, content automation tools, or smart decision-support systems, our experts ensure your prompts deliver accurate, context-aware, and goal-oriented outputs. Contact us for a free consultation today and discover how prompt engineering can revolutionize your business! "
         buttonText="Get Started"
         buttonLink="/contact-us"
         imageSrc={AiPrompt}
@@ -6148,7 +6148,7 @@ const contentMap = {
         img2={AiPromptWhy}
         h1="Rise of Prompt Engineering AI"
         p1="AI prompt engineering is transforming how organizations harness the potential of Large Language Models (LLMs) like GPT, Claude, Gemini, and LLaMA. High-performance AI platforms using Natural Language Processing (NLP) and Generative AI technologies. Our tailored prompt engineering models align with your industry-specific workflows, ensuring enhanced accuracy, faster automation, and data security. "
-        h2="Why Hire Prompt Engineers from Sapphire Software Solutions? "
+        h2="Why Hire Prompt Engineers from Kryzen Software Solutions? "
         p2={
           <>
            Our company is well-versed in developing highly interactive augmented reality app solutions, both those based on markers and those that do not need features. We see these apps as an extension of the actual world. We adhere to the most acceptable standards in the industry, which are related to Apple's Human Interface Guidelines and the stringent use policy for the iOS SDK.
@@ -6246,7 +6246,7 @@ const contentMap = {
           <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
           Why hire Kryzen for Generative AI Development Services?
         </h1>
-         <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Sapphire indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Sapphire Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Sapphire uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
+         <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Kryzen indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Kryzen Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Kryzen uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
         </div>
         </div>
       <LogoCarousel />
@@ -6449,7 +6449,7 @@ const contentMap = {
       />
       <ReasonChoose 
        title="Why Choose Kryzen for AI Agent Development Solutions?"
-       des="Enhance user experiences with Sapphire that craft intelligent AI agents for streamline operations. Our experts leverage AI/ML development service to develop custom AI solutions tailored to your business needs ensuring your AI agents drive real value."
+       des="Enhance user experiences with Kryzen that craft intelligent AI agents for streamline operations. Our experts leverage AI/ML development service to develop custom AI solutions tailored to your business needs ensuring your AI agents drive real value."
        benifits={AiAgentWhy}
       />
       <SectorsSlider />

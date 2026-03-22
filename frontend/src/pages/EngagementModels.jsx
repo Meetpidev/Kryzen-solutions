@@ -59,7 +59,7 @@ function EngagementModels() {
       <section className="text-center">
         <h1 className="font-bold text-4xl">Our Engagement Model</h1>
         <div className="mt-4">
-          <p>Sapphire works with these four engagement models ensuring the success is delivered to the client!</p>
+          <p>Kryzen works with these four engagement models ensuring the success is delivered to the client!</p>
         </div>
       </section>
       

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Menu, X, MapPin,ChevronRight,  Check, ArrowUpRight, BookText, Boxes, Factory, Users, Zap } from "lucide-react";
+import { ChevronDown, Menu, X, MapPin } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../public/logo.png";
 import Schedule from "../public/schedule.jpg";
@@ -59,12 +59,7 @@ const services = [
   },
 ];
 
-const OdooService = [
-      { label: "Odoo Accounting", to: "/odoo-accounting" },
-      { label: "Odoo Inventory", to: "/odoo-inventory" },
-      { label: "Odoo Manufacturing", to: "/odoo-manufacturing" },
-      { label: "Odoo CRM", to: "/odoo-crm" }
-]
+
 
 const AiServices = [
   {
@@ -122,11 +117,12 @@ const navigationItems = [
   },
   {
      label: "Odoo",
-     items: [
-      { label: "Odoo Accounting", to: "/odoo-accounting" },
-      { label: "Odoo Inventory", to: "/odoo-inventory" },
-      { label: "Odoo Manufacturing", to: "/odoo-manufacturing" },
-      { label: "Odoo CRM", to: "/odoo-crm" }
+    items: [
+     { label: "Odoo Development", to: "/odoo/odoo-development" },
+      { label: "Odoo Accounting", to: "/odoo/odoo-accounting" },
+      { label: "Odoo Inventory", to: "/odoo/odoo-inventory" },
+      { label: "Odoo Manufacturing", to: "/odoo/odoo-manufacturing" },
+      { label: "Odoo CRM", to: "/odoo/odoo-crm" }
      ]
   },
   {
@@ -611,7 +607,7 @@ export default function Header() {
                               <div>
                                 <div className="text-3xl font-bold mb-5">Our Work</div>
                                 <div className="mb-7 text-xl leading-snug">
-                                  Insights From Sapphire Experts Who Help The World's Most Successful Fortune 500 Companies Solve Key Challenges. Lets Shape Happier Tomorrow.
+                                  Insights From Kryzen Experts Who Help The World's Most Successful Fortune 500 Companies Solve Key Challenges. Lets Shape Happier Tomorrow.
                                 </div>
                               </div>
                               <button className="bg-white text-[#0178a8] px-8 py-3 rounded font-bold mt-5 hover:bg-blue-50 transition">

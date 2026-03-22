@@ -11,7 +11,7 @@ export default function InsightFulVideos() {
       { src: "award_ceremony.jpg", alt: "Awards ceremony" },
       { src: "office_birthday.jpg", alt: "Birthday in office" },
       { src: "employee_group.jpg", alt: "Employees standing" },
-      { src: "sapphire_logo.jpg", alt: "Sapphire office logo wall" },
+      { src: "Kryzen_logo.jpg", alt: "Kryzen office logo wall" },
       { src: "office_team.jpg", alt: "Team at their desks" },
       { src: "holi_celebration.jpg", alt: "Holi celebration group" }
     ],

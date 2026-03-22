@@ -31,7 +31,7 @@ const benifits = [
   },
   {
     title: "Exact Estimated Cost Of The Project",
-    description: "Sapphire estimation of the project is near to accurate providing economic stability."
+    description: "Kryzen estimation of the project is near to accurate providing economic stability."
   },
   {
     title: "No Extra Expenses",
@@ -96,7 +96,7 @@ function DeliveryModels() {
     <>
       <HeroSection
         title="Explore Our Delivery Model"
-        description="The Delivery Model Defines The Way Of Project Delivery Depending On The Location Of Manpower Resources. Sapphire Offers Flexible And Efficient Delivery Models That Ensure Only The Success Of The Project."
+        description="The Delivery Model Defines The Way Of Project Delivery Depending On The Location Of Manpower Resources. Kryzen Offers Flexible And Efficient Delivery Models That Ensure Only The Success Of The Project."
         buttonText="Get Started"
         buttonLink="#contact"
         imageSrc={DeliveryModel}
@@ -106,7 +106,7 @@ function DeliveryModels() {
       <Charts
         img={DeliveryDia}
         h1="To Maximize Your Business Potential And Drive Profitability!"
-        p1="'Start the success journey with our best-fit delivery model and be sure only the best product is delivered' Sapphire works on three delivery models, each of the models is the best for the dedicated criteria. With our efficient models, we understand our client’s diversified requirements, their fast delivery needs. Our delivery models are scalable, secure solutions for onsite, offshore, and hybrid project requirements ensuring a good return on investments. Our consistent high- end performance assures the rest! Every project has its own requirements and they or the support require for it changes over time. Sapphire solution provides a rational approach for all types of project requirements and fulfills the dynamic business needs."
+        p1="'Start the success journey with our best-fit delivery model and be sure only the best product is delivered' Kryzen works on three delivery models, each of the models is the best for the dedicated criteria. With our efficient models, we understand our client’s diversified requirements, their fast delivery needs. Our delivery models are scalable, secure solutions for onsite, offshore, and hybrid project requirements ensuring a good return on investments. Our consistent high- end performance assures the rest! Every project has its own requirements and they or the support require for it changes over time. Kryzen solution provides a rational approach for all types of project requirements and fulfills the dynamic business needs."
       />
       <Charts
         img={Delivery3}

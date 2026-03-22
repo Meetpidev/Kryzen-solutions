@@ -153,7 +153,7 @@ export default function Contact() {
           Let's Navigate Digital Transformation Together!!!
         </h1>
         <p className="text-l md:text-l text-gray-600 font-bold leading-relaxed max-w-2xl mx-auto">
-          Every day, Sapphire experts help businesses around the globe accelerate
+          Every day, Kryzen experts help businesses around the globe accelerate
           digital transformation and build a more resilient, sustainable, and
           inclusive future Together.
         </p>

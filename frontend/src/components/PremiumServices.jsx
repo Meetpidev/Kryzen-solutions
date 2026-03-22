@@ -91,7 +91,7 @@ export default function PremiumServices() {
           Our Premium Services
         </h2>
         <p className="text-white text-center text-lg mb-10 max-w-screen-lg px-2">
-          As a certified IT company, Sapphire helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks. Contact us to learn more!
+          As a certified IT company, Kryzen helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks. Contact us to learn more!
         </p>
 
         <div className="bg-white rounded-2xl px-6 py-8 flex flex-col items-center shadow-md transition-transform hover:scale-105 w-full max-w-screen-md">
@@ -121,7 +121,7 @@ export default function PremiumServices() {
         Our Premium Services
       </h2>
       <p className="text-white text-center text-lg mb-10 max-w-screen-lg px-2">
-        As a certified IT company, Sapphire helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks. Contact us to learn more!
+        As a certified IT company, Kryzen helps organizations thrive digitally by offering innovative solutions using cutting-edge tools and frameworks. Contact us to learn more!
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-[76rem]">

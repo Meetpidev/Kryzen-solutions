@@ -124,12 +124,12 @@ function Careers() {
     {
       title: "4. HR Interview",
       description:
-        "This is a great opportunity for us to get to know each other better. We aim to understand your career aspirations, skills, strengths, and passions. You can ask any questions about the role or Sapphire Software Solutions during this stage.",
+        "This is a great opportunity for us to get to know each other better. We aim to understand your career aspirations, skills, strengths, and passions. You can ask any questions about the role or Kryzen Software Solutions during this stage.",
     },
     {
       title: "5. Decision & Onboarding",
       description:
-        "Upon successfully completing the selection process, we will call you for joining formalities, including details of compensation, structure, and employment terms at Sapphire Software Solutions.",
+        "Upon successfully completing the selection process, we will call you for joining formalities, including details of compensation, structure, and employment terms at Kryzen Software Solutions.",
     },
     {
       title: "6. Welcome Aboard 🎉",

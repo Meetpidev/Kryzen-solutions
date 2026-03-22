@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const footerLinks = {
   Company: [
-    "About Sapphire",
+    "About Kryzen",
     "Events & Activities",
     "Careers",
     "Contact-Us",
@@ -81,7 +81,7 @@ const getLinks = (category, links) => {
     "Android": "/technology/android",
     "iOS": "/technology/ios",
     "Flutter": "/technology/flutter",
-    "About Sapphire": "/about-Kryzen-Software-Solutions",
+    "About Kryzen": "/about-Kryzen-Software-Solutions",
     "Why Choose Us": "/choose",
   };
 
@@ -105,7 +105,7 @@ const getLinks = (category, links) => {
 //     {links.map((link, index) => (
 //       <li key={index} className="flex items-center space-x-1 text-gray-600 text-sm hover:text-blue-600">
 //         <span>•</span>
-//         {link === "About Sapphire" ? (
+//         {link === "About Kryzen" ? (
 //           <Link to="/about-Kryzen-Software-Solutions" className="block">
 //             {link}
 //           </Link>

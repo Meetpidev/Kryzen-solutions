@@ -2037,7 +2037,7 @@ const TECHNOLOGY_CONTENT = {
       img={FlutterDev}
       img2={Flutter2}
       h1="Meet the Reputable Flutter App Development Company"
-      p1="With Flutter, we assist contemporary businesses in creating dynamic, feature-rich apps for the web, desktop, and mobile platforms all from a single codebase. Sapphire has a long history of generating Flutter apps, and our developers are skilled at making unique apps. When developing apps, we focus on getting things done quickly and are dedicated to meeting deadlines. Being a Reliable Flutter app development company, we are experts at providing creative and superior Flutter app development services. As a Flutter app development agency, we streamline development workflows to ensure fast, flexible, and feature-rich app delivery."
+      p1="With Flutter, we assist contemporary businesses in creating dynamic, feature-rich apps for the web, desktop, and mobile platforms all from a single codebase. Kryzen has a long history of generating Flutter apps, and our developers are skilled at making unique apps. When developing apps, we focus on getting things done quickly and are dedicated to meeting deadlines. Being a Reliable Flutter app development company, we are experts at providing creative and superior Flutter app development services. As a Flutter app development agency, we streamline development workflows to ensure fast, flexible, and feature-rich app delivery."
       h2="Result-Oriented Flutter App Development Services"
       p2={"With a single codebase, our Flutter app development services let businesses build high-quality, cross-platform mobile apps. We use the comprehensive widget library, hot reload capability, and robust performance of Flutter for designing visually beautiful, responsive, and speedy apps. We use the versatile, scalable, and efficient Flutter platform to build or improve apps. Our Flutter backend development services ensure robust server-side performance to support seamless functionality. Our Flutter app development services let organizations reach more customers with uniform user experience. Your app gets the latest features and security updates thanks to the expanding community and Google support. We also integrate advanced Flutter API integration techniques to extend app functionality with third-party services and internal systems. Startups and large companies can quickly and efficiently implement ideas with Flutter." }
     />
@@ -2104,7 +2104,7 @@ const TECHNOLOGY_CONTENT = {
       emphasizePhrases={["hire mobile app developers"]}
       />
       <TechnologiesSlider
-        title="Cutting Edge Technologies Sapphire Use For Mobile App Development" 
+        title="Cutting Edge Technologies Kryzen Use For Mobile App Development" 
         techCards={ReactNative_techCards}
     />
       <PremiumServices />
@@ -2186,13 +2186,13 @@ const TECHNOLOGY_CONTENT = {
     <Charts
       img={ReactJsDev}
       h1="Leading React Js Development Company with High Rating "
-      p1="React JS development services from Sapphire, a well-known global company, enable developers to create complex, isomorphic apps with lightning-fast rendering. Our team specializing in React development can assist you in creating enterprise-class applications that comply with top coding standards like W3C and ECMAScript. Being an award winning React Js Development Company, we support its versatility in building frontends for mobile, web, and server-rendered applications that are highly scalable, lightweight, and user-friendly."
+      p1="React JS development services from Kryzen, a well-known global company, enable developers to create complex, isomorphic apps with lightning-fast rendering. Our team specializing in React development can assist you in creating enterprise-class applications that comply with top coding standards like W3C and ECMAScript. Being an award winning React Js Development Company, we support its versatility in building frontends for mobile, web, and server-rendered applications that are highly scalable, lightweight, and user-friendly."
     />
     <Quotes
       title="Build Powerful React Apps with Our Experienced Team"
       highlightedText="Bring Your Product Vision to Life with React Development"
       paragraphs={[
-        "React Web development services from Sapphire, a well-known global company, enable developers to create complex, isomorphic apps with lightning-fast rendering. Our team specializing in React development can assist you in creating enterprise-class applications that comply with top coding standards like W3C and ECMAScript. Being an experienced React Js Development Company, we support its versatility to build frontends for mobile, web, and server-rendered applications that are highly scalable, lightweight, and user-friendly.",
+        "React Web development services from Kryzen, a well-known global company, enable developers to create complex, isomorphic apps with lightning-fast rendering. Our team specializing in React development can assist you in creating enterprise-class applications that comply with top coding standards like W3C and ECMAScript. Being an experienced React Js Development Company, we support its versatility to build frontends for mobile, web, and server-rendered applications that are highly scalable, lightweight, and user-friendly.",
         "We have experience in developing websites using the react development framework and applications such as NextJS and GatsbyJS. These pages get pre-rendered hence forced to edge of CDN, as opposed to conventional equivalents such as WordPress, which enters the database every time anyone tries to access a blog. Our Top reactnative development comapny  work more efficiently when we use CD/CI software to design, analyze, and deploy our applications. We use Vercel and Netlify to automate our deployments and cross-check them against metrics like usability, SEO, performance, and PWA.",
       ]}
       emphasizeTextIndex={[1]}
@@ -2290,7 +2290,7 @@ const TECHNOLOGY_CONTENT = {
       title="Leading Dot Net Development Company"
       highlightedText="Grow Your Business With Our Tailored .NET Development Services"
       paragraphs={[
-        "We are an ASP.NET web development company with years of experience to build engaging and functional web solutions using a robust Framework and an extensive API set. If you need ASP dot net development services, then Sapphire Solutions can be the Best .NET development company for you. Our DOT NET development team has diverse skill sets and can handle any application development project you might need.",
+        "We are an ASP.NET web development company with years of experience to build engaging and functional web solutions using a robust Framework and an extensive API set. If you need ASP dot net development services, then Kryzen Solutions can be the Best .NET development company for you. Our DOT NET development team has diverse skill sets and can handle any application development project you might need.",
         "Whether it is public and private cloud or client devices like desktops and smartphones, our custom .NET development services will suit your needs. We also offer specialized .NET cloud application development services to help businesses leverage the power of cloud technologies. We make sure that our services are provided at the most reasonable cost possible without compromising on quality. We know how to create the perfect mix of quality, reliability, and efficiency to make sure we surpass your expectations on the final delivery. Additionally, for scalable and modernized solutions, we deliver high-performing .NET Core development services tailored to your business needs.",
       ]}
       emphasizeTextIndex={[1]}
@@ -2303,7 +2303,7 @@ const TECHNOLOGY_CONTENT = {
       <PremiumServices />
       <SectorsSlider />
       <ReasonChoose 
-        title=".NET Technologies Sapphire Use for .NET Development Services"
+        title=".NET Technologies Kryzen Use for .NET Development Services"
         des="We use the most up-to-date .NET technology stack to provide unmatched bespoke .NET development services that cater to specific needs."
         benifits={netBenefits}
       />
@@ -2340,8 +2340,8 @@ const TECHNOLOGY_CONTENT = {
       title="Offering Unmatched PHP Development Services"
       highlightedText="We Have Extensive Expertise In Building Robust PHP Websites For Several Businesses"
       paragraphs={[
-        "Kryzen Software Solutions is a leading PHP web development company that offers advanced, custom PHP development services to cater to your ever-changing business requirements. Our PHP software development team can develop dynamic and powerful PHP solutions to facilitate your business and lead in the market. If you are hunting for a PHP application development company, then your search ends at Sapphire Solutions. As a PHP app development company, we have expertise in creating attractive and scalable web and mobile solutions ranging from simple web pages to complex enterprise-level applications. Our Custom PHP web application development services are crafted to fit any business model.",
-        "We are a team of expert PHP web developers and seasoned project managers, designers who work to deliver result-oriented PHP web development services. From simple PHP-based websites and apps to advanced domain-specific solutions, we have expertise in doing it all. We understand our clients' absolute needs and have a proven work record in delivering social networking sites, Web calendars, Payment gateways, and more. Sapphire Solutions is a reliable Enterprise PHP development company USA serving businesses across industries. Whether you're planning a complete overhaul or need PHP migration services from legacy systems, we ensure a smooth transition. Looking to build a scalable online store? Our PHP eCommerce website development expertise guarantees a seamless experience. Also, as a trusted WordPress PHP development company, we build flexible, content-rich websites that drive results.",
+        "Kryzen Software Solutions is a leading PHP web development company that offers advanced, custom PHP development services to cater to your ever-changing business requirements. Our PHP software development team can develop dynamic and powerful PHP solutions to facilitate your business and lead in the market. If you are hunting for a PHP application development company, then your search ends at Kryzen Solutions. As a PHP app development company, we have expertise in creating attractive and scalable web and mobile solutions ranging from simple web pages to complex enterprise-level applications. Our Custom PHP web application development services are crafted to fit any business model.",
+        "We are a team of expert PHP web developers and seasoned project managers, designers who work to deliver result-oriented PHP web development services. From simple PHP-based websites and apps to advanced domain-specific solutions, we have expertise in doing it all. We understand our clients' absolute needs and have a proven work record in delivering social networking sites, Web calendars, Payment gateways, and more. Kryzen Solutions is a reliable Enterprise PHP development company USA serving businesses across industries. Whether you're planning a complete overhaul or need PHP migration services from legacy systems, we ensure a smooth transition. Looking to build a scalable online store? Our PHP eCommerce website development expertise guarantees a seamless experience. Also, as a trusted WordPress PHP development company, we build flexible, content-rich websites that drive results.",
       ]}
       emphasizeTextIndex={[1]}
       emphasizePhrases={["hire mobile app developers"]}
@@ -2386,14 +2386,14 @@ const TECHNOLOGY_CONTENT = {
     <Charts
       img={JavaDev}
       h1="Offering Java Development Services"
-      p1="We develop cross-platform, scalable apps for any server system that supports Java. Together, object-oriented programming, robust IDEs, and platform-independent development can help you expedite your Java projects. Our Java developers make use of libraries containing ready-to-integrate codes, reusable components, and frameworks. The industry-focused consultants at Sapphire assess your needs and provide all software requirements. Our project managers evaluate the risks and provide realistic project schedules and budgets."
+      p1="We develop cross-platform, scalable apps for any server system that supports Java. Together, object-oriented programming, robust IDEs, and platform-independent development can help you expedite your Java projects. Our Java developers make use of libraries containing ready-to-integrate codes, reusable components, and frameworks. The industry-focused consultants at Kryzen assess your needs and provide all software requirements. Our project managers evaluate the risks and provide realistic project schedules and budgets."
     />
     <Quotes
       title="Get All-In-One Java Development Services"
       highlightedText="Leverage The Benefit Of Our Unique Java Development Approach"
       paragraphs={[
         "We are a well-known Java development company committed to building scalable and high-quality Java solutions using the most trusted architecture patterns. As a trusted Java web application development company , we have extensive expertise in creating robust and secure Java desktop and web-based applications for several industries and business verticals. Our Java web development team can turn your idea or vision into intelligent software using Java.",
-        "While working with Sapphire solutions, you will get a complete cycle of Java software development services under a single roof. Our year-long expertise in this field and intensive knowledge of this field enable us to become a preferred Java development company. Be it MVPs for startups or complex enterprise business automation; our Java development services got you covered. Get in touch to get best-in-class Java applications handcrafted for you.",
+        "While working with Kryzen solutions, you will get a complete cycle of Java software development services under a single roof. Our year-long expertise in this field and intensive knowledge of this field enable us to become a preferred Java development company. Be it MVPs for startups or complex enterprise business automation; our Java development services got you covered. Get in touch to get best-in-class Java applications handcrafted for you.",
       ]}
       emphasizeTextIndex={[1]}
       emphasizePhrases={["hire mobile app developers"]}
@@ -2423,7 +2423,7 @@ const TECHNOLOGY_CONTENT = {
   <>
     <HeroSection
       title="Node JS Development Company"
-      description="As a leading Node JS development company with good review, Sapphire Software Solutions create fast, scalable and real time applications. Hire our dedicated developers for Node JS web development needs."
+      description="As a leading Node JS development company with good review, Kryzen Software Solutions create fast, scalable and real time applications. Hire our dedicated developers for Node JS web development needs."
       buttonText="Let's Talk"
       buttonLink="#contact"
       imageSrc={NodeJs}
@@ -2438,7 +2438,7 @@ const TECHNOLOGY_CONTENT = {
     <Quotes
       title="Tailor-Made Node Js Application Development Services"
       highlightedText="Delivering A Wide Range Of Node .Js Development Services"
-      paragraphs={["As a Top-Rated Node js Development Company, Sapphire solutions is the one-stop destination for building feature-rich, high-performance, and scalable web and mobile applications. With our up-to-date knowledge and advanced skill set in NodeJS development, we are always prepared to create NodeJS server-side applications and backend solutions. Whether you need to migrate your existing backend system to NodeJS or want a powerful Node .js API, we are the Award Winning Node js Development Company that crafts Node js application development services to enable efficiency in both server-side and client-side."]}
+      paragraphs={["As a Top-Rated Node js Development Company, Kryzen solutions is the one-stop destination for building feature-rich, high-performance, and scalable web and mobile applications. With our up-to-date knowledge and advanced skill set in NodeJS development, we are always prepared to create NodeJS server-side applications and backend solutions. Whether you need to migrate your existing backend system to NodeJS or want a powerful Node .js API, we are the Award Winning Node js Development Company that crafts Node js application development services to enable efficiency in both server-side and client-side."]}
       emphasizeTextIndex={[1]}
       emphasizePhrases={["hire mobile app developers"]}
     />
@@ -2487,7 +2487,7 @@ const TECHNOLOGY_CONTENT = {
               <h1 className="text-xl sm:text-3xl font-extrabold text-center text-gray-800 mb-12">
               Why hire Kryzen for Generative AI Development Services?
             </h1>
-             <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Sapphire indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Sapphire Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Sapphire uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
+             <p className="text-gray-700 leading-relaxed text-base sm:text-lg">Kryzen specializes in Generative AI Development Solutions, focusing solely on this specific field. Affordable generative ai application development expertise helps to provide deeper insights, unique solutions, and better results than generic development businesses. Kryzen indeed maintains current knowledge of Ai Development Services  research and technology. We use cutting-edge algorithms, frameworks, and tools to create solutions using the latest approaches and capabilities. Our Generative AI Development Services for Enterprise can meet project scopes and timetables with resources and capabilities for modest proof-of-concept prototypes or significant deployments. We test, validate, and optimize to provide high-quality goods that surpass customer expectations. Kryzen Software Solutions offers knowledge, specialty, bespoke solutions, cutting-edge technology, scalability, flexibility, collaborative collaboration, quality assurance, confidentiality, and security for Generative AI development. As a Top Generative AI Development Company, Kryzen uses extensive quality assurance systems to verify the dependability, accuracy, and robustness of its Generative AI products.  </p>
             </div>
             </div>
           <LogoCarousel />
