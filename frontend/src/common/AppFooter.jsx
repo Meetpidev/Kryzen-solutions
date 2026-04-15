@@ -8,14 +8,15 @@ import {
     SiYoutube,
 } from "react-icons/si";
 import Kryzen from "../public/kryzen.png"
-import logo from "../public/logo.png";
-import Logo from "../public/Kryzen_Software.png";
 import Google from "../public/google.webp";
 import Left from "../public/left-leaf.svg";
 import Right from "../public/right-leaf.svg";
 import India from "../public/india_iamge.png";
 import Email from "../public/icon_email_blue.jpg";
 import MadeinIndia from "../public/Make_in_india-removebg-preview.png";
+import cer_1 from "../public/cer_1.png";
+import cer_2 from "../public/cer_2.png";
+
 
 
 function ContactCard({ title, email, phones }) {
@@ -133,6 +134,19 @@ function ReviewBadge({ platform, icon }) {
     );
 }
 
+function CertificateBadge({ src, alt }) {
+    return (
+        <div className=" px-4 py-1 flex items-center justify-center">
+            <img
+                src={src}
+                alt={alt}
+                className="h-26 sm:h-20 md:h-44 w-auto object-contain"
+                loading="lazy"
+            />
+        </div>
+    );
+}
+
 function SocialLink({ href, icon, label }) {
     return (
         <a
@@ -210,6 +224,13 @@ export default function AppFooter() {
                         icon={null} 
                     />
                 </div>
+
+                                <div className="flex  items-center justify-center gap-3">
+                                    <div><CertificateBadge src={cer_1} alt="Certificate 1" /></div>
+                                    <div>  <CertificateBadge src={cer_2} alt="Certificate 2" /></div>
+                                    
+                                  
+                                </div>
 
 
                                 <div className="flex items-center gap-3 mt-9">

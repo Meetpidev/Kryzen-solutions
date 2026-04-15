@@ -1,30 +1,29 @@
-// import Flexible from "../public/flexible.png";
-// import Experience from "../public/experencied developers.png";
-// import Time from "../public/timiley deliverd.png";
+import { useState } from "react";
+import { getApiErrorMessage, postApi } from "../lib/api";
 
 const features = [
   {
-    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">🔄</span>,
+    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">ðŸ”„</span>,
     title: "Flexible-Engagement-Models",
     description: "Total customized and customer-centric engagement models facilitating hourly or fixed rate hiring of developers.",
   },
   {
-    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">🔎</span>,
+    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">ðŸ”Ž</span>,
     title: "100% Transparency",
     description: "100% transparency policy to keep our client and our team on the same page.",
   },
   {
-    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">👨‍💻</span>,
+    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">ðŸ‘¨â€ðŸ’»</span>,
     title: "Experienced Developers",
     description: "Our team of capable and experienced developers handle your unique business needs efficiently and have working experience in versatile domains.",
   },
   {
-    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">⏰</span>,
+    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">â°</span>,
     title: "Timely Delivery",
     description: "We value the time and are particular about timely deliveries by following the highest quality standards.",
   },
   {
-    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">🛠️</span>,
+    icon: <span className="bg-gray-100 text-black rounded-lg p-3 mr-3 text-3xl">ðŸ› ï¸</span>,
     title: "Technical Support",
     description: "Ask any technical query and get it solved by our expert technical support staff! With fruitful interaction, get the best possible solutions for your problems from our consultation and support team.",
   },
@@ -43,6 +42,62 @@ function FeatureItem({ icon, title, description }) {
 }
 
 export default function Upper() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    countryCode: "+91",
+    message: "",
+    notRobot: false,
+  });
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
+
+  function handleChange(event) {
+    const { name, value, type, checked } = event.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatusMessage("");
+
+    if (!formData.notRobot) {
+      setStatusMessage("Please confirm you are not a robot.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await postApi("/api/send-email", {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        countryCode: formData.countryCode,
+        message: formData.message,
+        formType: "Upper Discuss Form",
+      });
+
+      setStatusMessage(response.data?.message || "Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        countryCode: "+91",
+        message: "",
+        notRobot: false,
+      });
+    } catch (error) {
+      setStatusMessage(getApiErrorMessage(error, "Failed to send message. Please try again."));
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <section className="bg-[#F2F7FC] py-10 px-4">
       <div className="max-w-7xl mx-auto">
@@ -61,49 +116,76 @@ export default function Upper() {
 
           <div className="flex-1 bg-white rounded-lg shadow p-8 min-w-[300px] border-2">
             <h3 className="text-xl font-bold text-center mb-6">Let's Discuss</h3>
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your name *"
                 className="border rounded px-4 py-2"
                 required
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email ID *"
                 className="border rounded px-4 py-2"
                 required
               />
               <div className="flex gap-2">
-                <select className="border rounded px-3 py-2">
+                <select
+                  name="countryCode"
+                  value={formData.countryCode}
+                  onChange={handleChange}
+                  className="border rounded px-3 py-2"
+                >
                   <option value="+91">+91</option>
-                  
+                  <option value="+1">+1</option>
                 </select>
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Mobile Number *"
                   className="border rounded px-4 py-2 flex-1"
                   required
                 />
               </div>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Tell us more about your project*"
                 className="border rounded px-4 py-2"
                 rows={3}
                 required
               />
-              
-              <div className="bg-gray-100 rounded p-3 flex items-center gap-2">
-                <input type="checkbox" />
+
+              <label className="bg-gray-100 rounded p-3 flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  name="notRobot"
+                  checked={formData.notRobot}
+                  onChange={handleChange}
+                />
                 <span>I'm not a robot</span>
-                
-              </div>
+              </label>
               <button
                 type="submit"
-                className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 rounded mt-4"
+                disabled={loading}
+                className="bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 text-white font-bold py-2 rounded mt-4"
               >
-                Send
+                {loading ? "Sending..." : "Send"}
               </button>
+              {statusMessage && (
+                <p className={`text-sm ${statusMessage.includes("successfully") ? "text-green-600" : "text-red-600"}`}>
+                  {statusMessage}
+                </p>
+              )}
             </form>
           </div>
         </div>

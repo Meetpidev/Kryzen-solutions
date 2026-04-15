@@ -1,7 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import Bg from "../public/why_us_bg.45bce6d4.png";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import { getApiErrorMessage, postApi } from "../lib/api";
 
 const CTAWorkTogether = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTAWorkTogether })));
 const CTASubscribe = lazy(() => import("../components/FeaturedLogos").then(module => ({ default: module.CTASubscribe })));
@@ -78,18 +77,12 @@ export default function Contact() {
     if (file) {
       formDataToSend.append("attachment", file);
     }
-//https://kryzen-solutions.onrender.com/api/schedule-meeting
+
     try {
-      const response = await axios.post(
-        "https://kryzen-solutions.onrender.com/api/schedule-meeting",
-        formDataToSend,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
-      );
+      const response = await postApi("/api/schedule-meeting", formDataToSend);
 
       if (response.status === 200) {
-        alert("Meeting scheduled successfully!");
+        alert(response.data?.message || "Meeting scheduled successfully!");
         setForm({
           name: "",
           email: "",
@@ -107,7 +100,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("An error occurred while scheduling the meeting.");
+      alert(getApiErrorMessage(error, "An error occurred while scheduling the meeting."));
     } finally {
     setIsLoading(false);
   }
@@ -334,7 +327,11 @@ export default function Contact() {
                           />
                           {file && <p>{file.name} is selected</p>}
                         </div>
-                        <button className="bg-[#005D89] text-white px-6 py-2 rounded-md hover:shadow-[0_0_12px_rgba(0,0,0,0.5)] hover:bg-[#005D89]">
+                        <button
+                          type="button"
+                          onClick={() => document.getElementById("custom-file")?.click()}
+                          className="bg-[#005D89] text-white px-6 py-2 rounded-md hover:shadow-[0_0_12px_rgba(0,0,0,0.5)] hover:bg-[#005D89]"
+                        >
                           Upload
                         </button>
                       </div>
@@ -382,7 +379,6 @@ export default function Contact() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="/" className="w-full">
                     <button
                       type="submit"
                       disabled={isLoading}
@@ -418,7 +414,6 @@ export default function Contact() {
     "Submit"
   )}
                       </button>
-                      </Link>
                   </div>
                 </form>
 
@@ -559,3 +554,4 @@ export default function Contact() {
     </section>
   );
 }
+

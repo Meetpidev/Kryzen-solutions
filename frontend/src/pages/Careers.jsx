@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Career from "../public/career_bannner.svg";
 import Who1 from "../public/career_and_culture_1.svg";
 import Who2 from "../public/career_and_culture_2.svg";
@@ -32,18 +31,106 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { CTASubscribe } from "../components/FeaturedLogos";
+import { getApiErrorMessage, postApi } from "../lib/api";
 
 function Careers() {
   const [activeTab, setActiveTab] = useState("who");
   const [showForm, setShowForm] = useState(false);
   const [selectedRole, setSelectedRole] = useState("");
+  const [careerForm, setCareerForm] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    experience: "",
+    qualification: "",
+    degreeResult: "",
+    tenthResult: "",
+    twelfthResult: "",
+    role: "",
+    resume: null,
+  });
+  const [careerLoading, setCareerLoading] = useState(false);
+  const [careerStatus, setCareerStatus] = useState("");
 
   const openForm = (role) => {
     setSelectedRole(role);
+    setCareerStatus("");
+    setCareerForm({
+      name: "",
+      mobile: "",
+      email: "",
+      experience: "",
+      qualification: "",
+      degreeResult: "",
+      tenthResult: "",
+      twelfthResult: "",
+      role,
+      resume: null,
+    });
     setShowForm(true);
   };
 
-  const closeForm = () => setShowForm(false);
+  const closeForm = () => {
+    setShowForm(false);
+    setCareerStatus("");
+    setSelectedRole("");
+  };
+
+  const handleCareerChange = (e) => {
+    const { name, value, files } = e.target;
+    setCareerForm((prev) => ({
+      ...prev,
+      [name]: files ? files[0] || null : value,
+    }));
+  };
+
+  const handleCareerSubmit = async (e) => {
+    e.preventDefault();
+    setCareerStatus("");
+    setCareerLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("name", careerForm.name);
+      formData.append("mobile", careerForm.mobile);
+      formData.append("email", careerForm.email);
+      formData.append("experience", careerForm.experience);
+      formData.append("qualification", careerForm.qualification);
+      formData.append("degreeResult", careerForm.degreeResult);
+      formData.append("tenthResult", careerForm.tenthResult);
+      formData.append("twelfthResult", careerForm.twelfthResult);
+      formData.append("role", careerForm.role || selectedRole || "General Application");
+
+      if (careerForm.resume) {
+        formData.append("resume", careerForm.resume);
+      }
+
+      const response = await postApi("/api/careers", formData);
+
+      setCareerStatus(response.data?.message || "Application submitted successfully!");
+      setCareerForm({
+        name: "",
+        mobile: "",
+        email: "",
+        experience: "",
+        qualification: "",
+        degreeResult: "",
+        tenthResult: "",
+        twelfthResult: "",
+        role: "",
+        resume: null,
+      });
+      setSelectedRole("");
+      setTimeout(() => {
+        setShowForm(false);
+        setCareerStatus("");
+      }, 1500);
+    } catch (error) {
+      setCareerStatus(getApiErrorMessage(error, "Failed to submit application. Please try again."));
+    } finally {
+      setCareerLoading(false);
+    }
+  };
 
   const tabs = [
     { id: "who", label: "Who we are" },
@@ -401,26 +488,92 @@ function Careers() {
 
             <h2 className="text-xl font-semibold mb-4">Apply for {selectedRole || "a Position"}</h2>
 
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input className="border p-2 rounded" type="text" placeholder="Name *" required />
-              <input className="border p-2 rounded" type="text" placeholder="Mobile Number *" required />
-              <input className="border p-2 rounded" type="email" placeholder="Email ID *" required />
-              <select className="border p-2 rounded" required>
-                <option>Select Experience *</option>
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleCareerSubmit}>
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="name"
+                value={careerForm.name}
+                onChange={handleCareerChange}
+                placeholder="Name *"
+                required
+              />
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="mobile"
+                value={careerForm.mobile}
+                onChange={handleCareerChange}
+                placeholder="Mobile Number *"
+                required
+              />
+              <input
+                className="border p-2 rounded"
+                type="email"
+                name="email"
+                value={careerForm.email}
+                onChange={handleCareerChange}
+                placeholder="Email ID *"
+                required
+              />
+              <select
+                className="border p-2 rounded"
+                name="experience"
+                value={careerForm.experience}
+                onChange={handleCareerChange}
+                required
+              >
+                <option value="">Select Experience *</option>
                 <option>Fresher</option>
                 <option>1 - 2 Years</option>
                 <option>3 - 5 Years</option>
                 <option>5+ Years</option>
               </select>
-              <input className="border p-2 rounded" type="text" placeholder="Qualification *" required />
-              <input className="border p-2 rounded" type="text" placeholder="Degree Result *" required />
-              <input className="border p-2 rounded" type="text" placeholder="10th Result *" required />
-              <input className="border p-2 rounded" type="text" placeholder="12th/Diploma Result *" required />
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="qualification"
+                value={careerForm.qualification}
+                onChange={handleCareerChange}
+                placeholder="Qualification *"
+                required
+              />
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="degreeResult"
+                value={careerForm.degreeResult}
+                onChange={handleCareerChange}
+                placeholder="Degree Result *"
+                required
+              />
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="tenthResult"
+                value={careerForm.tenthResult}
+                onChange={handleCareerChange}
+                placeholder="10th Result *"
+                required
+              />
+              <input
+                className="border p-2 rounded"
+                type="text"
+                name="twelfthResult"
+                value={careerForm.twelfthResult}
+                onChange={handleCareerChange}
+                placeholder="12th/Diploma Result *"
+                required
+              />
               
               <select
                 className="border p-2 rounded col-span-2"
-                value={selectedRole}
-                onChange={(e) => setSelectedRole(e.target.value)}
+                name="role"
+                value={careerForm.role || selectedRole}
+                onChange={(e) => {
+                  setSelectedRole(e.target.value);
+                  handleCareerChange(e);
+                }}
                 required
               >
                 <option value="">Select Role *</option>
@@ -434,17 +587,26 @@ function Careers() {
               <input
                 className="border p-2 rounded col-span-2"
                 type="file"
+                name="resume"
+                onChange={handleCareerChange}
                 accept=".pdf,.doc,.docx"
                 required
               />
 
               <div className="col-span-2 flex justify-center mt-4">
-              <Link to ="/">
-                <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-                  Submit
+                <button
+                  type="submit"
+                  disabled={careerLoading}
+                  className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:bg-blue-400"
+                >
+                  {careerLoading ? "Submitting..." : "Submit"}
                 </button>
-                </Link>
               </div>
+              {careerStatus && (
+                <p className={`col-span-2 text-center text-sm ${careerStatus.includes("successfully") ? "text-green-600" : "text-red-600"}`}>
+                  {careerStatus}
+                </p>
+              )}
             </form>
 
             <p className="text-xs text-gray-500 mt-2 text-center">
